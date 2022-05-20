@@ -1,0 +1,12 @@
+# commentaires
+
+*.xml
+*.txt
+
+/__pycache__
+/00 - Old
+/01 - Resources
+/03 - Pictures
+
+
+/*.csv

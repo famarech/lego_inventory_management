@@ -1,0 +1,383 @@
+LOTID;DATEADDED;CATEGORY;COLOR;PRICE;QTY;BULK;IMAGE;DESCRIPTION;CONDITION;ITEMTYPE;ITEMID;SALE;STOCKROOM;ITEMWEIGHT;DATELASTSOLD;BASECURRENCYCODE;CATEGORYNAME;CATEGORYNAMEUNDER;COLORNAME;ITEMTYPENAME;ITEMIDNAME;BOX;LINE;ROW;DIMENSIONX;DIMENSIONY;DIMENSIONZ
+;05/01/2022;22;1;0,35;58;1;;;U;P;4276;;Y;0,41;;EUR;Hinge;;White;Part;Hinge Plate 1 x 2 with 2 Fingers (Undetermined Type);Grand Gris;A;1;0;0;0
+;05/01/2022;22;3;0,26;47;1;;;U;P;4276;;Y;0,41;;EUR;Hinge;;Yellow;Part;Hinge Plate 1 x 2 with 2 Fingers (Undetermined Type);Grand Gris;A;1;0;0;0
+;05/01/2022;22;5;0,19;66;1;;;U;P;4276;;Y;0,41;;EUR;Hinge;;Red;Part;Hinge Plate 1 x 2 with 2 Fingers (Undetermined Type);Grand Gris;A;1;0;0;0
+;05/01/2022;22;7;0,36;24;1;;;U;P;4276;;Y;0,41;;EUR;Hinge;;Blue;Part;Hinge Plate 1 x 2 with 2 Fingers (Undetermined Type);Grand Gris;A;1;0;0;0
+;05/01/2022;22;9;0,8;12;1;;;U;P;4276;;Y;0,41;;EUR;Hinge;;Light Gray;Part;Hinge Plate 1 x 2 with 2 Fingers (Undetermined Type);Grand Gris;A;1;0;0;0
+;05/01/2022;22;11;0,54;167;1;;;U;P;4276;;Y;0,41;;EUR;Hinge;;Black;Part;Hinge Plate 1 x 2 with 2 Fingers (Undetermined Type);Grand Gris;A;1;0;0;0
+;05/01/2022;43;1;0,42;1;1;;;U;P;2695;;Y;2,4;;EUR;Wheel;;White;Part;Wheel 30mm D. x 13mm (13 x 24 Model Team);grand gris;A;2;0;0;0
+;05/01/2022;43;3;0,24;5;1;;;U;P;2695;;Y;2,4;;EUR;Wheel;;Yellow;Part;Wheel 30mm D. x 13mm (13 x 24 Model Team);grand gris;A;2;0;0;0
+;05/01/2022;43;9;0,57;1;1;;;U;P;2695;;Y;2,4;;EUR;Wheel;;Light Gray;Part;Wheel 30mm D. x 13mm (13 x 24 Model Team);grand gris;A;2;0;0;0
+;05/01/2022;43;39;0,16;1;1;;;U;P;2695;;Y;2,4;;EUR;Wheel;;Dark Turquoise;Part;Wheel 30mm D. x 13mm (13 x 24 Model Team);grand gris;A;2;0;0;0
+;05/01/2022;111;11;0,19;5;1;;;U;P;2696;;Y;11;;EUR;Tire & Tread;;Black;Part;Tire 13 x 24 Model Team;grand gris;A;2;0;0;0
+;05/01/2022;43;3;0,09;1;1;;;U;P;2994;;Y;1,75;;EUR;Wheel;;Yellow;Part;Wheel 30.4 x 14 VR;grand gris;A;2;0;0;0
+;05/01/2022;22;1;2,1;13;1;;;U;P;4275;;Y;0,43;;EUR;Hinge;;White;Part;Hinge Plate 1 x 2 with 3 Fingers (Undetermined Type);Grand Gris;A;2;0;0;0
+;05/01/2022;22;3;0,25;63;1;;;U;P;4275;;Y;0,43;;EUR;Hinge;;Yellow;Part;Hinge Plate 1 x 2 with 3 Fingers (Undetermined Type);Grand Gris;A;2;0;0;0
+;05/01/2022;22;5;0,41;47;1;;;U;P;4275;;Y;0,43;;EUR;Hinge;;Red;Part;Hinge Plate 1 x 2 with 3 Fingers (Undetermined Type);Grand Gris;A;2;0;0;0
+;05/01/2022;22;7;0,3;55;1;;;U;P;4275;;Y;0,43;;EUR;Hinge;;Blue;Part;Hinge Plate 1 x 2 with 3 Fingers (Undetermined Type);Grand Gris;A;2;0;0;0
+;05/01/2022;22;9;1,31;10;1;;;U;P;4275;;Y;0,43;;EUR;Hinge;;Light Gray;Part;Hinge Plate 1 x 2 with 3 Fingers (Undetermined Type);Grand Gris;A;2;0;0;0
+;05/01/2022;22;11;0,82;105;1;;;U;P;4275;;Y;0,43;;EUR;Hinge;;Black;Part;Hinge Plate 1 x 2 with 3 Fingers (Undetermined Type);Grand Gris;A;2;0;0;0
+;05/01/2022;43;67;3,11;3;1;;;U;P;22253;;Y;7,2;;EUR;Wheel;;Metallic Silver;Part;Wheel 36.8mm D. x 26mm VR with Axle Hole (x Shape);grand gris;A;2;0;0;0
+;05/01/2022;11;1;0,12;4;1;;;U;P;41531;;Y;2,83;;EUR;Cylinder;;White;Part;Cylinder 4 x 4 x 1 2/3 with Pin Holes and Center Bar;grand gris;A;2;4;4;1,67
+;05/01/2022;11;5;0,07;2;1;;;U;P;41531;;Y;2,83;;EUR;Cylinder;;Red;Part;Cylinder 4 x 4 x 1 2/3 with Pin Holes and Center Bar;grand gris;A;2;4;4;1,67
+;05/01/2022;11;86;0,12;2;1;;;U;P;41531;;Y;2,83;;EUR;Cylinder;;Light Bluish Gray;Part;Cylinder 4 x 4 x 1 2/3 with Pin Holes and Center Bar;grand gris;A;2;4;4;1,67
+;05/01/2022;43;86;0,9;5;1;;;U;P;41896;;Y;9,35;;EUR;Wheel;;Light Bluish Gray;Part;Wheel 43.2mm D. x 26mm Technic Racing Small, 3 Pin Holes;grand gris;A;2;0;0;0
+;05/01/2022;43;1;0,28;1;1;;;U;P;56145;;Y;4,25;;EUR;Wheel;;White;Part;Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim;grand gris;A;2;0;0;0
+;05/01/2022;43;5;0,21;3;1;;;U;P;56145;;Y;4,25;;EUR;Wheel;;Red;Part;Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim;grand gris;A;2;0;0;0
+;05/01/2022;43;11;0,12;31;1;;;U;P;56145;;Y;4,25;;EUR;Wheel;;Black;Part;Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim;grand gris;A;2;0;0;0
+;05/01/2022;43;86;0,11;10;1;;;U;P;56145;;Y;4,25;;EUR;Wheel;;Light Bluish Gray;Part;Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim;grand gris;A;2;0;0;0
+;05/01/2022;43;115;0,1;8;1;;;U;P;56145;;Y;4,25;;EUR;Wheel;;Pearl Gold;Part;Wheel 30.4mm D. x 20mm with No Pin Holes and Reinforced Rim;grand gris;A;2;0;0;0
+;05/01/2022;111;11;0,37;4;1;;;U;P;56898;;Y;7,58;;EUR;Tire & Tread;;Black;Part;Tire 43.2 x 14 Offset Tread;grand gris;A;2;0;0;0
+;05/01/2022;43;1;0,27;1;1;;;U;P;56904;;Y;4,1;;EUR;Wheel;;White;Part;Wheel 30mm D. x 14mm (for Tire 43.2 x 14);grand gris;A;2;0;0;0
+;05/01/2022;43;86;0,28;4;1;;;U;P;56904;;Y;4,1;;EUR;Wheel;;Light Bluish Gray;Part;Wheel 30mm D. x 14mm (for Tire 43.2 x 14);grand gris;A;2;0;0;0
+;05/01/2022;43;85;0,15;2;1;;;U;P;64711;;Y;12,25;;EUR;Wheel;;Dark Bluish Gray;Part;Wheel Hard Plastic with Small Cleats;grand gris;A;2;0;0;0
+;05/01/2022;43;11;0,1;1;1;;;U;P;64712;;Y;14,6;;EUR;Wheel;;Black;Part;Wheel Hard Plastic with Small Cleats and Flanges;grand gris;A;2;0;0;0
+;05/01/2022;43;5;0,27;1;1;;;U;P;4266pb02;;Y;4,59;;EUR;Wheel;;Red;Part;Wheel 20 x 30 Technic with Yellow Arrow Pattern (Sticker) - Set 8856;grand gris;A;2;0;0;0
+;05/01/2022;43;11;0,14;3;1;;;U;P;4266pb04;;Y;5,3;;EUR;Wheel;;Black;Part;Wheel 20 x 30 Technic with 28 Lines with Orange to Yellow Gradient Pattern (Sticker) - Sets 6580 / 6582;grand gris;A;2;0;0;0
+;05/01/2022;22;1;0,27;56;1;;;U;P;4315;;Y;0,85;;EUR;Hinge;;White;Part;Hinge Vehicle Roof Holder 1 x 4;Grand Gris;A;3;1;4;0
+;05/01/2022;22;3;0,12;7;1;;;U;P;4315;;Y;0,85;;EUR;Hinge;;Yellow;Part;Hinge Vehicle Roof Holder 1 x 4;Grand Gris;A;3;1;4;0
+;05/01/2022;22;5;0,14;27;1;;;U;P;4315;;Y;0,85;;EUR;Hinge;;Red;Part;Hinge Vehicle Roof Holder 1 x 4;Grand Gris;A;3;1;4;0
+;05/01/2022;22;7;0,18;40;1;;;U;P;4315;;Y;0,85;;EUR;Hinge;;Blue;Part;Hinge Vehicle Roof Holder 1 x 4;Grand Gris;A;3;1;4;0
+;05/01/2022;22;9;0,57;3;1;;;U;P;4315;;Y;0,85;;EUR;Hinge;;Light Gray;Part;Hinge Vehicle Roof Holder 1 x 4;Grand Gris;A;3;1;4;0
+;05/01/2022;22;11;0,19;48;1;;;U;P;4315;;Y;0,85;;EUR;Hinge;;Black;Part;Hinge Vehicle Roof Holder 1 x 4;Grand Gris;A;3;1;4;0
+;05/01/2022;22;1;0,18;28;1;;;U;P;4625;;Y;0,67;;EUR;Hinge;;White;Part;Hinge Tile 1 x 4;Grand Gris;A;4;1;4;0
+;05/01/2022;22;3;1,46;1;1;;;U;P;4625;;Y;0,67;;EUR;Hinge;;Yellow;Part;Hinge Tile 1 x 4;Grand Gris;A;4;1;4;0
+;05/01/2022;22;5;0,18;37;1;;;U;P;4625;;Y;0,67;;EUR;Hinge;;Red;Part;Hinge Tile 1 x 4;Grand Gris;A;4;1;4;0
+;05/01/2022;22;7;0,21;5;1;;;U;P;4625;;Y;0,67;;EUR;Hinge;;Blue;Part;Hinge Tile 1 x 4;Grand Gris;A;4;1;4;0
+;05/01/2022;22;9;0,2;1;1;;;U;P;4625;;Y;0,67;;EUR;Hinge;;Light Gray;Part;Hinge Tile 1 x 4;Grand Gris;A;4;1;4;0
+;05/01/2022;22;11;0,15;24;1;;;U;P;4625;;Y;0,67;;EUR;Hinge;;Black;Part;Hinge Tile 1 x 4;Grand Gris;A;4;1;4;0
+;05/01/2022;22;34;0,19;3;1;;;U;P;4625;;Y;0,67;;EUR;Hinge;;Lime;Part;Hinge Tile 1 x 4;Grand Gris;A;4;1;4;0
+;05/01/2022;45;10;0,11;1;1;;;U;P;412;;Y;0,47;;EUR;Arm;;Dark Gray;Part;Arm Piece Turned with 2 and 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;16;0,33;5;1;;;U;P;412;;Y;0,47;;EUR;Arm;;Trans-Neon Green;Part;Arm Piece Turned with 2 and 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;18;0,11;8;1;;;U;P;412;;Y;0,47;;EUR;Arm;;Trans-Neon Orange;Part;Arm Piece Turned with 2 and 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;9;0,14;1;1;;;U;P;795;;Y;0,24;;EUR;Arm;;Light Gray;Part;Arm Piece with Disk and 2 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;14;5;0,57;9;1;;;U;P;2607;;Y;0,89;;EUR;Magnet;;Red;Part;Magnet Holder 2 x 3 with Clips and Pin Hole;Grand Gris;A;5;0;0;0
+;05/01/2022;14;7;0,68;1;1;;;U;P;2607;;Y;0,89;;EUR;Magnet;;Blue;Part;Magnet Holder 2 x 3 with Clips and Pin Hole;Grand Gris;A;5;0;0;0
+;05/01/2022;14;11;1,35;4;1;;;U;P;2607;;Y;0,89;;EUR;Magnet;;Black;Part;Magnet Holder 2 x 3 with Clips and Pin Hole;Grand Gris;A;5;0;0;0
+;05/01/2022;45;3;0,14;9;1;;;U;P;3612;;Y;0,47;;EUR;Arm;;Yellow;Part;Arm Piece Straight with 2 and 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;5;0,07;2;1;;;U;P;3612;;Y;0,47;;EUR;Arm;;Red;Part;Arm Piece Straight with 2 and 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;7;0,13;6;1;;;U;P;3612;;Y;0,47;;EUR;Arm;;Blue;Part;Arm Piece Straight with 2 and 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;8;0,05;2;1;;;U;P;3612;;Y;0,47;;EUR;Arm;;Brown;Part;Arm Piece Straight with 2 and 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;9;0,25;9;1;;;U;P;3612;;Y;0,47;;EUR;Arm;;Light Gray;Part;Arm Piece Straight with 2 and 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;11;0,16;8;1;;;U;P;3612;;Y;0,47;;EUR;Arm;;Black;Part;Arm Piece Straight with 2 and 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;1;0,04;11;1;;;U;P;3613;;Y;0,43;;EUR;Arm;;White;Part;Arm Piece with Tow Ball Socket, 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;3;0,07;2;1;;;U;P;3613;;Y;0,43;;EUR;Arm;;Yellow;Part;Arm Piece with Tow Ball Socket, 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;5;0,02;1;1;;;U;P;3613;;Y;0,43;;EUR;Arm;;Red;Part;Arm Piece with Tow Ball Socket, 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;7;0,07;5;1;;;U;P;3613;;Y;0,43;;EUR;Arm;;Blue;Part;Arm Piece with Tow Ball Socket, 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;11;0,04;1;1;;;U;P;3613;;Y;0,43;;EUR;Arm;;Black;Part;Arm Piece with Tow Ball Socket, 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;3;0,08;3;1;;;U;P;4220;;Y;0,45;;EUR;Arm;;Yellow;Part;Arm Grab Jaw Holder;Grand Gris;A;5;0;0;0
+;05/01/2022;45;9;0,42;2;1;;;U;P;4220;;Y;0,45;;EUR;Arm;;Light Gray;Part;Arm Grab Jaw Holder;Grand Gris;A;5;0;0;0
+;05/01/2022;45;11;0,68;3;1;;;U;P;4220;;Y;0,45;;EUR;Arm;;Black;Part;Arm Grab Jaw Holder;Grand Gris;A;5;0;0;0
+;05/01/2022;45;9;0,41;2;1;;;U;P;4221;;Y;0,28;;EUR;Arm;;Light Gray;Part;Arm Grab Jaw;Grand Gris;A;5;0;0;0
+;05/01/2022;45;11;0,14;10;1;;;U;P;4221;;Y;0,28;;EUR;Arm;;Black;Part;Arm Grab Jaw;Grand Gris;A;5;0;0;0
+;05/01/2022;45;11;0,17;11;1;;;U;P;6048;;Y;0,36;;EUR;Arm;;Black;Part;Arm Piece with Pin, 2 Fingers;Grand Gris;A;5;1;2;1
+;05/01/2022;45;5;0,13;4;1;;;U;P;6217;;Y;0,44;;EUR;Arm;;Red;Part;Arm Piece with Pin, 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;7;0,14;1;1;;;U;P;6217;;Y;0,44;;EUR;Arm;;Blue;Part;Arm Piece with Pin, 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;11;1,58;5;1;;;U;P;6217;;Y;0,44;;EUR;Arm;;Black;Part;Arm Piece with Pin, 3 Fingers;Grand Gris;A;5;0;0;0
+;05/01/2022;45;10;0,06;1;1;;;U;P;30014;;Y;1,13;;EUR;Arm;;Dark Gray;Part;Arm Holder Brick 1 x 2 with 2 Horizontal Fingers;Grand Gris;A;5;2;2;1
+;05/01/2022;45;11;0,06;10;1;;;U;P;30014;;Y;1,13;;EUR;Arm;;Black;Part;Arm Holder Brick 1 x 2 with 2 Horizontal Fingers;Grand Gris;A;5;2;2;1
+;05/01/2022;45;10;1,12;3;1;;;U;P;30082;;Y;0,18;;EUR;Arm;;Dark Gray;Part;Arm Piece with Tow Ball and Clip;Grand Gris;A;5;0;0;0
+;05/01/2022;14;1;6,28;1;1;;;U;P;30159;;Y;0,68;;EUR;Magnet;;White;Part;Magnet Holder Plate 2 x 2 Bottom;Grand Gris;A;5;2;2;1
+;05/01/2022;14;11;3,81;11;1;;;U;P;73092;;Y;3,03;;EUR;Magnet;;Black;Part;Magnet Cylindrical;Grand Gris;A;5;0;0;0
+;05/01/2022;14;1;0,42;2;1;;;U;P;2609a;;Y;0,6;;EUR;Magnet;;White;Part;Magnet Holder Tile 2 x 2 - Short Arms;Grand Gris;A;5;0;0;0
+;05/01/2022;14;11;0,34;7;1;;;U;P;2609a;;Y;0,6;;EUR;Magnet;;Black;Part;Magnet Holder Tile 2 x 2 - Short Arms;Grand Gris;A;5;0;0;0
+;05/01/2022;28;3;0,19;9;1;;;U;P;3614a;;Y;0,25;;EUR;Plate, Round;;Yellow;Part;Plate, Round 1 x 1 with Tow Ball with Round Hole (Maxifigure Hand);Grand Gris;A;5;1;2;0
+;05/01/2022;111;11;0,05;72;1;;;U;P;3139;;Y;0,4;;EUR;Tire & Tread;;Black;Part;Tire 14mm D. x 4mm Smooth Small Single;Grand Gris;A;6;0;0;0
+;05/01/2022;111;11;0,04;26;1;;;U;P;30028;;Y;0,83;;EUR;Tire & Tread;;Black;Part;Tire 14mm D. x 9mm Smooth Small Wide Slick;Grand Gris;A;6;0;0;0
+;05/01/2022;43;86;0,04;17;1;;;U;P;42610;;Y;0,39;;EUR;Wheel;;Light Bluish Gray;Part;Wheel 11mm D. x 8mm with Center Groove;Grand Gris;A;6;0;0;0
+;05/01/2022;111;11;0,16;6;1;;;U;P;42611;;Y;0,84;;EUR;Tire & Tread;;Black;Part;Tire 17.5mm D. x 6mm with Shallow Staggered Treads;Grand Gris;A;6;0;0;0
+;05/01/2022;43;11;0,11;26;1;;;U;P;50944;;Y;0,32;;EUR;Wheel;;Black;Part;Wheel 11mm D. x 6mm with 5 Spokes;Grand Gris;A;6;0;0;0
+;05/01/2022;111;11;0,07;39;1;;;U;P;50945;;Y;0,42;;EUR;Tire & Tread;;Black;Part;Tire 14mm D. x 6mm Solid Smooth;Grand Gris;A;6;0;0;0
+;05/01/2022;43;1;0,03;1;1;;;U;P;74967;;Y;0,25;;EUR;Wheel;;White;Part;Wheel  8mm D. x 9mm for Slicks, Hole Notched for Wheels Holder Pin, Reinforced Back;Grand Gris;A;6;0;0;0
+;05/01/2022;43;3;0,04;2;1;;;U;P;74967;;Y;0,25;;EUR;Wheel;;Yellow;Part;Wheel  8mm D. x 9mm for Slicks, Hole Notched for Wheels Holder Pin, Reinforced Back;Grand Gris;A;6;0;0;0
+;05/01/2022;43;11;0,05;14;1;;;U;P;74967;;Y;0,25;;EUR;Wheel;;Black;Part;Wheel  8mm D. x 9mm for Slicks, Hole Notched for Wheels Holder Pin, Reinforced Back;Grand Gris;A;6;0;0;0
+;05/01/2022;43;86;0,03;10;1;;;U;P;74967;;Y;0,25;;EUR;Wheel;;Light Bluish Gray;Part;Wheel  8mm D. x 9mm for Slicks, Hole Notched for Wheels Holder Pin, Reinforced Back;Grand Gris;A;6;0;0;0
+;05/01/2022;43;86;0,12;2;1;;;U;P;93593;;Y;0,33;;EUR;Wheel;;Light Bluish Gray;Part;Wheel 11mm D. x 6mm with 8 Spokes;Grand Gris;A;6;0;0;0
+;05/01/2022;43;95;0,07;10;1;;;U;P;93594;;Y;0,36;;EUR;Wheel;;Flat Silver;Part;Wheel 11mm D. x 6mm with Smooth Hubcap;Grand Gris;A;6;0;0;0
+;05/01/2022;27;1;0,06;3;1;;;U;P;8;;Y;1;;EUR;Plate, Modified;;White;Part;Plate, Modified 2 x 2 with Wheel Holder Bottom;Grand Gris;B;1;0;0;0
+;05/01/2022;27;5;0,14;2;1;;;U;P;8;;Y;1;;EUR;Plate, Modified;;Red;Part;Plate, Modified 2 x 2 with Wheel Holder Bottom;Grand Gris;B;1;0;0;0
+;05/01/2022;111;11;0,49;1;1;;;U;P;36;;Y;6;;EUR;Tire & Tread;;Black;Part;Tire Smooth - Large Solid;Grand Gris;B;1;0;0;0
+;05/01/2022;43;11;0,05;5;1;;;U;P;2496;;Y;0,3;;EUR;Wheel;;Black;Part;Wheel Skateboard / Trolley;Grand Gris;B;1;0;0;0
+;05/01/2022;28;3;0,06;1;1;;;U;P;2655;;Y;0,43;;EUR;Plate, Round;;Yellow;Part;Plate, Round 2 x 2 Thin with Wheel Holder;Grand Gris;B;1;2;2;0
+;05/01/2022;28;9;0,05;3;1;;;U;P;2655;;Y;0,43;;EUR;Plate, Round;;Light Gray;Part;Plate, Round 2 x 2 Thin with Wheel Holder;Grand Gris;B;1;2;2;0
+;05/01/2022;28;86;0,04;3;1;;;U;P;2655;;Y;0,43;;EUR;Plate, Round;;Light Bluish Gray;Part;Plate, Round 2 x 2 Thin with Wheel Holder;Grand Gris;B;1;2;2;0
+;05/01/2022;43;1;0,09;1;1;;;U;P;3464;;Y;0,25;;EUR;Wheel;;White;Part;Wheel Center Small with Stub Axles (Pulley Wheel);Grand Gris;B;1;0;0;0
+;05/01/2022;43;5;0,15;8;1;;;U;P;3464;;Y;0,25;;EUR;Wheel;;Red;Part;Wheel Center Small with Stub Axles (Pulley Wheel);Grand Gris;B;1;0;0;0
+;05/01/2022;43;12;0,17;6;1;;;U;P;3464;;Y;0,25;;EUR;Wheel;;Trans-Clear;Part;Wheel Center Small with Stub Axles (Pulley Wheel);Grand Gris;B;1;0;0;0
+;05/01/2022;43;85;0,11;2;1;;;U;P;3464;;Y;0,25;;EUR;Wheel;;Dark Bluish Gray;Part;Wheel Center Small with Stub Axles (Pulley Wheel);Grand Gris;B;1;0;0;0
+;05/01/2022;43;1;0,04;68;1;;;U;P;4624;;Y;0,22;;EUR;Wheel;;White;Part;Wheel  8mm D. x 6mm;Grand Gris;B;1;0;0;0
+;05/01/2022;43;3;0,08;11;1;;;U;P;4624;;Y;0,22;;EUR;Wheel;;Yellow;Part;Wheel  8mm D. x 6mm;Grand Gris;B;1;0;0;0
+;05/01/2022;43;9;0,09;71;1;;;U;P;4624;;Y;0,22;;EUR;Wheel;;Light Gray;Part;Wheel  8mm D. x 6mm;Grand Gris;B;1;0;0;0
+;05/01/2022;111;11;0,11;2;1;;;U;P;50861;;Y;0,83;;EUR;Tire & Tread;;Black;Part;Tire 21mm D. x 6mm City Motorcycle;Grand Gris;B;1;0;0;0
+;05/01/2022;43;86;0,13;1;1;;;U;P;50862;;Y;0,5;;EUR;Wheel;;Light Bluish Gray;Part;Wheel 15mm D. x 6mm City Motorcycle;Grand Gris;B;1;0;0;0
+;05/01/2022;111;11;0,06;22;1;;;U;P;7b;;Y;0,93;;EUR;Tire & Tread;;Black;Part;Tire Smooth Small Dually;Grand Gris;B;1;0;0;0
+;05/01/2022;43;12;0,51;1;1;;;U;P;92851c01;;Y;0,49;;EUR;Wheel;;Trans-Clear;Part;Wheel Bicycle with Fixed Black Hard Rubber Tire (1-Piece Wheel);Grand Gris;B;1;0;0;0
+;05/01/2022;93;9;0,3;1;1;;;U;P;bb0164c01;;Y;1,46;;EUR;Aircraft;;Light Gray;Part;Plate, Modified 2 x 2 Thin with Dual Wheels Holder - Solid Pins with Space Shuttle Wheels;Grand Gris;B;1;0;0;0
+;05/01/2022;72;1;0,03;25;1;;;U;P;3829c01;;Y;0,6;;EUR;Vehicle;;White;Part;Vehicle, Steering Stand 1 x 2 with Black Steering Wheel;Grand Gris;B;2;0;0;0
+;05/01/2022;72;3;0,03;14;1;;;U;P;3829c01;;Y;0,6;;EUR;Vehicle;;Yellow;Part;Vehicle, Steering Stand 1 x 2 with Black Steering Wheel;Grand Gris;B;2;0;0;0
+;05/01/2022;72;5;0,03;18;1;;;U;P;3829c01;;Y;0,6;;EUR;Vehicle;;Red;Part;Vehicle, Steering Stand 1 x 2 with Black Steering Wheel;Grand Gris;B;2;0;0;0
+;05/01/2022;72;7;0,04;10;1;;;U;P;3829c01;;Y;0,6;;EUR;Vehicle;;Blue;Part;Vehicle, Steering Stand 1 x 2 with Black Steering Wheel;Grand Gris;B;2;0;0;0
+;05/01/2022;72;9;0,06;17;1;;;U;P;3829c01;;Y;0,6;;EUR;Vehicle;;Light Gray;Part;Vehicle, Steering Stand 1 x 2 with Black Steering Wheel;Grand Gris;B;2;0;0;0
+;05/01/2022;72;11;0,04;3;1;;;U;P;3829c01;;Y;0,6;;EUR;Vehicle;;Black;Part;Vehicle, Steering Stand 1 x 2 with Black Steering Wheel;Grand Gris;B;2;0;0;0
+;05/01/2022;72;86;0,04;6;1;;;U;P;3829c01;;Y;0,6;;EUR;Vehicle;;Light Bluish Gray;Part;Vehicle, Steering Stand 1 x 2 with Black Steering Wheel;Grand Gris;B;2;0;0;0
+;05/01/2022;12;1;0,29;5;1;;;U;P;445;;Y;2,3;;EUR;Door;;White;Part;Door 1 x 3 x 4 Left;Grand Gris;B;3;1;3;4
+;05/01/2022;12;5;1,8;1;1;;;U;P;445;;Y;2,3;;EUR;Door;;Red;Part;Door 1 x 3 x 4 Left;Grand Gris;B;3;1;3;4
+;05/01/2022;12;7;0,15;2;1;;;U;P;445;;Y;2,3;;EUR;Door;;Blue;Part;Door 1 x 3 x 4 Left;Grand Gris;B;3;1;3;4
+;05/01/2022;12;1;0,31;4;1;;;U;P;446;;Y;2,3;;EUR;Door;;White;Part;Door 1 x 3 x 4 Right;Grand Gris;B;3;1;3;4
+;05/01/2022;12;5;2,06;1;1;;;U;P;446;;Y;2,3;;EUR;Door;;Red;Part;Door 1 x 3 x 4 Right;Grand Gris;B;3;1;3;4
+;05/01/2022;12;7;0,22;2;1;;;U;P;446;;Y;2,3;;EUR;Door;;Blue;Part;Door 1 x 3 x 4 Right;Grand Gris;B;3;1;3;4
+;05/01/2022;12;9;0,77;2;1;;;U;P;446;;Y;2,3;;EUR;Door;;Light Gray;Part;Door 1 x 3 x 4 Right;Grand Gris;B;3;1;3;4
+;05/01/2022;12;7;0,46;1;1;;;U;P;801;;Y;1,78;;EUR;Door;;Blue;Part;Door 1 x 3 x 3 Left with Window and Vertical Handle;Grand Gris;B;3;1;3;3
+;05/01/2022;12;5;0,28;3;1;;;U;P;3188;;Y;1,13;;EUR;Door;;Red;Part;Door 1 x 3 x 2 Right;Grand Gris;B;3;1;3;2
+;05/01/2022;12;11;1,44;1;1;;;U;P;3188;;Y;1,13;;EUR;Door;;Black;Part;Door 1 x 3 x 2 Right;Grand Gris;B;3;1;3;2
+;05/01/2022;12;5;0,27;3;1;;;U;P;3189;;Y;1,13;;EUR;Door;;Red;Part;Door 1 x 3 x 2 Left;Grand Gris;B;3;1;3;2
+;05/01/2022;12;11;1,06;1;1;;;U;P;3189;;Y;1,13;;EUR;Door;;Black;Part;Door 1 x 3 x 2 Left;Grand Gris;B;3;1;3;2
+;05/01/2022;12;1;0,26;4;1;;;U;P;3192;;Y;1,88;;EUR;Door;;White;Part;Door 1 x 3 x 3 Right;Grand Gris;B;3;1;3;3
+;05/01/2022;12;5;0,2;1;1;;;U;P;3192;;Y;1,88;;EUR;Door;;Red;Part;Door 1 x 3 x 3 Right;Grand Gris;B;3;1;3;3
+;05/01/2022;12;7;0,11;1;1;;;U;P;3192;;Y;1,88;;EUR;Door;;Blue;Part;Door 1 x 3 x 3 Right;Grand Gris;B;3;1;3;3
+;05/01/2022;12;85;0,26;2;1;;;U;P;3192;;Y;1,88;;EUR;Door;;Dark Bluish Gray;Part;Door 1 x 3 x 3 Right;Grand Gris;B;3;1;3;3
+;05/01/2022;12;1;0,27;5;1;;;U;P;3193;;Y;1,88;;EUR;Door;;White;Part;Door 1 x 3 x 3 Left;Grand Gris;B;3;1;3;3
+;05/01/2022;12;5;0,21;1;1;;;U;P;3193;;Y;1,88;;EUR;Door;;Red;Part;Door 1 x 3 x 3 Left;Grand Gris;B;3;1;3;3
+;05/01/2022;12;85;0,27;1;1;;;U;P;3193;;Y;1,88;;EUR;Door;;Dark Bluish Gray;Part;Door 1 x 3 x 3 Left;Grand Gris;B;3;1;3;3
+;05/01/2022;42;5;0,1;1;1;;;U;P;2399;;Y;3;;EUR;Wedge;;Red;Part;Wedge 3 x 4 without Stud Notches;Grand Gris;B;4;3,5;4;1
+;05/01/2022;42;8;0,09;1;1;;;U;P;2399;;Y;3;;EUR;Wedge;;Brown;Part;Wedge 3 x 4 without Stud Notches;Grand Gris;B;4;3,5;4;1
+;05/01/2022;42;1;0,11;1;1;;;U;P;6564;;Y;1,85;;EUR;Wedge;;White;Part;Wedge 3 x 2 Right;Grand Gris;B;4;3;2;1
+;05/01/2022;42;3;0,06;4;1;;;U;P;6564;;Y;1,85;;EUR;Wedge;;Yellow;Part;Wedge 3 x 2 Right;Grand Gris;B;4;3;2;1
+;05/01/2022;42;5;0,05;2;1;;;U;P;6564;;Y;1,85;;EUR;Wedge;;Red;Part;Wedge 3 x 2 Right;Grand Gris;B;4;3;2;1
+;05/01/2022;42;6;0,08;3;1;;;U;P;6564;;Y;1,85;;EUR;Wedge;;Green;Part;Wedge 3 x 2 Right;Grand Gris;B;4;3;2;1
+;05/01/2022;42;9;0,37;1;1;;;U;P;6564;;Y;1,85;;EUR;Wedge;;Light Gray;Part;Wedge 3 x 2 Right;Grand Gris;B;4;3;2;1
+;05/01/2022;42;86;0,41;1;1;;;U;P;6564;;Y;1,85;;EUR;Wedge;;Light Bluish Gray;Part;Wedge 3 x 2 Right;Grand Gris;B;4;3;2;1
+;05/01/2022;42;1;0,08;2;1;;;U;P;6565;;Y;1,85;;EUR;Wedge;;White;Part;Wedge 3 x 2 Left;Grand Gris;B;4;3;2;1
+;05/01/2022;42;2;0,84;2;1;;;U;P;6565;;Y;1,85;;EUR;Wedge;;Tan;Part;Wedge 3 x 2 Left;Grand Gris;B;4;3;2;1
+;05/01/2022;42;3;0,06;3;1;;;U;P;6565;;Y;1,85;;EUR;Wedge;;Yellow;Part;Wedge 3 x 2 Left;Grand Gris;B;4;3;2;1
+;05/01/2022;42;5;0,06;2;1;;;U;P;6565;;Y;1,85;;EUR;Wedge;;Red;Part;Wedge 3 x 2 Left;Grand Gris;B;4;3;2;1
+;05/01/2022;42;6;0,09;2;1;;;U;P;6565;;Y;1,85;;EUR;Wedge;;Green;Part;Wedge 3 x 2 Left;Grand Gris;B;4;3;2;1
+;05/01/2022;42;9;0,32;2;1;;;U;P;6565;;Y;1,85;;EUR;Wedge;;Light Gray;Part;Wedge 3 x 2 Left;Grand Gris;B;4;3;2;1
+;05/01/2022;42;86;0,39;1;1;;;U;P;6565;;Y;1,85;;EUR;Wedge;;Light Bluish Gray;Part;Wedge 3 x 2 Left;Grand Gris;B;4;3;2;1
+;05/01/2022;42;4;0,07;1;1;;;U;P;50373;;Y;2,68;;EUR;Wedge;;Orange;Part;Wedge 3 x 4 with Stud Notches;Grand Gris;B;4;3,5;4;1
+;05/01/2022;42;5;0,06;4;1;;;U;P;50373;;Y;2,68;;EUR;Wedge;;Red;Part;Wedge 3 x 4 with Stud Notches;Grand Gris;B;4;3,5;4;1
+;05/01/2022;42;86;0,07;3;1;;;U;P;50373;;Y;2,68;;EUR;Wedge;;Light Bluish Gray;Part;Wedge 3 x 4 with Stud Notches;Grand Gris;B;4;3,5;4;1
+;05/01/2022;81;12;0,3;39;1;;;U;P;3855;;Y;1,65;;EUR;Window, Glass & Shutter;;Trans-Clear;Part;Glass for Window 1 x 4 x 3;Grand Gris;B;5;0;0;0
+;05/01/2022;81;15;0,49;3;1;;;U;P;3855;;Y;1,65;;EUR;Window, Glass & Shutter;;Trans-Light Blue;Part;Glass for Window 1 x 4 x 3;Grand Gris;B;5;0;0;0
+;05/01/2022;81;19;1,65;3;1;;;U;P;3855;;Y;1,65;;EUR;Window, Glass & Shutter;;Trans-Yellow;Part;Glass for Window 1 x 4 x 3;Grand Gris;B;5;0;0;0
+;05/01/2022;81;12;1,47;2;1;;;U;P;4034;;Y;1,5;;EUR;Window, Glass & Shutter;;Trans-Clear;Part;Glass for Train Window 1 x 4 x 3;Grand Gris;B;5;0;0;0
+;05/01/2022;81;15;1,24;2;1;;;U;P;4034;;Y;1,5;;EUR;Window, Glass & Shutter;;Trans-Light Blue;Part;Glass for Train Window 1 x 4 x 3;Grand Gris;B;5;0;0;0
+;05/01/2022;81;12;2,12;10;1;;;U;P;4448;;Y;2,2;;EUR;Window, Glass & Shutter;;Trans-Clear;Part;Glass for Window 4 x 4 x 3 Roof;Grand Gris;B;5;0;0;0
+;05/01/2022;20;1;0,07;22;1;;;U;P;53989;;Y;0,38;;EUR;Minifigure, Body Part;;White;Part;Arm Mechanical, Exo-Force / Bionicle, Thin Support;Grand Gris;B;5;0;0;0
+;05/01/2022;20;7;0,07;1;1;;;U;P;53989;;Y;0,38;;EUR;Minifigure, Body Part;;Blue;Part;Arm Mechanical, Exo-Force / Bionicle, Thin Support;Grand Gris;B;5;0;0;0
+;05/01/2022;20;11;0,07;22;1;;;U;P;53989;;Y;0,38;;EUR;Minifigure, Body Part;;Black;Part;Arm Mechanical, Exo-Force / Bionicle, Thin Support;Grand Gris;B;5;0;0;0
+;05/01/2022;20;66;0,08;2;1;;;U;P;53989;;Y;0,38;;EUR;Minifigure, Body Part;;Pearl Light Gray;Part;Arm Mechanical, Exo-Force / Bionicle, Thin Support;Grand Gris;B;5;0;0;0
+;05/01/2022;20;77;0,09;10;1;;;U;P;53989;;Y;0,38;;EUR;Minifigure, Body Part;;Pearl Dark Gray;Part;Arm Mechanical, Exo-Force / Bionicle, Thin Support;Grand Gris;B;5;0;0;0
+;05/01/2022;20;88;0,1;10;1;;;U;P;53989;;Y;0,38;;EUR;Minifigure, Body Part;;Reddish Brown;Part;Arm Mechanical, Exo-Force / Bionicle, Thin Support;Grand Gris;B;5;0;0;0
+;05/01/2022;20;115;0,08;2;1;;;U;P;53989;;Y;0,38;;EUR;Minifigure, Body Part;;Pearl Gold;Part;Arm Mechanical, Exo-Force / Bionicle, Thin Support;Grand Gris;B;5;0;0;0
+;05/01/2022;81;12;0,12;4;1;;;U;P;60603;;Y;1,2;;EUR;Window, Glass & Shutter;;Trans-Clear;Part;Glass for Window 1 x 4 x 3 - Opening;Grand Gris;B;5;0;0;0
+;05/01/2022;81;12;0,57;5;1;;;U;P;2348b;;Y;0,41;;EUR;Window, Glass & Shutter;;Trans-Clear;Part;Glass for Hinge Car Roof 4 x 4 Sunroof with Ridges;Grand Gris;B;5;0;0;0
+;05/01/2022;81;14;0,11;7;1;;;U;P;2348b;;Y;0,41;;EUR;Window, Glass & Shutter;;Trans-Dark Blue;Part;Glass for Hinge Car Roof 4 x 4 Sunroof with Ridges;Grand Gris;B;5;0;0;0
+;05/01/2022;81;15;0,22;12;1;;;U;P;2348b;;Y;0,41;;EUR;Window, Glass & Shutter;;Trans-Light Blue;Part;Glass for Hinge Car Roof 4 x 4 Sunroof with Ridges;Grand Gris;B;5;0;0;0
+;05/01/2022;46;8;0,16;2;1;;;U;P;6016;;Y;1,3;;EUR;Bar;;Brown;Part;Bar 1 x 4 x 3 Window Grille;Grand Gris;B;6;1;4;3
+;05/01/2022;46;10;0,12;1;1;;;U;P;6016;;Y;1,3;;EUR;Bar;;Dark Gray;Part;Bar 1 x 4 x 3 Window Grille;Grand Gris;B;6;1;4;3
+;05/01/2022;46;11;0,24;1;1;;;U;P;6016;;Y;1,3;;EUR;Bar;;Black;Part;Bar 1 x 4 x 3 Window Grille;Grand Gris;B;6;1;4;3
+;05/01/2022;46;86;0,31;7;1;;;U;P;6016;;Y;1,3;;EUR;Bar;;Light Bluish Gray;Part;Bar 1 x 4 x 3 Window Grille;Grand Gris;B;6;1;4;3
+;05/01/2022;46;85;0,07;3;1;;;U;P;62113;;Y;1,03;;EUR;Bar;;Dark Bluish Gray;Part;Bar 1 x 4 x 3 Grille with End Protrusions;Grand Gris;B;6;0;0;0
+;05/01/2022;12;5;0,34;4;1;;;U;P;73312;;Y;4;;EUR;Door;;Red;Part;Door 1 x 4 x 5 Right with 6 Panes;Grand Gris;B;6;1;4;5
+;05/01/2022;12;7;1,58;2;1;;;U;P;73312;;Y;4;;EUR;Door;;Blue;Part;Door 1 x 4 x 5 Right with 6 Panes;Grand Gris;B;6;1;4;5
+;05/01/2022;12;11;17,2;1;1;;;U;P;73312;;Y;4;;EUR;Door;;Black;Part;Door 1 x 4 x 5 Right with 6 Panes;Grand Gris;B;6;1;4;5
+;05/01/2022;642;3;0,91;1;1;;;U;P;73435c01pb02;;Y;3,55;;EUR;Door, Decorated;;Yellow;Part;Door 1 x 4 x 5 Right with Trans-Clear Glass and White Open Hours '9-12 / 14-17' Pattern (Sticker) - Sets 6362 / 6689;Grand Gris;B;6;1;4;5
+;05/01/2022;12;5;0,57;2;1;;;U;P;73435c01pb02;;Y;3,55;;EUR;Door, Decorated;;Red;Part;Door 1 x 4 x 5 Right with Trans-Clear Glass and White Open Hours '9-12 / 14-17' Pattern (Sticker) - Sets 6362 / 6689;Grand Gris;B;6;1;4;5
+;05/01/2022;12;1;0,79;2;1;;;U;P;73435c02;;Y;3,52;;EUR;Door;;White;Part;Door 1 x 4 x 5 Right with Trans-Light Blue Glass;Grand Gris;B;6;1;4;5
+;05/01/2022;12;11;0,61;1;1;;;U;P;73435c02;;Y;3,52;;EUR;Door;;Black;Part;Door 1 x 4 x 5 Right with Trans-Light Blue Glass;Grand Gris;B;6;1;4;5
+;05/01/2022;12;11;0,61;2;1;;;U;P;73435c02;;Y;3,52;;EUR;Door;;Black;Part;Door 1 x 4 x 5 Right with Trans-Light Blue Glass;Grand Gris;B;6;1;4;5
+;05/01/2022;642;5;1,55;1;1;;;U;P;73436c01pb01;;Y;3,55;;EUR;Door, Decorated;;Red;Part;Door 1 x 4 x 5 Left with Trans-Clear Glass and Red & Black diagonal Stripe and White Helmet Pattern (Sticker) - Set 6373;Grand Gris;B;6;1;4;5
+;05/01/2022;642;7;1,61;1;1;;;U;P;73436c01pb04;;Y;3,55;;EUR;Door, Decorated;;Blue;Part;Door 1 x 4 x 5 Left with Trans-Clear Glass and Drink and Ice Pop (Freezer / Lollipop / Lolly / Pole / Popsicle / Stick) Pattern (Sticker) - Set 6683;Grand Gris;B;6;1;4;5
+;05/01/2022;85;1;0,39;3;1;;;U;P;1;;Y;5,8;;EUR;Homemaker;;White;Part;Homemaker Bookcase 2 x 4 x 4;grand gris;C;1;2;4;4
+;05/01/2022;85;1;0,16;1;1;;;U;P;2;;Y;10,14;;EUR;Homemaker;;White;Part;Homemaker Cupboard 4 x 4 x 4;grand gris;C;1;4;4;4
+;05/01/2022;85;5;0,67;2;1;;;U;P;2;;Y;10,14;;EUR;Homemaker;;Red;Part;Homemaker Cupboard 4 x 4 x 4;grand gris;C;1;4;4;4
+;05/01/2022;85;7;0,37;2;1;;;U;P;2;;Y;10,14;;EUR;Homemaker;;Blue;Part;Homemaker Cupboard 4 x 4 x 4;grand gris;C;1;4;4;4
+;05/01/2022;85;1;0,14;2;1;;;U;P;3;;Y;3,44;;EUR;Homemaker;;White;Part;Homemaker Drawer 4 x 4 x 2;grand gris;C;1;4;4;2
+;05/01/2022;85;3;0,15;2;1;;;U;P;3;;Y;3,44;;EUR;Homemaker;;Yellow;Part;Homemaker Drawer 4 x 4 x 2;grand gris;C;1;4;4;2
+;05/01/2022;85;5;0,15;5;1;;;U;P;3;;Y;3,44;;EUR;Homemaker;;Red;Part;Homemaker Drawer 4 x 4 x 2;grand gris;C;1;4;4;2
+;05/01/2022;85;1;0,28;2;1;;;U;P;837;;Y;10,14;;EUR;Homemaker;;White;Part;Homemaker Cupboard 4 x 4 x 4 with Door Holder Holes;grand gris;C;1;4;4;4
+;05/01/2022;85;3;0,1;2;1;;;U;P;838;;Y;1,3;;EUR;Homemaker;;Yellow;Part;Homemaker Cupboard Door 4 x 4;grand gris;C;1;0;0;0
+;05/01/2022;85;1;1,53;1;1;;;U;P;839;;Y;8,8;;EUR;Homemaker;;White;Part;Homemaker Washbasin Sink Base 4 x 4 x 4;grand gris;C;1;4;4;4
+;05/01/2022;28;1;0,04;6;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;White;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;2;0,07;19;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Tan;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;3;0,07;14;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Yellow;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;5;0,07;13;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Red;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;6;0,08;15;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Green;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;7;1,61;6;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Blue;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;8;0,17;7;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Brown;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;9;0,07;11;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Light Gray;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;10;0,11;3;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Dark Gray;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;11;1,61;44;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Black;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;80;0,08;1;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Dark Green;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;85;0,17;21;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Dark Bluish Gray;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;86;0,08;15;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Light Bluish Gray;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;28;88;0,07;6;1;;;U;P;4032;;Y;0,37;;EUR;Plate, Round;;Reddish Brown;Part;Plate, Round 2 x 2 with Axle Hole;Grand Gris;C;1;2;2;0
+;05/01/2022;85;1;1,34;1;1;;;U;P;840c01;;Y;4;;EUR;Homemaker;;White;Part;Homemaker Washbasin Sink with Chrome Silver Tap;grand gris;C;1;4;4;1
+;05/01/2022;113;1;1,5;6;1;;;U;P;4033;;Y;1,85;;EUR;Window;;White;Part;Window 1 x 4 x 3 Train - Hollow Studs;Grand Gris;C;2;1;4;3
+;05/01/2022;113;5;0,94;1;1;;;U;P;4033;;Y;1,85;;EUR;Window;;Red;Part;Window 1 x 4 x 3 Train - Hollow Studs;Grand Gris;C;2;1;4;3
+;05/01/2022;113;7;0,63;8;1;;;U;P;4033;;Y;1,85;;EUR;Window;;Blue;Part;Window 1 x 4 x 3 Train - Hollow Studs;Grand Gris;C;2;1;4;3
+;05/01/2022;113;9;1,21;1;1;;;U;P;4033;;Y;1,85;;EUR;Window;;Light Gray;Part;Window 1 x 4 x 3 Train - Hollow Studs;Grand Gris;C;2;1;4;3
+;05/01/2022;113;11;0,55;7;1;;;U;P;4033;;Y;1,85;;EUR;Window;;Black;Part;Window 1 x 4 x 3 Train - Hollow Studs;Grand Gris;C;2;1;4;3
+;05/01/2022;113;3;0,24;3;1;;;U;P;60594;;Y;1,85;;EUR;Window;;Yellow;Part;Window 1 x 4 x 3 - No Shutter Tabs;Grand Gris;C;2;1;4;3
+;05/01/2022;113;1;0,15;4;1;;;U;P;60594;;Y;1,85;;EUR;Window;;White;Part;Window 1 x 4 x 3 - No Shutter Tabs;Grand Gris;C;3;1;4;3
+;05/01/2022;113;2;0,21;9;1;;;U;P;60594;;Y;1,85;;EUR;Window;;Tan;Part;Window 1 x 4 x 3 - No Shutter Tabs;Grand Gris;C;3;1;4;3
+;05/01/2022;113;5;0,18;1;1;;;U;P;60594;;Y;1,85;;EUR;Window;;Red;Part;Window 1 x 4 x 3 - No Shutter Tabs;Grand Gris;C;3;1;4;3
+;05/01/2022;113;7;0,13;1;1;;;U;P;60594;;Y;1,85;;EUR;Window;;Blue;Part;Window 1 x 4 x 3 - No Shutter Tabs;Grand Gris;C;3;1;4;3
+;05/01/2022;113;11;0,19;2;1;;;U;P;60594;;Y;1,85;;EUR;Window;;Black;Part;Window 1 x 4 x 3 - No Shutter Tabs;Grand Gris;C;3;1;4;3
+;05/01/2022;113;1;0,06;12;1;;;U;P;60608;;Y;0,4;;EUR;Window, Glass & Shutter;;White;Part;Pane for Window 1 x 2 x 3 with Thick Corner Tabs;Grand Gris;C;3;1;2;3
+;05/01/2022;113;3;0,03;10;1;;;U;P;60608;;Y;0,4;;EUR;Window, Glass & Shutter;;Yellow;Part;Pane for Window 1 x 2 x 3 with Thick Corner Tabs;Grand Gris;C;3;1;2;3
+;05/01/2022;12;85;0,07;5;1;;;U;P;60614;;Y;0,44;;EUR;Door;;Dark Bluish Gray;Part;Door 1 x 2 x 3 with Vertical Handle, Mold for Tabless Frames;Grand Gris;C;3;1;2;3
+;05/01/2022;113;1;0,09;39;1;;;U;P;3854;;Y;0,33;;EUR;Window, Glass & Shutter;;White;Part;Pane for Window 1 x 2 x 3;Grand Gris;C;4;1;2;3
+;05/01/2022;113;3;0,05;5;1;;;U;P;3854;;Y;0,33;;EUR;Window, Glass & Shutter;;Yellow;Part;Pane for Window 1 x 2 x 3;Grand Gris;C;4;1;2;3
+;05/01/2022;113;5;0,06;35;1;;;U;P;3854;;Y;0,33;;EUR;Window, Glass & Shutter;;Red;Part;Pane for Window 1 x 2 x 3;Grand Gris;C;4;1;2;3
+;05/01/2022;113;11;0,51;11;1;;;U;P;3854;;Y;0,33;;EUR;Window, Glass & Shutter;;Black;Part;Pane for Window 1 x 2 x 3;Grand Gris;C;4;1;2;3
+;05/01/2022;37;85;0,08;20;1;;;U;P;3068a;;Y;0,5;;EUR;Tile;;Dark Bluish Gray;Part;Tile 2 x 2 without Groove;Grand Gris;C;4;2;2;0
+;05/01/2022;37;86;0,06;11;1;;;U;P;3068a;;Y;0,5;;EUR;Tile;;Light Bluish Gray;Part;Tile 2 x 2 without Groove;Grand Gris;C;4;2;2;0
+;05/01/2022;12;1;0,12;15;1;;;U;P;3821;;Y;0,56;;EUR;Door;;White;Part;Door 1 x 3 x 1 Right;Grand Gris;C;5;1;3;1
+;05/01/2022;12;3;0,08;3;1;;;U;P;3821;;Y;0,56;;EUR;Door;;Yellow;Part;Door 1 x 3 x 1 Right;Grand Gris;C;5;1;3;1
+;05/01/2022;12;5;0,06;10;1;;;U;P;3821;;Y;0,56;;EUR;Door;;Red;Part;Door 1 x 3 x 1 Right;Grand Gris;C;5;1;3;1
+;05/01/2022;12;7;0,1;3;1;;;U;P;3821;;Y;0,56;;EUR;Door;;Blue;Part;Door 1 x 3 x 1 Right;Grand Gris;C;5;1;3;1
+;05/01/2022;12;11;0,12;5;1;;;U;P;3821;;Y;0,56;;EUR;Door;;Black;Part;Door 1 x 3 x 1 Right;Grand Gris;C;5;1;3;1
+;05/01/2022;12;1;0,07;16;1;;;U;P;3822;;Y;0,56;;EUR;Door;;White;Part;Door 1 x 3 x 1 Left;Grand Gris;C;5;1;3;1
+;05/01/2022;12;3;0,07;4;1;;;U;P;3822;;Y;0,56;;EUR;Door;;Yellow;Part;Door 1 x 3 x 1 Left;Grand Gris;C;5;1;3;1
+;05/01/2022;12;5;0,06;2;1;;;U;P;3822;;Y;0,56;;EUR;Door;;Red;Part;Door 1 x 3 x 1 Left;Grand Gris;C;5;1;3;1
+;05/01/2022;12;7;0,09;1;1;;;U;P;3822;;Y;0,56;;EUR;Door;;Blue;Part;Door 1 x 3 x 1 Left;Grand Gris;C;5;1;3;1
+;05/01/2022;12;11;0,11;4;1;;;U;P;3822;;Y;0,56;;EUR;Door;;Black;Part;Door 1 x 3 x 1 Left;Grand Gris;C;5;1;3;1
+;05/01/2022;27;1;0,04;4;1;;;U;P;11458;;Y;0,47;;EUR;Plate, Modified;;White;Part;Plate, Modified 1 x 2 with Pin Hole on Top;Grand Gris;C;5;1;2;1
+;05/01/2022;27;85;0,07;11;1;;;U;P;11458;;Y;0,47;;EUR;Plate, Modified;;Dark Bluish Gray;Part;Plate, Modified 1 x 2 with Pin Hole on Top;Grand Gris;C;5;1;2;1
+;05/01/2022;27;86;0,04;6;1;;;U;P;18677;;Y;0,4;;EUR;Plate, Modified;;Light Bluish Gray;Part;Plate, Modified 1 x 2 with Pin Hole on Bottom;Grand Gris;C;5;1;2;1
+;05/01/2022;7;5;0,1;85;1;;;U;P;4216;;Y;0,8;;EUR;Brick, Modified;;Red;Part;Brick, Modified 1 x 2 with Groove;Grand Gris;C;6;1;2;0
+;05/01/2022;7;7;1,48;3;1;;;U;P;4216;;Y;0,8;;EUR;Brick, Modified;;Blue;Part;Brick, Modified 1 x 2 with Groove;Grand Gris;C;6;1;2;0
+;05/01/2022;7;11;0,43;3;1;;;U;P;4216;;Y;0,8;;EUR;Brick, Modified;;Black;Part;Brick, Modified 1 x 2 with Groove;Grand Gris;C;6;1;2;0
+;05/01/2022;38;9;0,11;12;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Light Gray;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;D;1;1;2;0
+;05/01/2022;38;10;0,09;4;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Dark Gray;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;D;1;1;2;0
+;05/01/2022;38;85;0,06;64;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Dark Bluish Gray;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;D;1;1;2;0
+;05/01/2022;38;86;0,01;43;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Light Bluish Gray;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;D;1;1;2;0
+;05/01/2022;37;9;0,26;32;1;;;U;P;3068a;;Y;0,5;;EUR;Tile;;Light Gray;Part;Tile 2 x 2 without Groove;Grand Gris;D;1;2;2;0
+;05/01/2022;37;85;0,2;4;1;;;U;P;3068b;;Y;0,48;;EUR;Tile;;Dark Bluish Gray;Part;Tile 2 x 2 with Groove;Grand Gris;D;1;2;2;0
+;05/01/2022;37;9;0,3;12;1;;;U;P;3069b;;Y;0,26;;EUR;Tile;;Light Gray;Part;Tile 1 x 2 with Groove;Grand Gris;D;1;1;2;0
+;05/01/2022;37;86;0,26;21;1;;;U;P;3069b;;Y;0,26;;EUR;Tile;;Light Bluish Gray;Part;Tile 1 x 2 with Groove;Grand Gris;D;1;1;2;0
+;05/01/2022;7;1;0,07;65;1;;;U;P;4216;;Y;0,8;;EUR;Brick, Modified;;White;Part;Brick, Modified 1 x 2 with Groove;Grand Gris;D;2;1;2;0
+;05/01/2022;438;86;0,16;3;1;;;U;P;32803;;Y;0,67;;EUR;Slope, Curved;;Light Bluish Gray;Part;Slope, Curved 2 x 2 Inverted;Grand Gris;D;2;2;2;0,67
+;05/01/2022;438;11;0,14;3;1;;;U;P;93606;;Y;1,4;;EUR;Slope, Curved;;Black;Part;Slope, Curved 4 x 2;Grand Gris;D;2;4;2;1
+;05/01/2022;438;63;0,1;4;1;;;U;P;93606;;Y;1,4;;EUR;Slope, Curved;;Dark Blue;Part;Slope, Curved 4 x 2;Grand Gris;D;2;4;2;1
+;05/01/2022;79;12;0,46;14;1;;;U;P;4218;;Y;1;;EUR;Garage;;Trans-Clear;Part;Garage Roller Door Section without Handle;Grand Gris;D;3;0;0;0
+;05/01/2022;79;13;0,33;10;1;;;U;P;4218;;Y;1;;EUR;Garage;;Trans-Black;Part;Garage Roller Door Section without Handle;Grand Gris;D;3;0;0;0
+;05/01/2022;79;15;0,23;51;1;;;U;P;4218;;Y;1;;EUR;Garage;;Trans-Light Blue;Part;Garage Roller Door Section without Handle;Grand Gris;D;3;0;0;0
+;05/01/2022;79;1;0,31;10;1;;;U;P;4219;;Y;0,99;;EUR;Garage;;White;Part;Garage Roller Door End Section with Handle;Grand Gris;D;3;0;0;0
+;05/01/2022;79;9;0,73;1;1;;;U;P;4219;;Y;0,99;;EUR;Garage;;Light Gray;Part;Garage Roller Door End Section with Handle;Grand Gris;D;3;0;0;0
+;05/01/2022;141;9;0,07;5;1;;;U;P;4261;;Y;0,83;;EUR;Technic, Steering;;Light Gray;Part;Technic, Steering Arm;Grand Gris;D;4;1;3;1,8
+;05/01/2022;141;11;7,53;2;1;;;U;P;6571;;Y;0,79;;EUR;Technic, Steering;;Black;Part;Technic, Steering Arm Small with Pin Hole and Tow Ball;Grand Gris;D;4;0;0;0
+;05/01/2022;133;11;0,14;2;1;;;U;P;11455;;Y;1;;EUR;Technic, Connector;;Black;Part;Technic, Pin Connector Perpendicular 2 x 4 Bent;Grand Gris;D;4;4;1;2
+;05/01/2022;141;11;0,1;3;1;;;U;P;32069;;Y;1,25;;EUR;Technic, Steering;;Black;Part;Technic, Steering Arm with Pins;Grand Gris;D;4;0;0;0
+;05/01/2022;36;11;0,08;3;1;;;U;P;32072;;Y;0,87;;EUR;Technic;;Black;Part;Technic Knob Cog / Gear / Wheel;Grand Gris;D;4;0;0;0
+;05/01/2022;36;86;0,13;4;1;;;U;P;32187;;Y;0,5;;EUR;Technic;;Light Bluish Gray;Part;Technic Driving Ring Extension;Grand Gris;D;4;0;0;0
+;05/01/2022;137;11;0,1;12;1;;;U;P;33299;;Y;0,7;;EUR;Technic, Liftarm;;Black;Part;Technic, Liftarm, Modified Crank / Pin 1 x 3 - Axle Holes;Grand Gris;D;4;0;0;0
+;05/01/2022;137;86;0,08;11;1;;;U;P;33299;;Y;0,7;;EUR;Technic, Liftarm;;Light Bluish Gray;Part;Technic, Liftarm, Modified Crank / Pin 1 x 3 - Axle Holes;Grand Gris;D;4;0;0;0
+;05/01/2022;139;85;0,69;1;1;;;U;P;47972;;Y;1;;EUR;Technic, Pin;;Dark Bluish Gray;Part;Technic, Pin Double Triangle 1 x 3 with Tow Ball;Grand Gris;D;4;0;0;0
+;05/01/2022;139;5;0,12;2;1;;;U;P;47973;;Y;1;;EUR;Hinge;;Red;Part;Hinge 1 x 3 with Two Pins, Locking 1 Finger;Grand Gris;D;4;0;0;0
+;05/01/2022;139;85;0,08;1;1;;;U;P;47973;;Y;1;;EUR;Hinge;;Dark Bluish Gray;Part;Hinge 1 x 3 with Two Pins, Locking 1 Finger;Grand Gris;D;4;0;0;0
+;05/01/2022;139;6;0,09;4;1;;;U;P;47994;;Y;1,2;;EUR;Technic, Pin;;Green;Part;Technic, Pin Double Triangle 1 x 3 with 2 Clips with Round Pin Holes;Grand Gris;D;4;0;0;0
+;05/01/2022;137;11;0,04;11;1;;;U;P;85940;;Y;0,5;;EUR;Technic, Liftarm;;Black;Part;Technic, Liftarm, Modified Bar 1 x 2;Grand Gris;D;4;0;0;0
+;05/01/2022;135;85;0,04;8;1;;;U;P;85943;;Y;1,34;;EUR;Technic, Brick;;Dark Bluish Gray;Part;Technic, Brick 1 x 2 with Hole and Dual Liftarm Extensions;Grand Gris;D;4;0;0;0
+;05/01/2022;137;85;0,13;2;1;;;U;P;98577;;Y;0,9;;EUR;Technic, Liftarm;;Dark Bluish Gray;Part;Technic, Liftarm, Modified Ball Joint Middle 1 x 3;Grand Gris;D;4;1;3;1
+;05/01/2022;77;3;0,08;1;1;;;U;P;3787;;Y;1,31;;EUR;Vehicle, Mudguard;;Yellow;Part;Vehicle, Mudguard 2 x 4 with Arch Smooth;Grand Gris;D;5;2;4;0,67
+;05/01/2022;77;5;0,06;3;1;;;U;P;3787;;Y;1,31;;EUR;Vehicle, Mudguard;;Red;Part;Vehicle, Mudguard 2 x 4 with Arch Smooth;Grand Gris;D;5;2;4;0,67
+;05/01/2022;77;7;0,12;1;1;;;U;P;3787;;Y;1,31;;EUR;Vehicle, Mudguard;;Blue;Part;Vehicle, Mudguard 2 x 4 with Arch Smooth;Grand Gris;D;5;2;4;0,67
+;05/01/2022;77;9;0,12;6;1;;;U;P;3787;;Y;1,31;;EUR;Vehicle, Mudguard;;Light Gray;Part;Vehicle, Mudguard 2 x 4 with Arch Smooth;Grand Gris;D;5;2;4;0,67
+;05/01/2022;72;11;0,07;4;1;;;U;P;30663;;Y;0,4;;EUR;Vehicle;;Black;Part;Vehicle, Steering Wheel Small, 2 Studs Diameter;Grand Gris;D;5;0;0;0
+;05/01/2022;72;86;0,06;4;1;;;U;P;30663;;Y;0,4;;EUR;Vehicle;;Light Bluish Gray;Part;Vehicle, Steering Wheel Small, 2 Studs Diameter;Grand Gris;D;5;0;0;0
+;05/01/2022;77;1;0,05;1;1;;;U;P;41854;;Y;1,12;;EUR;Vehicle, Mudguard;;White;Part;Vehicle, Mudguard 2 x 4 with Flared Wings;Grand Gris;D;5;2;4;1
+;05/01/2022;77;4;0,04;1;1;;;U;P;41854;;Y;1,12;;EUR;Vehicle, Mudguard;;Orange;Part;Vehicle, Mudguard 2 x 4 with Flared Wings;Grand Gris;D;5;2;4;1
+;05/01/2022;77;11;0,04;1;1;;;U;P;41854;;Y;1,12;;EUR;Vehicle, Mudguard;;Black;Part;Vehicle, Mudguard 2 x 4 with Flared Wings;Grand Gris;D;5;2;4;1
+;05/01/2022;77;59;0,05;1;1;;;U;P;41854;;Y;1,12;;EUR;Vehicle, Mudguard;;Dark Red;Part;Vehicle, Mudguard 2 x 4 with Flared Wings;Grand Gris;D;5;2;4;1
+;05/01/2022;77;85;0,05;1;1;;;U;P;41854;;Y;1,12;;EUR;Vehicle, Mudguard;;Dark Bluish Gray;Part;Vehicle, Mudguard 2 x 4 with Flared Wings;Grand Gris;D;5;2;4;1
+;05/01/2022;77;89;0,04;1;1;;;U;P;41854;;Y;1,12;;EUR;Vehicle, Mudguard;;Dark Purple;Part;Vehicle, Mudguard 2 x 4 with Flared Wings;Grand Gris;D;5;2;4;1
+;05/01/2022;27;8;0,12;1;1;;;U;P;41862;;Y;1,48;;EUR;Plate, Modified;;Brown;Part;Plate, Modified 2 x 2 with Vents;Grand Gris;D;5;0;0;0
+;05/01/2022;27;11;0,07;2;1;;;U;P;41862;;Y;1,48;;EUR;Plate, Modified;;Black;Part;Plate, Modified 2 x 2 with Vents;Grand Gris;D;5;0;0;0
+;05/01/2022;27;86;0,22;1;1;;;U;P;41862;;Y;1,48;;EUR;Plate, Modified;;Light Bluish Gray;Part;Plate, Modified 2 x 2 with Vents;Grand Gris;D;5;0;0;0
+;05/01/2022;77;1;0,05;6;1;;;U;P;44674;;Y;1,31;;EUR;Vehicle, Mudguard;;White;Part;Vehicle, Mudguard 2 x 4 with Headlights Overhang;Grand Gris;D;5;0;0;0
+;05/01/2022;77;11;0,05;4;1;;;U;P;44674;;Y;1,31;;EUR;Vehicle, Mudguard;;Black;Part;Vehicle, Mudguard 2 x 4 with Headlights Overhang;Grand Gris;D;5;0;0;0
+;05/01/2022;77;3;0,07;4;1;;;U;P;50947;;Y;0,7;;EUR;Vehicle, Mudguard;;Yellow;Part;Vehicle, Mudguard 1 x 4 1/2;Grand Gris;D;5;1;4,5;0,75
+;05/01/2022;27;1;0,43;1;1;;;U;P;2476;;Y;0,82;;EUR;Plate, Modified;;White;Part;Plate, Modified 2 x 2 with Pin on Bottom;Grand Gris;D;6;2;2;1,5
+;05/01/2022;27;7;0,08;1;1;;;U;P;2476;;Y;0,82;;EUR;Plate, Modified;;Blue;Part;Plate, Modified 2 x 2 with Pin on Bottom;Grand Gris;D;6;2;2;1,5
+;05/01/2022;27;9;0,11;1;1;;;U;P;2476;;Y;0,82;;EUR;Plate, Modified;;Light Gray;Part;Plate, Modified 2 x 2 with Pin on Bottom;Grand Gris;D;6;2;2;1,5
+;05/01/2022;27;11;1,6;1;1;;;U;P;2476;;Y;0,82;;EUR;Plate, Modified;;Black;Part;Plate, Modified 2 x 2 with Pin on Bottom;Grand Gris;D;6;2;2;1,5
+;05/01/2022;27;86;0,08;1;1;;;U;P;2476;;Y;0,82;;EUR;Plate, Modified;;Light Bluish Gray;Part;Plate, Modified 2 x 2 with Pin on Bottom;Grand Gris;D;6;2;2;1,5
+;05/01/2022;7;5;0,04;3;1;;;U;P;4729;;Y;1,54;;EUR;Brick, Modified;;Red;Part;Brick, Modified 2 x 2 No Studs, Top Pin;Grand Gris;D;6;0;0;0
+;05/01/2022;32;9;0,05;1;1;;;U;P;30390;;Y;2,57;;EUR;Slope, Inverted;;Light Gray;Part;Slope, Inverted 45 4 x 2 Double with Pins;Grand Gris;D;6;0;0;0
+;05/01/2022;32;86;0,04;3;1;;;U;P;30390;;Y;2,57;;EUR;Slope, Inverted;;Light Bluish Gray;Part;Slope, Inverted 45 4 x 2 Double with Pins;Grand Gris;D;6;0;0;0
+;05/01/2022;7;85;0,04;5;1;;;U;P;30592;;Y;2,19;;EUR;Brick, Modified;;Dark Bluish Gray;Part;Brick, Modified 2 x 2 with Top Pin and 1 x 2 Side Plates;Grand Gris;D;6;4;2;2,2
+;05/01/2022;7;86;0,04;4;1;;;U;P;30592;;Y;2,19;;EUR;Brick, Modified;;Light Bluish Gray;Part;Brick, Modified 2 x 2 with Top Pin and 1 x 2 Side Plates;Grand Gris;D;6;4;2;2,2
+;05/01/2022;7;1;0,06;1;1;;;U;P;47456;;Y;1;;EUR;Slope, Curved;;White;Part;Slope, Curved 3 x 2 x 2/3 with Two Studs, Wing End;Grand Gris;D;6;2;3;0,67
+;05/01/2022;7;6;0,09;2;1;;;U;P;47456;;Y;1;;EUR;Slope, Curved;;Green;Part;Slope, Curved 3 x 2 x 2/3 with Two Studs, Wing End;Grand Gris;D;6;2;3;0,67
+;05/01/2022;7;11;0,05;1;1;;;U;P;47456;;Y;1;;EUR;Slope, Curved;;Black;Part;Slope, Curved 3 x 2 x 2/3 with Two Studs, Wing End;Grand Gris;D;6;2;3;0,67
+;05/01/2022;7;77;0,07;2;1;;;U;P;47456;;Y;1;;EUR;Slope, Curved;;Pearl Dark Gray;Part;Slope, Curved 3 x 2 x 2/3 with Two Studs, Wing End;Grand Gris;D;6;2;3;0,67
+;05/01/2022;7;156;0,19;2;1;;;U;P;47456;;Y;1;;EUR;Slope, Curved;;Medium Azure;Part;Slope, Curved 3 x 2 x 2/3 with Two Studs, Wing End;Grand Gris;D;6;2;3;0,67
+;05/01/2022;7;5;0,05;3;1;;;U;P;47458;;Y;0,44;;EUR;Slope, Curved;;Red;Part;Slope, Curved 1 x 2 x 2/3 Wing End;Grand Gris;D;6;1;2;0,67
+;05/01/2022;7;11;0,05;2;1;;;U;P;47458;;Y;0,44;;EUR;Slope, Curved;;Black;Part;Slope, Curved 1 x 2 x 2/3 Wing End;Grand Gris;D;6;1;2;0,67
+;05/01/2022;7;115;0,07;1;1;;;U;P;47458;;Y;0,44;;EUR;Slope, Curved;;Pearl Gold;Part;Slope, Curved 1 x 2 x 2/3 Wing End;Grand Gris;D;6;1;2;0,67
+;05/01/2022;27;3;0,07;1;1;;;U;P;50949;;Y;0,9;;EUR;Plate, Modified;;Yellow;Part;Plate, Modified 1 x 2 with Racers Car Grille;Grand Gris;D;6;0;0;0
+;05/01/2022;438;1;0,11;2;1;;;U;P;93273;;Y;0,6;;EUR;Slope, Curved;;White;Part;Slope, Curved 4 x 1 Double;Grand Gris;D;6;4;1;0,67
+;05/01/2022;438;3;0,11;1;1;;;U;P;93273;;Y;0,6;;EUR;Slope, Curved;;Yellow;Part;Slope, Curved 4 x 1 Double;Grand Gris;D;6;4;1;0,67
+;05/01/2022;38;11;0,14;198;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Black;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;E;1;1;2;0
+;05/01/2022;37;11;0,14;210;1;;;U;P;3069b;;Y;0,26;;EUR;Tile;;Black;Part;Tile 1 x 2 with Groove;Grand Gris;E;2;1;2;0
+;05/01/2022;37;11;0,14;171;1;;;U;P;2431;;Y;0,54;;EUR;Tile;;Black;Part;Tile 1 x 4;Grand Gris;E;3;1;4;0
+;05/01/2022;37;11;0,08;33;1;;;U;P;6636;;Y;0,83;;EUR;Tile;;Black;Part;Tile 1 x 6;Grand Gris;E;4;1;6;0
+;05/01/2022;37;3;0,08;117;1;;;U;P;3068a;;Y;0,5;;EUR;Tile;;Yellow;Part;Tile 2 x 2 without Groove;Grand Gris;E;4;2;2;0
+;05/01/2022;37;9;0,32;10;1;;;U;P;4162;;Y;1,06;;EUR;Tile;;Light Gray;Part;Tile 1 x 8;Grand Gris;E;5;1;8;0
+;05/01/2022;37;10;0,45;2;1;;;U;P;4162;;Y;1,06;;EUR;Tile;;Dark Gray;Part;Tile 1 x 8;Grand Gris;E;5;1;8;0
+;05/01/2022;37;85;0,24;17;1;;;U;P;4162;;Y;1,06;;EUR;Tile;;Dark Bluish Gray;Part;Tile 1 x 8;Grand Gris;E;5;1;8;0
+;05/01/2022;37;86;0,45;20;1;;;U;P;4162;;Y;1,06;;EUR;Tile;;Light Bluish Gray;Part;Tile 1 x 8;Grand Gris;E;5;1;8;0
+;05/01/2022;37;11;0,24;61;1;;;U;P;3068a;;Y;0,5;;EUR;Tile;;Black;Part;Tile 2 x 2 without Groove;Grand Gris;E;5;2;2;0
+;05/01/2022;37;9;0,32;15;1;;;U;P;2431;;Y;0,54;;EUR;Tile;;Light Gray;Part;Tile 1 x 4;Grand Gris;E;6;1;4;0
+;05/01/2022;37;10;0,22;4;1;;;U;P;2431;;Y;0,54;;EUR;Tile;;Dark Gray;Part;Tile 1 x 4;Grand Gris;E;6;1;4;0
+;05/01/2022;37;85;0,32;18;1;;;U;P;2431;;Y;0,54;;EUR;Tile;;Dark Bluish Gray;Part;Tile 1 x 4;Grand Gris;E;6;1;4;0
+;05/01/2022;37;86;0,22;20;1;;;U;P;2431;;Y;0,54;;EUR;Tile;;Light Bluish Gray;Part;Tile 1 x 4;Grand Gris;E;6;1;4;0
+;05/01/2022;91;11;0,06;60;1;;;U;P;4865;;Y;0,46;;EUR;Panel;;Black;Part;Panel 1 x 2 x 1;Grand Gris;E;6;1;2;1
+;05/01/2022;37;9;0,34;2;1;;;U;P;6636;;Y;0,83;;EUR;Tile;;Light Gray;Part;Tile 1 x 6;Grand Gris;E;6;1;6;0
+;05/01/2022;37;85;0,06;13;1;;;U;P;6636;;Y;0,83;;EUR;Tile;;Dark Bluish Gray;Part;Tile 1 x 6;Grand Gris;E;6;1;6;0
+;05/01/2022;37;86;0,06;17;1;;;U;P;6636;;Y;0,83;;EUR;Tile;;Light Bluish Gray;Part;Tile 1 x 6;Grand Gris;E;6;1;6;0
+;05/01/2022;38;5;0,09;213;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Red;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;F;1;1;2;0
+;05/01/2022;91;3;0,04;26;1;;;U;P;4865;;Y;0,46;;EUR;Panel;;Yellow;Part;Panel 1 x 2 x 1;Grand Gris;F;2;1;2;1
+;05/01/2022;37;5;0,04;200;1;;;U;P;3069b;;Y;0,26;;EUR;Tile;;Red;Part;Tile 1 x 2 with Groove;Grand Gris;F;2;1;2;0
+;05/01/2022;37;5;0,04;119;1;;;U;P;2431;;Y;0,54;;EUR;Tile;;Red;Part;Tile 1 x 4;Grand Gris;F;3;1;4;0
+;05/01/2022;37;5;0,12;44;1;;;U;P;4162;;Y;1,06;;EUR;Tile;;Red;Part;Tile 1 x 8;Grand Gris;F;4;1;8;0
+;05/01/2022;37;11;0,04;8;1;;;U;P;4162;;Y;1,06;;EUR;Tile;;Black;Part;Tile 1 x 8;Grand Gris;F;4;1;8;0
+;05/01/2022;37;5;0,12;19;1;;;U;P;6636;;Y;0,83;;EUR;Tile;;Red;Part;Tile 1 x 6;Grand Gris;F;4;1;6;0
+;05/01/2022;37;5;0,13;157;1;;;U;P;3068a;;Y;0,5;;EUR;Tile;;Red;Part;Tile 2 x 2 without Groove;Grand Gris;F;5;2;2;0
+;05/01/2022;91;5;0,04;79;1;;;U;P;4865;;Y;0,46;;EUR;Panel;;Red;Part;Panel 1 x 2 x 1;Grand Gris;F;6;1;2;1
+;05/01/2022;37;6;0,1;52;1;;;U;P;3068a;;Y;0,5;;EUR;Tile;;Green;Part;Tile 2 x 2 without Groove;Grand Gris;F;6;2;2;0
+;05/01/2022;38;1;0,12;133;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;White;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;3;0,07;30;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Yellow;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;4;0,03;7;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Orange;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;6;0,31;9;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Green;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;7;0,11;13;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Blue;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;8;0,11;9;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Brown;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;22;0,06;3;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Chrome Silver;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;24;0,06;1;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Purple;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;39;0,06;4;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Dark Turquoise;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;55;0,06;2;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Sand Blue;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;58;0,06;1;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Sand Red;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;67;0,06;7;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Metallic Silver;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;68;0,06;1;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Dark Orange;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;81;0,06;6;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Flat Dark Gold;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;88;0,01;1;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Reddish Brown;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;89;0,01;4;1;;;U;P;2412a;;Y;0,21;;EUR;Tile, Modified;;Dark Purple;Part;Tile, Modified 1 x 2 Grille without Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;38;2;0,06;6;1;;;U;P;2412b;;Y;0,23;;EUR;Tile, Modified;;Tan;Part;Tile, Modified 1 x 2 Grille with Bottom Groove / Lip;Grand Gris;G;1;1;2;0
+;05/01/2022;37;1;0,07;132;1;;;U;P;3069b;;Y;0,26;;EUR;Tile;;White;Part;Tile 1 x 2 with Groove;Grand Gris;G;2;1;2;0
+;05/01/2022;37;3;0,07;100;1;;;U;P;3069b;;Y;0,26;;EUR;Tile;;Yellow;Part;Tile 1 x 2 with Groove;Grand Gris;G;2;1;2;0
+;05/01/2022;37;7;0,07;77;1;;;U;P;3069b;;Y;0,26;;EUR;Tile;;Blue;Part;Tile 1 x 2 with Groove;Grand Gris;G;2;1;2;0
+;05/01/2022;37;1;0,09;107;1;;;U;P;2431;;Y;0,54;;EUR;Tile;;White;Part;Tile 1 x 4;Grand Gris;G;3;1;4;0
+;05/01/2022;37;3;0,09;53;1;;;U;P;2431;;Y;0,54;;EUR;Tile;;Yellow;Part;Tile 1 x 4;Grand Gris;G;3;1;4;0
+;05/01/2022;37;7;0,09;35;1;;;U;P;2431;;Y;0,54;;EUR;Tile;;Blue;Part;Tile 1 x 4;Grand Gris;G;3;1;4;0
+;05/01/2022;37;1;0,09;8;1;;;U;P;4162;;Y;1,06;;EUR;Tile;;White;Part;Tile 1 x 8;Grand Gris;G;4;1;8;0
+;05/01/2022;37;3;0,19;14;1;;;U;P;4162;;Y;1,06;;EUR;Tile;;Yellow;Part;Tile 1 x 8;Grand Gris;G;4;1;8;0
+;05/01/2022;37;1;0,12;28;1;;;U;P;6636;;Y;0,83;;EUR;Tile;;White;Part;Tile 1 x 6;Grand Gris;G;4;1;6;0
+;05/01/2022;37;3;0,09;27;1;;;U;P;6636;;Y;0,83;;EUR;Tile;;Yellow;Part;Tile 1 x 6;Grand Gris;G;4;1;6;0
+;05/01/2022;37;7;0,12;5;1;;;U;P;6636;;Y;0,83;;EUR;Tile;;Blue;Part;Tile 1 x 6;Grand Gris;G;4;1;6;0
+;05/01/2022;37;1;0,33;146;1;;;U;P;3068a;;Y;0,5;;EUR;Tile;;White;Part;Tile 2 x 2 without Groove;Grand Gris;G;5;2;2;0
+;05/01/2022;37;7;0,1;48;1;;;U;P;3068a;;Y;0,5;;EUR;Tile;;Blue;Part;Tile 2 x 2 without Groove;Grand Gris;G;5;2;2;0
+;05/01/2022;91;1;0,05;150;1;;;U;P;4865;;Y;0,46;;EUR;Panel;;White;Part;Panel 1 x 2 x 1;Grand Gris;G;6;1;2;1
+;05/01/2022;91;7;0,05;17;1;;;U;P;4865;;Y;0,46;;EUR;Panel;;Blue;Part;Panel 1 x 2 x 1;Grand Gris;G;6;1;2;1

@@ -1,0 +1,82 @@
+/*D:\Reconversion_Pro\00_formations\Formation Python appronfondie\Projet Lego II\03 - Pictures\id2color5.jpg*/
+
+INVENTORY {
+  padding : 10px;
+}
+
+ITEM {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  border-bottom : 1px solid gray;
+  text-align : center;
+}
+
+LINE {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+ITEM[value="pair"] {
+  background-color: #ddd;
+}
+
+ITEM[class="title"] {
+  background-color: #aaa;
+  font-weight : bold;
+  text-transform : uppercase;
+  height : 25px;
+  line-height: 25px;
+  padding : 10px;
+  border : solid 2px black;
+}
+
+IMAGE {
+  /*url(D:\Reconversion_Pro\00_formations\Formation Python appronfondie\Projet Lego II\03 - Pictures\id2color5.jpg);
+  background-image: url("D:/Reconversion_Pro/00_formations/Formation Python appronfondie/Projet Lego II/03 - Pictures/id2color5.jpg");
+  background : url("D:/Reconversion_Pro/00_formations/Formation Python appronfondie/Projet Lego II/03 - Pictures/id2color5.jpg") center;*/
+}
+
+/*
+DATEADDED {
+}
+
+CATEGORY {
+}
+
+COLOR {
+}
+
+PRICE {
+}
+
+QTY {
+}
+
+BULK {
+}
+
+DESCRIPTION {
+}
+
+CONDITION {
+}
+
+ITEMTYPE {
+}
+
+SALE {
+}
+
+STOCKROOM {
+}
+
+ITEMWEIGHT {
+}
+
+DATELASTSOLD {
+}
+
+BASECURRENCYCODE {
+}
+*/
