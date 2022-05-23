@@ -65,7 +65,7 @@ class BRICKLINK():
         self.mdp = 'Vila1981'
         self.paquet = 50
         self.path_picture = abspath('./03 - Pictures/')
-        self.path_download = 'D:/Telechargements'
+        self.path_download = '/home/moyen/Téléchargements'
 
     def ouvrir(self):
         open_new(self.html0)
