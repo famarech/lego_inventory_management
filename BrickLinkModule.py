@@ -1,11 +1,13 @@
 import pyautogui
-from webbrowser import open_new
+from webbrowser import open
+from webbrowser import open_new_tab
 from time import sleep
 from pyperclip import paste
 from os import listdir
 from os.path import abspath
 from CutModule import cut_after
 from CutModule import cut_before
+from CutModule import traduction
 from ClassInventaireModule import INVENTAIRE
 from ClassItemModule import ITEM
 
@@ -66,36 +68,34 @@ class BRICKLINK():
         self.paquet = 50
         self.path_picture = abspath('./03 - Pictures/')
         self.path_download = '/home/moyen/Téléchargements'
+        self.screen = pyautogui.size()
 
     def ouvrir(self):
-        open_new(self.html0)
+        open(self.html0, new=0, autoraise=True)
         sleep(15)
-        pyautogui.click(500, 850, 1, button='primary')
-        pyautogui.click(1250, 150, 1, button='primary')
+        pyautogui.click(self.screen.width * 0.388, self.screen.height * 0.827, 1, button='primary')
+        pyautogui.click(self.screen.width * 0.678, self.screen.height * 0.176, 1, button='primary')
         sleep(3)
         pyautogui.write(self.pseudo)
         pyautogui.press('tab')
-        pyautogui.write(self.mdp)
+        pyautogui.write(traduction(self.mdp))
         pyautogui.press('enter')
         sleep(2)
 
     def fermer(self):
         sleep(1)
-        pyautogui.click(1900, 10, 1, button='primary')
+        pyautogui.click(self.screen.width * 0.991, self.screen.height * 0.041, 1, button='primary')
         print("patienter 30 secondes avant la fermeture de Firefox")
         sleep(30)
 
     def acces_page(self, item):
         url = self.html1 + item.itemid + self.html2 + item.color
-        open_new(url)
+        open_new_tab(url)
 
     def get_price(self, item):
         sleep(2)
-        pyautogui.click(1000, 800, 1, button='secondary')
-        pyautogui.click(1020, 620, 1, button='primary')
-        pyautogui.keyDown('ctrl')
-        pyautogui.press('c')
-        pyautogui.keyUp('ctrl')
+        pyautogui.hotkey('ctrl', 'a')
+        pyautogui.hotkey('ctrl', 'c')
         sleep(1)
         str = paste()
         prix = self.exist_price(str)
@@ -120,23 +120,22 @@ class BRICKLINK():
 
     def get_picture(self, item):
         sleep(4)
-        pyautogui.click(950, 350, 1, button='secondary')
+        pyautogui.click(self.screen.width * 0.518, self.screen.height * 0.350, 1, button='secondary')
         sleep(1)
-        pyautogui.click(970, 590, 1, button='primary')
+        pyautogui.click(self.screen.width * 0.541, self.screen.height * 0.532, 1, button='primary')
         sleep(1.5)
-        pyautogui.keyDown('ctrl')
-        pyautogui.press('c')
-        pyautogui.keyUp('ctrl')
+        pyautogui.hotkey('ctrl', 'a')
+        pyautogui.hotkey('ctrl', 'c')
         sleep(1)
         str = paste()
         if str != "noImage.gif":
-            filename = "id" + item.itemid + "color" + item.color + ".jpg"
-            pyautogui.write(filename)
+            filename = "id" + item.itemid + "color" + item.color
+            pyautogui.write(traduction(filename))
             for i in range(3):
                 sleep(0.5)
                 pyautogui.press('enter')
         else:
-            pyautogui.click(1820, 1000, 1, button='primary')
+            pyautogui.click(self.screen.width * 0.068, self.screen.height * 0.053, 1, button='primary')
             item.image = "Not Available"
 
     def exist_picture(self, filename):
