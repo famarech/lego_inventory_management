@@ -66,12 +66,13 @@ class BRICKLINK():
         self.paquet = 50
         self.path_picture = abspath('./03 - Pictures/')
         self.path_download = 'D:/Telechargements'
+        self.screen = pyautogui.size()
 
     def ouvrir(self):
         open_new(self.html0)
         sleep(15)
-        pyautogui.click(500, 850, 1, button='primary')
-        pyautogui.click(1250, 150, 1, button='primary')
+        pyautogui.click(self.screen.width * 0.355, self.screen.height * 0.782, 1, button='primary')
+        pyautogui.click(self.screen.width * 0.653, self.screen.height * 0.155, 1, button='primary')
         sleep(3)
         pyautogui.write(self.pseudo)
         pyautogui.press('tab')
@@ -81,7 +82,7 @@ class BRICKLINK():
 
     def fermer(self):
         sleep(1)
-        pyautogui.click(1900, 10, 1, button='primary')
+        pyautogui.click(self.screen.width * 0.979, self.screen.height * 0.011, 1, button='primary')
         print("patienter 30 secondes avant la fermeture de Firefox")
         sleep(30)
 
@@ -91,11 +92,8 @@ class BRICKLINK():
 
     def get_price(self, item):
         sleep(2)
-        pyautogui.click(1000, 800, 1, button='secondary')
-        pyautogui.click(1020, 620, 1, button='primary')
-        pyautogui.keyDown('ctrl')
-        pyautogui.press('c')
-        pyautogui.keyUp('ctrl')
+        pyautogui.hotkey('ctrl', 'a')
+        pyautogui.hotkey('ctrl', 'c')
         sleep(1)
         str = paste()
         prix = self.exist_price(str)
@@ -120,9 +118,9 @@ class BRICKLINK():
 
     def get_picture(self, item):
         sleep(4)
-        pyautogui.click(950, 350, 1, button='secondary')
+        pyautogui.click(self.screen.width * 0.498, self.screen.height * 0.318, 1, button='secondary')
         sleep(1)
-        pyautogui.click(970, 590, 1, button='primary')
+        pyautogui.click(self.screen.width * 0.533, self.screen.height * 0.539, 1, button='primary')
         sleep(1.5)
         pyautogui.keyDown('ctrl')
         pyautogui.press('c')
@@ -136,7 +134,7 @@ class BRICKLINK():
                 sleep(0.5)
                 pyautogui.press('enter')
         else:
-            pyautogui.click(1820, 1000, 1, button='primary')
+            pyautogui.click(self.screen.width * 0.963, self.screen.height * 0.933, 1, button='primary')
             item.image = "Not Available"
 
     def exist_picture(self, filename):
