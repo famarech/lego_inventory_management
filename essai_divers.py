@@ -1,60 +1,38 @@
 import pyautogui
 from time import sleep
-from pyperclip import paste
-# données pour ubuntu
 
-def ouvrir():
-    u = pyautogui.size()
-    pyautogui.click(u.width * 0.388, u.height * 0.827, 1, button='primary')
-    pyautogui.click(u.width * 0.678, u.height * 0.176, 1, button='primary')
-
-def fermer():
-    u = pyautogui.size()
-    pyautogui.click(u.width * 0.991, u.height * 0.041, 1, button='primary')
-
-def get_price():
-    pyautogui.hotkey('ctrl', 'a')
-    pyautogui.hotkey('ctrl', 'c')
-
-def get_picture():
-    u = pyautogui.size()
-    pyautogui.click(u.width * 0.518, u.height * 0.350, 1, button='secondary')
-    sleep(1)
-    pyautogui.click(u.width * 0.541, u.height * 0.532, 1, button='primary')
-    sleep(1)
-    pyautogui.click(u.width * 0.068, u.height * 0.053, 1, button='primary')
-
-def point():
-    u = pyautogui.size()
-    sleep(3)
-    p = pyautogui.position()
-    print(p.x / u.width)
-    print(p.y / u.height)
-
-def password():
-    numbers = ['0','1','2','3','4','5','6','7','8','9']
-    symbols = ['@','&','~','"','{','(','|','','_','^']
-    
+def traduction(tab):
     sleep(2)
-    for s in symbols:
+    for s in tab:
         pyautogui.write(s)
-    pyautogui.press('enter')
-    
-def rot(number):
-    symbols = ['@','&','~','"','{','(','|','_','^']
-    return symbols[number]
-    
-def traduction(str):
-    new_str = []
-    for s in str:
-        try:
-            int(s)
-            new_str.append(rot(s))
-        except:
-            new_str.append(s)
-    return "".join(new_str)
+        pyautogui.press('enter')
 
-sleep(2)
-pyautogui.write('')
-pyautogui.press('enter')
-    
+azerty_min = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+traduc_min = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+azerty_maj = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+traduc_maj = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+azerty_chiffre = ['0','1','2','3','4','5','6','7','8','9']
+traduc_chiffre = ['à','&','é','"',"'",'(','-','è','_','ç']
+azerty_symbole_min =               ['œ','&','é','"',"'",'(','-','è','_','ç','à',')','=','^','$','ù','*',',',';',':','!','<']
+traduc_symbole_min =               [' ','1',' ','3',"'",'5','-',' ','8',' ',' ','°','=','9','£',' ','µ',',',';','/','§','>']
+azerty_symbole_maj_ver =           ['Œ','&','É','"',"'",'(','-','È','_','Ç','À',')','=','^','$','Ù','*',',',';',':','!','<']
+traduc_symbole_maj_ver =           [' ','1',' ','3',"'",'5','-',' ','8',' ',' ','°','=','9','£',' ','µ',',',';','/','§','>']
+azerty_symbole_touche_maj =        ['Œ','1','2','3',"4",'5','6','7','8','9','0','°','+','¨','£','%','µ','?','.','/','§','>']
+traduc_symbole_touche_maj =        [' ','&','é','"',"'",'(','-','è','_','ç','à',' ','+',' ',' ','%',' ','?',';',':',' ','>']
+azerty_symbole_touche_alt_gr =     ['“','´','~','#','{','[','|','`',' ','^','@',']','}','~','ê','²','³','¿','×','÷','¡','|']
+traduc_symbole_touche_alt_gr =     [' ',' ','2','3','4','(','6','p',' ','9','0',')','+','2',' ',' ',' ',' ',' ',' ',' ','6']
+azerty_symbole_touche_maj_alt_gr = ['”','·','É','¸','´','¨','¦','È','¯','Ç','À','ÿ','°',"'",'ë','Ù','¥','º','×','÷','˙','¦']
+traduc_symbole_touche_maj_alt_gr = [' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',' ',"'",' ',' ',' ',' ',' ',' ',' ',' ']
+azerty_autre = ['\n','\t','\\']
+traduc_autre = ['\n','\t','_']
+
+azerty = [azerty_min, azerty_maj, azerty_chiffre, azerty_symbole_min, azerty_symbole_maj_ver, azerty_symbole_touche_maj, azerty_symbole_touche_alt_gr, azerty_symbole_touche_maj_alt_gr, azerty_autre]
+
+traduc = [traduc_min, traduc_maj, traduc_chiffre, traduc_symbole_min, traduc_symbole_maj_ver, traduc_symbole_touche_maj, traduc_symbole_touche_alt_gr, traduc_symbole_touche_maj_alt_gr, traduc_autre]
+
+for a in azerty:
+    traduction(a)t
+
+for t in traduc:
+    traduction(t)
+
