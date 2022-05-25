@@ -1,6 +1,6 @@
 from ClassItemModule import ITEM
-from CutModule import cut_after
-from CutModule import cut_before
+from ToolsModule import cut_after
+from ToolsModule import cut_before
 from os import listdir
 from os.path import abspath
 

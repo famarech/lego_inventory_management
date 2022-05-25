@@ -5,9 +5,9 @@ from time import sleep
 from pyperclip import paste
 from os import listdir
 from os.path import abspath
-from CutModule import cut_after
-from CutModule import cut_before
-from CutModule import traduction
+from ToolsModule import cut_after
+from ToolsModule import cut_before
+from ToolsModule import traduction
 from ClassInventaireModule import INVENTAIRE
 from ClassItemModule import ITEM
 
