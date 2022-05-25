@@ -124,7 +124,10 @@ class BRICKLINK():
         sleep(1)
         pyautogui.click(self.screen.width * 0.541, self.screen.height * 0.532, 1, button='primary')
         sleep(1.5)
+<<<<<<< HEAD
         pyautogui.hotkey('ctrl', 'a')
+=======
+>>>>>>> 5f793dc68112e8a22a17829dc9ed237d9e9bf2db
         pyautogui.hotkey('ctrl', 'c')
         sleep(1)
         str = paste()
