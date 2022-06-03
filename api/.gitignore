@@ -1,0 +1,17 @@
+*.egg-info/
+.ipynb_checkpoints/
+.idea
+__pycache__/
+bin/
+build/
+dist/
+docs/_build/
+include/
+lib/
+lib64
+lib64/
+pip-selfcheck.json
+pyvenv.cfg
+venv/
+
+**/auth.json
