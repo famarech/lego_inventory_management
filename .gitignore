@@ -4,6 +4,7 @@
 *.txt
 !/api/LICENSE.txt
 !/api/requirements.txt
+mdp.json
 
 /__pycache__
 /00 - Old

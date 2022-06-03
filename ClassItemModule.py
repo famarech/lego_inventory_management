@@ -1,3 +1,5 @@
+from api import bricklink_api as api
+
 class ITEM:
 
     def __init__(self, lotid, dateadded, category, color, price, qty, bulk, image, description, condition, itemtype, itemid, sale, stockroom, itemweight, datelastsold, basecurrencycode, categoryname, categorynameunder, colorname, itemtypename, itemidname, box, row, column, dimensionx, dimensiony, dimensionz):
@@ -145,3 +147,9 @@ class ITEM:
                     '\t\t\t<p>' + self.column + '</p>\n' +\
                     '\t\t</div>\n'
         return content
+
+    def get_price(self):
+        # ajouter dans la description? l'atat used ou new de la pièce
+        json_obj = api.catalog_item.get_price_guide("Part", self.itemid, self.color, new_or_used="U")
+        item.price = json_obj['data']['avg_price']
+        # .replace('.', ',') est-ce que c'est necessaire ?

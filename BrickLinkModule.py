@@ -12,18 +12,6 @@ from ClassItemModule import ITEM
 
 
 
-def get_price(inventaire):
-    blk = BRICKLINK(inventaire)
-    for i in range(0, len(inventaire.tab), blk.paquet):
-        partition = inventaire.tab[i:(i + blk.paquet)]
-        blk.ouvrir()
-        for item in partition:
-            blk.acces_page(item)
-            item.price = blk.get_price(item)
-        path = abspath('./06 - Sauvegarde_temp/prices_temp.csv').replace('\\', '/')
-        inventaire.sauvegarder(path)
-        blk.fermer()
-
 def get_picture(inventaire):
     blk = BRICKLINK(inventaire)
     for i in range(0, len(inventaire.tab), blk.paquet):
@@ -36,21 +24,6 @@ def get_picture(inventaire):
                 blk.get_picture(item)
         blk.fermer()
 
-def get_all(inventaire):
-    blk = BRICKLINK(inventaire)
-    for i in range(0, len(inventaire.tab), blk.paquet):
-        partition = inventaire.tab[i:(i + blk.paquet)]
-        blk.ouvrir()
-        for item in partition:
-            blk.acces_page(item)
-            item.price = blk.get_price(item)
-            filename = "id" + item.itemid + "color" + item.color + ".jpg"
-            if blk.exist_picture(filename) == False:
-                blk.get_picture(item)
-        path = abspath('./06 - Sauvegarde_temp/prices_temp.csv').replace('\\', '/')
-        inventaire.sauvegarder(path)
-        blk.fermer()
-
 
 
 
@@ -61,8 +34,8 @@ class BRICKLINK():
         self.html0 = "https://www.bricklink.com"
         self.html1 = "https://www.bricklink.com/catalogPG.asp?P="
         self.html2 = "&ColorID="
-        self.pseudo = 'famarech'
-        self.mdp = 'Vila1981'
+        self.pseudo = '' # aller chercher dans le dossier spécifié
+        self.mdp = ''
         self.paquet = 50
         self.path_picture = abspath('./03 - Pictures/')
         self.path_download = 'D:/Telechargements'
@@ -90,32 +63,6 @@ class BRICKLINK():
         url = self.html1 + item.itemid + self.html2 + item.color
         open_new(url)
 
-    def get_price(self, item):
-        sleep(2)
-        pyautogui.hotkey('ctrl', 'a')
-        pyautogui.hotkey('ctrl', 'c')
-        sleep(1)
-        str = paste()
-        prix = self.exist_price(str)
-        return prix
-
-    def exist_price(self, str):
-        str = cut_after("Used", str)
-        str = cut_after("Used", str)
-        str = cut_after("Qty Avg Price:", str)
-        str = cut_after("Qty Avg Price:", str)
-        str = cut_after("Qty Avg Price:", str)
-        str = cut_after("Avg Price:", str)
-        str = cut_after("EUR ", str)
-        str = cut_before("Qty Avg Price", str)
-        try:
-            float(str)
-        except:
-            str = '0.01'
-        str = str.replace('.',',')
-        str = str.replace('\n','')
-        return str
-
     def get_picture(self, item):
         sleep(4)
         pyautogui.click(self.screen.width * 0.498, self.screen.height * 0.318, 1, button='secondary')
@@ -141,6 +88,3 @@ class BRICKLINK():
         if filename in list_pict or filename in list_down:
             return True
         return False
-
-# mettre en place des interruptions en cas de deconnexion à la page internet
-# mise en place d'un fichier d'écriture des references non trouvées

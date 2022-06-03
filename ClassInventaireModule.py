@@ -132,6 +132,9 @@ class INVENTAIRE:
 
 
     def sauvegarder(self, path_destination):
+        # d'abord faire une sauvegarde du fichier avec un nom temporaire
+        # enregistrer le fichier à chaque reference avec le time dans le nom de fichier ("a")
+        # enfin ecraser le fichier source
         file_in = open(path_destination, "w")
         content = ";".join(self.label) + '\n'
         file_in.write(content)
@@ -214,6 +217,12 @@ class INVENTAIRE:
         path = abspath('./04 - Impression') + "/html_test_" + str(number + 1) + ".html"
         file_in = open(path, "w")
         file_in.write(content)
+
+    def get_price(self):
+        for item in self.tab:
+            item.get_price()
+        path = abspath('./06 - Sauvegarde_temp/prices_temp.csv')
+        self.sauvegarder(path)
 
     # def compare(self):
         #comparer deux inventaire pour trouver l'un dans l'autre
