@@ -2,6 +2,8 @@
 
 *.xml
 *.txt
+!/api/LICENSE.txt
+!/api/requirements.txt
 
 /__pycache__
 /00 - Old
