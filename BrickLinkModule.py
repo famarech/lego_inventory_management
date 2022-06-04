@@ -8,6 +8,7 @@ from CutModule import cut_after
 from CutModule import cut_before
 from ClassInventaireModule import INVENTAIRE
 from ClassItemModule import ITEM
+import json
 
 
 
@@ -34,12 +35,21 @@ class BRICKLINK():
         self.html0 = "https://www.bricklink.com"
         self.html1 = "https://www.bricklink.com/catalogPG.asp?P="
         self.html2 = "&ColorID="
-        self.pseudo = '' # aller chercher dans le dossier spécifié
+        self.pseudo = ''
         self.mdp = ''
         self.paquet = 50
         self.path_picture = abspath('./03 - Pictures/')
         self.path_download = 'D:/Telechargements'
         self.screen = pyautogui.size()
+
+        self.get_mdps()
+
+    def get_mdps(self):
+        file = abspath('mdp.json')
+        with open(file) as mon_fichier:
+            data = json.load(mon_fichier)
+        self.pseudo = data["Pseudo"]
+        self.mdp = data["MDP"]
 
     def ouvrir(self):
         open_new(self.html0)

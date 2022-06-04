@@ -29,4 +29,5 @@ import time
 
 
 inventaire = INVENTAIRE(abspath('essai.csv'))
+inventaire.get_price()
 print(inventaire.prix_total())

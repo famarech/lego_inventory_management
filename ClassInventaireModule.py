@@ -3,6 +3,8 @@ from CutModule import cut_after
 from CutModule import cut_before
 from os import listdir
 from os.path import abspath
+from time import time
+from time import localtime
 
 
 
@@ -10,7 +12,12 @@ class INVENTAIRE:
 
     def __init__(self, path):
         self.tab = []
-        self.label = ["LOTID","DATEADDED", "CATEGORY", "COLOR", "PRICE", "QTY", "BULK", "IMAGE", "DESCRIPTION", "CONDITION", "ITEMTYPE", "ITEMID", "SALE", "STOCKROOM", "ITEMWEIGHT", "DATELASTSOLD", "BASECURRENCYCODE", "CATEGORYNAME", "CATEGORYNAMEUNDER", "COLORNAME", "ITEMTYPENAME", "ITEMIDNAME", "BOX", "LINE", "ROW", "DIMENSIONX", "DIMENSIONY", "DIMENSIONZ"]
+        self.label = ["LOTID","DATEADDED", "CATEGORY", "COLOR", "PRICE",
+                        "QTY", "BULK", "IMAGE", "DESCRIPTION", "CONDITION",
+                        "ITEMTYPE", "ITEMID", "SALE", "STOCKROOM", "ITEMWEIGHT",
+                        "DATELASTSOLD", "BASECURRENCYCODE", "CATEGORYNAME", "CATEGORYNAMEUNDER", "COLORNAME",
+                        "ITEMTYPENAME", "ITEMIDNAME", "BOX", "LINE", "ROW",
+                        "DIMENSIONX", "DIMENSIONY", "DIMENSIONZ"]
         self.path = path
         self.str = self.read_file()
         self.extension = self.choice()
@@ -93,13 +100,23 @@ class INVENTAIRE:
     def transform_item_full(tab):
         new_tab= []
         for item in tab:
-            new_tab.append(ITEM(item[0], item[1], item[2], item[3], item[4], item[5], item[6], INVENTAIRE.exist_picture(item[11], item[3]), item[8], item[9], item[10], item[11], item[12], item[13], item[14], item[15], item[16], item[17], item[18], item[19], item[10], item[21], item[22], item[23], item[24], item[25], item[26], item[27].replace('\n', '')))
+            new_tab.append(ITEM(item[0], item[1], item[2], item[3], item[4],
+                                item[5], item[6], INVENTAIRE.exist_picture(item[11], item[3]), item[8], item[9],
+                                item[10], item[11], item[12], item[13], item[14],
+                                item[15], item[16], item[17], item[18], item[19],
+                                item[10], item[21], item[22], item[23], item[24],
+                                item[25], item[26], item[27].replace('\n', '')))
         return new_tab
 
     def transform_item_partiel(tab):
         new_tab= []
         for item in tab:
-            new_tab.append(ITEM('', '', '', item[4], '0', item[3], '', '', '', '', '', item[1], '', '', '0', '', '', '', '', '', '', '', '', '', '', '', '', ''))
+            new_tab.append(ITEM('', '', '', item[4], '0',
+                                item[3], '', '', '', '',
+                                '', item[1], '', '', '0',
+                                '', '', '', '', '',
+                                '', '', '', '', '',
+                                '', '', ''))
         return new_tab
 
 
@@ -150,7 +167,7 @@ class INVENTAIRE:
             self.tab.append(item)
 
     def transform_to_upload_bricklink(self):
-        PAQUET = 500
+        PAQUET = 500 #nombre max autorisé par Bricklink
         index = 1
         for i in range(0, len(self.tab), PAQUET):
             partition = self.tab[i:(i+PAQUET)]
@@ -219,10 +236,15 @@ class INVENTAIRE:
         file_in.write(content)
 
     def get_price(self):
+        size = len(self.tab)
+        time_per_item = 1
+        finish = localtime(time() + (time_per_item * size))
+        print("fin de la recherche de prix estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
         for item in self.tab:
             item.get_price()
-        path = abspath('./06 - Sauvegarde_temp/prices_temp.csv')
-        self.sauvegarder(path)
+        # path = abspath('./06 - Sauvegarde_temp/prices_temp.csv')
+        # self.sauvegarder(path)
 
     # def compare(self):
         #comparer deux inventaire pour trouver l'un dans l'autre

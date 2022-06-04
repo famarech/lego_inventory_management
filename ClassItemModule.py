@@ -149,7 +149,7 @@ class ITEM:
         return content
 
     def get_price(self):
-        # ajouter dans la description? l'atat used ou new de la pièce
-        json_obj = api.catalog_item.get_price_guide("Part", self.itemid, self.color, new_or_used="U")
-        item.price = json_obj['data']['avg_price']
-        # .replace('.', ',') est-ce que c'est necessaire ?
+        if self.itemtype == 'P':
+            type = 'Part'
+        json_obj = api.catalog_item.get_price_guide(type, self.itemid, int(self.color), new_or_used= self.condition)
+        self.price = (json_obj['data']['avg_price']).replace('.', ',')
