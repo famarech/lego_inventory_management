@@ -3,8 +3,6 @@ from ClassInventaireModule import INVENTAIRE
 from ClassItemModule import ITEM
 from os import listdir
 from os.path import abspath
-import ApiModule as api
-import time
 
 
 # path_stocks = abspath('./02 - Stocks')
@@ -17,17 +15,10 @@ import time
 #     i += 1
 #
 # print(len(inventaire.tab))
-#
-#
-# start = time.time()
-# api.get_price(inventaire)
-# finish = time.time()
-# delta = finish - start
-# ratio = round(delta / len(inventaire.tab), 0)
-# inventaire.afficher()
-# print(f'{ratio} secondes par reference\n')
+
 
 
 inventaire = INVENTAIRE(abspath('essai.csv'))
 inventaire.get_price()
 print(inventaire.prix_total())
+

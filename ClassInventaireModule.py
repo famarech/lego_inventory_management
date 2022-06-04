@@ -180,30 +180,30 @@ class INVENTAIRE:
             file_in = open(path, "w")
             file_in.write(content)
 
-    def transform_to_impression(self):
-        content = '<?xml version="1.0" encoding="UTF-8"?>\n' +\
-                    '<?xml-stylesheet href="style_xml.css" type="text/css" ?>\n' +\
-                    "<!-- commentaires --> \n\n" +\
-                    "<INVENTORY>\n" +\
-                    '\t<ITEM class="title">\n' +\
-                    "\t\t<LINE>LINE</LINE>\n" +\
-                    "\t\t<ITEMID>ITEMID</ITEMID>\n" +\
-                    "\t\t<ITEMIDNAME>ITEMNAME</ITEMIDNAME>\n" +\
-                    "\t\t<COLOR>COLOR</COLOR>\n" +\
-                    "\t\t<COLORNAME>COLORNAME</COLORNAME>\n" +\
-                    "\t\t<QTY>QTY</QTY>\n" +\
-                    "\t\t<BOX>BOX</BOX>\n" +\
-                    "\t\t<ROW>ROW</ROW>\n" +\
-                    "\t\t<COLUMN>COLUMN</COLUMN>\n" +\
-                    "\t</ITEM>\n"
-        index = 1
-        for item in self.tab:
-            content = content + item.transform_to_impression(index)
-            index += 1
-        content = content + "</INVENTORY>"
-        path = abspath('./04 - Impression') + '/impression_test.xml'
-        file_in = open(path, "w")
-        file_in.write(content)
+    # def transform_to_impression(self):
+    #     content = '<?xml version="1.0" encoding="UTF-8"?>\n' +\
+    #                 '<?xml-stylesheet href="style_xml.css" type="text/css" ?>\n' +\
+    #                 "<!-- commentaires --> \n\n" +\
+    #                 "<INVENTORY>\n" +\
+    #                 '\t<ITEM class="title">\n' +\
+    #                 "\t\t<LINE>LINE</LINE>\n" +\
+    #                 "\t\t<ITEMID>ITEMID</ITEMID>\n" +\
+    #                 "\t\t<ITEMIDNAME>ITEMNAME</ITEMIDNAME>\n" +\
+    #                 "\t\t<COLOR>COLOR</COLOR>\n" +\
+    #                 "\t\t<COLORNAME>COLORNAME</COLORNAME>\n" +\
+    #                 "\t\t<QTY>QTY</QTY>\n" +\
+    #                 "\t\t<BOX>BOX</BOX>\n" +\
+    #                 "\t\t<ROW>ROW</ROW>\n" +\
+    #                 "\t\t<COLUMN>COLUMN</COLUMN>\n" +\
+    #                 "\t</ITEM>\n"
+    #     index = 1
+    #     for item in self.tab:
+    #         content = content + item.transform_to_impression(index)
+    #         index += 1
+    #     content = content + "</INVENTORY>"
+    #     path = abspath('./04 - Impression') + '/impression_test.xml'
+    #     file_in = open(path, "w")
+    #     file_in.write(content)
 
     def transform_to_impression_html(self, number):
         content = '<!DOCTYPE html>\n\n' +\

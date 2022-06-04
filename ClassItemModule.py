@@ -108,23 +108,23 @@ class ITEM:
         content = content + "\t</ITEM>\n"
         return content
 
-    def transform_to_impression(self, index):
-        if (index % 2) == 0:
-            pair = "pair"
-        else:
-            pair = "impair"
-        content = '\t<ITEM value="' + pair + '">\n' +\
-                    "\t\t<LINE>" + str(index) + "</LINE>\n" +\
-                    "\t\t<ITEMID>" + self.itemid + "</ITEMID>\n" +\
-                    "\t\t<ITEMIDNAME>" + self.itemidname + "</ITEMIDNAME>\n" +\
-                    "\t\t<COLOR>" + self.color + "</COLOR>\n" +\
-                    "\t\t<COLORNAME>" + self.colorname + "</COLORNAME>\n" +\
-                    "\t\t<QTY>" + self.qty + "</QTY>\n" +\
-                    "\t\t<BOX>" + self.box + "</BOX>\n" +\
-                    "\t\t<ROW>" + self.row + "</ROW>\n" +\
-                    "\t\t<COLUMN>" + self.column + "</COLUMN>\n"
-        content = content + "\t</ITEM>\n"
-        return content
+    # def transform_to_impression(self, index):
+    #     if (index % 2) == 0:
+    #         pair = "pair"
+    #     else:
+    #         pair = "impair"
+    #     content = '\t<ITEM value="' + pair + '">\n' +\
+    #                 "\t\t<LINE>" + str(index) + "</LINE>\n" +\
+    #                 "\t\t<ITEMID>" + self.itemid + "</ITEMID>\n" +\
+    #                 "\t\t<ITEMIDNAME>" + self.itemidname + "</ITEMIDNAME>\n" +\
+    #                 "\t\t<COLOR>" + self.color + "</COLOR>\n" +\
+    #                 "\t\t<COLORNAME>" + self.colorname + "</COLORNAME>\n" +\
+    #                 "\t\t<QTY>" + self.qty + "</QTY>\n" +\
+    #                 "\t\t<BOX>" + self.box + "</BOX>\n" +\
+    #                 "\t\t<ROW>" + self.row + "</ROW>\n" +\
+    #                 "\t\t<COLUMN>" + self.column + "</COLUMN>\n"
+    #     content = content + "\t</ITEM>\n"
+    #     return content
 
     def transform_to_impression_html(self, index):
         if self.image != "Not Available":
@@ -153,3 +153,12 @@ class ITEM:
             type = 'Part'
         json_obj = api.catalog_item.get_price_guide(type, self.itemid, int(self.color), new_or_used= self.condition)
         self.price = (json_obj['data']['avg_price']).replace('.', ',')
+
+    # def exist_picture ?
+    # def exist_picture(id, color):
+    #     path = abspath('./03 - Pictures')
+    #     list_pict = listdir(path)
+    #     filename = "id" + id + "color" + color + ".jpg"
+    #     if filename in list_pict:
+    #         return ""
+    #     return "Not Available"
