@@ -10,7 +10,6 @@ mdp.json
 /build
 /dist
 /__pycache__
-/00 - Old
 *.jpg
 !noImage.jpg
 *.spec

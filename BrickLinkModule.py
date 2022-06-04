@@ -34,14 +34,14 @@ class BRICKLINK():
         self.pseudo = ''
         self.mdp = ''
         self.paquet = 50
-        self.path_picture = abspath('./03 - Pictures/')
+        self.path_picture = abspath('./ressources/pictures/')
         self.path_download = 'D:/Telechargements'
         self.screen = pyautogui.size()
 
         self.get_mdps()
 
     def get_mdps(self):
-        file = abspath('mdp.json')
+        file = abspath('/ressources/mdp.json')
         with open(file) as mon_fichier:
             data = json.load(mon_fichier)
         self.pseudo = data["Pseudo"]

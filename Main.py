@@ -5,7 +5,7 @@ from os import listdir
 from os.path import abspath
 
 
-# path_stocks = abspath('./02 - Stocks')
+# path_stocks = abspath('./ressources/stocks')
 # all_stocks = listdir(path_stocks)
 # inventaire = INVENTAIRE(path_stocks + '/' + all_stocks[0])
 # i = 1

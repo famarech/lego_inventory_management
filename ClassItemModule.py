@@ -48,7 +48,7 @@ class ITEM:
 
     def exist_picture(self, itemid, color, image):
         filename = "id" + itemid + "color" + str(color) + ".jpg"
-        path = abspath('./03 - Pictures')
+        path = abspath('./ressources/pictures')
         list_pict = listdir(path)
         if image == filename:
             return image
@@ -58,7 +58,7 @@ class ITEM:
             return filename
 
     def get_category(self, laurel, hardy, value, file):
-        file = abspath('./07 - ressources/' + file + '.json')
+        file = abspath('./ressources/' + file + '.json')
         with open(file) as mon_fichier:
             data = load(mon_fichier)
         for d in data:

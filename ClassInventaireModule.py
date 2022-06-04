@@ -172,7 +172,7 @@ class INVENTAIRE:
             for item in partition:
                 content = content + item.transform_to_upload_bricklink_xml()
             content = content + "</INVENTORY>"
-            path = abspath('./05 - Upload') + "/upload(" + str(index) + ").txt"
+            path = abspath('./ressources/uploads') + "/upload(" + str(index) + ").txt"
             index += 1
             file_in = open(path, "w")
             file_in.write(content)
@@ -204,7 +204,7 @@ class INVENTAIRE:
             content = content + item.transform_to_impression_html(index)
             index += 1
         content = content + "\t</body>\n\n</html>"
-        path = abspath('./04 - Impression') + "/html_test_" + str(number + 1) + ".html"
+        path = abspath('./ressources/printables') + "/printable(" + str(number + 1) + ").html"
         file_in = open(path, "w")
         file_in.write(content)
 
@@ -216,7 +216,7 @@ class INVENTAIRE:
                 f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n")
         for item in self.tab:
             item.get_price()
-        # path = abspath('./06 - Sauvegarde_temp/prices_temp.csv')
+        # path = abspath('./ressources/save_temp/inventory_temp_hh_mm_ss.csv')
         # self.sauvegarder(path)
 
     # def compare(self):
