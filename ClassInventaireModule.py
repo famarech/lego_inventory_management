@@ -16,7 +16,7 @@ class INVENTAIRE:
                         "QTY", "BULK", "IMAGE", "DESCRIPTION", "CONDITION",
                         "ITEMTYPE", "ITEMID", "SALE", "STOCKROOM", "ITEMWEIGHT",
                         "DATELASTSOLD", "BASECURRENCYCODE", "CATEGORYNAME", "CATEGORYNAMEUNDER", "COLORNAME",
-                        "ITEMTYPENAME", "ITEMIDNAME", "BOX", "LINE", "ROW",
+                        "ITEMTYPENAME", "ITEMIDNAME", "BOX", "COLUMN", "ROW",
                         "DIMENSIONX", "DIMENSIONY", "DIMENSIONZ"]
         self.path = path
         self.str = self.read_file()

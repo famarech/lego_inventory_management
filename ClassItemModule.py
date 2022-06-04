@@ -117,7 +117,7 @@ class ITEM:
 
     def transform_to_upload_bricklink_xml(self):
         a = self.price.replace(',','.')
-        b = self.box + ' ' + self.row + self.column
+        b = self.box + ' ' + self.row + ' ' + self.column
         # attention la quantité ne doit pas être nulle
         content = "\t<ITEM>\n"
         required = "\t\t<CATEGORY>" + self.category + "</CATEGORY>\n" +\
