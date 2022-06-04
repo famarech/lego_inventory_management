@@ -1,7 +1,3 @@
-import json as _json
-import pathlib as _pathlib
-from os.path import abspath
-
 def cut_after(mot, str):
     index = str.find(mot)
     if index >= 0:

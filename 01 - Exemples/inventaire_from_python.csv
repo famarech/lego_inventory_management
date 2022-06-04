@@ -1,0 +1,9 @@
+LOTID;DATEADDED;CATEGORY;COLOR;PRICE;QTY;BULK;IMAGE;DESCRIPTION;CONDITION;ITEMTYPE;ITEMID;SALE;STOCKROOM;ITEMWEIGHT;DATELASTSOLD;BASECURRENCYCODE;CATEGORYNAME;CATEGORYNAMEUNDER;COLORNAME;ITEMTYPENAME;ITEMIDNAME;BOX;LINE;ROW;DIMENSIONX;DIMENSIONY;DIMENSIONZ
+;05/01/2022;5;85;9,0836;3;1;Not Available;;U;P;2357;;Y;1,25;;EUR;Brick;;Dark Bluish Gray;P;Brick 2 x 2 Corner;black box;A;1;2;2;1
+;05/01/2022;5;86;9,1209;2;1;Not Available;;U;P;2357;;Y;1,25;;EUR;Brick;;Light Bluish Gray;P;Brick 2 x 2 Corner;black box;A;1;2;2;1
+;05/01/2022;26;85;9,0791;10;1;Not Available;;U;P;2420;;Y;0,54;;EUR;Plate;;Dark Bluish Gray;P;Plate 2 x 2 Corner;black box;A;1;2;2;0
+;05/01/2022;72;86;9,0000;23;1;Not Available;;U;P;2440;;Y;2,15;;EUR;Vehicle;;Light Bluish Gray;P;Vehicle, Spoiler / Plow Blade 6 x 3 with Hinge;black box;A;1;6;3;0
+;05/01/2022;26;85;9,1646;4;1;Not Available;;U;P;2445;;Y;3,5;;EUR;Plate;;Dark Bluish Gray;P;Plate 2 x 12;black box;A;1;2;12;0
+;05/01/2022;26;86;9,2187;10;1;Not Available;;U;P;2445;;Y;3,5;;EUR;Plate;;Light Bluish Gray;P;Plate 2 x 12;black box;A;1;2;12;0
+;05/01/2022;5;86;9,1707;1;1;Not Available;;U;P;2454;;Y;3,49;;EUR;Brick;;Light Bluish Gray;P;Brick 1 x 2 x 5 - Blocked Open Studs or Hollow Studs;black box;A;1;1;2;5
+;05/01/2022;5;85;9,1807;10;1;Not Available;;U;P;2456;;Y;3,74;;EUR;Brick;;Dark Bluish Gray;P;Brick 2 x 6;black box;A;1;2;6;1

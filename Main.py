@@ -19,6 +19,4 @@ from os.path import abspath
 
 
 inventaire = INVENTAIRE(abspath('essai.csv'))
-inventaire.get_price()
 print(inventaire.prix_total())
-

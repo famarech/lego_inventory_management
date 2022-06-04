@@ -1,0 +1,25 @@
+trouver les modules approprié pour un chargement des inventaires aux format txt, csv et xml
+trouver le module approprié pour connaitre l'extension d'un fichier
+
+
+
+
+revoir le principe de sauvegarde
+avec pour les operations longues des sauvegardes temporaires en ecriture 'a' dans le dossier temporaire avec pour nom de fichier la date et l'heure d'enregistrement
+pour les sauvegardes standard, ecriture en w dans un dossier et avec un nom de son choix
+
+
+
+
+refondre l'arborescence pour une meilleure gestion des ressources à partir d'un dossier ressources
+
+class inventaire, devrait peut-être contenir le nom de fichier d'origine ?
+
+
+
+
+
+comment faire pour ne pas pas que la list_dict se regenere à chaque creation d'ITEM
+un peu lourd pour la memoire --> demander à openclassroom
+ne reste plus qu'a trouver un dictionnaire json pour les itemidname en correspondance avec itemid
+verifier de quel type doivent être chaque attribut de la class ITEM (int, str, float)

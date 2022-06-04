@@ -1,54 +1,87 @@
 from api import bricklink_api as api
+from os.path import abspath
+from os import listdir
+from json import load
 
 class ITEM:
 
-    def __init__(self, lotid, dateadded, category, color, price, qty, bulk, image, description, condition, itemtype, itemid, sale, stockroom, itemweight, datelastsold, basecurrencycode, categoryname, categorynameunder, colorname, itemtypename, itemidname, box, row, column, dimensionx, dimensiony, dimensionz):
+    def __init__(self, lotid: str, dateadded: str, category: int, color: int, price: str,
+                        qty: str, bulk: int, image: str, description: str, condition: str,
+                        itemtype: str, itemid: int, sale: str, stockroom: str, itemweight: str,
+                        datelastsold: str, basecurrencycode: str, categoryname: str, categorynameunder: str, colorname: str,
+                        itemtypename: str, itemidname: str, box: str, row: str, column: str,
+                        dimensionx: str, dimensiony: str, dimensionz: str):
         self.lotid = lotid
         self.dateadded = dateadded
         self.category = category
         self.color = color
-        self.price = price
-        self.qty = qty
+        self.price = price.replace('.',',')
+        self.qty = qty.replace('.',',')
         self.bulk = bulk
-        self.image = image
+        self.image = self.exist_picture(itemid, color, image)
         self.description = description
-        self.condition = condition
+        self.condition = "U" if condition == "" else condition
         self.itemtype = itemtype
         self.itemid = itemid
         self.sale = sale
         self.stockroom = stockroom
-        self.itemweight = itemweight
+        self.itemweight = itemweight.replace('.',',')
         self.datelastsold = datelastsold
         self.basecurrencycode = basecurrencycode
-        self.categoryname = categoryname
+        self.categoryname = self.get_category("categoryid",
+                                                "categoryname",
+                                                category,
+                                                "categories")
         self.categorynameunder = categorynameunder
-        self.colorname = colorname
+        self.colorname = self.get_category("colorid",
+                                                "colorname",
+                                                color,
+                                                "colors")
         self.itemtypename = itemtypename
         self.itemidname = itemidname
         self.box = box
         self.row = row
         self.column = column
-        self.dimensionx = dimensionx
-        self.dimensiony = dimensiony
-        self.dimensionz = dimensionz
+        self.dimensionx = dimensionx.replace('.',',')
+        self.dimensiony = dimensiony.replace('.',',')
+        self.dimensionz = dimensionz.replace('.',',')
 
+    def exist_picture(self, itemid, color, image):
+        filename = "id" + itemid + "color" + str(color) + ".jpg"
+        path = abspath('./03 - Pictures')
+        list_pict = listdir(path)
+        if image == filename:
+            return image
+        else:
+            if not(filename in list_pict):
+                return "Not Available"
+            return filename
+
+    def get_category(self, laurel, hardy, value, file):
+        file = abspath('./07 - ressources/' + file + '.json')
+        with open(file) as mon_fichier:
+            data = load(mon_fichier)
+        for d in data:
+            if d[laurel] == value:
+                return d[hardy]
+        return f"{hardy} Not Available"
 
     def afficher(self):
-        print(f"{self.itemid} : {self.color} : {self.qty} : {self.price} : {self.box} : {self.row} : {self.column} : {self.image}")
+        print(f"{self.itemid} : {self.color} : {self.qty} : {self.price}€" +\
+                f"dans {self.box} : {self.row}{self.column}")
 
     def prix_total(self):
-        a = self.price.replace(',','.')
-        a = float(a)
-        b = int(self.qty)
-        return (a * b)
+        a = float(self.price.replace(',','.'))
+        b = float(self.qty.replace(',','.'))
+        return round(a * b, 2)
 
     def poid_total(self):
-        a = self.itemweight.replace(',','.')
-        a = float(a)
-        b = int(self.qty)
-        return (a * b)
+        # en grammes
+        a = float(self.itemweight.replace(',','.'))
+        b = float(self.qty.replace(',','.'))
+        return round(a * b, 2)
 
-    def sauvegarder(self):
+    def sauvegarder_format_csv(self):
         a = str(self.price).replace('.',',')
         b = str(self.qty).replace('.',',')
         c = str(self.itemweight).replace('.',',')
@@ -82,7 +115,7 @@ class ITEM:
                 self.dimensionz + '\n'
         return content
 
-    def transform_to_upload_bricklink(self):
+    def transform_to_upload_bricklink_xml(self):
         a = self.price.replace(',','.')
         b = self.box + ' ' + self.row + self.column
         # attention la quantité ne doit pas être nulle
@@ -107,24 +140,6 @@ class ITEM:
         content = content + required #+ not_required
         content = content + "\t</ITEM>\n"
         return content
-
-    # def transform_to_impression(self, index):
-    #     if (index % 2) == 0:
-    #         pair = "pair"
-    #     else:
-    #         pair = "impair"
-    #     content = '\t<ITEM value="' + pair + '">\n' +\
-    #                 "\t\t<LINE>" + str(index) + "</LINE>\n" +\
-    #                 "\t\t<ITEMID>" + self.itemid + "</ITEMID>\n" +\
-    #                 "\t\t<ITEMIDNAME>" + self.itemidname + "</ITEMIDNAME>\n" +\
-    #                 "\t\t<COLOR>" + self.color + "</COLOR>\n" +\
-    #                 "\t\t<COLORNAME>" + self.colorname + "</COLORNAME>\n" +\
-    #                 "\t\t<QTY>" + self.qty + "</QTY>\n" +\
-    #                 "\t\t<BOX>" + self.box + "</BOX>\n" +\
-    #                 "\t\t<ROW>" + self.row + "</ROW>\n" +\
-    #                 "\t\t<COLUMN>" + self.column + "</COLUMN>\n"
-    #     content = content + "\t</ITEM>\n"
-    #     return content
 
     def transform_to_impression_html(self, index):
         if self.image != "Not Available":
@@ -153,12 +168,3 @@ class ITEM:
             type = 'Part'
         json_obj = api.catalog_item.get_price_guide(type, self.itemid, int(self.color), new_or_used= self.condition)
         self.price = (json_obj['data']['avg_price']).replace('.', ',')
-
-    # def exist_picture ?
-    # def exist_picture(id, color):
-    #     path = abspath('./03 - Pictures')
-    #     list_pict = listdir(path)
-    #     filename = "id" + id + "color" + color + ".jpg"
-    #     if filename in list_pict:
-    #         return ""
-    #     return "Not Available"

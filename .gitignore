@@ -1,16 +1,18 @@
 # commentaires
 
-*.xml
-*.txt
+# api bricklink
 !/api/LICENSE.txt
 !/api/requirements.txt
+
+# mdp safe and secure
 mdp.json
 
+/build
+/dist
 /__pycache__
 /00 - Old
-/01 - Resources
 *.jpg
 !noImage.jpg
-
-
-/*.csv
+*.spec
+*.swp
+*.exe

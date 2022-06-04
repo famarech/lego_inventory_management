@@ -1,10 +1,10 @@
 from ClassItemModule import ITEM
 from CutModule import cut_after
 from CutModule import cut_before
-from os import listdir
 from os.path import abspath
 from time import time
 from time import localtime
+
 
 
 
@@ -27,6 +27,8 @@ class INVENTAIRE:
         self.prix_par_piece = self.prix / self.qty
 
 
+
+
     def read_file(self):
         file_in = open(self.path, "r")
         str = file_in.readlines()
@@ -37,12 +39,15 @@ class INVENTAIRE:
     def choice(self):
         extension = self.path
         extension = cut_after(".", extension)
+        print(f"chargement de l'inventaire '.{extension}' en cours")
         if extension == "csv":
             self.tab = self.from_csv()
         elif extension == "xml":
             self.tab = self.from_xml()
         elif extension == "txt":
             self.tab = self.from_txt()
+        if len(self.tab) > 0:
+            print("chargement terminé\n")
         return extension
 
     def from_csv(self):
@@ -88,20 +93,12 @@ class INVENTAIRE:
         new_tab = INVENTAIRE.transform_item_partiel(tab)
         return new_tab
 
-    def exist_picture(id, color):
-        path = abspath('./03 - Pictures')
-        list_pict = listdir(path)
-        filename = "id" + id + "color" + color + ".jpg"
-        if filename in list_pict:
-            return ""
-        return "Not Available"
-
     # # # permet quelque soit le type d'inventaire, d'avoir un format d'inventaire unique
     def transform_item_full(tab):
         new_tab= []
         for item in tab:
             new_tab.append(ITEM(item[0], item[1], item[2], item[3], item[4],
-                                item[5], item[6], INVENTAIRE.exist_picture(item[11], item[3]), item[8], item[9],
+                                item[5], item[6], item[7], item[8], item[9],
                                 item[10], item[11], item[12], item[13], item[14],
                                 item[15], item[16], item[17], item[18], item[19],
                                 item[10], item[21], item[22], item[23], item[24],
@@ -148,7 +145,7 @@ class INVENTAIRE:
 
 
 
-    def sauvegarder(self, path_destination):
+    def sauvegarder_csv(self, path_destination):
         # d'abord faire une sauvegarde du fichier avec un nom temporaire
         # enregistrer le fichier à chaque reference avec le time dans le nom de fichier ("a")
         # enfin ecraser le fichier source
@@ -156,7 +153,7 @@ class INVENTAIRE:
         content = ";".join(self.label) + '\n'
         file_in.write(content)
         for item in self.tab:
-            content = item.sauvegarder()
+            content = item.sauvegarder_format_csv()
             file_in.write(content)
         file_in.close()
 
@@ -166,44 +163,20 @@ class INVENTAIRE:
         for item in inventory_to_add.tab:
             self.tab.append(item)
 
-    def transform_to_upload_bricklink(self):
+    def transform_to_upload_bricklink_xml(self):
         PAQUET = 500 #nombre max autorisé par Bricklink
         index = 1
         for i in range(0, len(self.tab), PAQUET):
             partition = self.tab[i:(i+PAQUET)]
             content = "<INVENTORY>\n"
             for item in partition:
-                content = content + item.transform_to_upload_bricklink()
+                content = content + item.transform_to_upload_bricklink_xml()
             content = content + "</INVENTORY>"
             path = abspath('./05 - Upload') + "/upload(" + str(index) + ").txt"
             index += 1
             file_in = open(path, "w")
             file_in.write(content)
-
-    # def transform_to_impression(self):
-    #     content = '<?xml version="1.0" encoding="UTF-8"?>\n' +\
-    #                 '<?xml-stylesheet href="style_xml.css" type="text/css" ?>\n' +\
-    #                 "<!-- commentaires --> \n\n" +\
-    #                 "<INVENTORY>\n" +\
-    #                 '\t<ITEM class="title">\n' +\
-    #                 "\t\t<LINE>LINE</LINE>\n" +\
-    #                 "\t\t<ITEMID>ITEMID</ITEMID>\n" +\
-    #                 "\t\t<ITEMIDNAME>ITEMNAME</ITEMIDNAME>\n" +\
-    #                 "\t\t<COLOR>COLOR</COLOR>\n" +\
-    #                 "\t\t<COLORNAME>COLORNAME</COLORNAME>\n" +\
-    #                 "\t\t<QTY>QTY</QTY>\n" +\
-    #                 "\t\t<BOX>BOX</BOX>\n" +\
-    #                 "\t\t<ROW>ROW</ROW>\n" +\
-    #                 "\t\t<COLUMN>COLUMN</COLUMN>\n" +\
-    #                 "\t</ITEM>\n"
-    #     index = 1
-    #     for item in self.tab:
-    #         content = content + item.transform_to_impression(index)
-    #         index += 1
-    #     content = content + "</INVENTORY>"
-    #     path = abspath('./04 - Impression') + '/impression_test.xml'
-    #     file_in = open(path, "w")
-    #     file_in.write(content)
+        print(f"creation des fichiers terminées, {index - 1} fichier(s) produit(s)\n")
 
     def transform_to_impression_html(self, number):
         content = '<!DOCTYPE html>\n\n' +\
@@ -240,7 +213,7 @@ class INVENTAIRE:
         time_per_item = 1
         finish = localtime(time() + (time_per_item * size))
         print("fin de la recherche de prix estimé à :\n" +\
-                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n")
         for item in self.tab:
             item.get_price()
         # path = abspath('./06 - Sauvegarde_temp/prices_temp.csv')
