@@ -5,6 +5,7 @@ lecture de tous les types différents de fichiers d'inventaires (csv, txt, from 
 créer un module à par entière
 supprimer le module CutModule
 inclure aussi l'importation des inventaire de set
+vérifier tous les types d'import de BrickLink'
 
 
 
