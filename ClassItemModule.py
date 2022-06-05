@@ -12,15 +12,18 @@ list_pict = listdir(abspath('./ressources/pictures'))
 
 class ITEM:
 
-    def __init__(self, lotid: str, dateadded: str, category: int, color: int, price: str,
-                        qty: str, bulk: int, image: str, description: str, condition: str,
-                        itemtype: str, itemid: int, sale: str, stockroom: str, itemweight: str,
-                        datelastsold: str, basecurrencycode: str, categoryname: str, categorynameunder: str, colorname: str,
-                        itemtypename: str, itemidname: str, box: str, row: str, column: str,
-                        dimensionx: str, dimensiony: str, dimensionz: str):
+    def __init__(self, lotid, dateadded, category, color, price,
+                        qty, bulk, image, description, condition,
+                        itemtype, itemid, sale, stockroom, weight,
+                        datelastsold, basecurrencycode, categoryname, categorynameunder, colorname,
+                        itemtypename, itemidname, box, row, column,
+                        dimensionx, dimensiony, dimensionz):
         self.lotid = lotid
         self.dateadded = dateadded
-        self.category = category
+        self.category = self.get_category("Number",
+                                            "Category ID",
+                                            itemid,
+                                            "parts")
         self.color = color
         self.price = price.replace('.',',')
         self.qty = qty.replace('.',',')
@@ -32,7 +35,10 @@ class ITEM:
         self.itemid = itemid
         self.sale = sale
         self.stockroom = stockroom
-        self.itemweight = itemweight.replace('.',',')
+        self.weight = self.get_category("Number",
+                                            "weight",
+                                            itemid,
+                                            "parts").replace('.',',')
         self.datelastsold = datelastsold
         self.basecurrencycode = basecurrencycode
         self.categoryname = self.get_category("categoryid",
@@ -44,8 +50,14 @@ class ITEM:
                                                 "colorname",
                                                 color,
                                                 "colors")
-        self.itemtypename = itemtypename
-        self.itemidname = itemidname
+        self.itemtypename = self.get_category("itemtypeid",
+                                            "itemtypename",
+                                            itemtype,
+                                            "itemtypes")
+        self.itemidname = self.get_category("Number",
+                                                "Name",
+                                                itemid,
+                                                "parts")
         self.box = box
         self.row = row
         self.column = column

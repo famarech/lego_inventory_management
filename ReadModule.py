@@ -16,49 +16,6 @@ file_set_txt = abspath('./ressources/exemples/set_from_blk.txt')
 
 
 
-def from_txt_set(file):
-    tab = []
-    with open(file, newline='') as csvfile:
-        data = csv.reader(csvfile.readlines()[2:], delimiter='\t')
-        for row in data:
-            # row[6] est ALTERNATE, faut-il le décompter ?
-            if row[8] == "N" and row[5] == "N" and row[0] == "P":
-                tab.append(ITEM('', '', '', row[4], '',
-                                row[3], '', '', '', '',
-                                row[0], row[1], '', '', '',
-                                '', '', '', '', '',
-                                row[2], '', '', '', '',
-                                '', '', ''))
-    return tab
-
-
-
-def from_xml_set(file):
-    tree = ET.parse(file)
-    root = tree.getroot()
-    tab = []
-    for item in root:
-        # item[5].text est ALTERNATE, faut-il le décompter ?
-        if item[7].text == "N" and item[4].text == "N" and item[0].text == "P":
-            tab.append(ITEM('', '', '', item[3].text, '',
-                            item[2].text, '', '', '', '',
-                            item[0].text, item[1].text, '', '', '',
-                            '', '', '', '', '',
-                            '', '', '', '', '',
-                            '', '', ''))
-    return tab
-
-
-
-set = from_txt_set(file_set_txt)
-for each in set:
-    each.afficher()
-
-
-
-
-
-
 
 
 
@@ -80,7 +37,6 @@ def choice(file):
     #     print("chargement terminé\n")
     return extension
 
-
 def get_category(laurel, hardy, value, file):
     file = abspath('./ressources/' + file + '.json')
     with open(file) as mon_fichier:
@@ -92,51 +48,37 @@ def get_category(laurel, hardy, value, file):
 
 def from_txt_from_blk(file):
     tab = []
-    with open(file, newline='') as csvfile:
+    with open(file, encoding="utf-8", newline='') as csvfile:
         data = csv.reader(csvfile, delimiter='\t')
-        try:
-            for i, row in enumerate(data):
-                if i > 1:
-                    a = row[5].split()
-                    b = get_category("colorname", "colorid", row[1], "colors")
-                    c = row[7].replace('â‚¬', '')
-                    tab.append(ITEM(row[0], row[26], row[2], b, c,
-                                        row[8], row[9], '', (' ').join(a[:-3]), row[3],
-                                        '', row[12], row[10], row[20], row[24],
-                                        row[27], row[28], '', '', row[1],
-                                        '', '', (' ').join(a[-4:-2]), a[-2], a[-1],
-                                        '', '', ''))
-        except UnicodeDecodeError:
-            print("Impossible de charger l'inventaire dans sa totalité\n" +\
-                    "certaines références n'ont pas été créées\n"
-                    "fichier provenant de Bricklink contenant des '''Chinese Logogram'''\n" +\
-                    "A effacer manuellement\n\n")
+        for i, row in enumerate(data):
+            if i > 1:
+                a = row[5].split()
+                b = get_category("colorname", "colorid", row[1], "colors")
+                c = row[7].replace('â‚¬', '')
+                tab.append(ITEM(row[0], row[26], row[2], b, c,
+                                    row[8], row[9], '', (' ').join(a[:-3]), row[3],
+                                    '', row[12], row[10], row[20], row[24],
+                                    row[27], row[28], '', '', row[1],
+                                    '', '', (' ').join(a[-4:-2]), a[-2], a[-1],
+                                    '', '', ''))
     return tab
 
 def from_csv_from_blk(file):
     tab = []
-    with open(file, newline='') as csvfile:
+    with open(file, encoding="utf-8", newline='') as csvfile:
         data = csv.reader(csvfile, delimiter=',')
-        try:
-            for i, row in enumerate(data):
-                if i > 1:
-                    a = row[5].split()
-                    b = get_category("colorname", "colorid", row[1], "colors")
-                    c = row[7].replace('â‚¬', '')
-                    tab.append(ITEM(row[0], row[26], row[2], b, c,
-                                        row[8], row[9], '', (' ').join(a[:-3]), row[3],
-                                        '', row[12], row[10], row[20], row[24],
-                                        row[27], row[28], '', '', row[1],
-                                        '', '', (' ').join(a[-4:-2]), a[-2], a[-1],
-                                        '', '', ''))
-        except UnicodeDecodeError:
-            print("Impossible de charger l'inventaire dans sa totalité\n" +\
-                    "certaines références n'ont pas été créées\n"
-                    "fichier provenant de Bricklink contenant des '''Chinese Logogram'''\n" +\
-                    "A effacer manuellement\n\n")
+        for i, row in enumerate(data):
+            if i > 1:
+                a = row[5].split()
+                b = get_category("colorname", "colorid", row[1], "colors")
+                c = row[7].replace('â‚¬', '')
+                tab.append(ITEM(row[0], row[26], row[2], b, c,
+                                    row[8], row[9], '', (' ').join(a[:-3]), row[3],
+                                    '', row[12], row[10], row[20], row[24],
+                                    row[27], row[28], '', '', row[1],
+                                    '', '', (' ').join(a[-4:-2]), a[-2], a[-1],
+                                    '', '', ''))
     return tab
-
-
 
 def from_xml_v2(file):
     tree = ET.parse(file)
@@ -157,7 +99,7 @@ def from_xml_v2(file):
 
 def from_csv_by_me(file):
     tab = []
-    with open(file, newline='') as csvfile:
+    with open(file, encoding="utf-8", newline='') as csvfile:
         data = csv.reader(csvfile.readlines()[:1], delimiter=';', quotechar=' ')
         for row in data:
             tab.append(ITEM(row[0], row[1], row[2], row[3], row[4],
@@ -168,5 +110,54 @@ def from_csv_by_me(file):
                                 row[25], row[26], row[27]))
     return tab
 
+def from_txt_set(file):
+    tab = []
+    with open(file, encoding="utf-8", newline='') as csvfile:
+        data = csv.reader(csvfile.readlines()[2:], delimiter='\t')
+        for row in data:
+            # row[6] est ALTERNATE, faut-il le décompter ?
+            if row[8] == "N" and row[5] == "N" and row[0] == "P":
+                tab.append(ITEM('', '', '', row[4], '',
+                                row[3], '', '', '', '',
+                                row[0], row[1], '', '', '',
+                                '', '', '', '', '',
+                                row[2], '', '', '', '',
+                                '', '', ''))
+    return tab
+
+def from_xml_set(file):
+    tree = ET.parse(file)
+    root = tree.getroot()
+    tab = []
+    for item in root:
+        # item[5].text est ALTERNATE, faut-il le décompter ?
+        if item[7].text == "N" and item[4].text == "N" and item[0].text == "P":
+            tab.append(ITEM('', '', '', item[3].text, '',
+                            item[2].text, '', '', '', '',
+                            item[0].text, item[1].text, '', '', '',
+                            '', '', '', '', '',
+                            '', '', '', '', '',
+                            '', '', ''))
+    return tab
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+inv = from_xml_set(file_set_xml)
+for i in inv:
+    print(i.itemtypename)

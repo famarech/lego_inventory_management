@@ -1,14 +1,3 @@
-trouver les modules approprié pour un chargement des inventaires aux format txt, csv et xml
-trouver le module approprié pour connaitre l'extension d'un fichier
-
-lecture de tous les types différents de fichiers d'inventaires (csv, txt, from blk, by me ...)
-créer un module à par entière
-supprimer le module CutModule
-inclure aussi l'importation des inventaire de set
-vérifier tous les types d'import de BrickLink'
-
-
-
 
 revoir le principe de sauvegarde
 avec pour les operations longues des sauvegardes temporaires en ecriture 'a' dans le dossier temporaire avec pour nom de fichier la date et l'heure d'enregistrement
@@ -18,6 +7,9 @@ class inventaire, devrait peut-être contenir le nom de fichier d'origine ? pour
 
 
 
-
-ne reste plus qu'a trouver un dictionnaire json pour les itemidname en correspondance avec itemid
+normalement, tous les types de fichier sont prévus pour l'import (xml, csv, txt, from_blk, by_me,...)
+ne reste plus qu'à refaire la fonction choice et le module ReadModule
+retravailler le parts.json pour avoir des dimensions x,y,z
 verifier de quel type doivent être chaque attribut de la class ITEM (int, str, float)
+toujours des problems de . et de , de points et de virgiles pour price et weight et dimensions
+de manière générale, il va falloir faire le ménage dans les variables/fichiers/instances qui s'appelle 'item'
