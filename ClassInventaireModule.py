@@ -1,126 +1,38 @@
 from ClassItemModule import ITEM
-from CutModule import cut_after
-from CutModule import cut_before
+from ReadModule import loading
+from ReadModule import get_extension
 from os.path import abspath
 from time import time
 from time import localtime
 
 
 
+global label
+label = ["LOTID","DATEADDED", "CATEGORY", "COLOR", "PRICE",
+        "QTY", "BULK", "IMAGE", "DESCRIPTION", "CONDITION",
+        "ITEMTYPE", "ITEMID", "SALE", "STOCKROOM", "ITEMWEIGHT",
+        "DATELASTSOLD", "BASECURRENCYCODE", "CATEGORYNAME", "CATEGORYNAMEUNDER", "COLORNAME",
+        "ITEMTYPENAME", "ITEMIDNAME", "BOX", "COLUMN", "ROW",
+        "DIMENSIONX", "DIMENSIONY", "DIMENSIONZ"]
+
+
+
 
 class INVENTAIRE:
 
-    def __init__(self, path):
-        self.tab = []
-        self.label = ["LOTID","DATEADDED", "CATEGORY", "COLOR", "PRICE",
-                        "QTY", "BULK", "IMAGE", "DESCRIPTION", "CONDITION",
-                        "ITEMTYPE", "ITEMID", "SALE", "STOCKROOM", "ITEMWEIGHT",
-                        "DATELASTSOLD", "BASECURRENCYCODE", "CATEGORYNAME", "CATEGORYNAMEUNDER", "COLORNAME",
-                        "ITEMTYPENAME", "ITEMIDNAME", "BOX", "COLUMN", "ROW",
-                        "DIMENSIONX", "DIMENSIONY", "DIMENSIONZ"]
-        self.path = path
-        self.str = self.read_file()
-        self.extension = self.choice()
+    def __init__(self, path, where_from, type):
+
+        self.path = get_extension(path)[0]
+        self.filename = get_extension(path)[1]
+        self.extension = get_extension(path)[2]
+        self.where_from = where_from
+        self.type = type
+        self.tab = loading(path, where_from, type, self.filename, self.extension)
+
         self.prix = self.prix_total()
         self.poid = self.poid_total()
         self.qty = self.qty_total()
         self.prix_par_piece = self.prix / self.qty
-
-
-
-
-    def read_file(self):
-        file_in = open(self.path, "r")
-        str = file_in.readlines()
-        file_in.close()
-        return str
-
-    # # # permet de déterminer quel est le type d'extension pour pouvoir importer n'importe quel inventaire
-    def choice(self):
-        extension = self.path
-        extension = cut_after(".", extension)
-        print(f"chargement de l'inventaire '.{extension}' en cours")
-
-        start = time()
-
-        if extension == "csv":
-            self.tab = self.from_csv()
-        elif extension == "xml":
-            self.tab = self.from_xml()
-        elif extension == "txt":
-            self.tab = self.from_txt()
-        if len(self.tab) > 0:
-            finish = time()
-            delta = round(finish - start, 2)
-            print("chargement terminé\n" +\
-                    f"{len(self.tab)} references en {delta} secondes.\n")
-        return extension
-
-    def from_csv(self):
-        str = self.str
-        tab = []
-        for t in str:
-            tab.append(t.split(';'))
-        del tab[0]
-        new_tab = INVENTAIRE.transform_item_full(tab)
-        return new_tab
-
-    def from_xml(self):
-        str = self.str
-        str = "".join(str)
-        str = cut_after("INVENTORY>", str)
-        str = cut_before("</INVENTORY", str)
-        tab = []
-        while len(str) > 15:
-            str = cut_after("<ITEM>", str)
-            b = cut_after("</ITEM>", str)
-            new_tab = []
-            for word in self.label:
-                str = cut_after((word + ">"), str)
-                a = cut_before(("</" + word), str)
-                str = cut_after(("</" + word), str)
-                new_tab.append(a)
-            tab.append(new_tab)
-        new_tab = []
-        new_tab = INVENTAIRE.transform_item_full(tab)
-        return new_tab
-
-    def from_txt(self):
-        file_in = open(self.path, 'r')
-        tab = []
-        for line in file_in.readlines():
-            str = line.replace("\t", ";")
-            str = str.replace("\n", "")
-            str = str.split(";")
-            tab.append(str)
-        file_in.close()
-        del tab[0]
-        del tab[0]
-        new_tab = INVENTAIRE.transform_item_partiel(tab)
-        return new_tab
-
-    # # # permet quelque soit le type d'inventaire, d'avoir un format d'inventaire unique
-    def transform_item_full(tab):
-        new_tab= []
-        for item in tab:
-            new_tab.append(ITEM(item[0], item[1], item[2], item[3], item[4],
-                                item[5], item[6], item[7], item[8], item[9],
-                                item[10], item[11], item[12], item[13], item[14],
-                                item[15], item[16], item[17], item[18], item[19],
-                                item[20], item[21], item[22], item[23], item[24],
-                                item[25], item[26], item[27].replace('\n', '')))
-        return new_tab
-
-    def transform_item_partiel(tab):
-        new_tab= []
-        for item in tab:
-            new_tab.append(ITEM('', '', '', item[4], '0',
-                                item[3], '', '', '', '',
-                                '', item[1], '', '', '0',
-                                '', '', '', '', '',
-                                '', '', '', '', '',
-                                '', '', ''))
-        return new_tab
 
 
 
@@ -156,7 +68,7 @@ class INVENTAIRE:
         # enregistrer le fichier à chaque reference avec le time dans le nom de fichier ("a")
         # enfin ecraser le fichier source
         file_in = open(path_destination, "w")
-        content = ";".join(self.label) + '\n'
+        content = ";".join(label) + '\n'
         file_in.write(content)
         for item in self.tab:
             content = item.sauvegarder_format_csv()
@@ -224,6 +136,9 @@ class INVENTAIRE:
             item.get_price()
         # path = abspath('./ressources/save_temp/inventory_temp_hh_mm_ss.csv')
         # self.sauvegarder(path)
+
+    def get_picture(self):
+        return 0
 
     # def compare(self):
         #comparer deux inventaire pour trouver l'un dans l'autre

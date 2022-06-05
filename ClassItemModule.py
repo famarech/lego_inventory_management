@@ -183,5 +183,11 @@ class ITEM:
     def get_price(self):
         if self.itemtype == 'P':
             type = 'Part'
-        json_obj = api.catalog_item.get_price_guide(type, self.itemid, int(self.color), new_or_used= self.condition)
+        json_obj = api.catalog_item.get_price_guide(type,
+                                                    self.itemid,
+                                                    int(self.color),
+                                                    new_or_used= self.condition)
         self.price = (json_obj['data']['avg_price']).replace('.', ',')
+
+    def get_picture(self):
+        return 0
