@@ -40,6 +40,9 @@ class INVENTAIRE:
         extension = self.path
         extension = cut_after(".", extension)
         print(f"chargement de l'inventaire '.{extension}' en cours")
+
+        start = time()
+
         if extension == "csv":
             self.tab = self.from_csv()
         elif extension == "xml":
@@ -47,7 +50,10 @@ class INVENTAIRE:
         elif extension == "txt":
             self.tab = self.from_txt()
         if len(self.tab) > 0:
-            print("chargement terminé\n")
+            finish = time()
+            delta = round(finish - start, 2)
+            print("chargement terminé\n" +\
+                    f"{len(self.tab)} references en {delta} secondes.\n")
         return extension
 
     def from_csv(self):
@@ -101,7 +107,7 @@ class INVENTAIRE:
                                 item[5], item[6], item[7], item[8], item[9],
                                 item[10], item[11], item[12], item[13], item[14],
                                 item[15], item[16], item[17], item[18], item[19],
-                                item[10], item[21], item[22], item[23], item[24],
+                                item[20], item[21], item[22], item[23], item[24],
                                 item[25], item[26], item[27].replace('\n', '')))
         return new_tab
 

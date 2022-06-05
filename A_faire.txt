@@ -1,6 +1,11 @@
 trouver les modules approprié pour un chargement des inventaires aux format txt, csv et xml
 trouver le module approprié pour connaitre l'extension d'un fichier
 
+lecture de tous les types différents de fichiers d'inventaires (csv, txt, from blk, by me ...)
+créer un module à par entière
+supprimer le module CutModule
+inclure aussi l'importation des inventaire de set
+
 
 
 
@@ -13,7 +18,5 @@ class inventaire, devrait peut-être contenir le nom de fichier d'origine ? pour
 
 
 
-comment faire pour ne pas pas que la list_dict se regenere à chaque creation d'ITEM
-un peu lourd pour la memoire --> demander à openclassroom
 ne reste plus qu'a trouver un dictionnaire json pour les itemidname en correspondance avec itemid
 verifier de quel type doivent être chaque attribut de la class ITEM (int, str, float)

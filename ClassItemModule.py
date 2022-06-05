@@ -1,7 +1,14 @@
 from api import bricklink_api as api
 from os.path import abspath
+from os.path import exists
 from os import listdir
 from json import load
+
+global list_dict
+list_pict = listdir(abspath('./ressources/pictures'))
+
+
+
 
 class ITEM:
 
@@ -48,8 +55,6 @@ class ITEM:
 
     def exist_picture(self, itemid, color, image):
         filename = "id" + itemid + "color" + str(color) + ".jpg"
-        path = abspath('./ressources/pictures')
-        list_pict = listdir(path)
         if image == filename:
             return image
         else:

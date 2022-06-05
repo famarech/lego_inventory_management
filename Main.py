@@ -18,5 +18,4 @@ from os.path import abspath
 
 
 
-inventaire = INVENTAIRE(abspath('essai.csv'))
-print(inventaire.prix_total())
+inventaire = INVENTAIRE(abspath('./ressources/exemples/essai.csv'))
