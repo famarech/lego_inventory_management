@@ -20,8 +20,8 @@ all = [f_1, f_2, f_3, f_4, f_5, f_6, f_7, f_8, f_9]
 # for a in all:
 #     inv = INVENTAIRE(a, 'blk', 'inv')
 
-# inv1 = INVENTAIRE(f_1, 'blk', 'inv') #ok
-# inv2 = INVENTAIRE(f_2, 'blk', 'inv') #ok mais ultra long
+inv1 = INVENTAIRE(f_1, 'blk', 'inv') #ok
+# inv2 = INVENTAIRE(f_2, 'blk', 'inv') #ok
 # inv3 = INVENTAIRE(f_3, 'blk', 'inv') # ok
 # inv4 = INVENTAIRE(f_4, 'blk', 'set') #ok
 # inv5 = INVENTAIRE(f_5, 'blk', 'set') #ok
@@ -29,5 +29,8 @@ all = [f_1, f_2, f_3, f_4, f_5, f_6, f_7, f_8, f_9]
 # inv7 = INVENTAIRE(f_7, 'pyth', 'impression') # a faire
 # inv8 = INVENTAIRE(f_8, 'pyth', 'inv') #pose certains problemes conversion int et str
 # inv9 = INVENTAIRE(f_9, 'user', 'inv') #ok
+inv1.afficher()
+inv1.upload()
+inv1.printing()
 
 

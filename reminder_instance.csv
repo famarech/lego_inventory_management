@@ -1,0 +1,53 @@
+		fonctionne	oui, sauf que datelastsold est forcé à la valeur string ‘15’, car il y a un probleme de NoneType, et dans la fonction loading, il n’y a pas encore de distinction avec from_blk_inv_tab_txt	oui, mais dans la fonction loading, il n’y a pas encore de distinction avec from_blk_inv_tab_txt									
+		def	from_blk_inv_xml_txt(path)	from_blk_inv_tab_txt(path)									
+		from	blk	blk	blk	blk	blk	pyth		pyth	pyth	user	
+		type	inv	inv	inv	set	set	upload		impression	inv	inv	
+		separator	xml balise	tab	coma	xml balise	tab	xml balise		html balise	semicolon	semicolon	
+		extension	txt	txt	csv	xml	txt	txt		html	csv	csv	
+	class ITEM	Possibles values	from_blk_inv_xml_txt	from_blk_inv_tab_txt	from_blk_inv_coma_csv	from_blk_set_xml	from_blk_set_txt	from_pyth_upload_xml_txt	required for upload	from_pyth_impression_html	from_inv_semicolon_csv	from_user_semicolon_csv	get_category
+0	lotid	empty	0	0	0						0		
+1	datedded	empty	1	26	26						1		
+2	categoryid	le chiffre de la category	2					0	X		2		parts.json
+3	colorid	only number, not float	3			3	4	1	X		3		color.json
+4	price		4	7	7			2	X		4		
+5	qty		5	8	8	2	3	3	X		5	1	
+6	bulk	1 what is it ?	6	9	9						6		
+7	urlimage	Not available or filename	7	11	11						7		exists_pict
+8	description	concatenate of box/column/row		trop de chose mélangée, colorname, itemidname, itemcategoryname,…	trop de chose mélangée, colorname, itemidname, itemcategoryname,…				X		8		
+9	condition	U = Used , N = New, …	9	3	3			4	X		9		Si vide forcer à U
+10	itemtype	P = Parts, M = Minifigure, ….	10	2[0]	2[0]	0		5	X		10		Si vide forcer à P
+11	itemid		11	12	12	1		6	X		11	0	
+12	salediscount		12	10	10						12		
+13	stockroom	Y	13	20	20			7	X		13		
+14	weight		14	24	24						14		parts.json
+15	datelastsold		15	27	27						15		
+16	currency	€	16	28	28						16		
+17	categorynamefull			2[1:]	2[1:]						17 et 18		parts.json
+18	categoryname1												categories.json
+19	categoryname2												categories.json
+20	categoryname3												categories.json
+21	categoryname4												categories.json
+22	colorname			1	1						19	2	colors.json
+23	colornrgb												colors.json
+24	colortype												colors.json
+25	subcondition			4	4								
+26	remarks			6	6								
+27	tier_qty1			13	13								
+28	tier_price1			14	14								
+29	tier_qty2			15	15								
+30	tier_price2			16	16								
+31	tier_qty3			17	17								
+32	tier_price3			18	18								
+33	reservedfor			19	19								
+34	retain			21	21								
+35	superlotid			22	22								
+36	superlotqty			23	23								
+37	extendeddescription			25	25								
+38	itemtypename						2				20		itemtypes.json
+39	itemidname										21		parts.json
+40	dimx										25		parts.json
+41	dimy										26		parts.json
+42	dimz										27		parts.json
+43	box		8[ :-2]	5[ :-2]	5[ :-2]			8[ :-2]	X in description		22	3	
+44	row		8[-1]	5[-2]	5[-2]			8[-1]	X in description		24	5	
+45	column		8[-2]	5[-1]	5[-1]			8[-2]	X in description		23	4	

@@ -1,21 +1,14 @@
-revoir le principe de sauvegarde
-avec pour les operations longues des sauvegardes temporaires en ecriture 'a' dans le dossier temporaire avec pour nom de fichier la date et l'heure d'enregistrement
-pour les sauvegardes standard, ecriture en w dans un dossier et avec un nom de son choix
-class inventaire, devrait peut-être contenir le nom de fichier d'origine ? pour le principe de sauvegarde ?
-
-à l'instar de readmodule, faire un write module
+write module en cours
+sauvegarde en continue lors de get_price à faire en mode a
 
 
 
-
-intégrer les tier price etc dans les variable d'instance de la class ITEM
+revision complete des variable d'instance de ITEM en fonction du fichier reminder_instance.csv
 
 
 dans les fonction du loading ne reste que la fonction depuis impression
 trouver solution pour longueur de chargement (fonction get_category et exist_picture)
-faire un dessin recap des types exemples, de leur nom, des fonctions associés, ...
-faire un dessin recap des instances de ITEM et de leur correspondance dans les exemples associés
 verifier de quel type doivent être chaque attribut de la class ITEM (int, str, float)
 toujours des problems de . et de , de points et de virgiles pour price et weight et dimensions
 de manière générale, il va falloir faire le ménage dans les variables/fichiers/instances qui s'appelle 'item'
-attention, certaines instances de ITEM doivent être forcés en fonction des types d'import pour faire fonctionner des fonctions du types get_price, il va falloir fair ela chasse
+attention, certaines instances de ITEM doivent être forcés en fonction des types d'import pour faire fonctionner des fonctions du types get_price, il va falloir fair la chasse

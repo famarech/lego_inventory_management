@@ -34,9 +34,13 @@ def from_blk_inv_xml_txt(file):
         tab.append(ITEM(row[0], row[1], row[2], row[3], row[4],
                         row[5], row[6], row[7], '', row[9],
                         row[10], row[11], row[12], row[13], row[14],
-                        row[15], row[16], '', '', '',
-                        '', '', (' ').join(place[:-2]), place[-2], place[-1],
-                        '', '', ''))
+                        '15', row[16], '', '', '',
+                        '', '', '', '', '',
+                        '', '', '', '', '',
+                        '', '', '', '', '',
+                        '', '', '', '', '',
+                        '', '', '', (' ').join(place[:-2]), place[-2],
+                        place[-1]))
     return tab
 
 def from_blk_inv_tab_txt(file):
@@ -45,14 +49,22 @@ def from_blk_inv_tab_txt(file):
         data = csv.reader(csvfile, delimiter='\t')
         for i, row in enumerate(data):
             if i > 1:
-                a = row[5].split()
-                c = row[7].replace('€', '')
-                tab.append(ITEM(row[0], row[26], row[2], '', c,
-                                    row[8], row[9], '', (' ').join(a[:-3]), row[3],
-                                    '', row[12], row[10], row[20], row[24],
-                                    row[27], row[28], '', '', row[1],
-                                    '', '', (' ').join(a[-4:-2]), a[-2], a[-1],
-                                    '', '', ''))
+                place = row[5].split()
+                price = row[7].replace('€', '')
+                p1 = row[14].replace('€', '')
+                p2 = row[16].replace('€', '')
+                p3 = row[18].replace('€', '')
+                cat = row[2].split()
+                tab.append(ITEM(row[0], row[26], '', '', price,
+                                row[8], row[9], row[11], '', row[3],
+                                cat[0], row[12], row[10], row[20], row[24],
+                                row[27], row[28], (' ').join(cat[2:]), '', '',
+                                '', '', row[1], '', '',
+                                row[4], row[6], row[13], p1, row[15],
+                                p2, row[17], p3, row[19], row[21],
+                                row[22], row[23], row[25], '', '',
+                                '', '', '', (' ').join(place[-4:-2]), place[-2],
+                                place[-1]))
     return tab
 
 def from_blk_coma_csv(file):
