@@ -24,7 +24,7 @@ class ITEM:
                                             "Category ID",
                                             itemid,
                                             "parts")
-        self.color = color
+        self.color = self.check_color(color, colorname)
         self.price = price.replace('.',',')
         self.qty = qty.replace('.',',')
         self.bulk = bulk
@@ -36,34 +36,51 @@ class ITEM:
         self.sale = sale
         self.stockroom = stockroom
         self.weight = self.get_category("Number",
-                                            "weight",
-                                            itemid,
-                                            "parts").replace('.',',')
+                                        "weight",
+                                        itemid,
+                                        "parts").replace('.',',')
         self.datelastsold = datelastsold
         self.basecurrencycode = basecurrencycode
         self.categoryname = self.get_category("categoryid",
-                                                "categoryname",
-                                                category,
-                                                "categories")
+                                            "categoryname",
+                                            category,
+                                            "categories")
         self.categorynameunder = categorynameunder
         self.colorname = self.get_category("colorid",
-                                                "colorname",
-                                                color,
-                                                "colors")
+                                            "colorname",
+                                            color,
+                                            "colors")
         self.itemtypename = self.get_category("itemtypeid",
                                             "itemtypename",
                                             itemtype,
                                             "itemtypes")
         self.itemidname = self.get_category("Number",
-                                                "Name",
-                                                itemid,
-                                                "parts")
+                                            "Name",
+                                            itemid,
+                                            "parts")
         self.box = box
         self.row = row
         self.column = column
-        self.dimensionx = dimensionx.replace('.',',')
-        self.dimensiony = dimensiony.replace('.',',')
-        self.dimensionz = dimensionz.replace('.',',')
+        self.dimensionx =  self.get_category("Number",
+                                            "DimensionX",
+                                            itemid,
+                                            "parts")
+        self.dimensiony = self.get_category("Number",
+                                            "DimensionY",
+                                            itemid,
+                                            "parts")
+        self.dimensionz = self.get_category("Number",
+                                            "DimensionZ",
+                                            itemid,
+                                            "parts")
+
+    def check_color(self, color, colorname):
+        if color == '':
+            color = self.get_category("colorname",
+                                        "colorid",
+                                        colorname,
+                                        "colors")
+        return color
 
     def exist_picture(self, itemid, color, image):
         filename = "id" + itemid + "color" + str(color) + ".jpg"
@@ -84,24 +101,24 @@ class ITEM:
         return f"{hardy} Not Available"
 
     def afficher(self):
-        print(f"{self.itemid} : {self.color} : {self.qty} : {self.price}€" +\
+        print(f"{self.itemid} : {self.color} : {self.qty} : {self.price}€ " +\
                 f"dans {self.box} : {self.row}{self.column}")
 
-    def prix_total(self):
+    def price_total(self):
         a = float(self.price.replace(',','.'))
         b = float(self.qty.replace(',','.'))
         return round(a * b, 2)
 
-    def poid_total(self):
+    def weight_total(self):
         # en grammes
-        a = float(self.itemweight.replace(',','.'))
+        a = float(self.weight.replace(',','.'))
         b = float(self.qty.replace(',','.'))
         return round(a * b, 2)
 
     def sauvegarder_format_csv(self):
         a = str(self.price).replace('.',',')
         b = str(self.qty).replace('.',',')
-        c = str(self.itemweight).replace('.',',')
+        c = str(self.weight).replace('.',',')
         content = self.lotid + ";" +\
                 self.dateadded + ";" +\
                 self.category + ";" +\
@@ -151,7 +168,7 @@ class ITEM:
                     "\t\t<BULK>" + self.bulk + "</BULK>\n" +\
                     "\t\t<IMAGE>" + self.image + "</IMAGE>\n" +\
                     "\t\t<SALE>" + self.sale + "</SALE>\n" +\
-                    "\t\t<ITEMWEIGHT>" + self.itemweight + "</ITEMWEIGHT>\n" +\
+                    "\t\t<ITEMWEIGHT>" + self.weight + "</ITEMWEIGHT>\n" +\
                     "\t\t<DATELASTSOLD>" + self.datelastsold + "</DATELASTSOLD>\n" +\
                     "\t\t<BASECURRENCYCODE>" + self.basecurrencycode + "</BASECURRENCYCODE>\n"
         content = content + required #+ not_required

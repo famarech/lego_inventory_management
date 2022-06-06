@@ -29,10 +29,10 @@ class INVENTAIRE:
         self.type = type
         self.tab = loading(path, where_from, type, self.filename, self.extension)
 
-        self.prix = self.prix_total()
-        self.poid = self.poid_total()
+        self.price = self.price_total()
+        self.weight = self.weight_total()
         self.qty = self.qty_total()
-        self.prix_par_piece = self.prix / self.qty
+        self.price_par_piece = self.price / self.qty
 
 
 
@@ -41,16 +41,16 @@ class INVENTAIRE:
         for item in self.tab:
             item.afficher()
 
-    def prix_total(self):
+    def price_total(self):
         somme = 0
         for item in self.tab:
-            somme = somme + item.prix_total()
+            somme = somme + item.price_total()
         return somme
 
-    def poid_total(self):
+    def weight_total(self):
         somme = 0
         for item in self.tab:
-            somme = somme + item.poid_total()
+            somme = somme + item.weight_total()
         somme = somme / 1000
         return somme
 
@@ -86,7 +86,8 @@ class INVENTAIRE:
         index = 1
         for i in range(0, len(self.tab), PAQUET):
             partition = self.tab[i:(i+PAQUET)]
-            content = "<INVENTORY>\n"
+            content = '<?xml version="1.0" encoding="UTF-8"?>' +\
+                        "<INVENTORY>\n"
             for item in partition:
                 content = content + item.transform_to_upload_bricklink_xml()
             content = content + "</INVENTORY>"
@@ -130,7 +131,7 @@ class INVENTAIRE:
         size = len(self.tab)
         time_per_item = 1
         finish = localtime(time() + (time_per_item * size))
-        print("fin de la recherche de prix estimé à :\n" +\
+        print("fin de la recherche de price estimé à :\n" +\
                 f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n")
         for item in self.tab:
             item.get_price()

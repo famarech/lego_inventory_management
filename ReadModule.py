@@ -1,12 +1,11 @@
-import xml.etree.ElementTree as ET
-import csv
+from ClassItemModule import ITEM
 from os.path import abspath
 from os.path import splitext
 from os.path import split
-from ClassItemModule import ITEM
+import xml.etree.ElementTree as ET
+import csv
 from json import load
 from time import time
-
 
 
 
@@ -29,36 +28,6 @@ def get_category(laurel, hardy, value, file):
 
 
 
-
-def from_blk_set_txt(file):
-    tab = []
-    with open(file, encoding="utf-8", newline='') as csvfile:
-        data = csv.reader(csvfile.readlines()[2:], delimiter='\t')
-        for row in data:
-            # row[6] est ALTERNATE, faut-il le décompter ?
-            if row[8] == "N" and row[5] == "N" and row[0] == "P":
-                tab.append(ITEM('', '', '', row[4], '',
-                                row[3], '', '', '', '',
-                                row[0], row[1], '', '', '',
-                                '', '', '', '', '',
-                                row[2], '', '', '', '',
-                                '', '', ''))
-    return tab
-
-def from_blk_set_xml(file):
-    tree = ET.parse(file)
-    root = tree.getroot()
-    tab = []
-    for item in root:
-        # item[5].text est ALTERNATE, faut-il le décompter ?
-        if item[7].text == "N" and item[4].text == "N" and item[0].text == "P":
-            tab.append(ITEM('', '', '', item[3].text, '',
-                            item[2].text, '', '', '', '',
-                            item[0].text, item[1].text, '', '', '',
-                            '', '', '', '', '',
-                            '', '', '', '', '',
-                            '', '', ''))
-    return tab
 
 def from_blk_inv_xml_txt(file):
     tree = ET.parse(file)
@@ -84,10 +53,8 @@ def from_blk_inv_tab_txt(file):
         for i, row in enumerate(data):
             if i > 1:
                 a = row[5].split()
-                b = get_category("colorname", "colorid", row[1], "colors")
-                # c'est cette variable b qui provoque le ralentissement
-                c = row[7].replace('â‚¬', '')
-                tab.append(ITEM(row[0], row[26], row[2], b, c,
+                c = row[7].replace('€', '')
+                tab.append(ITEM(row[0], row[26], row[2], '', c,
                                     row[8], row[9], '', (' ').join(a[:-3]), row[3],
                                     '', row[12], row[10], row[20], row[24],
                                     row[27], row[28], '', '', row[1],
@@ -95,17 +62,15 @@ def from_blk_inv_tab_txt(file):
                                     '', '', ''))
     return tab
 
-def from_blk_semicolon_csv(file):
+def from_blk_coma_csv(file):
     tab = []
     with open(file, encoding="utf-8", newline='') as csvfile:
         data = csv.reader(csvfile, delimiter=',')
         for i, row in enumerate(data):
             if i > 1:
                 a = row[5].split()
-                b = get_category("colorname", "colorid", row[1], "colors")
-                # c'est cette variable b qui provoque le ralentissement
-                c = row[7].replace('â‚¬', '')
-                tab.append(ITEM(row[0], row[26], row[2], b, c,
+                c = row[7].replace('€', '')
+                tab.append(ITEM(row[0], row[26], row[2], '', c,
                                     row[8], row[9], '', (' ').join(a[:-3]), row[3],
                                     '', row[12], row[10], row[20], row[24],
                                     row[27], row[28], '', '', row[1],
@@ -113,10 +78,62 @@ def from_blk_semicolon_csv(file):
                                     '', '', ''))
     return tab
 
-def from_pyth_semicolon_csv(file):
+def from_blk_set_xml(file):
+    tree = ET.parse(file)
+    root = tree.getroot()
+    tab = []
+    for item in root:
+        # item[5].text est ALTERNATE, faut-il le décompter ?
+        if item[7].text == "N" and item[4].text == "N" and item[0].text == "P":
+            tab.append(ITEM('', '', '', item[3].text, '',
+                            item[2].text, '', '', '', '',
+                            item[0].text, item[1].text, '', '', '',
+                            '', '', '', '', '',
+                            '', '', '', '', '',
+                            '', '', ''))
+    return tab
+
+def from_blk_set_txt(file):
     tab = []
     with open(file, encoding="utf-8", newline='') as csvfile:
-        data = csv.reader(csvfile.readlines()[:1], delimiter=';', quotechar=' ')
+        data = csv.reader(csvfile.readlines()[2:], delimiter='\t')
+        for row in data:
+            # row[6] est ALTERNATE, faut-il le décompter ?
+            if row[8] == "N" and row[5] == "N" and row[0] == "P":
+                tab.append(ITEM('', '', '', row[4], '',
+                                row[3], '', '', '', '',
+                                row[0], row[1], '', '', '',
+                                '', '', '', '', '',
+                                row[2], '', '', '', '',
+                                '', '', ''))
+    return tab
+
+def from_pyth_inv_xml_txt(file):
+    tree = ET.parse(file)
+    root = tree.getroot()
+    tab = []
+    for item in root:
+        row = []
+        for param in item:
+            row.append(param.text)
+        place = row[8].split()
+        tab.append(ITEM('', '', row[0], row[1], row[2],
+                        row[3], '', '', '', row[4],
+                        row[5], row[6], '', row[7], '',
+                        '', '', '', '', '',
+                        '', '', (' ').join(place[:-2]), place[-2], place[-1],
+                        '', '', ''))
+    return tab
+
+def from_pyth_html(path)
+    tab = []
+    # a faire
+    return tab
+
+def from_pyth_inv_semicolon_csv(file):
+    tab = []
+    with open(file, encoding="utf-8", newline='') as csvfile:
+        data = csv.reader(csvfile.readlines()[1:], delimiter=';', quotechar=' ')
         for row in data:
             tab.append(ITEM(row[0], row[1], row[2], row[3], row[4],
                                 row[5], row[6], row[7], row[8], row[9],
@@ -126,6 +143,18 @@ def from_pyth_semicolon_csv(file):
                                 row[25], row[26], row[27]))
     return tab
 
+def from_user_inv_semicolon_csv(file):
+    tab = []
+    with open(file, encoding="utf-8", newline='') as csvfile:
+        data = csv.reader(csvfile.readlines()[1:], delimiter=';', quotechar=' ')
+        for row in data:
+            tab.append(ITEM('', '', '', '', '0,00',
+                                row[1], '', '', '', '',
+                                '', row[0], '', '', '',
+                                '', '', '', '', row[2],
+                                '', '', row[3], row[4], row[5],
+                                '', '', ''))
+    return tab
 
 
 
@@ -145,7 +174,7 @@ def loading(path, where_from, type, filename, extension):
                 except:
                     tab = from_blk_inv_tab_txt(path)
             elif extension == '.csv':
-                tab = from_blk_semicolon_csv(path)
+                tab = from_blk_coma_csv(path)
         elif type == 'set':
             if extension == '.xml':
                 tab = from_blk_set_xml(path)
@@ -153,13 +182,14 @@ def loading(path, where_from, type, filename, extension):
                 tab = from_blk_set_txt(path)
     elif where_from == 'pyth':
         if type == 'inv' or type == 'upload':
-            # if extension == '.txt':
-            #     tab = from_blk_inv_xml_txt(path)
-            # el
-            if extension == '.csv':
-                tab = from_pyth_semicolon_csv(path)
+            if extension == '.txt':
+                tab = from_pyth_inv_xml_txt(path)
+            elif extension == '.csv':
+                tab = from_pyth_inv_semicolon_csv(path)
         # elif type == 'impression':
-    # elif where_from == 'user':
+            # tab = from_pyth_html(path)
+    elif where_from == 'user':
+        tab = from_user_inv_semicolon_csv(path)
     else:
         print("format non reconnu\n\t\t\tABANDON\n")
         exit()
@@ -169,4 +199,4 @@ def loading(path, where_from, type, filename, extension):
         delta = round(finish - start, 2)
         print("chargement terminé\n" +\
                 f"{len(tab)} references en {delta} secondes.\n")
-    return extension
+    return tab
