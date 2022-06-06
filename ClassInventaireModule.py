@@ -1,6 +1,7 @@
 from ClassItemModule import ITEM
 from ReadModule import loading
 from ReadModule import get_extension
+import WriteModule as write
 from os.path import abspath
 from time import time
 from time import localtime
@@ -38,8 +39,10 @@ class INVENTAIRE:
 
 
     def afficher(self):
+        print(f"Inventaire : {self.filename} ===\n")
         for item in self.tab:
             item.afficher()
+        print("\n\n\n")
 
     def price_total(self):
         somme = 0
@@ -63,83 +66,48 @@ class INVENTAIRE:
 
 
 
-    def sauvegarder_csv(self, path_destination):
-        # d'abord faire une sauvegarde du fichier avec un nom temporaire
-        # enregistrer le fichier à chaque reference avec le time dans le nom de fichier ("a")
-        # enfin ecraser le fichier source
-        file_in = open(path_destination, "w")
-        content = ";".join(label) + '\n'
-        file_in.write(content)
-        for item in self.tab:
-            content = item.sauvegarder_format_csv()
-            file_in.write(content)
-        file_in.close()
+    def sauvegarder(self, path_destination):
+        path = path_destination + '\\' + self.filename + '.csv'
+        write.save(self.tab, path, "w")
+        print("Inventaire sauvegardé !!!")
+
+    def upload(self):
+        write.transform_to_upload_blk_xml(self.tab, self.filename)
+
+    def printing(self):
+        write.transform_to_impression_html(self.tab, self.filename)
+        print("Inventaire printé en html !!!")
 
     def fusionner(self, inventory_to_add):
         # !!!! ATTENTION !!!! met à jour l'objet actuel d'origine avec un nouvel inventaire
         # inventory_to_add est l'inventaire à ajouter à l'objet actuel
         for item in inventory_to_add.tab:
             self.tab.append(item)
-
-    def transform_to_upload_bricklink_xml(self):
-        PAQUET = 500 #nombre max autorisé par Bricklink
-        index = 1
-        for i in range(0, len(self.tab), PAQUET):
-            partition = self.tab[i:(i+PAQUET)]
-            content = '<?xml version="1.0" encoding="UTF-8"?>' +\
-                        "<INVENTORY>\n"
-            for item in partition:
-                content = content + item.transform_to_upload_bricklink_xml()
-            content = content + "</INVENTORY>"
-            path = abspath('./ressources/uploads') + "/upload(" + str(index) + ").txt"
-            index += 1
-            file_in = open(path, "w")
-            file_in.write(content)
-        print(f"creation des fichiers terminées, {index - 1} fichier(s) produit(s)\n")
-
-    def transform_to_impression_html(self, number):
-        content = '<!DOCTYPE html>\n\n' +\
-                    '<html>\n\n' +\
-                    '\t<head>\n' +\
-                    '\t\t<title> Impression </title>\n' +\
-                    '\t\t<meta charset="utf-8"/>\n' +\
-                    '\t\t<link href="style_html.css" rel="stylesheet">\n' +\
-                    '\t\t<!-- commentaires -->\n' +\
-                    '\t</head>\n\n' +\
-                    '\t<body>\n' +\
-                    '\t\t<div class="title">\n' +\
-                    '\t\t\t<p>IMAGE</p>\n' +\
-                    '\t\t\t<p>ITEMID</p>\n' +\
-                    '\t\t\t<p>ITEMIDNAME</p>\n' +\
-                    '\t\t\t<p>COLOR</p>\n' +\
-                    '\t\t\t<p>COLORNAME</p>\n' +\
-                    '\t\t\t<p>QTY</p>\n' +\
-                    '\t\t\t<p>BOX</p>\n' +\
-                    '\t\t\t<p>ROW</p>\n' +\
-                    '\t\t\t<p>COLUMN</p>\n' +\
-                    '\t\t</div>\n'
-        index = 1
-        for item in self.tab:
-            content = content + item.transform_to_impression_html(index)
-            index += 1
-        content = content + "\t</body>\n\n</html>"
-        path = abspath('./ressources/printables') + "/printable(" + str(number + 1) + ").html"
-        file_in = open(path, "w")
-        file_in.write(content)
+        filename = '/' + self.filename + '_' +\
+                    inventory_to_add.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+        print(f"l'inventaire '''{inventory_to_add.filename}''' " +\
+                f"fusionné dans l'Inventaire '''{self.filename}'''\n\n")
 
     def get_price(self):
         size = len(self.tab)
         time_per_item = 1
         finish = localtime(time() + (time_per_item * size))
-        print("fin de la recherche de price estimé à :\n" +\
-                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n")
+        print("fin de la recherche de prix estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
         for item in self.tab:
             item.get_price()
-        # path = abspath('./ressources/save_temp/inventory_temp_hh_mm_ss.csv')
-        # self.sauvegarder(path)
-
-    def get_picture(self):
-        return 0
+        filename = '/' + self.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+        print(f"\t\tFin de la Recherche de Prix de l'inventaire {self.filename}\n\n")
 
     # def compare(self):
         #comparer deux inventaire pour trouver l'un dans l'autre

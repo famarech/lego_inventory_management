@@ -1,4 +1,5 @@
 from ClassItemModule import ITEM
+from WriteModule import save
 from os.path import abspath
 from os.path import splitext
 from os.path import split
@@ -6,6 +7,7 @@ import xml.etree.ElementTree as ET
 import csv
 from json import load
 from time import time
+from time import localtime
 
 
 
@@ -16,15 +18,6 @@ def get_extension(path):
     return [head + '\\',
             tail[:tail.index('.')],
             extension]
-
-def get_category(laurel, hardy, value, file):
-    file = abspath('./ressources/' + file + '.json')
-    with open(file) as mon_fichier:
-        data = load(mon_fichier)
-    for d in data:
-        if d[laurel] == value:
-            return d[hardy]
-    return f"{hardy} Not Available"
 
 
 
@@ -125,7 +118,7 @@ def from_pyth_inv_xml_txt(file):
                         '', '', ''))
     return tab
 
-def from_pyth_html(path)
+def from_pyth_html(path):
     tab = []
     # a faire
     return tab
@@ -148,9 +141,9 @@ def from_user_inv_semicolon_csv(file):
     with open(file, encoding="utf-8", newline='') as csvfile:
         data = csv.reader(csvfile.readlines()[1:], delimiter=';', quotechar=' ')
         for row in data:
-            tab.append(ITEM('', '', '', '', '0,00',
+            tab.append(ITEM('0', '', '', '', '0,00',
                                 row[1], '', '', '', '',
-                                '', row[0], '', '', '',
+                                'P', row[0], '', '', '',
                                 '', '', '', '', row[2],
                                 '', '', row[3], row[4], row[5],
                                 '', '', ''))
@@ -199,4 +192,11 @@ def loading(path, where_from, type, filename, extension):
         delta = round(finish - start, 2)
         print("chargement terminé\n" +\
                 f"{len(tab)} references en {delta} secondes.\n")
+
+    filename = '/' + filename + '_' +\
+                str(localtime().tm_hour) +\
+                str(localtime().tm_min) +\
+                str(localtime().tm_sec) + '_temp.csv'
+    path = abspath('./ressources/save_temp')
+    save(tab, path + filename, "w")
     return tab

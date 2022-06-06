@@ -41,14 +41,14 @@ class ITEM:
                                         "parts").replace('.',',')
         self.datelastsold = datelastsold
         self.basecurrencycode = basecurrencycode
-        self.categoryname = self.get_category("categoryid",
-                                            "categoryname",
+        self.categoryname = self.get_category("Number",
+                                            "Category Name",
                                             category,
-                                            "categories")
+                                            "parts")
         self.categorynameunder = categorynameunder
         self.colorname = self.get_category("colorid",
                                             "colorname",
-                                            color,
+                                            int(color),
                                             "colors")
         self.itemtypename = self.get_category("itemtypeid",
                                             "itemtypename",
@@ -80,7 +80,7 @@ class ITEM:
                                         "colorid",
                                         colorname,
                                         "colors")
-        return color
+        return str(color)
 
     def exist_picture(self, itemid, color, image):
         filename = "id" + itemid + "color" + str(color) + ".jpg"
@@ -97,7 +97,7 @@ class ITEM:
             data = load(mon_fichier)
         for d in data:
             if d[laurel] == value:
-                return d[hardy]
+                return str(d[hardy])
         return f"{hardy} Not Available"
 
     def afficher(self):
@@ -149,7 +149,7 @@ class ITEM:
                 self.dimensionz + '\n'
         return content
 
-    def transform_to_upload_bricklink_xml(self):
+    def transform_to_upload_blk_xml(self):
         a = self.price.replace(',','.')
         b = self.box + ' ' + self.row + ' ' + self.column
         # attention la quantité ne doit pas être nulle
@@ -205,6 +205,3 @@ class ITEM:
                                                     int(self.color),
                                                     new_or_used= self.condition)
         self.price = (json_obj['data']['avg_price']).replace('.', ',')
-
-    def get_picture(self):
-        return 0
