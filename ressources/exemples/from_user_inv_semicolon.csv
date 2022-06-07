@@ -1,10 +1,10 @@
-ITEMID;QTY;COLORNAME;BOX;COLUMN;ROW
-4176;21;White;black box;A;1
-63864;6;White;Bleue;B;2
-6037;1;Tan;Etagere Indigo;C;3
-6565;2;Tan;Grand Gris;B;4
-3938;1;Tan;Grand Noir;I;2
-30041;2;Tan;indigo;A;2
-30042;2;Tan;indigo;A;2
-4185;1;Tan;Malette Noire;A;1
-32269;3;Tan;Malette Noire;A;1
+"ITEMID";"QTY";"COLORNAME";"BOX";"ROW";"COLUMN"
+4176;21;"White";"blackbox";"A";4
+63864;6;"White";"Bleue";"B";5
+6037;1;"Tan";"EtagereIndigo";"C";3
+6565;2;"Tan";"GrandGris";"B";4
+3938;1;"Black";"GrandNoir";"I";2
+30041;2;"Tan";"indigo";"A";2
+30042;2;"Dark Bluish Gray";"indigo";"A";2
+4185;1;"Yellow";"MaletteNoire";"A";1
+32269;3;"Red";"MaletteNoire";"A";1

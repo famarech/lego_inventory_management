@@ -55,15 +55,15 @@ class ITEM:
         self.categoryname4 = categoryname4
         self.colorname = self.get_category("colorid",
                                             "colorname",
-                                            colorid,
+                                            self.colorid,
                                             "colors")
         self.colorrgb = self.get_category("colorid",
                                             "rgb",
-                                            colorid,
+                                            self.colorid,
                                             "colors")
         self.colortype = self.get_category("colorid",
                                             "type",
-                                            colorid,
+                                            self.colorid,
                                             "colors")
         self.subcondition = subcondition
         self.remarks = remarks
@@ -192,15 +192,14 @@ class ITEM:
                 c + ";" +\
                 self.datelastsold + ";" +\
                 self.currency + ";" +\
-                self.categorynamefull + ";" +\
+                self.categorynamefull + ';' +\
                 self.categoryname1 + ";" +\
                 self.categoryname2 + ";" +\
                 self.categoryname3 + ";" +\
                 self.categoryname4 + ";" +\
                 self.colorname + ";" +\
-                self.colorrgb + ";" +\
+                '#' + self.colorrgb + ";" +\
                 self.colortype + ";" +\
-                self.itemtypename + ";" +\
                 self.subcondition + ";" +\
                 self.remarks + ";" +\
                 self.tierqty1 + ";" +\
@@ -218,7 +217,7 @@ class ITEM:
                 self.itemidname + ";" +\
                 self.dimensionx + ";" +\
                 self.dimensiony + ";" +\
-                self.dimensionz +\
+                self.dimensionz  + ";" +\
                 self.box + ";" +\
                 self.row + ";" +\
                 self.column + ";" + '\n'
@@ -227,6 +226,8 @@ class ITEM:
     def transform_to_upload_blk_xml(self):
         a = self.price.replace(',','.')
         b = self.box + ' ' + self.row + ' ' + self.column
+        if b == '  ':
+            b=''
         # attention la quantité ne doit pas être nulle
         content = "\t<ITEM>\n"
         required = "\t\t<CATEGORY>" + self.categoryid + "</CATEGORY>\n" +\
@@ -236,13 +237,13 @@ class ITEM:
                     "\t\t<CONDITION>" + self.condition + "</CONDITION>\n" +\
                     "\t\t<ITEMTYPE>" + self.itemtype + "</ITEMTYPE>\n" +\
                     "\t\t<ITEMID>" + self.itemid + "</ITEMID>\n" +\
-                    "\t\t<STOCKROOM>" + self.stockroom + "</STOCKROOM>\n" +\
                     "\t\t<DESCRIPTION>" + b + "</DESCRIPTION>\n"
         not_required = "\t\t<LOTID>" + self.lotid + "</LOTID>\n" +\
                     "\t\t<DATEADDED>" + self.dateadded + "</DATEADDED>\n" +\
                     "\t\t<BULK>" + self.bulk + "</BULK>\n" +\
                     "\t\t<IMAGE>" + self.urlimage + "</IMAGE>\n" +\
                     "\t\t<SALE>" + self.salediscount + "</SALE>\n" +\
+                    "\t\t<STOCKROOM>" + self.stockroom + "</STOCKROOM>\n" +\
                     "\t\t<ITEMWEIGHT>" + self.weight + "</ITEMWEIGHT>\n" +\
                     "\t\t<DATELASTSOLD>" + self.datelastsold + "</DATELASTSOLD>\n" +\
                     "\t\t<BASECURRENCYCODE>" + self.currency + "</BASECURRENCYCODE>\n"

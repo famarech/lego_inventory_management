@@ -1,7 +1,5 @@
 from os.path import abspath
 
-
-#
 # après des grosses opérations (recherche de prix par exemple)
 # à chaque item qui met à jour son prix,
 # faire une sauvegarde dans un nouveau dossier temporaire avec la fonction save_temp()
@@ -14,11 +12,14 @@ from os.path import abspath
 global label
 label = ["LOTID","DATEADDED", "CATEGORY", "COLOR", "PRICE",
         "QTY", "BULK", "IMAGE", "DESCRIPTION", "CONDITION",
-        "ITEMTYPE", "ITEMID", "SALE", "STOCKROOM", "ITEMWEIGHT",
-        "DATELASTSOLD", "BASECURRENCYCODE", "CATEGORYNAME", "CATEGORYNAMEUNDER", "COLORNAME",
-        "ITEMTYPENAME", "ITEMIDNAME", "BOX", "COLUMN", "ROW",
-        "DIMENSIONX", "DIMENSIONY", "DIMENSIONZ"]
-
+        "ITEMTYPE", "ITEMID", "SALE", "STOCKROOM", "WEIGHT",
+        "DATELASTSOLD", "CURRENCY", "CATEGORYNAME", "CATNAME1", "CATNAME2",
+        "CATNAME3", "CATNAME4", "COLORNAME", "RGB", "COLORTYPE",
+        "SUBCONDITION", "REMARKS", "TIERQTY1", "TIERPRICE1", "TIERQTY2",
+        "TIERPRICE2", "TIERQTY3", "TIERPRICE3", "RESERVEDFOR", "RETAIN",
+        "SUPERLOTID", "SUPERLOTQTY", "EXTDESCRIPTION", "ITEMTYPENAME", "ITEMIDNAME",
+        "DIMENSIONX", "DIMENSIONY", "DIMENSIONZ", "BOX", "COLUMN",
+        "ROW"]
 
 
 

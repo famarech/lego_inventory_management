@@ -1,9 +1,14 @@
 write module en cours
 sauvegarde en continue lors de get_price à faire en mode a
 
+faire une focntion qui vérifie que chaque item dans un inventaire n'as pas de quantité nulle
+que faire en conséquence ? supprimer automatiquement? renvoyé les ref concernés ?
+
+faire une autre fonction qui empeche l'upload d'items dont les prix sont de zero et les quantité nulle
+
+trouver solution pour categoryidnameunder1 2 3 et 4
 
 
-revision complete des variable d'instance de ITEM en fonction du fichier reminder_instance.csv
 
 
 dans les fonction du loading ne reste que la fonction depuis impression

@@ -15,4 +15,5 @@ mdp.json
 *.spec
 *.swp
 *.exe
+.~lock.*
 /ressources/save_temp/*_temp.csv

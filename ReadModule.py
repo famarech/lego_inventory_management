@@ -43,10 +43,10 @@ def from_blk_inv_xml_txt(file):
                         place[-1]))
     return tab
 
-def from_blk_inv_tab_txt(file):
+def from_blk_inv_csv(file, delimiter_type):
     tab = []
     with open(file, encoding="utf-8", newline='') as csvfile:
-        data = csv.reader(csvfile, delimiter='\t')
+        data = csv.reader(csvfile, delimiter= delimiter_type)
         for i, row in enumerate(data):
             if i > 1:
                 place = row[5].split()
@@ -55,9 +55,10 @@ def from_blk_inv_tab_txt(file):
                 p2 = row[16].replace('€', '')
                 p3 = row[18].replace('€', '')
                 cat = row[2].split()
+                s = row[10].replace('%', '')
                 tab.append(ITEM(row[0], row[26], '', '', price,
                                 row[8], row[9], row[11], '', row[3],
-                                cat[0], row[12], row[10], row[20], row[24],
+                                cat[0], row[12], s, row[20], row[24],
                                 row[27], row[28], (' ').join(cat[2:]), '', '',
                                 '', '', row[1], '', '',
                                 row[4], row[6], row[13], p1, row[15],
@@ -67,22 +68,6 @@ def from_blk_inv_tab_txt(file):
                                 place[-1]))
     return tab
 
-def from_blk_coma_csv(file):
-    tab = []
-    with open(file, encoding="utf-8", newline='') as csvfile:
-        data = csv.reader(csvfile, delimiter=',')
-        for i, row in enumerate(data):
-            if i > 1:
-                a = row[5].split()
-                c = row[7].replace('€', '')
-                tab.append(ITEM(row[0], row[26], row[2], '', c,
-                                    row[8], row[9], '', (' ').join(a[:-3]), row[3],
-                                    '', row[12], row[10], row[20], row[24],
-                                    row[27], row[28], '', '', row[1],
-                                    '', '', (' ').join(a[-4:-2]), a[-2], a[-1],
-                                    '', '', ''))
-    return tab
-
 def from_blk_set_xml(file):
     tree = ET.parse(file)
     root = tree.getroot()
@@ -90,12 +75,16 @@ def from_blk_set_xml(file):
     for item in root:
         # item[5].text est ALTERNATE, faut-il le décompter ?
         if item[7].text == "N" and item[4].text == "N" and item[0].text == "P":
-            tab.append(ITEM('', '', '', item[3].text, '',
+            tab.append(ITEM('', '', '', item[3].text, '0.00',
                             item[2].text, '', '', '', '',
                             item[0].text, item[1].text, '', '', '',
                             '', '', '', '', '',
                             '', '', '', '', '',
-                            '', '', ''))
+                            '', '', '', '', '',
+                            '', '', '', '', '',
+                            '', '', '', '', '',
+                            '', '', '', '', '',
+                            ''))
     return tab
 
 def from_blk_set_txt(file):
@@ -105,15 +94,19 @@ def from_blk_set_txt(file):
         for row in data:
             # row[6] est ALTERNATE, faut-il le décompter ?
             if row[8] == "N" and row[5] == "N" and row[0] == "P":
-                tab.append(ITEM('', '', '', row[4], '',
+                tab.append(ITEM('', '', '', row[4], '0.00',
                                 row[3], '', '', '', '',
                                 row[0], row[1], '', '', '',
                                 '', '', '', '', '',
-                                row[2], '', '', '', '',
-                                '', '', ''))
+                                '', '', '', '', '',
+                                '', '', '', '', '',
+                                '', '', '', '', '',
+                                '', '', '', '', row[2],
+                                '', '', '', '', '',
+                                ''))
     return tab
 
-def from_pyth_inv_xml_txt(file):
+def from_pyth_upload_xml_txt(file):
     tree = ET.parse(file)
     root = tree.getroot()
     tab = []
@@ -122,12 +115,20 @@ def from_pyth_inv_xml_txt(file):
         for param in item:
             row.append(param.text)
         place = row[8].split()
+        if row[7] == '':
+            st = row[7]
+        else :
+            st = ' '
         tab.append(ITEM('', '', row[0], row[1], row[2],
                         row[3], '', '', '', row[4],
-                        row[5], row[6], '', row[7], '',
+                        row[5], row[6], '', st, '',
                         '', '', '', '', '',
-                        '', '', (' ').join(place[:-2]), place[-2], place[-1],
-                        '', '', ''))
+                        '', '', '', '', '',
+                        '', '', '', '', '',
+                        '', '', '', '', '',
+                        '', '', '', '', '',
+                        '', '', '', (' ').join(place[:-2]), place[-2],
+                        place[-1]))
     return tab
 
 def from_pyth_html(path):
@@ -140,25 +141,35 @@ def from_pyth_inv_semicolon_csv(file):
     with open(file, encoding="utf-8", newline='') as csvfile:
         data = csv.reader(csvfile.readlines()[1:], delimiter=';', quotechar=' ')
         for row in data:
+            print(len(row))
+            print(row)
             tab.append(ITEM(row[0], row[1], row[2], row[3], row[4],
-                                row[5], row[6], row[7], row[8], row[9],
-                                row[10], row[11], row[12], row[13], row[14],
-                                row[15], row[16], row[17], row[18], row[19],
-                                row[10], row[21], row[22], row[23], row[24],
-                                row[25], row[26], row[27]))
+                            row[5], row[6], row[7], row[8], row[9],
+                            row[10], row[11], row[12], row[13], row[14],
+                            row[15], row[16], row[17], row[18], row[19],
+                            row[10], row[21], row[22], row[23], row[24],
+                            row[25], row[26], row[27], row[28], row[29],
+                            row[30], row[31], row[32], row[33], row[34],
+                            row[35], row[36], row[37], row[38], row[39],
+                            row[40], row[41], row[42], row[43], row[44],
+                            row[45]))
     return tab
 
 def from_user_inv_semicolon_csv(file):
     tab = []
     with open(file, encoding="utf-8", newline='') as csvfile:
-        data = csv.reader(csvfile.readlines()[1:], delimiter=';', quotechar=' ')
+        data = csv.reader(csvfile.readlines()[1:], delimiter=';')
         for row in data:
-            tab.append(ITEM('0', '', '', '', '0,00',
-                                row[1], '', '', '', '',
-                                'P', row[0], '', '', '',
-                                '', '', '', '', row[2],
-                                '', '', row[3], row[4], row[5],
-                                '', '', ''))
+            tab.append(ITEM('', '', '', '', '0,00',
+                            row[1], '', '', '', '',
+                            'P', row[0], '', '', '',
+                            '', '', '', '', '',
+                            '', '', row[2], '', '',
+                            '', '', '', '', '',
+                            '', '', '', '', '',
+                            '', '', '', '', '',
+                            '', '', '', row[3], row[4],
+                            row[5]))
     return tab
 
 
@@ -177,19 +188,18 @@ def loading(path, where_from, type, filename, extension):
                 try:
                     tab = from_blk_inv_xml_txt(path)
                 except:
-                    tab = from_blk_inv_tab_txt(path)
+                    tab = from_blk_inv_csv(path, '\t')
             elif extension == '.csv':
-                tab = from_blk_coma_csv(path)
+                tab = from_blk_inv_csv(path, ',')
         elif type == 'set':
             if extension == '.xml':
                 tab = from_blk_set_xml(path)
             elif extension == '.txt':
                 tab = from_blk_set_txt(path)
     elif where_from == 'pyth':
-        if type == 'inv' or type == 'upload':
-            if extension == '.txt':
-                tab = from_pyth_inv_xml_txt(path)
-            elif extension == '.csv':
+        if type == 'upload':
+            tab = from_pyth_upload_xml_txt(path)
+        elif type == 'inv':
                 tab = from_pyth_inv_semicolon_csv(path)
         # elif type == 'impression':
             # tab = from_pyth_html(path)
