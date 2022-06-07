@@ -55,7 +55,7 @@ def transform_to_impression_html(tab, filename):
     content = '<!DOCTYPE html>\n\n' +\
                 '<html>\n\n' +\
                 '\t<head>\n' +\
-                '\t\t<title> Impression </title>\n' +\
+                '\t\t<title>' + filename + '</title>\n' +\
                 '\t\t<meta charset="utf-8"/>\n' +\
                 '\t\t<link href="style_html.css" rel="stylesheet">\n' +\
                 '\t\t<!-- commentaires -->\n' +\

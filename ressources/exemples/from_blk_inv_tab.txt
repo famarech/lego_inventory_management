@@ -1,7 +1,12 @@
 Lot ID	Color	Category	Condition	Sub-Condition	Description	Remarks	Price	Quantity	Bulk	Sale	URL	Item No	Tier Qty 1	Tier Price 1	Tier Qty 2	Tier Price 2	Tier Qty 3	Tier Price 3	Reserved For	Stockroom	Retain	Super Lot ID	Super Lot Qty	Weight	Extended Description	Date Added	Date Last Sold	Currency
 
-278027840	Black	Parts / Dish	Used		Black Dish 8 x 8 Inverted &#40;Radar&#41; - Solid Studs indigo A 2		€18.71	2	1	0%		3961	0	€0.00	0	€0.00	0	€0.00		Yes	No			4.57		1/5/2022		EUR
-278027841	Black	Parts / Door	Used		Black Door 1 x 4 x 5 Right with 6 Panes Grand Gris B 6		€17.20	1	1	0%		73312	0	€0.00	0	€0.00	0	€0.00		Yes	No			4		1/5/2022		EUR
-278027842	Black	Parts / Slope	Used		Black Slope 45 3 x 4 Double / 33 Etagere Indigo C 1		€16.13	1	1	0%		4861	0	€0.00	0	€0.00	0	€0.00		Yes	No			2		1/5/2022		EUR
-278027843	Yellow	Parts / Plate, Modified	Used		Yellow Plate, Modified 1 x 2 with Long Stud Receptacle (Space Wing) Grand Noir F 1		€16.12	1	1	0%		4596	0	€0.00	0	€0.00	0	€0.00		Yes	No			1		1/5/2022		EUR
-278027844	Black	Parts / Electric, Battery Box	Used		Black Electric 9V Battery Box Small Assembly Malette Noir A 1		€14.55	1	1	0%		4760c01	0	€0.00	0	€0.00	0	€0.00		Yes	No			18		1/5/2022		EUR
+278027968	Black	Parts / Technic, Connector	Used		Black Technic, Pin Connector Perpendicular 2 x 2 Bent Grand Noir B 3		€1.78	4	1	0%		44809	0	€0.00	0	€0.00	0	€0.00		Yes	No			0.5		1/5/2022		EUR
+278032628	White	Parts / Technic, Panel, Decorated	Used		White Technic, Panel Fairing #22 Very Small Smooth, Side A with 'CONTAINER SERVICE' Pattern &#40;Sticker&#41; - Set 42062 casier bleue clair G 3		€0.01	1	1	0%		11947pb048	0	€0.00	0	€0.00	0	€0.00		Yes	No			1.43		1/5/2022		EUR
+278032629	Dark Bluish Gray	Parts / Door, Frame	Used		Dark Bluish Gray Door, Frame 2 x 8 x 6 Swivel with Bottom Notches indigo A 2		€0.01	3	1	0%		30101	0	€0.00	0	€0.00	0	€0.00		Yes	No			7.08		1/5/2022		EUR
+278032630	Light Bluish Gray	Parts / Aircraft	Used		Light Bluish Gray Helicopter Sled Rails 12 x 6 indigo A 2		€0.01	1	1	0%		30248	0	€0.00	0	€0.00	0	€0.00		Yes	No			5.39		1/5/2022		EUR
+278028117	Trans-Clear	Parts / Window, Glass & Shutter, Decorated	Used		Trans-Clear Glass for Window 1 x 4 x 6 with Dragon Head and Black Chinese Logogram  40;Dragon God41; Pattern Bleue H 4		€0.93	1	1	0%		57895pb008	0	€0.00	0	€0.00	0	€0.00		Yes	No			2.66		1/5/2022		EUR
+278028118	Green	Parts / Brick	Used		Green Brick 8 x 16 Etagere Grise A 1		€0.93	16	1	0%		4204	0	€0.00	0	€0.00	0	€0.00		Yes	No			30.66		1/5/2022		EUR
+278028119	Red	Parts / Technic	Used		Red Technic Driving Ring 2L Orange 1 F 2		€0.93	1	1	0%		6539	0	€0.00	0	€0.00	0	€0.00		Yes	No			1.19		1/5/2022		EUR
+278028120	Blue	Parts / Plate	Used		Blue Plate 6 x 12 Etagere Aubergine A 5		€0.93	1	1	0%		3028	0	€0.00	0	€0.00	0	€0.00		Yes	No			9.47		1/5/2022		EUR
+278028121	Dark Gray	Parts / Support	Used		Dark Gray Support 2 x 2 x 10 Girder Triangular Vertical - Type 1 - Solid Top, 3 Posts indigo A 2		€0.93	1	1	0%		30517	0	€0.00	0	€0.00	0	€0.00		Yes	No			6.79		1/5/2022		EUR
+278028122	Trans-Clear	Parts / Window, Glass & Shutter, Decorated	Used		Trans-Clear Glass for Window 1 x 4 x 6 with Dragon Tail and Black Chinese Logogram  40;Dragon God41; Pattern Bleue H 4		€0.92	1	1	0%		57895pb009	0	€0.00	0	€0.00	0	€0.00		Yes	No			2.66		1/5/2022		EUR

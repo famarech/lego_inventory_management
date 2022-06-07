@@ -10,7 +10,7 @@ trouver solution pour categoryidnameunder1 2 3 et 4
 
 
 
-
+module readmodule, deux fonctions ne marche pas, from_blk_inv_csv à cause des fichiers from_blk_inv_xml.txt et from_blk_inv_coma.csv
 dans les fonction du loading ne reste que la fonction depuis impression
 trouver solution pour longueur de chargement (fonction get_category et exist_picture)
 verifier de quel type doivent être chaque attribut de la class ITEM (int, str, float)

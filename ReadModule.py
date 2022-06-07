@@ -114,14 +114,10 @@ def from_pyth_upload_xml_txt(file):
         row = []
         for param in item:
             row.append(param.text)
-        place = row[8].split()
-        if row[7] == '':
-            st = row[7]
-        else :
-            st = ' '
+        place = row[7].split()
         tab.append(ITEM('', '', row[0], row[1], row[2],
                         row[3], '', '', '', row[4],
-                        row[5], row[6], '', st, '',
+                        row[5], row[6], '', ' ', '',
                         '', '', '', '', '',
                         '', '', '', '', '',
                         '', '', '', '', '',
@@ -141,8 +137,6 @@ def from_pyth_inv_semicolon_csv(file):
     with open(file, encoding="utf-8", newline='') as csvfile:
         data = csv.reader(csvfile.readlines()[1:], delimiter=';', quotechar=' ')
         for row in data:
-            print(len(row))
-            print(row)
             tab.append(ITEM(row[0], row[1], row[2], row[3], row[4],
                             row[5], row[6], row[7], row[8], row[9],
                             row[10], row[11], row[12], row[13], row[14],

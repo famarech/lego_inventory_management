@@ -1,9 +1,11 @@
 LOTID;DATEADDED;CATEGORY;COLOR;PRICE;QTY;BULK;IMAGE;DESCRIPTION;CONDITION;ITEMTYPE;ITEMID;SALE;STOCKROOM;WEIGHT;DATELASTSOLD;CURRENCY;CATEGORYNAME;CATNAME1;CATNAME2;CATNAME3;CATNAME4;COLORNAME;RGB;COLORTYPE;SUBCONDITION;REMARKS;TIERQTY1;TIERPRICE1;TIERQTY2;TIERPRICE2;TIERQTY3;TIERPRICE3;RESERVEDFOR;RETAIN;SUPERLOTID;SUPERLOTQTY;EXTDESCRIPTION;ITEMTYPENAME;ITEMIDNAME;DIMENSIONX;DIMENSIONY;DIMENSIONZ;BOX;COLUMN;ROW
-;;38;1;1,00;2;;Not Available;;U;P;2555;;;0,22;;;Category Name Not Available;;;;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Tile, Modified 1 x 1 with Clip;1;1;0;grande etagere grise;A;1;
-;;27;1;0,09;2;;Not Available;;U;P;4085d;;;0,29;;;Window;;;;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Plate, Modified 1 x 1 with Open O Clip Thick (Vertical Grip);?;?;?;Indigo;B;1;
-;;38;1;0,01;2;;Not Available;;U;P;2412b;;;0,23;;;Category Name Not Available;;;;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Tile, Modified 1 x 2 Grille with Bottom Groove / Lip;1;2;0;truc machin chose bidule;C;1;
-;;8;3;0,01;1;;Not Available;;U;P;3062b;;;0,28;;;Plate, Modified;;;;;Yellow;#FFE001;Solid;;;;;;;;;;;;;;Part;Brick, Round 1 x 1 Open Stud;1;1;1;truc;A;3;
-;;27;3;1,00;2;;Not Available;;U;P;3794;;;0,3;;;Window;;;;;Yellow;#FFE001;Solid;;;;;;;;;;;;;;Part;Plate, Modified 1 x 2 with 1 Stud, Jumper (Undetermined Type);1;2;0;;A;3;
-;;107;3;0,01;1;;Not Available;;U;P;4599b;;;0,21;;;Category Name Not Available;;;;;Yellow;#FFE001;Solid;;;;;;;;;;;;;;Part;Tap 1 x 1 without Hole in Nozzle End;?;?;?;grande etagere grise;A;1;
-;;111;11;1,9;4;;Not Available;;U;P;87697;;;1,98;;;Category Name Not Available;;;;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Tire 21mm D. x 12mm - Offset Tread Small Wide, Band Around Center of Tread;?;?;?;grande etagere grise;A;2;
-;;18;11;0,01;1;;Not Available;;U;P;30031;;;0,33;;;Category Name Not Available;;;;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Minifigure, Utensil Handlebars;?;?;?;grande etagere grise;A;3;
+278028627;1/5/2022;85;1;0,39;3;1;Not Available;;U;P;1;0;Y;5,8;15;EUR;Category Name Not Available;;;;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Homemaker Bookcase 2 x 4 x 4;2;4;4;grand gris;C;1;
+278029806;1/5/2022;111;11;0,17;14;1;Not Available;;U;P;132old;0;Y;2;15;EUR;Category Name Not Available;;;;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Tire Smooth - Small Solid;?;?;?;Bleue;C;1;
+278029988;1/5/2022;85;1;0,16;1;1;Not Available;;U;P;2;0;Y;10,14;15;EUR;Category Name Not Available;;;;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Homemaker Cupboard 4 x 4 x 4;4;4;4;grand gris;C;1;
+278028263;1/5/2022;85;5;0,67;2;1;Not Available;;U;P;2;0;Y;10,14;15;EUR;Category Name Not Available;;;;;Red;#B30006;Solid;;;;;;;;;;;;;;Part;Homemaker Cupboard 4 x 4 x 4;4;4;4;grand gris;C;1;
+278028667;1/5/2022;85;7;0,37;2;1;Not Available;;U;P;2;0;Y;10,14;15;EUR;Category Name Not Available;;;;;Blue;#0057A6;Solid;;;;;;;;;;;;;;Part;Homemaker Cupboard 4 x 4 x 4;4;4;4;grand gris;C;1;
+278029985;1/5/2022;115;12;0,16;1;1;Not Available;;U;P;21;0;Y;2,14;15;EUR;Category Name Not Available;;;;;Trans-Clear;#EEEEEE;Transparent;;;;;;;;;;;;;;Part;Windscreen 2 x 4 x 1 2/3;2;4;1.67;casier bleue clair;H;3;
+278030272;1/5/2022;76;1;0,13;1;1;Not Available;;U;P;2335;0;Y;0,5;15;EUR;Category Name Not Available;;;;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Flag 2 x 2 Square;2;2;0;Grand Noir;C;5;
+278030550;1/5/2022;76;3;0,11;5;1;Not Available;;U;P;2335;0;Y;0,5;15;EUR;Category Name Not Available;;;;;Yellow;#FFE001;Solid;;;;;;;;;;;;;;Part;Flag 2 x 2 Square;2;2;0;Grand Noir;C;5;
+278030039;1/5/2022;76;5;0,15;3;1;Not Available;;U;P;2335;0;Y;0,5;15;EUR;Category Name Not Available;;;;;Red;#B30006;Solid;;;;;;;;;;;;;;Part;Flag 2 x 2 Square;2;2;0;Grand Noir;C;5;
+278029469;1/5/2022;76;7;0,21;4;1;Not Available;;U;P;2335;0;Y;0,5;15;EUR;Category Name Not Available;;;;;Blue;#0057A6;Solid;;;;;;;;;;;;;;Part;Flag 2 x 2 Square;2;2;0;Grand Noir;C;5;
