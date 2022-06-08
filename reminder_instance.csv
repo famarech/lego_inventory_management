@@ -1,53 +1,53 @@
-		"fonctionne"	"oui, sauf que datelastsold est forcé à la valeur string ‘15’, car il y a un probleme de NoneType, et dans la fonction loading, il n’y a pas encore de distinction avec from_blk_inv_tab_txt"	"non, probleme de carctere ??? a cause chinese logogram, et dans la fonction loading, il n’y a pas encore de distinction avec from_blk_inv_tab_txt"	"non, tourne en boucle, mais je ne sais pas pkoi, probleme chinese logogram ?"	"oui"	"oui"	"oui"			"oui"	"oui"	
-		"def read"	"from_blk_inv_xml_txt(path)"	"from_blk_inv_csv(path, '\t')"	"from_blk_inv_csv(path, ',')"	"from_blk_set_xml(path)"	"from_blk_set_txt(path)"	"from_pyth_upload_xml_txt(path)"			"from_pyth_inv_semicolon_csv(path)"	"from_user_inv_semicolon_csv(path)"	
-		"from"	"blk"	"blk"	"blk"	"blk"	"blk"	"pyth"		"pyth"	"pyth"	"user"	
-		"type"	"inv"	"inv"	"inv"	"set"	"set"	"upload"		"impression"	"inv"	"inv"	
-		"separator"	"xml balise"	"tab"	"coma"	"xml balise"	"tab"	"xml balise"		"html balise"	"semicolon"	"semicolon"	
-		"extension"	"txt"	"txt"	"csv"	"xml"	"txt"	"txt"		"html"	"csv"	"csv"	
-	"class ITEM"	"Possibles values"	"from_blk_inv_xml_txt"	"from_blk_inv_tab_txt"	"from_blk_inv_coma_csv"	"from_blk_set_xml"	"from_blk_set_txt"	"from_pyth_upload_xml_txt"	"required for upload"	"from_pyth_impression_html"	"from_inv_semicolon_csv"	"from_user_semicolon_csv"	"get_category"
-0	"lotid"	"empty"	0	0	0						0		
-1	"datedded"	"empty"	1	26	26						1		
-2	"categoryid"	"le chiffre de la category"	2					0	"X"		2		"parts.json"
-3	"colorid"	"only number, not float"	3			3	4	1	"X"		3		"color.json"
-4	"price"		4	7	7	"forcé à 0,00"	"forcé à 0,01"	2	"X"		4		
-5	"qty"		5	8	8	2	3	3	"X"		5	1	
-6	"bulk"	"1 what is it ?"	6	9	9						6		
-7	"urlimage"	"Not available or filename"	7	11	11						7		"exists_pict"
-8	"description"	"concatenate of box/column/row"		"trop de chose mélangée, colorname, itemidname, itemcategoryname,…"	"trop de chose mélangée, colorname, itemidname, itemcategoryname,…"				"X"		8		
-9	"condition"	"U = Used , N = New, …"	9	3	3			4	"X"		9		"Si vide forcer à U"
-10	"itemtype"	"P = Parts, M = Minifigure, …."	10	"2[0]"	"2[0]"	0	0	5	"X"		10	"forcé à ‘P’"	"Si vide forcer à P"
-11	"itemid"		11	12	12	1	1	6	"X"		11	0	
-12	"salediscount"		12	10	10						12		
-13	"stockroom"	"Y"	13	20	20			"forcé à ‘ ‘ espace"			13		
-14	"weight"		14	24	24						14		"parts.json"
-15	"datelastsold"		15	27	27						15		
-16	"currency"	"€"	16	28	28						16		
-17	"categorynamefull"			"2[1:]"	"2[1:]"						17		"parts.json"
-18	"categoryname1"										18		"categories.json"
-19	"categoryname2"										19		"categories.json"
-20	"categoryname3"										20		"categories.json"
-21	"categoryname4"										21		"categories.json"
-22	"colorname"			1	1						22	2	"colors.json"
-23	"colornrgb"										23		"colors.json"
-24	"colortype"										24		"colors.json"
-25	"subcondition"			4	4						25		
-26	"remarks"			6	6						26		
-27	"tier_qty1"			13	13						27		
-28	"tier_price1"			14	14						28		
-29	"tier_qty2"			15	15						29		
-30	"tier_price2"			16	16						30		
-31	"tier_qty3"			17	17						31		
-32	"tier_price3"			18	18						32		
-33	"reservedfor"			19	19						33		
-34	"retain"			21	21						34		
-35	"superlotid"			22	22						35		
-36	"superlotqty"			23	23						36		
-37	"extendeddescription"			25	25						37		
-38	"itemtypename"										38		"itemtypes.json"
-39	"itemidname"						2				39		"parts.json"
-40	"dimx"										40		"parts.json"
-41	"dimy"										41		"parts.json"
-42	"dimz"										42		"parts.json"
-43	"box"		"8[ :-2]"	"5[ :-2]"	"5[ :-2]"			"7[ :-2]"	"X in description"		43	3	
-44	"row"		"8[-1]"	"5[-2]"	"5[-2]"			"7[-1]"	"X in description"		44	4	
-45	"column"		"8[-2]"	"5[-1]"	"5[-1]"			"7[-2]"	"X in description"		45	5	
+;;"fonctionne";"oui, sauf que datelastsold est forcé à la valeur string ‘15’, car il y a un probleme de NoneType";"oui";"oui";"oui";"oui";"oui";;;"oui";"oui";
+;;"def read";"from_blk_inv_xml_txt(path)";"from_blk_inv_csv(path, '\t')";"from_blk_inv_csv(path, ',')";"from_blk_set_xml(path)";"from_blk_set_txt(path)";"from_pyth_upload_xml_txt(path)";;;"from_pyth_inv_semicolon_csv(path)";"from_user_inv_semicolon_csv(path)";
+;;"from";"blk";"blk";"blk";"blk";"blk";"pyth";;"pyth";"pyth";"user";
+;;"type";"inv";"inv";"inv";"set";"set";"upload";;"impression";"inv";"inv";
+;;"separator";"xml balise";"tab";"coma";"xml balise";"tab";"xml balise";;"html balise";"semicolon";"semicolon";
+;;"extension";"txt";"txt";"csv";"xml";"txt";"txt";;"html";"csv";"csv";
+;"class ITEM";"Possibles values";"from_blk_inv_xml_txt";"from_blk_inv_tab_txt";"from_blk_inv_coma_csv";"from_blk_set_xml";"from_blk_set_txt";"from_pyth_upload_xml_txt";"required for upload";"from_pyth_impression_html";"from_inv_semicolon_csv";"from_user_semicolon_csv";"get_category"
+0;"lotid";"empty";0;0;0;;;;;;0;;
+1;"datedded";"empty";1;26;26;;;;;;1;;
+2;"categoryid";"le chiffre de la category";2;;;;;0;"X";;2;;"parts.json"
+3;"colorid";"only number, not float";3;;;3;4;1;"X";;3;;"color.json"
+4;"price";;4;7;7;"forcé à 0,00";"forcé à 0,01";2;"X";;4;;
+5;"qty";;5;8;8;2;3;3;"X";;5;1;
+6;"bulk";"1 what is it ?";6;9;9;;;;;;6;;
+7;"urlimage";"Not available or filename";7;11;11;;;;;;7;;"exists_pict"
+8;"description";"concatenate of box/column/row";;"trop de chose mélangée, colorname, itemidname, itemcategoryname,…";"trop de chose mélangée, colorname, itemidname, itemcategoryname,…";;;;"X";;8;;
+9;"condition";"U = Used , N = New, …";9;3;3;;;4;"X";;9;;"Si vide forcer à U"
+10;"itemtype";"P = Parts, M = Minifigure, ….";10;"2[0]";"2[0]";0;0;5;"X";;10;"forcé à ‘P’";"Si vide forcer à P"
+11;"itemid";;11;12;12;1;1;6;"X";;11;0;
+12;"salediscount";;12;10;10;;;;;;12;;
+13;"stockroom";"Y";13;20;20;;;"forcé à ‘ ‘ espace";;;13;;
+14;"weight";;14;24;24;;;;;;14;;"parts.json"
+15;"datelastsold";;15;27;27;;;;;;15;;
+16;"currency";"€";16;28;28;;;;;;16;;
+17;"categorynamefull";;;"2[1:]";"2[1:]";;;;;;17;;"parts.json"
+18;"categoryname1";;;;;;;;;;18;;"categories.json"
+19;"categoryname2";;;;;;;;;;19;;"categories.json"
+20;"categoryname3";;;;;;;;;;20;;"categories.json"
+21;"categoryname4";;;;;;;;;;21;;"categories.json"
+22;"colorname";;;1;1;;;;;;22;2;"colors.json"
+23;"colornrgb";;;;;;;;;;23;;"colors.json"
+24;"colortype";;;;;;;;;;24;;"colors.json"
+25;"subcondition";;;4;4;;;;;;25;;
+26;"remarks";;;6;6;;;;;;26;;
+27;"tier_qty1";;;13;13;;;;;;27;;
+28;"tier_price1";;;14;14;;;;;;28;;
+29;"tier_qty2";;;15;15;;;;;;29;;
+30;"tier_price2";;;16;16;;;;;;30;;
+31;"tier_qty3";;;17;17;;;;;;31;;
+32;"tier_price3";;;18;18;;;;;;32;;
+33;"reservedfor";;;19;19;;;;;;33;;
+34;"retain";;;21;21;;;;;;34;;
+35;"superlotid";;;22;22;;;;;;35;;
+36;"superlotqty";;;23;23;;;;;;36;;
+37;"extendeddescription";;;25;25;;;;;;37;;
+38;"itemtypename";;;;;;;;;;38;;"itemtypes.json"
+39;"itemidname";;;;;;2;;;;39;;"parts.json"
+40;"dimx";;;;;;;;;;40;;"parts.json"
+41;"dimy";;;;;;;;;;41;;"parts.json"
+42;"dimz";;;;;;;;;;42;;"parts.json"
+43;"box";;"8[ :-2]";"5[ :-2]";"5[ :-2]";;;"7[ :-2]";"X in description";;43;3;
+44;"row";;"8[-1]";"5[-2]";"5[-2]";;;"7[-1]";"X in description";;44;4;
+45;"column";;"8[-2]";"5[-1]";"5[-1]";;;"7[-2]";"X in description";;45;5;

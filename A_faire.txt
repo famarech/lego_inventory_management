@@ -1,6 +1,11 @@
 write module en cours
 sauvegarde en continue lors de get_price à faire en mode a
 
+faire des fonctions de tri
+inv.sort(key=lambda obj: obj.color)
+inv.sort(key=lambda obj: obj.itemid) ... etc
+faire des tri avant sauvegarde final (pas besoin pour save_temp)
+
 faire une focntion qui vérifie que chaque item dans un inventaire n'as pas de quantité nulle
 que faire en conséquence ? supprimer automatiquement? renvoyé les ref concernés ?
 
@@ -9,8 +14,19 @@ faire une autre fonction qui empeche l'upload d'items dont les prix sont de zero
 trouver solution pour categoryidnameunder1 2 3 et 4
 
 
+faire une fonction re_definir_infos
+donc au premier chargement de l'inventaire, charger chaque item même avec des infos absentes depuis les fichiers
+et seulement avec cette fonction, permettre de completer les infos ou de les re_rechercher pour former un inventaire complet
+à la fin de cette fonction, save_temp
 
-module readmodule, deux fonctions ne marche pas, from_blk_inv_csv à cause des fichiers from_blk_inv_xml.txt et from_blk_inv_coma.csv
+fonction de recherche d'emplacement selon 2 criteres color et itemid
+confère Projet recherche Dichotomique
+pour permettre la recherche de ref d'un inventaire dans un autre (recherche pieces d'un set dans un inv)
+
+attention à la fonction get_category quand elle recherche un poid
+elle renvoie "weight Not Available" au lieu d'un poid nulle
+et cela pose probleme lors des calcul de poids total
+
 dans les fonction du loading ne reste que la fonction depuis impression
 trouver solution pour longueur de chargement (fonction get_category et exist_picture)
 verifier de quel type doivent être chaque attribut de la class ITEM (int, str, float)

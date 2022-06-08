@@ -147,7 +147,10 @@ class ITEM:
 
     def weight_total(self):
         # en grammes
-        a = float(self.weight.replace(',','.'))
+        if self.weight != 'weight Not Available':
+            a = float(self.weight.replace(',','.'))
+        else:
+            a = 0
         b = float(self.qty.replace(',','.'))
         return round(a * b, 2)
 
@@ -155,26 +158,6 @@ class ITEM:
         a = str(self.price).replace('.',',')
         b = str(self.qty).replace('.',',')
         c = str(self.weight).replace('.',',')
-        # print(type(self.lotid))
-        # print(type(self.dateadded))
-        # print(type(self.categoryid))
-        # print(type(a))
-        # print(type(b))
-        # print(type(c))
-        # print(type(self.bulk))
-        # print(type(self.urlimage))
-        # print(type(self.description))
-        # print(type(self.itemtype))
-        # print(type(self.itemid))
-        # print(type(self.salediscount))
-        # print(type(self.stockroom))
-        # print(type(self.datelastsold))
-        # print(type(self.currency))
-        # print(type(self.categorynamefull))
-        # print(type(self.colorname))
-        # print(type(self.itemtypename))
-        # print(type(self.itemidname))
-        # print(type(self.box))
         content = self.lotid + ";" +\
                 self.dateadded + ";" +\
                 self.categoryid + ";" +\

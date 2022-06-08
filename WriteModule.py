@@ -25,7 +25,7 @@ label = ["LOTID","DATEADDED", "CATEGORY", "COLOR", "PRICE",
 
 
 def save(tab, path, mode):
-    file_in = open(path, mode)
+    file_in = open(path, mode, encoding="utf-8")
     content = ";".join(label) + '\n'
     file_in.write(content)
     for item in tab:
@@ -47,7 +47,7 @@ def transform_to_upload_blk_xml(tab, filename):
         path = abspath('./ressources/uploads') + "/" +\
                         filename + "_upload(" + str(index) + ").txt"
         index += 1
-        file_in = open(path, "w")
+        file_in = open(path, "w", encoding="utf-8")
         file_in.write(content)
     print(f"creation des fichiers terminées, {index - 1} fichier(s) produit(s)\n")
 
@@ -79,5 +79,5 @@ def transform_to_impression_html(tab, filename):
     content = content + "\t</body>\n\n</html>"
     path = abspath('./ressources/printables') + "/" +\
                     filename + "_printable.html"
-    file_in = open(path, "w")
+    file_in = open(path, "w", encoding="utf-8")
     file_in.write(content)

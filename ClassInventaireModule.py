@@ -99,5 +99,50 @@ class INVENTAIRE:
         write.save(self.tab, path + filename, "w")
         print(f"\t\tFin de la Recherche de Prix de l'inventaire {self.filename}\n\n")
 
+    def find_in(self, inventory_in_wich):
+        # !!!! ATTENTION !!!! fait une recherche des items de l'inventaire self.tab
+        # dans inventory_in_wich qui est passé en parametre
+        print(f"Recherche des items de l'inventaire ''''{self.filename}''''\n"+
+                f"\tdans l'inventaire ''''{inventory_in_wich.filename}'''' ...\n\n")
+
+        inventory_in_wich.tab.sort(key=lambda obj: obj.colorid)
+        inventory_in_wich.tab.sort(key=lambda obj: obj.itemid)
+        for each in self.tab:
+            print(INVENTAIRE.trouve(inventory_in_wich.tab, each))
+
+
+
+    def trouve(inv, thing):
+        a = 0
+        z = len(inv)
+        mid = int(round(z/2, 0))
+        trouve = False
+        index = 1
+        if (thing.itemid + thing.colorid) == (inv[a].itemid + inv[a].colorid):
+            trouve = True
+            content = (f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
+                        f" : {inv[a].box} : {inv[a].column}{inv[a].row}\n")
+        while trouve == False:
+            if mid == a or mid == z:
+                content = (f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
+                            "\t\t\tn'existe pas a commander\n")
+                return content
+            if (thing.itemid + thing.colorid) == (inv[mid].itemid + inv[mid].colorid):
+                trouve = True
+                content = (f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
+                            f" : {inv[mid].box} : {inv[mid].column}{inv[mid].row}\n")
+            else:
+                if (thing.itemid + thing.colorid) > (inv[mid].itemid + inv[mid].colorid):
+                    a = mid
+                    mid += int(round((z-mid)/2, 0))
+                else:
+                    z = mid
+                    mid -= int(round((mid-a)/2, 0))
+        return content
+
+
+
+
+
     # def compare(self):
         #comparer deux inventaire pour trouver l'un dans l'autre
