@@ -1,0 +1,31 @@
+div {
+	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	border-bottom : 1px solid gray;
+	text-align : center;
+}
+
+p {
+	display: grid;
+}
+
+.pair {
+	background-color: #ddd;
+}
+
+.itemidname {
+	font-size : 12px;
+}
+
+.title {
+	background-color: #aaa;
+	font-weight : bold;
+	text-transform : uppercase;
+	border : solid 2px black;
+}
+
+img {
+	text-align : center;
+	max-width : 80px;
+	max-height : 80px;
+}

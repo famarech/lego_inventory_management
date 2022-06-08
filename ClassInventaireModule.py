@@ -107,10 +107,29 @@ class INVENTAIRE:
 
         inventory_in_wich.tab.sort(key=lambda obj: obj.colorid)
         inventory_in_wich.tab.sort(key=lambda obj: obj.itemid)
+        content = ''
+        index = 1
         for each in self.tab:
-            print(INVENTAIRE.trouve(inventory_in_wich.tab, each))
-
-
+            infos = INVENTAIRE.trouve(inventory_in_wich.tab, each)
+            index += 1
+            if (index % 2) == 0:
+                pair = "pair"
+            else:
+                pair = "impair"
+            content += '\t\t<div class="' + pair + '">\n' +\
+                        '\t\t\t<img src="' + '' + '">\n' +\
+                        '\t\t\t<p>' + str(infos[0]) + '</p>\n' +\
+                        '\t\t\t<p class="itemidname">' + '' + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[1]) + '</p>\n' +\
+                        '\t\t\t<p>' + '' + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[2]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[3]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[4]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[5]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[6]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[7]) + '</p>\n' +\
+                        '\t\t</div>\n'
+        write.recherche_impression_html(content, self.filename, inventory_in_wich.filename)
 
     def trouve(inv, thing):
         a = 0
@@ -120,17 +139,34 @@ class INVENTAIRE:
         index = 1
         if (thing.itemid + thing.colorid) == (inv[a].itemid + inv[a].colorid):
             trouve = True
-            content = (f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
-                        f" : {inv[a].box} : {inv[a].column}{inv[a].row}\n")
+            print(f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
+                        f" : {inv[a].box} : {inv[a].row}{inv[a].column}")
+            if int(inv[a].qty) > int(thing.qty):
+                q_command = 0
+            else:
+                q_command = int(thing.qty) - int(inv[a].qty)
+            content = [thing.itemidname, thing.colorname,
+                        thing.qty, inv[a].qty, q_command,
+                        inv[a].box, inv[a].row, inv[a].column]
         while trouve == False:
             if mid == a or mid == z:
-                content = (f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
-                            "\t\t\tn'existe pas a commander\n")
+                print(f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
+                            "\tn'existe pas a commander")
+                content = [thing.itemidname, thing.colorname,
+                            thing.qty, 0, thing.qty,
+                            '', '', '']
                 return content
             if (thing.itemid + thing.colorid) == (inv[mid].itemid + inv[mid].colorid):
                 trouve = True
-                content = (f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
-                            f" : {inv[mid].box} : {inv[mid].column}{inv[mid].row}\n")
+                print(f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
+                            f" : {inv[mid].box} : {inv[mid].row}{inv[mid].column}")
+                if int(inv[mid].qty) > int(thing.qty):
+                    q_command = 0
+                else:
+                    q_command = int(thing.qty) - int(inv[mid].qty)
+                content = [thing.itemidname, thing.colorname,
+                            thing.qty, inv[mid].qty, q_command,
+                            inv[mid].box, inv[mid].row, inv[mid].column]
             else:
                 if (thing.itemid + thing.colorid) > (inv[mid].itemid + inv[mid].colorid):
                     a = mid
