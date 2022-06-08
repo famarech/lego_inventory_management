@@ -1,14 +1,5 @@
 from os.path import abspath
 
-# après des grosses opérations (recherche de prix par exemple)
-# à chaque item qui met à jour son prix,
-# faire une sauvegarde dans un nouveau dossier temporaire avec la fonction save_temp()
-#
-# une fonction sauvegarde permet d'enregistrer l'inventaire dans un dossier au format souhaité
-# dans un dossier souhaité
-# soit pour upload, soit pour impression, soit pour bdd en csv
-# si pas de fichier spécifié, enregistrer dans ressources appropriés
-
 global label
 label = ["LOTID","DATEADDED", "CATEGORY", "COLOR", "PRICE",
         "QTY", "BULK", "IMAGE", "DESCRIPTION", "CONDITION",

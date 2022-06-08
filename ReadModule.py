@@ -77,7 +77,7 @@ def from_blk_set_xml(file):
         if item[7].text == "N" and item[4].text == "N" and item[0].text == "P":
             tab.append(ITEM('', '', '', item[3].text, '0.00',
                             item[2].text, '', '', '', '',
-                            item[0].text, item[1].text, '', '', '',
+                            item[0].text, item[1].text, '', '', '0',
                             '', '', '', '', '',
                             '', '', '', '', '',
                             '', '', '', '', '',
@@ -96,7 +96,7 @@ def from_blk_set_txt(file):
             if row[8] == "N" and row[5] == "N" and row[0] == "P":
                 tab.append(ITEM('', '', '', row[4], '0.00',
                                 row[3], '', '', '', '',
-                                row[0], row[1], '', '', '',
+                                row[0], row[1], '', '', '0',
                                 '', '', '', '', '',
                                 '', '', '', '', '',
                                 '', '', '', '', '',
@@ -117,7 +117,7 @@ def from_pyth_upload_xml_txt(file):
         place = row[7].split()
         tab.append(ITEM('', '', row[0], row[1], row[2],
                         row[3], '', '', '', row[4],
-                        row[5], row[6], '', ' ', '',
+                        row[5], row[6], '', ' ', '0',
                         '', '', '', '', '',
                         '', '', '', '', '',
                         '', '', '', '', '',
@@ -156,7 +156,7 @@ def from_user_inv_semicolon_csv(file):
         for row in data:
             tab.append(ITEM('', '', '', '', '0,00',
                             row[1], '', '', '', '',
-                            'P', row[0], '', '', '',
+                            'P', row[0], '', '', '0',
                             '', '', '', '', '',
                             '', '', row[2], '', '',
                             '', '', '', '', '',

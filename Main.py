@@ -21,8 +21,11 @@ f11 = abspath('essai2.csv')
 # inv = INVENTAIRE(f_5, 'blk', 'set') #ok
 # inv = INVENTAIRE(f_6, 'pyth', 'upload') #ok
 # inv = INVENTAIRE(f_7, 'pyth', 'impression') # a faire
-inv8 = INVENTAIRE(f_8, 'pyth', 'inv') #ok
+# inv8 = INVENTAIRE(f_8, 'pyth', 'inv') #ok
 # inv = INVENTAIRE(f_9, 'user', 'inv') #ok
 
-inv8.get_price()
-inv8.afficher()
+
+inv10 = INVENTAIRE(f10, 'user', 'inv')
+
+inv10.refresh_infos()
+inv10.afficher()

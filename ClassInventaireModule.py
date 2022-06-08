@@ -59,7 +59,7 @@ class INVENTAIRE:
         print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
         start = time()
         size = len(self.tab)
-        time_per_item = 4
+        time_per_item = 3.7
         finish = localtime(start + (time_per_item * size))
         print("fin du rafraichissement estimé à :\n" +\
                 f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")

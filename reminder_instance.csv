@@ -19,7 +19,7 @@
 11;"itemid";;11;12;12;1;1;6;"X";;11;0;
 12;"salediscount";;12;10;10;;;;;;12;;
 13;"stockroom";"Y";13;20;20;;;"forcé à ‘ ‘ espace";;;13;;
-14;"weight";;14;24;24;;;;;;14;;"parts.json"
+14;"weight";;14;24;24;"forcé à 0";"forcé à 0";"forcé à 0";;;14;"forcé à 0";"parts.json"
 15;"datelastsold";;15;27;27;;;;;;15;;
 16;"currency";"€";16;28;28;;;;;;16;;
 17;"categorynamefull";;;"2[1:]";"2[1:]";;;;;;17;;"parts.json"
