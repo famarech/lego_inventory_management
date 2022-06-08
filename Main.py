@@ -17,14 +17,11 @@ f11 = abspath('essai2.csv')
 # inv = INVENTAIRE(f_1, 'blk', 'inv') #ok
 # inv = INVENTAIRE(f_2, 'blk', 'inv') #ok
 # inv = INVENTAIRE(f_3, 'blk', 'inv') # ok
-inv4 = INVENTAIRE(f_4, 'blk', 'set') #ok
+# inv4 = INVENTAIRE(f_4, 'blk', 'set') #ok
 # inv = INVENTAIRE(f_5, 'blk', 'set') #ok
 # inv = INVENTAIRE(f_6, 'pyth', 'upload') #ok
 # inv = INVENTAIRE(f_7, 'pyth', 'impression') # a faire
 inv8 = INVENTAIRE(f_8, 'pyth', 'inv') #ok
 # inv = INVENTAIRE(f_9, 'user', 'inv') #ok
 
-inv4.afficher()
-inv8.afficher()
-
-inv4.find_in(inv8)
+inv8.refresh_infos()

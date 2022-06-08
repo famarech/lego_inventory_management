@@ -24,10 +24,7 @@ class ITEM:
                     column):
         self.lotid = lotid
         self.dateadded = dateadded
-        self.categoryid = self.get_category("Number",
-                                            "Category ID",
-                                            itemid,
-                                            "parts")
+        self.categoryid = categoryid
         self.colorid = self.check_color(colorid, colorname)
         self.price = price.replace('.',',')
         self.qty = qty.replace('.',',')
@@ -39,32 +36,17 @@ class ITEM:
         self.itemid = itemid
         self.salediscount = salediscount
         self.stockroom = 'Y' if stockroom == 'Yes' else stockroom
-        self.weight = self.get_category("Number",
-                                        "weight",
-                                        itemid,
-                                        "parts").replace('.',',')
+        self.weight = weight.replace('.',',')
         self.datelastsold = datelastsold
         self.currency = currency
-        self.categorynamefull = self.get_category("Number",
-                                            "Category Name",
-                                            categoryid,
-                                            "parts")
+        self.categorynamefull = categorynamefull
         self.categoryname1 = categoryname1
         self.categoryname2 = categoryname2
         self.categoryname3 = categoryname3
         self.categoryname4 = categoryname4
-        self.colorname = self.get_category("colorid",
-                                            "colorname",
-                                            self.colorid,
-                                            "colors")
-        self.colorrgb = self.get_category("colorid",
-                                            "rgb",
-                                            self.colorid,
-                                            "colors")
-        self.colortype = self.get_category("colorid",
-                                            "type",
-                                            self.colorid,
-                                            "colors")
+        self.colorname = colorname
+        self.colorrgb = colorrgb
+        self.colortype = colortype
         self.subcondition = subcondition
         self.remarks = remarks
         self.tierqty1 = tierqty1
@@ -78,26 +60,11 @@ class ITEM:
         self.superlotid = superlotid
         self.superlotqty = superlotqty
         self.extdescritpion = extdescription
-        self.itemtypename = self.get_category("itemtypeid",
-                                            "itemtypename",
-                                            itemtype,
-                                            "itemtypes")
-        self.itemidname = self.get_category("Number",
-                                            "Name",
-                                            itemid,
-                                            "parts")
-        self.dimensionx =  self.get_category("Number",
-                                            "DimensionX",
-                                            itemid,
-                                            "parts")
-        self.dimensiony = self.get_category("Number",
-                                            "DimensionY",
-                                            itemid,
-                                            "parts")
-        self.dimensionz = self.get_category("Number",
-                                            "DimensionZ",
-                                            itemid,
-                                            "parts")
+        self.itemtypename = itemtypename
+        self.itemidname = itemidname
+        self.dimensionx =  dimensionx
+        self.dimensiony = dimensiony
+        self.dimensionz = dimensionz
         self.box = box
         self.row = row
         self.column = column
@@ -135,6 +102,64 @@ class ITEM:
         if condition == "N" or condition == "New":
             return 'N'
         return 'U'
+
+    def refresh_infos(self):
+        self.categoryid = self.get_category("Number",
+                                            "Category ID",
+                                            self.itemid,
+                                            "parts")
+        self.weight = self.get_category("Number",
+                                        "weight",
+                                        self.itemid,
+                                        "parts").replace('.',',')
+        self.categorynamefull = self.get_category("Number",
+                                            "Category Name",
+                                            self.categoryid,
+                                            "parts")
+        # self.categoryname1 = categoryname1
+        # self.categoryname2 = categoryname2
+        # self.categoryname3 = categoryname3
+        # self.categoryname4 = categoryname4
+        self.colorname = self.get_category("colorid",
+                                            "colorname",
+                                            self.colorid,
+                                            "colors")
+        self.colorrgb = self.get_category("colorid",
+                                            "rgb",
+                                            self.colorid,
+                                            "colors")
+        self.colortype = self.get_category("colorid",
+                                            "type",
+                                            self.colorid,
+                                            "colors")
+        self.itemtypename = self.get_category("itemtypeid",
+                                            "itemtypename",
+                                            self.itemtype,
+                                            "itemtypes")
+        self.itemidname = self.get_category("Number",
+                                            "Name",
+                                            self.itemid,
+                                            "parts")
+        self.dimensionx =  self.get_category("Number",
+                                            "DimensionX",
+                                            self.itemid,
+                                            "parts")
+        self.dimensiony = self.get_category("Number",
+                                            "DimensionY",
+                                            self.itemid,
+                                            "parts")
+        self.dimensionz = self.get_category("Number",
+                                            "DimensionZ",
+                                            self.itemid,
+                                            "parts")
+
+
+
+
+
+
+
+
 
     def afficher(self):
         print(f"{self.itemid} : {self.colorid} : {self.qty} : {self.price}€ " +\
@@ -205,6 +230,10 @@ class ITEM:
                 self.row + ";" +\
                 self.column + ";" + '\n'
         return content
+
+
+
+
 
     def transform_to_upload_blk_xml(self):
         a = self.price.replace(',','.')

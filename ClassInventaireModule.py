@@ -25,6 +25,8 @@ class INVENTAIRE:
         self.qty = self.qty_total()
         self.price_par_piece = self.price / self.qty
 
+        self.afficher()
+
 
 
 
@@ -53,15 +55,45 @@ class INVENTAIRE:
             somme = somme + int(item.qty)
         return somme
 
-
+    def refresh_infos(self):
+        print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
+        start = time()
+        for item in self.tab:
+            item.refresh_infos()
+        filename = '/' + self.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+        delta = round(time() - start, 2)
+        print("\tRafraichissement terminé !!!\n" +\
+                f"{len(self.tab)} references en {delta} secondes.\n")
 
 
     def sauvegarder(self, path_destination):
         path = path_destination + '\\' + self.filename + '.csv'
+        self.tab.sort(key=lambda obj: obj.colorid)
+        self.tab.sort(key=lambda obj: obj.itemid)
+        self.tab.sort(key=lambda obj: obj.column)
+        self.tab.sort(key=lambda obj: obj.row)
+        self.tab.sort(key=lambda obj: obj.box)
+        # refresh
         write.save(self.tab, path, "w")
-        print("Inventaire sauvegardé !!!")
+        print("Inventaire sauvegardé !!!\n\n")
 
     def upload(self):
+        for item in self.tab:
+            print(item.price)
+            print(type(item.price))
+            print(item.qty)
+            print(type(item.qty))
+
+        index = len(self.tab) - 1
+        for item in reversed(self.tab):
+            if item.qty == '0' or float(item.price.replace(',','.')) == 0:
+                del self.tab[index]
+            index -= 1
         write.transform_to_upload_blk_xml(self.tab, self.filename)
 
     def printing(self):
@@ -130,6 +162,7 @@ class INVENTAIRE:
                         '\t\t\t<p>' + str(infos[7]) + '</p>\n' +\
                         '\t\t</div>\n'
         write.recherche_impression_html(content, self.filename, inventory_in_wich.filename)
+        print("Resultat converti en html.\n\n")
 
     def trouve(inv, thing):
         a = 0

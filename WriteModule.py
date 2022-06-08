@@ -86,7 +86,8 @@ def recherche_impression_html(content, filenameset, filenameinv):
     title = '<!DOCTYPE html>\n\n' +\
             '<html>\n\n' +\
             '\t<head>\n' +\
-            '\t\t<title>Recherche de ' + filenameset + ' dans ' + filenameinv + '</title>\n' +\
+            '\t\t<title>Recherche de ' + filenameset +\
+            ' dans ' + filenameinv + '</title>\n' +\
             '\t\t<meta charset="utf-8"/>\n' +\
             '\t\t<link href="style_recherche.css" rel="stylesheet">\n' +\
             '\t\t<!-- commentaires -->\n' +\
