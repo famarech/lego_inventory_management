@@ -24,4 +24,5 @@ f11 = abspath('essai2.csv')
 inv8 = INVENTAIRE(f_8, 'pyth', 'inv') #ok
 # inv = INVENTAIRE(f_9, 'user', 'inv') #ok
 
-inv8.refresh_infos()
+inv8.get_price()
+inv8.afficher()

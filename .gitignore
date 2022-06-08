@@ -17,3 +17,4 @@ mdp.json
 *.exe
 .~lock.*
 /ressources/save_temp/*_temp.csv
+/ressources/upload/*upload*.txt

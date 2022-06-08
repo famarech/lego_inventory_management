@@ -2,25 +2,6 @@ write module en cours
 sauvegarde en continue lors de get_price à faire en mode a
 
 
-
-penser à faire un refresh avant une sauvegarde forcé
-
-
-trouver solution pour categoryidnameunder1 2 3 et 4 et categorynamefull
-et aussi bien verifier itemtypename et category, faire le menage pour que ce soit bien clair
-
-
-
-
-
-attention à la fonction get_category quand elle recherche un poid
-elle renvoie "weight Not Available" au lieu d'un poid nulle
-et cela pose probleme lors des calcul de poids total
-
-
-
-
-
 tester la fonction refresh_infos sur chaque type d'exemple
 refaire la fonction impression_recherche pour une ecriture complete dans le WriteModule
 dans les fonction du loading ne reste que la fonction depuis impression

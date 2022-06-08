@@ -58,6 +58,11 @@ class INVENTAIRE:
     def refresh_infos(self):
         print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
         start = time()
+        size = len(self.tab)
+        time_per_item = 4
+        finish = localtime(start + (time_per_item * size))
+        print("fin du rafraichissement estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
         for item in self.tab:
             item.refresh_infos()
         filename = '/' + self.filename + '_' +\
@@ -78,9 +83,9 @@ class INVENTAIRE:
         self.tab.sort(key=lambda obj: obj.column)
         self.tab.sort(key=lambda obj: obj.row)
         self.tab.sort(key=lambda obj: obj.box)
-        # refresh
+        self.refresh_infos()
         write.save(self.tab, path, "w")
-        print("Inventaire sauvegardé !!!\n\n")
+        print("Inventaire trié et sauvegardé !!!\n\n")
 
     def upload(self):
         for item in self.tab:

@@ -70,6 +70,9 @@ class ITEM:
         self.column = column
 
 
+
+
+
     def check_color(self, colorid, colorname):
         if colorid == '':
             colorid = self.get_category("colorname",
@@ -108,18 +111,34 @@ class ITEM:
                                             "Category ID",
                                             self.itemid,
                                             "parts")
-        self.weight = self.get_category("Number",
-                                        "weight",
-                                        self.itemid,
-                                        "parts").replace('.',',')
+        w = self.get_category("Number",
+                            "weight",
+                            self.itemid,
+                            "parts").replace('.',',')
+        if w == "weight Not Available":
+            self.weight = '0'
+        else:
+            self.weight = w
         self.categorynamefull = self.get_category("Number",
                                             "Category Name",
-                                            self.categoryid,
+                                            self.itemid,
                                             "parts")
-        # self.categoryname1 = categoryname1
-        # self.categoryname2 = categoryname2
-        # self.categoryname3 = categoryname3
-        # self.categoryname4 = categoryname4
+        self.categoryname1 = self.get_category("Number",
+                                            "Category1",
+                                            self.itemid,
+                                            "parts")
+        self.categoryname2 = self.get_category("Number",
+                                            "Category2",
+                                            self.itemid,
+                                            "parts")
+        self.categoryname3 = self.get_category("Number",
+                                            "Category3",
+                                            self.itemid,
+                                            "parts")
+        self.categoryname4 = self.get_category("Number",
+                                            "Category4",
+                                            self.itemid,
+                                            "parts")
         self.colorname = self.get_category("colorid",
                                             "colorname",
                                             self.colorid,
@@ -153,14 +172,6 @@ class ITEM:
                                             self.itemid,
                                             "parts")
 
-
-
-
-
-
-
-
-
     def afficher(self):
         print(f"{self.itemid} : {self.colorid} : {self.qty} : {self.price}€ " +\
                 f"dans {self.box} : {self.row}{self.column}")
@@ -172,10 +183,7 @@ class ITEM:
 
     def weight_total(self):
         # en grammes
-        if self.weight != 'weight Not Available':
-            a = float(self.weight.replace(',','.'))
-        else:
-            a = 0
+        a = float(self.weight.replace(',','.'))
         b = float(self.qty.replace(',','.'))
         return round(a * b, 2)
 
@@ -231,10 +239,6 @@ class ITEM:
                 self.column + ";" + '\n'
         return content
 
-
-
-
-
     def transform_to_upload_blk_xml(self):
         a = self.price.replace(',','.')
         b = self.box + ' ' + self.row + ' ' + self.column
@@ -288,8 +292,15 @@ class ITEM:
     def get_price(self):
         if self.itemtype == 'P':
             type = 'Part'
+        else:
+            type = 'Part'
         json_obj = api.catalog_item.get_price_guide(type,
                                                     self.itemid,
                                                     int(self.colorid),
                                                     new_or_used= self.condition)
-        self.price = (json_obj['data']['avg_price']).replace('.', ',')
+        code = json_obj['meta']['code']
+        if code == 401:
+            print("Impossible de prendre les prix !!!\n" +\
+                    " --- !!! --- Erreur d'Authentification --- !!! --- \n\n\n")
+        elif code == 200:
+            self.price = (json_obj['data']['avg_price']).replace('.', ',')
