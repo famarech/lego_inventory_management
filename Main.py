@@ -2,6 +2,7 @@ from ClassInventaireModule import INVENTAIRE
 from ClassItemModule import ITEM
 from os.path import abspath
 
+
 f_1 = abspath('./ressources/exemples/from_blk_inv_xml.txt')
 f_2 = abspath('./ressources/exemples/from_blk_inv_tab.txt')
 f_3 = abspath('./ressources/exemples/from_blk_inv_coma.csv')
@@ -13,6 +14,7 @@ f_8 = abspath('./ressources/exemples/from_pyth_inv_semicolon.csv')
 f_9 = abspath('./ressources/exemples/from_user_inv_semicolon.csv')
 f10 = abspath('essai.csv')
 f11 = abspath('essai2.csv')
+f12 = abspath('Joseph.csv')
 
 # inv = INVENTAIRE(f_1, 'blk', 'inv') #ok
 # inv = INVENTAIRE(f_2, 'blk', 'inv') #ok
@@ -25,7 +27,5 @@ f11 = abspath('essai2.csv')
 # inv = INVENTAIRE(f_9, 'user', 'inv') #ok
 
 
-inv10 = INVENTAIRE(f10, 'user', 'inv')
-
-inv10.refresh_infos()
-inv10.afficher()
+inv12 = INVENTAIRE(f12, 'user', 'inv')
+inv12.get_picture()

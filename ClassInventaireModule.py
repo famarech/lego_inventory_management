@@ -2,6 +2,7 @@ from ClassItemModule import ITEM
 from ReadModule import loading
 from ReadModule import get_extension
 import WriteModule as write
+from BrickLinkModule import get_picture
 from os.path import abspath
 from time import time
 from time import localtime
@@ -214,7 +215,14 @@ class INVENTAIRE:
                     mid -= int(round((mid-a)/2, 0))
         return content
 
-
+    def get_picture(self):
+        start = time()
+        size = len(self.tab)
+        time_per_item = 8
+        finish = localtime(start + (time_per_item * size))
+        print("fin du telechargement des images estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n\n")
+        get_picture(self)
 
 
 

@@ -10,12 +10,13 @@ import json
 
 
 def get_picture(inventaire):
+    sleep(3)
     blk = BRICKLINK(inventaire)
     for i in range(0, len(inventaire.tab), blk.paquet):
         partition = inventaire.tab[i:(i + blk.paquet)]
         blk.ouvrir()
         for item in partition:
-            filename = "id" + item.itemid + "color" + item.color + ".jpg"
+            filename = "id" + item.itemid + "color" + item.colorid + ".jpg"
             if blk.exist_picture(filename) == False:
                 blk.acces_page(item)
                 blk.get_picture(item)
@@ -41,7 +42,7 @@ class BRICKLINK():
         self.get_mdps()
 
     def get_mdps(self):
-        file = abspath('/ressources/mdp.json')
+        file = abspath('./ressources/mdp.json')
         with open(file) as mon_fichier:
             data = json.load(mon_fichier)
         self.pseudo = data["Pseudo"]
@@ -66,7 +67,7 @@ class BRICKLINK():
         sleep(30)
 
     def acces_page(self, item):
-        url = self.html1 + item.itemid + self.html2 + item.color
+        url = self.html1 + item.itemid + self.html2 + item.colorid
         open_new(url)
 
     def get_picture(self, item):
@@ -79,7 +80,7 @@ class BRICKLINK():
         sleep(1)
         str = paste()
         if str != "noImage.gif":
-            filename = "id" + item.itemid + "color" + item.color + ".jpg"
+            filename = "id" + item.itemid + "color" + item.colorid + ".jpg"
             pyautogui.write(filename)
             for i in range(3):
                 sleep(0.5)
