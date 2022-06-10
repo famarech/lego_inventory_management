@@ -1,7 +1,8 @@
 from ClassInventaireModule import INVENTAIRE
 from ClassItemModule import ITEM
 from os.path import abspath
-
+from json import load
+from api import bricklink_api as api
 
 f_1 = abspath('./ressources/exemples/from_blk_inv_xml.txt')
 f_2 = abspath('./ressources/exemples/from_blk_inv_tab.txt')
@@ -27,5 +28,39 @@ f12 = abspath('Joseph.csv')
 # inv = INVENTAIRE(f_9, 'user', 'inv') #ok
 
 
-inv12 = INVENTAIRE(f12, 'user', 'inv')
-inv12.get_picture()
+# inv10 = INVENTAIRE(f10, 'pyth', 'inv')
+#
+# list_items = []
+# file = abspath('./ressources/parts.json')
+# with open(file) as mon_fichier:
+#     data = load(mon_fichier)
+# for d in data:
+#     if (d['Category Name'] == 'Brick, Round') or (d['Category Name'] == 'Plate') or (d['Category Name'] == 'Plate, Modified') or (d['Category Name'] == 'Plate, Round'):
+#         list_items.append(d['Number'])
+#
+# for item in list_items:
+#     list_color = []
+#     json_obj = api.item_mapping.get_element_id('Part', item)
+#     for each in json_obj['data']:
+#         list_color.append(each['color_id'])
+#
+#     for c in list_color:
+#
+#         inv10.tab.append(ITEM('', '', '', str(c), '0.00',
+#                                 '1', '', '', '', '',
+#                                 'P', str(item), '', '', '0',
+#                                 '', '', '', '', '',
+#                                 '', '', '', '', '',
+#                                 '', '', '', '', '',
+#                                 '', '', '', '', '',
+#                                 '', '', '', '', '',
+#                                 '', '', '', '', '',
+#                                 ''))
+#
+# inv10.sauvegarder(abspath('./ressources/stocks/'), False)
+
+
+
+
+inv10 = INVENTAIRE(f10, 'pyth', 'inv')
+inv10.get_picture()

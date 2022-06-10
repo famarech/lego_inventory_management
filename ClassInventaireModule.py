@@ -26,7 +26,7 @@ class INVENTAIRE:
         self.qty = self.qty_total()
         self.price_par_piece = self.price / self.qty
 
-        self.afficher()
+        # self.afficher()
 
 
 
@@ -77,14 +77,15 @@ class INVENTAIRE:
                 f"{len(self.tab)} references en {delta} secondes.\n")
 
 
-    def sauvegarder(self, path_destination):
+    def sauvegarder(self, path_destination, refresh):
         path = path_destination + '\\' + self.filename + '.csv'
         self.tab.sort(key=lambda obj: obj.colorid)
         self.tab.sort(key=lambda obj: obj.itemid)
         self.tab.sort(key=lambda obj: obj.column)
         self.tab.sort(key=lambda obj: obj.row)
         self.tab.sort(key=lambda obj: obj.box)
-        self.refresh_infos()
+        if refresh is True:
+            self.refresh_infos()
         write.save(self.tab, path, "w")
         print("Inventaire trié et sauvegardé !!!\n\n")
 
