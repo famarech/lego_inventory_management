@@ -35,13 +35,14 @@ f12 = abspath('Joseph.csv')
 # with open(file) as mon_fichier:
 #     data = load(mon_fichier)
 # for d in data:
-#     if (d['Category Name'] == 'Brick, Round') or (d['Category Name'] == 'Plate') or (d['Category Name'] == 'Plate, Modified') or (d['Category Name'] == 'Plate, Round'):
+#     if (d['Category Name'] == 'Technic, Axle') or (d['Category Name'] == 'Technic, Brick') or (d['Category Name'] == 'Technic, Connector') or (d['Category Name'] == 'Technic, Gear') or (d['Category Name'] == 'Technic, Liftarm') or (d['Category Name'] == 'Technic, Link') or (d['Category Name'] == 'Technic, Pin') or (d['Category Name'] == 'Technic, Plate'):
 #         list_items.append(d['Number'])
 #
 # for item in list_items:
 #     list_color = []
 #     json_obj = api.item_mapping.get_element_id('Part', item)
 #     for each in json_obj['data']:
+#         print(item, each['color_id'])
 #         list_color.append(each['color_id'])
 #
 #     for c in list_color:
@@ -62,5 +63,5 @@ f12 = abspath('Joseph.csv')
 
 
 
-inv10 = INVENTAIRE(f10, 'pyth', 'inv')
-inv10.get_picture()
+# inv10 = INVENTAIRE(f10, 'pyth', 'inv')
+# inv10.get_picture()

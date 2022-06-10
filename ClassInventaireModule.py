@@ -35,7 +35,7 @@ class INVENTAIRE:
         print(f"Inventaire : {self.filename} ===\n")
         for item in self.tab:
             item.afficher()
-        print("\n\n\n")
+        pritn(f"\t--> {len(self.tab)} références.\n\n\n")
 
     def price_total(self):
         somme = 0
@@ -219,7 +219,7 @@ class INVENTAIRE:
     def get_picture(self):
         start = time()
         size = len(self.tab)
-        time_per_item = 8
+        time_per_item = 9.5
         finish = localtime(start + (time_per_item * size))
         print("fin du telechargement des images estimé à :\n" +\
                 f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n\n")
