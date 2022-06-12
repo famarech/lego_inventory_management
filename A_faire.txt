@@ -1,0 +1,22 @@
+modifier la focntion get_picture
+d'abord vérifier si les images existent pour chaque item de l'inventaire
+modifier en consequence la valeur self.urlimage
+trier l'inventaire en fonction de self.urlimage dans l'ordre decroissant ?
+pour avoir tous les "image Not Available" à la fin ou au début
+puis n'envoyer dans la fonction get_picture que les items dont l'image n'est pas disponible
+
+
+write module en cours
+sauvegarde en continue lors de get_price à faire en mode a
+refaire la fonction impression_recherche pour une ecriture complete dans le WriteModule
+
+
+
+
+tester la fonction refresh_infos sur chaque type d'exemple
+dans les fonction du loading ne reste que la fonction depuis impression
+trouver solution pour longueur de chargement (fonction get_category et exist_picture)
+verifier de quel type doivent être chaque attribut de la class ITEM (int, str, float)
+toujours des problems de . et de , de points et de virgiles pour price et weight et dimensions
+de manière générale, il va falloir faire le ménage dans les variables/fichiers/instances qui s'appelle 'item'
+attention, certaines instances de ITEM doivent être forcés en fonction des types d'import pour faire fonctionner des fonctions du types get_price, il va falloir fair la chasse

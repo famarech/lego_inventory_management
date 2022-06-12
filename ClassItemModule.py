@@ -1,132 +1,276 @@
+from api import bricklink_api as api
+from os.path import abspath
+from os.path import exists
+from os import listdir
+from json import load
+
+global list_dict
+list_pict = listdir(abspath('./ressources/pictures'))
+
+
+
+
 class ITEM:
 
-    def __init__(self, lotid, dateadded, category, color, price, qty, bulk, image, description, condition, itemtype, itemid, sale, stockroom, itemweight, datelastsold, basecurrencycode, categoryname, categorynameunder, colorname, itemtypename, itemidname, box, row, column, dimensionx, dimensiony, dimensionz):
+    def __init__(self, lotid, dateadded, categoryid, colorid, price,
+                    qty, bulk, urlimage, description, condition,
+                    itemtype, itemid, salediscount, stockroom, weight,
+                    datelastsold, currency, categorynamefull, categoryname1, categoryname2,
+                    categoryname3, categoryname4, colorname, colorrgb, colortype,
+                    subcondition, remarks, tierqty1, tierprice1, tierqty2,
+                    tierprice2, tierqty3, tierprice3, reservedfor, retain,
+                    superlotid, superlotqty, extdescription, itemtypename, itemidname,
+                    dimensionx, dimensiony, dimensionz, box, row,
+                    column):
         self.lotid = lotid
         self.dateadded = dateadded
-        self.category = category
-        self.color = color
-        self.price = price
-        self.qty = qty
+        self.categoryid = categoryid
+        self.colorid = self.check_color(colorid, colorname)
+        self.price = price.replace('.',',')
+        self.qty = qty.replace('.',',')
         self.bulk = bulk
-        self.image = image
+        self.urlimage = self.exist_picture(itemid, colorid, urlimage)
         self.description = description
-        self.condition = condition
-        self.itemtype = itemtype
+        self.condition = self.what_condition(condition)
+        self.itemtype = 'P' if itemtype == 'Parts' else itemtype
         self.itemid = itemid
-        self.sale = sale
-        self.stockroom = stockroom
-        self.itemweight = itemweight
+        self.salediscount = salediscount
+        self.stockroom = 'Y' if stockroom == 'Yes' else stockroom
+        self.weight = weight.replace('.',',')
         self.datelastsold = datelastsold
-        self.basecurrencycode = basecurrencycode
-        self.categoryname = categoryname
-        self.categorynameunder = categorynameunder
+        self.currency = currency
+        self.categorynamefull = categorynamefull
+        self.categoryname1 = categoryname1
+        self.categoryname2 = categoryname2
+        self.categoryname3 = categoryname3
+        self.categoryname4 = categoryname4
         self.colorname = colorname
+        self.colorrgb = colorrgb
+        self.colortype = colortype
+        self.subcondition = subcondition
+        self.remarks = remarks
+        self.tierqty1 = tierqty1
+        self.tierprice1 = tierprice1
+        self.tierqty2 = tierqty2
+        self.tierprice2 = tierprice2
+        self.tierqty3 = tierqty3
+        self.tierprice3 = tierprice3
+        self.reservedfor = reservedfor
+        self.retain = retain
+        self.superlotid = superlotid
+        self.superlotqty = superlotqty
+        self.extdescritpion = extdescription
         self.itemtypename = itemtypename
         self.itemidname = itemidname
+        self.dimensionx =  dimensionx
+        self.dimensiony = dimensiony
+        self.dimensionz = dimensionz
         self.box = box
         self.row = row
         self.column = column
-        self.dimensionx = dimensionx
-        self.dimensiony = dimensiony
-        self.dimensionz = dimensionz
 
+
+
+
+
+    def check_color(self, colorid, colorname):
+        if colorid == '':
+            colorid = self.get_category("colorname",
+                                        "colorid",
+                                        colorname,
+                                        "colors")
+        return colorid
+
+    def exist_picture(self, itemid, colorid, urlimage):
+        filename = "id" + itemid + "color" + str(colorid) + ".jpg"
+        if urlimage == filename:
+            return urlimage
+        else:
+            if not(filename in list_pict):
+                return "Not Available"
+            return filename
+
+    def get_category(self, laurel, hardy, value, file):
+        file = abspath('./ressources/' + file + '.json')
+        with open(file) as mon_fichier:
+            data = load(mon_fichier)
+        for d in data:
+            if d[laurel] == value:
+                return str(d[hardy])
+        return f"{hardy} Not Available"
+
+    def what_condition(self, condition):
+        if condition == "U" or condition == "Used":
+            return 'U'
+        if condition == "N" or condition == "New":
+            return 'N'
+        return 'U'
+
+    def refresh_infos(self):
+        self.categoryid = self.get_category("Number",
+                                            "Category ID",
+                                            self.itemid,
+                                            "parts")
+        w = self.get_category("Number",
+                            "weight",
+                            self.itemid,
+                            "parts").replace('.',',')
+        if w == "weight Not Available":
+            self.weight = '0'
+        else:
+            self.weight = w
+        self.categorynamefull = self.get_category("Number",
+                                            "Category Name",
+                                            self.itemid,
+                                            "parts")
+        self.categoryname1 = self.get_category("Number",
+                                            "Category1",
+                                            self.itemid,
+                                            "parts")
+        self.categoryname2 = self.get_category("Number",
+                                            "Category2",
+                                            self.itemid,
+                                            "parts")
+        self.categoryname3 = self.get_category("Number",
+                                            "Category3",
+                                            self.itemid,
+                                            "parts")
+        self.categoryname4 = self.get_category("Number",
+                                            "Category4",
+                                            self.itemid,
+                                            "parts")
+        self.colorname = self.get_category("colorid",
+                                            "colorname",
+                                            self.colorid,
+                                            "colors")
+        self.colorrgb = self.get_category("colorid",
+                                            "rgb",
+                                            self.colorid,
+                                            "colors")
+        self.colortype = self.get_category("colorid",
+                                            "type",
+                                            self.colorid,
+                                            "colors")
+        self.itemtypename = self.get_category("itemtypeid",
+                                            "itemtypename",
+                                            self.itemtype,
+                                            "itemtypes")
+        self.itemidname = self.get_category("Number",
+                                            "Name",
+                                            self.itemid,
+                                            "parts")
+        self.dimensionx =  self.get_category("Number",
+                                            "DimensionX",
+                                            self.itemid,
+                                            "parts")
+        self.dimensiony = self.get_category("Number",
+                                            "DimensionY",
+                                            self.itemid,
+                                            "parts")
+        self.dimensionz = self.get_category("Number",
+                                            "DimensionZ",
+                                            self.itemid,
+                                            "parts")
 
     def afficher(self):
-        print(f"{self.itemid} : {self.color} : {self.qty} : {self.price} : {self.box} : {self.row} : {self.column} : {self.image}")
+        print(f"{self.itemid} : {self.colorid} : {self.qty} : {self.price}€ " +\
+                f"dans {self.box} : {self.row}{self.column}")
 
-    def prix_total(self):
-        a = self.price.replace(',','.')
-        a = float(a)
-        b = int(self.qty)
-        return (a * b)
+    def price_total(self):
+        a = float(self.price.replace(',','.'))
+        b = float(self.qty.replace(',','.'))
+        return round(a * b, 2)
 
-    def poid_total(self):
-        a = self.itemweight.replace(',','.')
-        a = float(a)
-        b = int(self.qty)
-        return (a * b)
+    def weight_total(self):
+        # en grammes
+        a = float(self.weight.replace(',','.'))
+        b = float(self.qty.replace(',','.'))
+        return round(a * b, 2)
 
-    def sauvegarder(self):
+    def sauvegarder_format_csv(self):
         a = str(self.price).replace('.',',')
         b = str(self.qty).replace('.',',')
-        c = str(self.itemweight).replace('.',',')
+        c = str(self.weight).replace('.',',')
         content = self.lotid + ";" +\
                 self.dateadded + ";" +\
-                self.category + ";" +\
-                self.color  + ";" +\
+                self.categoryid + ";" +\
+                self.colorid  + ";" +\
                 a + ";" +\
                 b + ";" +\
                 self.bulk + ";" +\
-                self.image + ";" +\
+                self.urlimage + ";" +\
                 self.description + ";" +\
                 self.condition + ";" +\
                 self.itemtype + ";" +\
                 self.itemid + ";" +\
-                self.sale + ";" +\
+                self.salediscount + ";" +\
                 self.stockroom + ";" +\
                 c + ";" +\
                 self.datelastsold + ";" +\
-                self.basecurrencycode + ";" +\
-                self.categoryname + ";" +\
-                self.categorynameunder + ";" +\
+                self.currency + ";" +\
+                self.categorynamefull + ';' +\
+                self.categoryname1 + ";" +\
+                self.categoryname2 + ";" +\
+                self.categoryname3 + ";" +\
+                self.categoryname4 + ";" +\
                 self.colorname + ";" +\
+                '#' + self.colorrgb + ";" +\
+                self.colortype + ";" +\
+                self.subcondition + ";" +\
+                self.remarks + ";" +\
+                self.tierqty1 + ";" +\
+                self.tierprice1 + ";" +\
+                self.tierqty2 + ";" +\
+                self.tierprice2 + ";" +\
+                self.tierqty3 + ";" +\
+                self.tierprice3 + ";" +\
+                self.reservedfor + ";" +\
+                self.retain + ";" +\
+                self.superlotid + ";" +\
+                self.superlotqty + ";" +\
+                self.extdescritpion + ";" +\
                 self.itemtypename + ";" +\
                 self.itemidname + ";" +\
-                self.box + ";" +\
-                self.row + ";" +\
-                self.column + ";" +\
                 self.dimensionx + ";" +\
                 self.dimensiony + ";" +\
-                self.dimensionz + '\n'
+                self.dimensionz  + ";" +\
+                self.box + ";" +\
+                self.row + ";" +\
+                self.column + ";" + '\n'
         return content
 
-    def transform_to_upload_bricklink(self):
+    def transform_to_upload_blk_xml(self):
         a = self.price.replace(',','.')
-        b = self.box + ' ' + self.row + self.column
+        b = self.box + ' ' + self.row + ' ' + self.column
+        if b == '  ':
+            b=''
         # attention la quantité ne doit pas être nulle
         content = "\t<ITEM>\n"
-        required = "\t\t<CATEGORY>" + self.category + "</CATEGORY>\n" +\
-                    "\t\t<COLOR>" + self.color + "</COLOR>\n" +\
+        required = "\t\t<CATEGORY>" + self.categoryid + "</CATEGORY>\n" +\
+                    "\t\t<COLOR>" + self.colorid + "</COLOR>\n" +\
                     "\t\t<PRICE>" + a + "</PRICE>\n" +\
                     "\t\t<QTY>" + self.qty + "</QTY>\n" +\
                     "\t\t<CONDITION>" + self.condition + "</CONDITION>\n" +\
                     "\t\t<ITEMTYPE>" + self.itemtype + "</ITEMTYPE>\n" +\
                     "\t\t<ITEMID>" + self.itemid + "</ITEMID>\n" +\
-                    "\t\t<STOCKROOM>" + self.stockroom + "</STOCKROOM>\n" +\
                     "\t\t<DESCRIPTION>" + b + "</DESCRIPTION>\n"
         not_required = "\t\t<LOTID>" + self.lotid + "</LOTID>\n" +\
                     "\t\t<DATEADDED>" + self.dateadded + "</DATEADDED>\n" +\
                     "\t\t<BULK>" + self.bulk + "</BULK>\n" +\
-                    "\t\t<IMAGE>" + self.image + "</IMAGE>\n" +\
-                    "\t\t<SALE>" + self.sale + "</SALE>\n" +\
-                    "\t\t<ITEMWEIGHT>" + self.itemweight + "</ITEMWEIGHT>\n" +\
+                    "\t\t<IMAGE>" + self.urlimage + "</IMAGE>\n" +\
+                    "\t\t<SALE>" + self.salediscount + "</SALE>\n" +\
+                    "\t\t<STOCKROOM>" + self.stockroom + "</STOCKROOM>\n" +\
+                    "\t\t<ITEMWEIGHT>" + self.weight + "</ITEMWEIGHT>\n" +\
                     "\t\t<DATELASTSOLD>" + self.datelastsold + "</DATELASTSOLD>\n" +\
-                    "\t\t<BASECURRENCYCODE>" + self.basecurrencycode + "</BASECURRENCYCODE>\n"
+                    "\t\t<BASECURRENCYCODE>" + self.currency + "</BASECURRENCYCODE>\n"
         content = content + required #+ not_required
         content = content + "\t</ITEM>\n"
         return content
 
-    def transform_to_impression(self, index):
-        if (index % 2) == 0:
-            pair = "pair"
-        else:
-            pair = "impair"
-        content = '\t<ITEM value="' + pair + '">\n' +\
-                    "\t\t<LINE>" + str(index) + "</LINE>\n" +\
-                    "\t\t<ITEMID>" + self.itemid + "</ITEMID>\n" +\
-                    "\t\t<ITEMIDNAME>" + self.itemidname + "</ITEMIDNAME>\n" +\
-                    "\t\t<COLOR>" + self.color + "</COLOR>\n" +\
-                    "\t\t<COLORNAME>" + self.colorname + "</COLORNAME>\n" +\
-                    "\t\t<QTY>" + self.qty + "</QTY>\n" +\
-                    "\t\t<BOX>" + self.box + "</BOX>\n" +\
-                    "\t\t<ROW>" + self.row + "</ROW>\n" +\
-                    "\t\t<COLUMN>" + self.column + "</COLUMN>\n"
-        content = content + "\t</ITEM>\n"
-        return content
-
     def transform_to_impression_html(self, index):
-        if self.image != "Not Available":
-            path_picture = "../03 - Pictures/id" + self.itemid + "color" + self.color + ".jpg"
+        if self.urlimage != "Not Available":
+            path_picture = "../03 - Pictures/id" + self.itemid +\
+                                                "color" + self.colorid + ".jpg"
         else:
             path_picture = "../03 - Pictures/noImage.jpg"
         if (index % 2) == 0:
@@ -137,7 +281,7 @@ class ITEM:
                     '\t\t\t<img src="' + path_picture + '">\n' +\
                     '\t\t\t<p>' + self.itemid + '</p>\n' +\
                     '\t\t\t<p class="itemidname">' + self.itemidname + '</p>\n' +\
-                    '\t\t\t<p>' + self.color + '</p>\n' +\
+                    '\t\t\t<p>' + self.colorid + '</p>\n' +\
                     '\t\t\t<p>' + self.colorname + '</p>\n' +\
                     '\t\t\t<p>' + self.qty + '</p>\n' +\
                     '\t\t\t<p>' + self.box + '</p>\n' +\
@@ -145,3 +289,19 @@ class ITEM:
                     '\t\t\t<p>' + self.column + '</p>\n' +\
                     '\t\t</div>\n'
         return content
+
+    def get_price(self):
+        if self.itemtype == 'P':
+            type = 'Part'
+        else:
+            type = 'Part'
+        json_obj = api.catalog_item.get_price_guide(type,
+                                                    self.itemid,
+                                                    int(self.colorid),
+                                                    new_or_used= self.condition)
+        code = json_obj['meta']['code']
+        if code == 401:
+            print("Impossible de prendre les prix !!!\n" +\
+                    " --- !!! --- Erreur d'Authentification --- !!! --- \n\n\n")
+        elif code == 200:
+            self.price = (json_obj['data']['avg_price']).replace('.', ',')

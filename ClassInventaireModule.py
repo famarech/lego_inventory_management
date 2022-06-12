@@ -1,124 +1,52 @@
 from ClassItemModule import ITEM
-from ToolsModule import cut_after
-from ToolsModule import cut_before
-from os import listdir
+from ReadModule import loading
+from ReadModule import get_extension
+import WriteModule as write
+from BrickLinkModule import get_picture
 from os.path import abspath
+from time import time
+from time import localtime
+
 
 
 
 class INVENTAIRE:
 
-    def __init__(self, path):
-        self.tab = []
-        self.label = ["LOTID","DATEADDED", "CATEGORY", "COLOR", "PRICE", "QTY", "BULK", "IMAGE", "DESCRIPTION", "CONDITION", "ITEMTYPE", "ITEMID", "SALE", "STOCKROOM", "ITEMWEIGHT", "DATELASTSOLD", "BASECURRENCYCODE", "CATEGORYNAME", "CATEGORYNAMEUNDER", "COLORNAME", "ITEMTYPENAME", "ITEMIDNAME", "BOX", "LINE", "ROW", "DIMENSIONX", "DIMENSIONY", "DIMENSIONZ"]
-        self.path = path
-        self.str = self.read_file()
-        self.extension = self.choice()
-        self.prix = self.prix_total()
-        self.poid = self.poid_total()
+    def __init__(self, path, where_from, type):
+
+        self.path = get_extension(path)[0]
+        self.filename = get_extension(path)[1]
+        self.extension = get_extension(path)[2]
+        self.where_from = where_from
+        self.type = type
+        self.tab = loading(path, where_from, type, self.filename, self.extension)
+
+        self.price = self.price_total()
+        self.weight = self.weight_total()
         self.qty = self.qty_total()
-        self.prix_par_piece = self.prix / self.qty
+        self.price_par_piece = self.price / self.qty
 
-
-    def read_file(self):
-        file_in = open(self.path, "r")
-        str = file_in.readlines()
-        file_in.close()
-        return str
-
-    # # # permet de déterminer quel est le type d'extension pour pouvoir importer n'importe quel inventaire
-    def choice(self):
-        extension = self.path
-        extension = cut_after(".", extension)
-        if extension == "csv":
-            self.tab = self.from_csv()
-        elif extension == "xml":
-            self.tab = self.from_xml()
-        elif extension == "txt":
-            self.tab = self.from_txt()
-        return extension
-
-    def from_csv(self):
-        str = self.str
-        tab = []
-        for t in str:
-            tab.append(t.split(';'))
-        del tab[0]
-        new_tab = INVENTAIRE.transform_item_full(tab)
-        return new_tab
-
-    def from_xml(self):
-        str = self.str
-        str = "".join(str)
-        str = cut_after("INVENTORY>", str)
-        str = cut_before("</INVENTORY", str)
-        tab = []
-        while len(str) > 15:
-            str = cut_after("<ITEM>", str)
-            b = cut_after("</ITEM>", str)
-            new_tab = []
-            for word in self.label:
-                str = cut_after((word + ">"), str)
-                a = cut_before(("</" + word), str)
-                str = cut_after(("</" + word), str)
-                new_tab.append(a)
-            tab.append(new_tab)
-        new_tab = []
-        new_tab = INVENTAIRE.transform_item_full(tab)
-        return new_tab
-
-    def from_txt(self):
-        file_in = open(self.path, 'r')
-        tab = []
-        for line in file_in.readlines():
-            str = line.replace("\t", ";")
-            str = str.replace("\n", "")
-            str = str.split(";")
-            tab.append(str)
-        file_in.close()
-        del tab[0]
-        del tab[0]
-        new_tab = INVENTAIRE.transform_item_partiel(tab)
-        return new_tab
-
-    def exist_picture(id, color):
-        path = abspath('./03 - Pictures')
-        list_pict = listdir(path)
-        filename = "id" + id + "color" + color + ".jpg"
-        if filename in list_pict:
-            return ""
-        return "Not Available"
-
-    # # # permet quelque soit le type d'inventaire, d'avoir un format d'inventaire unique
-    def transform_item_full(tab):
-        new_tab= []
-        for item in tab:
-            new_tab.append(ITEM(item[0], item[1], item[2], item[3], item[4], item[5], item[6], INVENTAIRE.exist_picture(item[11], item[3]), item[8], item[9], item[10], item[11], item[12], item[13], item[14], item[15], item[16], item[17], item[18], item[19], item[10], item[21], item[22], item[23], item[24], item[25], item[26], item[27].replace('\n', '')))
-        return new_tab
-
-    def transform_item_partiel(tab):
-        new_tab= []
-        for item in tab:
-            new_tab.append(ITEM('', '', '', item[4], '0', item[3], '', '', '', '', '', item[1], '', '', '0', '', '', '', '', '', '', '', '', '', '', '', '', ''))
-        return new_tab
+        # self.afficher()
 
 
 
 
     def afficher(self):
+        print(f"Inventaire : {self.filename} ===\n")
         for item in self.tab:
             item.afficher()
+        pritn(f"\t--> {len(self.tab)} références.\n\n\n")
 
-    def prix_total(self):
+    def price_total(self):
         somme = 0
         for item in self.tab:
-            somme = somme + item.prix_total()
+            somme = somme + item.price_total()
         return somme
 
-    def poid_total(self):
+    def weight_total(self):
         somme = 0
         for item in self.tab:
-            somme = somme + item.poid_total()
+            somme = somme + item.weight_total()
         somme = somme / 1000
         return somme
 
@@ -128,92 +56,176 @@ class INVENTAIRE:
             somme = somme + int(item.qty)
         return somme
 
-
-
-
-    def sauvegarder(self, path_destination):
-        file_in = open(path_destination, "w")
-        content = ";".join(self.label) + '\n'
-        file_in.write(content)
+    def refresh_infos(self):
+        print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
+        start = time()
+        size = len(self.tab)
+        time_per_item = 3.7
+        finish = localtime(start + (time_per_item * size))
+        print("fin du rafraichissement estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
         for item in self.tab:
-            content = item.sauvegarder()
-            file_in.write(content)
-        file_in.close()
+            item.refresh_infos()
+        filename = '/' + self.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+        delta = round(time() - start, 2)
+        print("\tRafraichissement terminé !!!\n" +\
+                f"{len(self.tab)} references en {delta} secondes.\n")
+
+
+    def sauvegarder(self, path_destination, refresh):
+        path = path_destination + '\\' + self.filename + '.csv'
+        self.tab.sort(key=lambda obj: obj.colorid)
+        self.tab.sort(key=lambda obj: obj.itemid)
+        self.tab.sort(key=lambda obj: obj.column)
+        self.tab.sort(key=lambda obj: obj.row)
+        self.tab.sort(key=lambda obj: obj.box)
+        if refresh is True:
+            self.refresh_infos()
+        write.save(self.tab, path, "w")
+        print("Inventaire trié et sauvegardé !!!\n\n")
+
+    def upload(self):
+        for item in self.tab:
+            print(item.price)
+            print(type(item.price))
+            print(item.qty)
+            print(type(item.qty))
+
+        index = len(self.tab) - 1
+        for item in reversed(self.tab):
+            if item.qty == '0' or float(item.price.replace(',','.')) == 0:
+                del self.tab[index]
+            index -= 1
+        write.transform_to_upload_blk_xml(self.tab, self.filename)
+
+    def printing(self):
+        write.transform_to_impression_html(self.tab, self.filename)
+        print("Inventaire printé en html !!!")
 
     def fusionner(self, inventory_to_add):
         # !!!! ATTENTION !!!! met à jour l'objet actuel d'origine avec un nouvel inventaire
         # inventory_to_add est l'inventaire à ajouter à l'objet actuel
         for item in inventory_to_add.tab:
             self.tab.append(item)
+        filename = '/' + self.filename + '_' +\
+                    inventory_to_add.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+        print(f"l'inventaire '''{inventory_to_add.filename}''' " +\
+                f"fusionné dans l'Inventaire '''{self.filename}'''\n\n")
 
-    def transform_to_upload_bricklink(self):
-        PAQUET = 500
-        index = 1
-        for i in range(0, len(self.tab), PAQUET):
-            partition = self.tab[i:(i+PAQUET)]
-            content = "<INVENTORY>\n"
-            for item in partition:
-                content = content + item.transform_to_upload_bricklink()
-            content = content + "</INVENTORY>"
-            path = abspath('./05 - Upload') + "/upload(" + str(index) + ").txt"
-            index += 1
-            file_in = open(path, "w")
-            file_in.write(content)
-
-    def transform_to_impression(self):
-        content = '<?xml version="1.0" encoding="UTF-8"?>\n' +\
-                    '<?xml-stylesheet href="style_xml.css" type="text/css" ?>\n' +\
-                    "<!-- commentaires --> \n\n" +\
-                    "<INVENTORY>\n" +\
-                    '\t<ITEM class="title">\n' +\
-                    "\t\t<LINE>LINE</LINE>\n" +\
-                    "\t\t<ITEMID>ITEMID</ITEMID>\n" +\
-                    "\t\t<ITEMIDNAME>ITEMNAME</ITEMIDNAME>\n" +\
-                    "\t\t<COLOR>COLOR</COLOR>\n" +\
-                    "\t\t<COLORNAME>COLORNAME</COLORNAME>\n" +\
-                    "\t\t<QTY>QTY</QTY>\n" +\
-                    "\t\t<BOX>BOX</BOX>\n" +\
-                    "\t\t<ROW>ROW</ROW>\n" +\
-                    "\t\t<COLUMN>COLUMN</COLUMN>\n" +\
-                    "\t</ITEM>\n"
-        index = 1
+    def get_price(self):
+        size = len(self.tab)
+        time_per_item = 1
+        finish = localtime(time() + (time_per_item * size))
+        print("fin de la recherche de prix estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
         for item in self.tab:
-            content = content + item.transform_to_impression(index)
-            index += 1
-        content = content + "</INVENTORY>"
-        path = abspath('./04 - Impression') + '/impression_test.xml'
-        file_in = open(path, "w")
-        file_in.write(content)
+            item.get_price()
+        filename = '/' + self.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+        print(f"\t\tFin de la Recherche de Prix de l'inventaire {self.filename}\n\n")
 
-    def transform_to_impression_html(self, number):
-        content = '<!DOCTYPE html>\n\n' +\
-                    '<html>\n\n' +\
-                    '\t<head>\n' +\
-                    '\t\t<title> Impression </title>\n' +\
-                    '\t\t<meta charset="utf-8"/>\n' +\
-                    '\t\t<link href="style_html.css" rel="stylesheet">\n' +\
-                    '\t\t<!-- commentaires -->\n' +\
-                    '\t</head>\n\n' +\
-                    '\t<body>\n' +\
-                    '\t\t<div class="title">\n' +\
-                    '\t\t\t<p>IMAGE</p>\n' +\
-                    '\t\t\t<p>ITEMID</p>\n' +\
-                    '\t\t\t<p>ITEMIDNAME</p>\n' +\
-                    '\t\t\t<p>COLOR</p>\n' +\
-                    '\t\t\t<p>COLORNAME</p>\n' +\
-                    '\t\t\t<p>QTY</p>\n' +\
-                    '\t\t\t<p>BOX</p>\n' +\
-                    '\t\t\t<p>ROW</p>\n' +\
-                    '\t\t\t<p>COLUMN</p>\n' +\
-                    '\t\t</div>\n'
+    def find_in(self, inventory_in_wich):
+        # !!!! ATTENTION !!!! fait une recherche des items de l'inventaire self.tab
+        # dans inventory_in_wich qui est passé en parametre
+        print(f"Recherche des items de l'inventaire ''''{self.filename}''''\n"+
+                f"\tdans l'inventaire ''''{inventory_in_wich.filename}'''' ...\n\n")
+
+        inventory_in_wich.tab.sort(key=lambda obj: obj.colorid)
+        inventory_in_wich.tab.sort(key=lambda obj: obj.itemid)
+        content = ''
         index = 1
-        for item in self.tab:
-            content = content + item.transform_to_impression_html(index)
+        for each in self.tab:
+            infos = INVENTAIRE.trouve(inventory_in_wich.tab, each)
             index += 1
-        content = content + "\t</body>\n\n</html>"
-        path = abspath('./04 - Impression') + "/html_test_" + str(number + 1) + ".html"
-        file_in = open(path, "w")
-        file_in.write(content)
+            if (index % 2) == 0:
+                pair = "pair"
+            else:
+                pair = "impair"
+            content += '\t\t<div class="' + pair + '">\n' +\
+                        '\t\t\t<img src="' + '' + '">\n' +\
+                        '\t\t\t<p>' + str(infos[0]) + '</p>\n' +\
+                        '\t\t\t<p class="itemidname">' + '' + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[1]) + '</p>\n' +\
+                        '\t\t\t<p>' + '' + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[2]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[3]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[4]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[5]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[6]) + '</p>\n' +\
+                        '\t\t\t<p>' + str(infos[7]) + '</p>\n' +\
+                        '\t\t</div>\n'
+        write.recherche_impression_html(content, self.filename, inventory_in_wich.filename)
+        print("Resultat converti en html.\n\n")
+
+    def trouve(inv, thing):
+        a = 0
+        z = len(inv)
+        mid = int(round(z/2, 0))
+        trouve = False
+        index = 1
+        if (thing.itemid + thing.colorid) == (inv[a].itemid + inv[a].colorid):
+            trouve = True
+            print(f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
+                        f" : {inv[a].box} : {inv[a].row}{inv[a].column}")
+            if int(inv[a].qty) > int(thing.qty):
+                q_command = 0
+            else:
+                q_command = int(thing.qty) - int(inv[a].qty)
+            content = [thing.itemidname, thing.colorname,
+                        thing.qty, inv[a].qty, q_command,
+                        inv[a].box, inv[a].row, inv[a].column]
+        while trouve == False:
+            if mid == a or mid == z:
+                print(f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
+                            "\tn'existe pas a commander")
+                content = [thing.itemidname, thing.colorname,
+                            thing.qty, 0, thing.qty,
+                            '', '', '']
+                return content
+            if (thing.itemid + thing.colorid) == (inv[mid].itemid + inv[mid].colorid):
+                trouve = True
+                print(f"{thing.itemidname} : {thing.colorname} : {thing.qty}" +\
+                            f" : {inv[mid].box} : {inv[mid].row}{inv[mid].column}")
+                if int(inv[mid].qty) > int(thing.qty):
+                    q_command = 0
+                else:
+                    q_command = int(thing.qty) - int(inv[mid].qty)
+                content = [thing.itemidname, thing.colorname,
+                            thing.qty, inv[mid].qty, q_command,
+                            inv[mid].box, inv[mid].row, inv[mid].column]
+            else:
+                if (thing.itemid + thing.colorid) > (inv[mid].itemid + inv[mid].colorid):
+                    a = mid
+                    mid += int(round((z-mid)/2, 0))
+                else:
+                    z = mid
+                    mid -= int(round((mid-a)/2, 0))
+        return content
+
+    def get_picture(self):
+        start = time()
+        size = len(self.tab)
+        time_per_item = 9.5
+        finish = localtime(start + (time_per_item * size))
+        print("fin du telechargement des images estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n\n")
+        get_picture(self)
+
+
 
     # def compare(self):
         #comparer deux inventaire pour trouver l'un dans l'autre

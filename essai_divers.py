@@ -1,5 +1,6 @@
 import pyautogui
 from time import sleep
+import pyperclip
 
 def traduction(tab):
     sleep(2)
@@ -30,9 +31,14 @@ azerty = [azerty_min, azerty_maj, azerty_chiffre, azerty_symbole_min, azerty_sym
 
 traduc = [traduc_min, traduc_maj, traduc_chiffre, traduc_symbole_min, traduc_symbole_maj_ver, traduc_symbole_touche_maj, traduc_symbole_touche_alt_gr, traduc_symbole_touche_maj_alt_gr, traduc_autre]
 
-for a in azerty:
-    traduction(a)t
+# for a in azerty:
+#     traduction(a)t
+# 
+# for t in traduc:
+#     traduction(t)
 
-for t in traduc:
-    traduction(t)
+sleep(1)
+pyperclip.copy('7')
+pyautogui.hotkey('ctrl', 'v')
+
 

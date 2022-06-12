@@ -1,56 +1,26 @@
 import pyautogui
-from webbrowser import open
-from webbrowser import open_new_tab
+import webbrowser as wb
 from time import sleep
 from pyperclip import paste
+from pyperclip import copy
 from os import listdir
 from os.path import abspath
-from ToolsModule import cut_after
-from ToolsModule import cut_before
-from ToolsModule import traduction
-from ClassInventaireModule import INVENTAIRE
-from ClassItemModule import ITEM
+import json
 
 
 
-
-def get_price(inventaire):
-    blk = BRICKLINK(inventaire)
-    for i in range(0, len(inventaire.tab), blk.paquet):
-        partition = inventaire.tab[i:(i + blk.paquet)]
-        blk.ouvrir()
-        for item in partition:
-            blk.acces_page(item)
-            item.price = blk.get_price(item)
-        path = abspath('./06 - Sauvegarde_temp/prices_temp.csv').replace('\\', '/')
-        inventaire.sauvegarder(path)
-        blk.fermer()
 
 def get_picture(inventaire):
+    sleep(3)
     blk = BRICKLINK(inventaire)
     for i in range(0, len(inventaire.tab), blk.paquet):
         partition = inventaire.tab[i:(i + blk.paquet)]
         blk.ouvrir()
         for item in partition:
-            filename = "id" + item.itemid + "color" + item.color + ".jpg"
+            filename = "id" + item.itemid + "color" + item.colorid + ".jpg"
             if blk.exist_picture(filename) == False:
                 blk.acces_page(item)
                 blk.get_picture(item)
-        blk.fermer()
-
-def get_all(inventaire):
-    blk = BRICKLINK(inventaire)
-    for i in range(0, len(inventaire.tab), blk.paquet):
-        partition = inventaire.tab[i:(i + blk.paquet)]
-        blk.ouvrir()
-        for item in partition:
-            blk.acces_page(item)
-            item.price = blk.get_price(item)
-            filename = "id" + item.itemid + "color" + item.color + ".jpg"
-            if blk.exist_picture(filename) == False:
-                blk.get_picture(item)
-        path = abspath('./06 - Sauvegarde_temp/prices_temp.csv').replace('\\', '/')
-        inventaire.sauvegarder(path)
         blk.fermer()
 
 
@@ -63,22 +33,31 @@ class BRICKLINK():
         self.html0 = "https://www.bricklink.com"
         self.html1 = "https://www.bricklink.com/catalogPG.asp?P="
         self.html2 = "&ColorID="
-        self.pseudo = 'famarech'
-        self.mdp = 'Vila1981'
+        self.pseudo = ''
+        self.mdp = ''
         self.paquet = 50
-        self.path_picture = abspath('./03 - Pictures/')
-        self.path_download = '/home/moyen/Téléchargements'
+        self.path_picture = abspath('./ressources/pictures/')
+        self.path_download = '/home/gros_pc/Téléchargements'
         self.screen = pyautogui.size()
 
+        self.get_mdps()
+
+    def get_mdps(self):
+        file = abspath('./ressources/mdp.json')
+        with open(file) as mon_fichier:
+            data = json.load(mon_fichier)
+        self.pseudo = data["Pseudo"]
+        self.mdp = data["MDP"]
+
     def ouvrir(self):
-        open(self.html0, new=0, autoraise=True)
-        sleep(15)
+        wb.open(self.html0, new=1, autoraise=True)
+        sleep(8)
         pyautogui.click(self.screen.width * 0.388, self.screen.height * 0.827, 1, button='primary')
         pyautogui.click(self.screen.width * 0.678, self.screen.height * 0.176, 1, button='primary')
         sleep(3)
         pyautogui.write(self.pseudo)
         pyautogui.press('tab')
-        pyautogui.write(traduction(self.mdp))
+        pyautogui.write(self.mdp)
         pyautogui.press('enter')
         sleep(2)
 
@@ -89,34 +68,8 @@ class BRICKLINK():
         sleep(30)
 
     def acces_page(self, item):
-        url = self.html1 + item.itemid + self.html2 + item.color
-        open_new_tab(url)
-
-    def get_price(self, item):
-        sleep(2)
-        pyautogui.hotkey('ctrl', 'a')
-        pyautogui.hotkey('ctrl', 'c')
-        sleep(1)
-        str = paste()
-        prix = self.exist_price(str)
-        return prix
-
-    def exist_price(self, str):
-        str = cut_after("Used", str)
-        str = cut_after("Used", str)
-        str = cut_after("Qty Avg Price:", str)
-        str = cut_after("Qty Avg Price:", str)
-        str = cut_after("Qty Avg Price:", str)
-        str = cut_after("Avg Price:", str)
-        str = cut_after("EUR ", str)
-        str = cut_before("Qty Avg Price", str)
-        try:
-            float(str)
-        except:
-            str = '0.01'
-        str = str.replace('.',',')
-        str = str.replace('\n','')
-        return str
+        url = self.html1 + item.itemid + self.html2 + item.colorid
+        wb.open_new_tab(url)
 
     def get_picture(self, item):
         sleep(4)
@@ -124,16 +77,17 @@ class BRICKLINK():
         sleep(1)
         pyautogui.click(self.screen.width * 0.541, self.screen.height * 0.532, 1, button='primary')
         sleep(1.5)
-<<<<<<< HEAD
-        pyautogui.hotkey('ctrl', 'a')
-=======
->>>>>>> 5f793dc68112e8a22a17829dc9ed237d9e9bf2db
         pyautogui.hotkey('ctrl', 'c')
         sleep(1)
         str = paste()
         if str != "noImage.gif":
-            filename = "id" + item.itemid + "color" + item.color
-            pyautogui.write(traduction(filename))
+            filename = "id" + item.itemid + "color" + item.colorid + ".jpg"
+            pyautogui.hotkey('ctrl', 'a')
+            sleep(1)
+            copy(filename)
+            # pyautogui.write(filename)
+            sleep(1)
+            pyautogui.hotkey('ctrl', 'v')
             for i in range(3):
                 sleep(0.5)
                 pyautogui.press('enter')
@@ -147,6 +101,3 @@ class BRICKLINK():
         if filename in list_pict or filename in list_down:
             return True
         return False
-
-# mettre en place des interruptions en cas de deconnexion à la page internet
-# mise en place d'un fichier d'écriture des references non trouvées

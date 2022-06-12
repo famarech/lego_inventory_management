@@ -1,0 +1,9 @@
+[{"itemtypeid":"S","itemtypename":"Set"},
+{"itemtypeid":"P","itemtypename":"Part"},
+{"itemtypeid":"M","itemtypename":"Minifigure"},
+{"itemtypeid":"B","itemtypename":"Book"},
+{"itemtypeid":"G","itemtypename":"Gear"},
+{"itemtypeid":"C","itemtypename":"Catalog"},
+{"itemtypeid":"I","itemtypename":"Instruction"},
+{"itemtypeid":"O","itemtypename":"Original Box"},
+{"itemtypeid":"U","itemtypename":"Unsorted Lot"}]
