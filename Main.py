@@ -16,6 +16,7 @@ f_9 = abspath('./ressources/exemples/from_user_inv_semicolon.csv')
 f10 = abspath('essai.csv')
 f11 = abspath('essai2.csv')
 f12 = abspath('Joseph.csv')
+f13 = abspath('./ressources/stocks/malette_noire.csv')
 
 # inv = INVENTAIRE(f_1, 'blk', 'inv') #ok
 # inv = INVENTAIRE(f_2, 'blk', 'inv') #ok
@@ -65,3 +66,9 @@ f12 = abspath('Joseph.csv')
 
 # inv10 = INVENTAIRE(f10, 'pyth', 'inv')
 # inv10.get_picture()
+
+inv13 = INVENTAIRE(f13, 'pyth', 'inv')
+print(inv13.price_total())
+print(inv13.weight_total())
+print(inv13.qty_total())
+

@@ -1,0 +1,101 @@
+LOTID;DATEADDED;CATEGORY;COLOR;PRICE;QTY;BULK;IMAGE;DESCRIPTION;CONDITION;ITEMTYPE;ITEMID;SALE;STOCKROOM;WEIGHT;DATELASTSOLD;CURRENCY;CATEGORYNAME;CATNAME1;CATNAME2;CATNAME3;CATNAME4;COLORNAME;RGB;COLORTYPE;SUBCONDITION;REMARKS;TIERQTY1;TIERPRICE1;TIERQTY2;TIERPRICE2;TIERQTY3;TIERPRICE3;RESERVEDFOR;RETAIN;SUPERLOTID;SUPERLOTQTY;EXTDESCRIPTION;ITEMTYPENAME;ITEMIDNAME;DIMENSIONX;DIMENSIONY;DIMENSIONZ;BOX;COLUMN;ROW
+;;992;18;0,1145;6;;id15303color18.jpg;;U;P;15303;;;0,65;;;Projectile Launcher;Projectile Launcher;;P;;Trans-Neon Orange;#FF4231;Transparent;;;;;;;;;;;;;;Part;Projectile Arrow, Bar 8L with Round End (Spring Shooter Dart);8;1;1;Malette Noire;A;1
+;;992;85;0,0771;13;;Not Available;;U;P;15301c01;;;1,9;;;Projectile Launcher;Projectile Launcher;;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Projectile Launcher, 1 x 4 Spring Shooter with Light Bluish Gray Top;1;4;1;Malette Noire;A;1
+;;992;11;0,0578;6;;id15403c01color11.jpg;;U;P;15403c01;;;1,08;;;Projectile Launcher;Projectile Launcher;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Projectile Launcher, 1 x 2 Mini Blaster / Shooter with Dark Bluish Gray Trigger (15403 / 15392);?;?;?;Malette Noire;A;1
+;;992;11;0,2251;5;;id18588c01color11.jpg;;U;P;18588c01;;;3,4;;;Projectile Launcher;Projectile Launcher;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Projectile Launcher, Rapid Shooter Six Barrel with Light Bluish Gray Trigger (18588 / 18587);?;?;?;Malette Noire;A;1
+;;504;85;0,8514;2;;id12787c01color85.jpg;;U;P;12787c01;;;31;;;Motor, Non-Electric;Motor;Non-Electric;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Pullback Motor 6 x 5 x 3;6;5;3;Malette Noire;A;2
+;;36;86;0,16;1;;Not Available;;U;P;44225;;;2,58;;;Technic;Technic;;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic Rotation Joint Disk with Pin Hole and 3L Liftarm Thick;?;?;?;Malette Noire;A;3
+;;;11;1,94;1;;Not Available;;U;;44224;;;0;;;;;;;;Black;#;;;;;;;;;;;;;;;;;;;;Malette Noire;A;3
+;;72;11;1,2904;3;;id3430c02color11.jpg;;U;P;3430c02;;;4,51;;;Vehicle;Vehicle;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Vehicle, Forklift 2 x 2 Plate and Yellow Fork;?;?;?;Malette Noire;A;3
+;;72;11;5,9052;1;;id4518bc02color11.jpg;;U;P;4518bc02;;;6,9;;;Vehicle;Vehicle;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Vehicle, Forklift Wide 1 x 2 Hinge Plate Locking and Dark Bluish Gray Wide Forks Reinforced;?;?;?;Malette Noire;A;3
+;;119;1;0,9554;2;;id4755color1.jpg;;U;P;4755;;;0,45;;;Electric;Electric;;P;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Electric Plate 1 x 2 with Contacts;1;2;0;Malette Noire;A;4
+;;119;11;2,561;2;;id4757color11.jpg;;U;P;4757;;;1,94;;;Electric;Electric;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Electric Plate 2 x 4 with Contacts;2;4;0;Malette Noire;A;4
+;;119;1;0,9794;2;;id4758color1.jpg;;U;P;4758;;;3,89;;;Electric;Electric;;P;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Electric Plate 2 x 8 with Contacts;2;8;0;Malette Noire;A;4
+;;123;1;5,4343;1;;id4767color1.jpg;;U;P;4767;;;1;;;Electric, Light & Sound;Electric;Light & Sound;P;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Electric, Light Brick 1 x 2 with Single Top Light;?;?;?;Malette Noire;A;4
+;;123;1;3,2338;1;;id4771color1.jpg;;U;P;4771;;;1,05;;;Electric, Light & Sound;Electric;Light & Sound;P;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Electric, Light Brick 1 x 4 with Twin Top Lights;1;4;1.17;Malette Noire;A;4
+;;123;1;1,2882;2;;id2500c01color1.jpg;;U;P;2500c01;;;4,39;;;Electric, Light & Sound;Electric;Light & Sound;P;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Electric, Light Brick 1 x 8 with 3 Front Light Prisms;?;?;?;Malette Noire;A;4
+;;123;11;1,8343;3;;id4774c01color11.jpg;;U;P;4774c01;;;2;;;Electric, Light & Sound;Electric;Light & Sound;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Electric, Sound Siren 9V 2 x 2 x 1 1/3 with Two Town Police / Fire Noises;2;2;1.33;Malette Noire;A;4
+;;123;1;2,4735;1;;id4774c02color1.jpg;;U;P;4774c02;;;2,42;;;Electric, Light & Sound;Electric;Light & Sound;P;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Electric, Sound Siren 9V 2 x 2 x 1 1/3 with Two Space Noises;2;2;1.33;Malette Noire;A;4
+;;123;1;3,1433;1;;id6035c01color1.jpg;;U;P;6035c01;;;1,4;;;Electric, Light & Sound;Electric;Light & Sound;P;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Electric, Light Brick 1 x 2 with Single Side Light (6034 / 6035);?;?;?;Malette Noire;A;4
+;;112;9;0,8856;3;;id3127color9.jpg;;U;P;3127;;;0,5;;;Hook;Hook;;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Hook Plate, Modified 1 x 2 with Crane Hook Left;?;?;?;Malette Noire;A;5
+;;112;5;0,4895;1;;id3127color5.jpg;;U;P;3127;;;0,5;;;Hook;Hook;;P;;Red;#B30006;Solid;;;;;;;;;;;;;;Part;Hook Plate, Modified 1 x 2 with Crane Hook Left;?;?;?;Malette Noire;A;5
+;;112;85;0,0598;7;;id30395color85.jpg;;U;P;30395;;;0,47;;;Hook;Hook;;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Hook Tow Ball;?;?;?;Malette Noire;A;5
+;;36;7;0,5046;1;;id32012color7.jpg;;U;P;32012;;;1,07;;;Technic;Technic;;P;;Blue;#0057A6;Solid;;;;;;;;;;;;;;Part;Technic Reel 3 x 2;?;?;?;Malette Noire;A;5
+;;36;85;0,3394;1;;id32012color85.jpg;;U;P;32012;;;1,07;;;Technic;Technic;;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Technic Reel 3 x 2;?;?;?;Malette Noire;A;5
+;;112;5;0,4586;3;;id3135c02color5.jpg;;U;P;3135c02;;;2,5;;;Hook;Hook;;P;;Red;#B30006;Solid;;;;;;;;;;;;;;Part;Hook Slope 45 2 x 3 x 1 1/3 Double with Arm and Light Gray Tow Hook;2;3;1.33;Malette Noire;A;5
+;;112;11;3,581;1;;idx99color11.jpg;;U;P;x99;;;3,48;;;Hook;Hook;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Hook Metal 1 x 4 x 1;?;?;?;Malette Noire;A;5
+;;141;11;0,1226;2;;id2792color11.jpg;;U;P;2792;;;4,27;;;Technic, Steering;Technic;Steering;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic, Steering Rack Top;?;?;?;Malette Noire;B;1
+;;72;5;0,4494;3;;id2484c01color5.jpg;;U;P;2484c01;;;1,5;;;Vehicle;Vehicle;;P;;Red;#B30006;Solid;;;;;;;;;;;;;;Part;Vehicle, Spring Wheels Holder 2 x 2;?;?;?;Malette Noire;B;1
+;;991;85;0,6337;4;;id30104color85.jpg;;U;P;30104;;;0,71;;;Chain;Chain;;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Chain 21 Links (16-17L);?;?;?;Malette Noire;B;2
+;;991;10;1,7337;4;;id30104color10.jpg;;U;P;30104;;;0,71;;;Chain;Chain;;P;;Dark Gray;#6B5A5A;Solid;;;;;;;;;;;;;;Part;Chain 21 Links (16-17L);?;?;?;Malette Noire;B;2
+;;991;86;0,6503;2;;id30104color86.jpg;;U;P;30104;;;0,71;;;Chain;Chain;;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Chain 21 Links (16-17L);?;?;?;Malette Noire;B;2
+;;991;115;0,2107;3;;id92338color115.jpg;;U;P;92338;;;0,33;;;Chain;Chain;;P;;Pearl Gold;#E79E1D;Pearl;;;;;;;;;;;;;;Part;Chain 5 Links;?;?;?;Malette Noire;B;2
+;;133;11;0,1588;8;;id45590color11.jpg;;U;P;45590;;;0,59;;;Technic, Connector;Technic;Connector;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic, Axle Connector Double - Flexible Rubber;?;?;?;Malette Noire;B;3
+;;411;9;0,8749;1;;id4352color9.jpg;;U;P;4352;;;17;;;Electric, Battery Box;Electric;Battery Box;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Electric 4.5V 3 C-Cell Battery Box Polarity Switch 2 x 4;?;?;?;Malette Noire;B;4
+;;735;7;0,7824;2;;id996bc01color7.jpg;;U;P;996bc01;;;1;;;Electric, Wire & Connector;Electric;Wire & Connector;P;;Blue;#0057A6;Solid;;;;;;;;;;;;;;Part;Electric, Connector, 1-Way Male Rounded with Cross-Cut Pin (Banana Plug);?;?;?;Malette Noire;B;4
+;;735;7;1,1903;1;;idbb0236bc01color7.jpg;;U;P;bb0236bc01;;;1,9;;;Electric, Wire & Connector;Electric;Wire & Connector;P;;Blue;#0057A6;Solid;;;;;;;;;;;;;;Part;Electric, Connector, 2-Way Male Rounded Narrow Type 2 with Cross-Cut Pins;?;?;?;Malette Noire;B;4
+;;136;11;0,4111;1;;id3743color11.jpg;;U;P;3743;;;0,79;;;Technic, Gear;Technic;Gear;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic, Gear Rack 1 x 4;1;4;0;Malette Noire;B;5
+;;136;9;0,4013;5;;id3743color9.jpg;;U;P;3743;;;0,79;;;Technic, Gear;Technic;Gear;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Gear Rack 1 x 4;1;4;0;Malette Noire;B;5
+;;136;1;0,368;5;;id3743color1.jpg;;U;P;3743;;;0,79;;;Technic, Gear;Technic;Gear;P;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Technic, Gear Rack 1 x 4;1;4;0;Malette Noire;B;5
+;;136;9;0,4304;1;;id4716color9.jpg;;U;P;4716;;;0,6;;;Technic, Gear;Technic;Gear;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Gear Worm Screw, Long;?;?;?;Malette Noire;B;6
+;;136;85;0,6246;1;;id15457color85.jpg;;U;P;15457;;;0,54;;;Technic, Gear;Technic;Gear;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Technic, Gear Worm Screw with 2 Bushes;1;3;0;Malette Noire;B;6
+;;136;85;0,3221;1;;id27938color85.jpg;;U;P;27938;;;0,65;;;Technic, Gear;Technic;Gear;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Technic, Gear Worm Screw, Short;?;?;?;Malette Noire;B;6
+;;133;86;0,4377;1;;id62520c01color86.jpg;;U;P;62520c01;;;0,54;;;Technic, Connector;Technic;Connector;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic, Universal Joint 3L;?;?;?;Malette Noire;B;6
+;;133;9;0,7693;2;;id9244c01color9.jpg;;U;P;9244c01;;;0,78;;;Technic, Connector;Technic;Connector;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Universal Joint 4L;?;?;?;Malette Noire;B;6
+;;136;85;1,4085;1;;id6573color85.jpg;;U;P;6573;;;3,25;;;Technic, Gear;Technic;Gear;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Technic, Gear Differential, 24-16 Teeth;4;4;4;Malette Noire;B;7
+;;136;86;0,3274;1;;id41667color86.jpg;;U;P;41667;;;2,06;;;Technic, Gear;Technic;Gear;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic, Arm 2 x 5 with 1/4 Gear 8 Tooth Double Bevel;?;?;?;Malette Noire;B;7
+;;136;9;1,3156;1;;Not Available;;U;P;73071;;;1,9;;;Technic, Gear;Technic;Gear;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Gear Differential 28 Teeth;?;?;?;Malette Noire;B;7
+;;36;11;1,5633;1;;id2426c01color11.jpg;;U;P;2426c01;;;5,5;;;Technic;Technic;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic Rack Winder;2;5;2;Malette Noire;B;7
+;;36;86;0,9326;1;;id99009c01color86.jpg;;U;P;99009c01;;;3,63;;;Technic;Technic;;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic Turntable 28 Tooth with Black Top (99009 / 99010);3.75;3.75;2.6;Malette Noire;B;7
+;;136;11;0,4283;1;;id3647color11.jpg;;U;P;3647;;;0,16;;;Technic, Gear;Technic;Gear;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic, Gear 8 Tooth;?;?;?;Malette Noire;C;1
+;;136;7;0,3545;2;;id3647color7.jpg;;U;P;3647;;;0,16;;;Technic, Gear;Technic;Gear;P;;Blue;#0057A6;Solid;;;;;;;;;;;;;;Part;Technic, Gear 8 Tooth;?;?;?;Malette Noire;C;1
+;;136;85;0,1291;10;;id3647color85.jpg;;U;P;3647;;;0,16;;;Technic, Gear;Technic;Gear;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Technic, Gear 8 Tooth;?;?;?;Malette Noire;C;1
+;;136;89;0,282;1;;id3647color89.jpg;;U;P;3647;;;0,16;;;Technic, Gear;Technic;Gear;P;;Dark Purple;#5F2683;Solid;;;;;;;;;;;;;;Part;Technic, Gear 8 Tooth;?;?;?;Malette Noire;C;1
+;;136;86;0,1781;4;;id3647color86.jpg;;U;P;3647;;;0,16;;;Technic, Gear;Technic;Gear;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic, Gear 8 Tooth;?;?;?;Malette Noire;C;1
+;;136;9;0,1087;20;;id3647color9.jpg;;U;P;3647;;;0,16;;;Technic, Gear;Technic;Gear;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Gear 8 Tooth;?;?;?;Malette Noire;C;1
+;;136;27;0,4274;1;;id3647color27.jpg;;U;P;3647;;;0,16;;;Technic, Gear;Technic;Gear;P;;Rust;#B24817;Solid;;;;;;;;;;;;;;Part;Technic, Gear 8 Tooth;?;?;?;Malette Noire;C;1
+;;136;3;0,4593;1;;id3647color3.jpg;;U;P;3647;;;0,16;;;Technic, Gear;Technic;Gear;P;;Yellow;#FFE001;Solid;;;;;;;;;;;;;;Part;Technic, Gear 8 Tooth;?;?;?;Malette Noire;C;1
+;;136;7;1,0355;1;;id3648color7.jpg;;U;P;3648;;;1,17;;;Technic, Gear;Technic;Gear;P;;Blue;#0057A6;Solid;;;;;;;;;;;;;;Part;Technic, Gear 24 Tooth (2nd Version - 1 Axle Hole);?;?;?;Malette Noire;C;1
+;;136;85;0,3804;2;;id3648color85.jpg;;U;P;3648;;;1,17;;;Technic, Gear;Technic;Gear;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Technic, Gear 24 Tooth (2nd Version - 1 Axle Hole);?;?;?;Malette Noire;C;1
+;;136;5;2,5765;1;;id3649color5.jpg;;U;P;3649;;;3,76;;;Technic, Gear;Technic;Gear;P;;Red;#B30006;Solid;;;;;;;;;;;;;;Part;Technic, Gear 40 Tooth;?;?;?;Malette Noire;C;1
+;;136;9;0,1066;7;;id4019color9.jpg;;U;P;4019;;;0,7;;;Technic, Gear;Technic;Gear;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Gear 16 Tooth (First Version - 4 Round Holes);?;?;?;Malette Noire;C;1
+;;136;9;0,1582;5;;id4143color9.jpg;;U;P;4143;;;0,2;;;Technic, Gear;Technic;Gear;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Gear 14 Tooth Bevel;?;?;?;Malette Noire;C;1
+;;136;10;0,4206;3;;id6542color10.jpg;;U;P;6542;;;0,7;;;Technic, Gear;Technic;Gear;P;;Dark Gray;#6B5A5A;Solid;;;;;;;;;;;;;;Part;Technic, Gear 16 Tooth with Clutch;?;?;?;Malette Noire;C;1
+;;136;2;0,0965;5;;id6589color2.jpg;;U;P;6589;;;0,29;;;Technic, Gear;Technic;Gear;P;;Tan;#EED9A4;Solid;;;;;;;;;;;;;;Part;Technic, Gear 12 Tooth Bevel;?;?;?;Malette Noire;C;1
+;;136;85;0,1193;2;;id10928color85.jpg;;U;P;10928;;;0,22;;;Technic, Gear;Technic;Gear;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Technic, Gear 8 Tooth with Dual Face;?;?;?;Malette Noire;C;1
+;;136;2;0,2894;2;;id32198color2.jpg;;U;P;32198;;;0,75;;;Technic, Gear;Technic;Gear;P;;Tan;#EED9A4;Solid;;;;;;;;;;;;;;Part;Technic, Gear 20 Tooth Bevel;?;?;?;Malette Noire;C;1
+;;136;11;0,2542;7;;id32269color11.jpg;;U;P;32269;;;1,4;;;Technic, Gear;Technic;Gear;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic, Gear 20 Tooth Double Bevel;?;?;?;Malette Noire;C;1
+;;136;86;0,3676;1;;id32269color86.jpg;;U;P;32269;;;1,4;;;Technic, Gear;Technic;Gear;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic, Gear 20 Tooth Double Bevel;?;?;?;Malette Noire;C;1
+;;136;2;0,2155;3;;id32269color2.jpg;;U;P;32269;;;1,4;;;Technic, Gear;Technic;Gear;P;;Tan;#EED9A4;Solid;;;;;;;;;;;;;;Part;Technic, Gear 20 Tooth Double Bevel;?;?;?;Malette Noire;C;1
+;;136;11;0,0721;21;;id32270color11.jpg;;U;P;32270;;;0,58;;;Technic, Gear;Technic;Gear;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic, Gear 12 Tooth Double Bevel;1.6;1.6;0.8;Malette Noire;C;1
+;;136;86;0,1222;2;;id32270color86.jpg;;U;P;32270;;;0,58;;;Technic, Gear;Technic;Gear;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic, Gear 12 Tooth Double Bevel;1.6;1.6;0.8;Malette Noire;C;1
+;;136;9;0,1074;1;;id32270color9.jpg;;U;P;32270;;;0,58;;;Technic, Gear;Technic;Gear;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Gear 12 Tooth Double Bevel;1.6;1.6;0.8;Malette Noire;C;1
+;;136;86;0,1284;12;;id87407color86.jpg;;U;P;87407;;;0,8;;;Technic, Gear;Technic;Gear;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic, Gear 20 Tooth Bevel with Pin Hole;?;?;?;Malette Noire;C;1
+;;136;86;0,1214;8;;id94925color86.jpg;;U;P;94925;;;0,7;;;Technic, Gear;Technic;Gear;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic, Gear 16 Tooth (Second Version - Reinforced);?;?;?;Malette Noire;C;1
+;;136;9;0,2162;3;;Not Available;;U;P;3650a;;;1,08;;;Technic, Gear;Technic;Gear;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Gear 24 Tooth Crown (1st Version - Not Reinforced);?;?;?;Malette Noire;C;1
+;;136;86;0,3655;1;;id3650bcolor86.jpg;;U;P;3650b;;;1,1;;;Technic, Gear;Technic;Gear;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic, Gear 24 Tooth Crown (2nd Version - Reinforced);?;?;?;Malette Noire;C;1
+;;36;86;0,1448;2;;id2850color86.jpg;;U;P;2850;;;2,81;;;Technic;Technic;;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic Engine Cylinder (Undetermined Type);?;?;?;Malette Noire;C;2
+;;36;85;0,8619;3;;id2851color85.jpg;;U;P;2851;;;0,4;;;Technic;Technic;;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Technic Engine Piston Round;?;?;?;Malette Noire;C;2
+;;36;3;0,0681;5;;id2851color3.jpg;;U;P;2851;;;0,4;;;Technic;Technic;;P;;Yellow;#FFE001;Solid;;;;;;;;;;;;;;Part;Technic Engine Piston Round;?;?;?;Malette Noire;C;2
+;;36;86;0,0619;7;;id2852color86.jpg;;U;P;2852;;;0,29;;;Technic;Technic;;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic Engine Connecting Rod;?;?;?;Malette Noire;C;2
+;;138;11;0,1631;60;;id3711color11.jpg;;U;P;3711;;;0,09;;;Technic, Link;Technic;Link;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic, Link Chain;?;?;?;Malette Noire;C;2
+;;136;11;0,1473;1;;id6585color11.jpg;;U;P;6585;;;4,5;;;Technic, Gear;Technic;Gear;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic, Gearbox 4 x 4 x 1 2/3;4;4;1.67;Malette Noire;C;2
+;;136;86;0,9016;1;;id18940color86.jpg;;U;P;18940;;;10,2;;;Technic, Gear;Technic;Gear;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic, Gear Rack 1 x 14 x 2 Housing;2;15;0;Malette Noire;C;2
+;;136;85;0,8758;1;;id18942color85.jpg;;U;P;18942;;;7,5;;;Technic, Gear;Technic;Gear;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Technic, Gear Rack 1 x 14 x 2 with Axle and Pin Holes;1;14;2;Malette Noire;C;2
+;;36;86;0,0962;4;;id2850bcolor86.jpg;;U;P;2850b;;;2,89;;;Technic;Technic;;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic Engine Cylinder with Bottom Slots;?;?;?;Malette Noire;C;2
+;;36;11;1,7783;2;;id2856c03color11.jpg;;U;P;2856c03;;;15,5;;;Technic;Technic;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Technic Turntable 56 Tooth Extended Arms with Light Bluish Gray Top (2856 / 2855);?;?;?;Malette Noire;C;2
+;;111;11;0,3264;3;;id2815color11.jpg;;U;P;2815;;;0,75;;;Tire & Tread;Tire & Tread;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Tire Technic Wedge Belt Wheel;?;?;?;Malette Noire;C;3
+;;43;86;0,2233;1;;id4185color86.jpg;;U;P;4185;;;0,97;;;Wheel;Wheel;;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Technic Wedge Belt Wheel (Pulley);3;3;0;Malette Noire;C;3
+;;43;34;0,0942;9;;id4185color34.jpg;;U;P;4185;;;0,97;;;Wheel;Wheel;;P;;Lime;#C4E000;Solid;;;;;;;;;;;;;;Part;Technic Wedge Belt Wheel (Pulley);3;3;0;Malette Noire;C;3
+;;43;2;0,1745;1;;id4185color2.jpg;;U;P;4185;;;0,97;;;Wheel;Wheel;;P;;Tan;#EED9A4;Solid;;;;;;;;;;;;;;Part;Technic Wedge Belt Wheel (Pulley);3;3;0;Malette Noire;C;3
+;;43;3;0,1398;5;;id4185color3.jpg;;U;P;4185;;;0,97;;;Wheel;Wheel;;P;;Yellow;#FFE001;Solid;;;;;;;;;;;;;;Part;Technic Wedge Belt Wheel (Pulley);3;3;0;Malette Noire;C;3
+;;542;12;4,9301;1;;id32181c04color12.jpg;;U;P;32181c04;;;6,29;;;Technic, Shock Absorber;Technic;Shock Absorber;P;;Trans-Clear;#EEEEEE;Transparent;;;;;;;;;;;;;;Part;Technic, Shock Absorber 10L Damped - Soft Spring;?;?;?;Malette Noire;C;4
+;;411;11;12,8405;1;;id4760c01color11.jpg;;U;P;4760c01;;;18;;;Electric, Battery Box;Electric;Battery Box;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Electric 9V Battery Box Small Assembly;8;4;2.33;Malette Noire;C;4
+;;411;1;2,9652;1;;id4760c01pb07color1.jpg;;U;P;4760c01pb07;;;18;;;Electric, Battery Box;Electric;Battery Box;P;;White;#FFFFFF;Solid;;;;;;;;;;;;;;Part;Electric 9V Battery Box Small with 'POLICE' Pattern on Both Sides (Stickers) - Set 6450;8;4;2.33;Malette Noire;C;4
+;;992;86;0,3408;1;;id57028c01color86.jpg;;U;P;57028c01;;;2,9;;;Projectile Launcher;Projectile Launcher;;P;;Light Bluish Gray;#AFB5C7;Solid;;;;;;;;;;;;;;Part;Projectile Arrow, Liftarm Shaft with Hollow Black Rubber End;2.5;8;2;Malette Noire;C;4
+;;992;11;0,2622;1;;id57029c01color11.jpg;;U;P;57029c01;;;6,31;;;Projectile Launcher;Projectile Launcher;;P;;Black;#212121;Solid;;;;;;;;;;;;;;Part;Projectile Launcher, Cannon, Flat Bottom;2;5.5;3;Malette Noire;C;4
+;;992;85;0,1978;1;;id57029c01color85.jpg;;U;P;57029c01;;;6,31;;;Projectile Launcher;Projectile Launcher;;P;;Dark Bluish Gray;#595D60;Solid;;;;;;;;;;;;;;Part;Projectile Launcher, Cannon, Flat Bottom;2;5.5;3;Malette Noire;C;4
+;;542;9;1,1492;9;;id731c05color9.jpg;;U;P;731c05;;;1,5;;;Technic, Shock Absorber;Technic;Shock Absorber;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Shock Absorber 6.5L - Normal Spring;?;?;?;Malette Noire;C;4
+;;542;9;1,2467;2;;id731c06color9.jpg;;U;P;731c06;;;1,565;;;Technic, Shock Absorber;Technic;Shock Absorber;P;;Light Gray;#9C9C9C;Solid;;;;;;;;;;;;;;Part;Technic, Shock Absorber 6.5L - Soft Spring, Standard Coils;?;?;?;Malette Noire;C;4
+;;504;3;0,6704;1;;idbb0046color3.jpg;;U;P;bb0046;;;55;;;Motor, Non-Electric;Motor;Non-Electric;P;;Yellow;#FFE001;Solid;;;;;;;;;;;;;;Part;Windup Motor 1980s;?;?;?;Malette Noire;C;4
+;;134;3;8,2547;2;;id50450color3.jpg;;U;P;50450;;;4,75;;;Technic, Axle;Technic;Axle;P;;Yellow;#FFE001;Solid;;;;;;;;;;;;;;Part;Technic, Axle 32L;?;?;?;Malette Noire;Z;0

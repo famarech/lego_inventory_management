@@ -10,8 +10,13 @@ write module en cours
 sauvegarde en continue lors de get_price à faire en mode a
 refaire la fonction impression_recherche pour une ecriture complete dans le WriteModule
 
+faire une fonction speciale dedié à la première connexion
+qui vérifie la présence des fichiers auth.json et mdp.json
+et qui renvoir l'erreur et l'adresse IP lors de la première connexion à l'api quand on à pas de jeton
 
 
+il faut un fichier recap des modules à installer pour faire fonctionner le programme
+tk, pyauotgui, yarl, requests_auth0 etc ...
 
 tester la fonction refresh_infos sur chaque type d'exemple
 dans les fonction du loading ne reste que la fonction depuis impression
