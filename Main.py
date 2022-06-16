@@ -18,16 +18,15 @@ f11 = abspath('essai2.csv')
 f12 = abspath('Joseph.csv')
 f13 = abspath('./ressources/stocks/malette_noire.csv')
 
-# inv = INVENTAIRE(f_1, 'blk', 'inv') #ok
-# inv = INVENTAIRE(f_2, 'blk', 'inv') #ok
-# inv = INVENTAIRE(f_3, 'blk', 'inv') # ok
+# inv1 = INVENTAIRE(f_1, 'blk', 'inv') #ok
+# inv2 = INVENTAIRE(f_2, 'blk', 'inv') #ok
+# inv3 = INVENTAIRE(f_3, 'blk', 'inv') # ok
 # inv4 = INVENTAIRE(f_4, 'blk', 'set') #ok
-# inv = INVENTAIRE(f_5, 'blk', 'set') #ok
-# inv = INVENTAIRE(f_6, 'pyth', 'upload') #ok
-# inv = INVENTAIRE(f_7, 'pyth', 'impression') # a faire
+# inv5 = INVENTAIRE(f_5, 'blk', 'set') #ok
+# inv6 = INVENTAIRE(f_6, 'pyth', 'upload') #ok
+# inv7 = INVENTAIRE(f_7, 'pyth', 'impression') # a faire
 # inv8 = INVENTAIRE(f_8, 'pyth', 'inv') #ok
-# inv = INVENTAIRE(f_9, 'user', 'inv') #ok
-
+# inv9 = INVENTAIRE(f_9, 'user', 'inv') #ok
 
 # inv10 = INVENTAIRE(f10, 'pyth', 'inv')
 #
@@ -61,9 +60,6 @@ f13 = abspath('./ressources/stocks/malette_noire.csv')
 #
 # inv10.sauvegarder(abspath('./ressources/stocks/'), False)
 
-
-
-
 # inv10 = INVENTAIRE(f10, 'pyth', 'inv')
 # inv10.get_picture()
 
@@ -71,4 +67,3 @@ inv13 = INVENTAIRE(f13, 'pyth', 'inv')
 print(inv13.price_total())
 print(inv13.weight_total())
 print(inv13.qty_total())
-

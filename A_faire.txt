@@ -5,6 +5,7 @@ trier l'inventaire en fonction de self.urlimage dans l'ordre decroissant ?
 pour avoir tous les "image Not Available" à la fin ou au début
 puis n'envoyer dans la fonction get_picture que les items dont l'image n'est pas disponible
 
+découper les archives pictures.zip en fichiers inférieur à 50Mo pour git
 
 write module en cours
 sauvegarde en continue lors de get_price à faire en mode a
