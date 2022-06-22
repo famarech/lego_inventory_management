@@ -269,10 +269,10 @@ class ITEM:
 
     def transform_to_impression_html(self, index):
         if self.urlimage != "Not Available":
-            path_picture = "../03 - Pictures/id" + self.itemid +\
+            path_picture = "../pictures/id" + self.itemid +\
                                                 "color" + self.colorid + ".jpg"
         else:
-            path_picture = "../03 - Pictures/noImage.jpg"
+            path_picture = "../pictures/noImage.jpg"
         if (index % 2) == 0:
             pair = "pair"
         else:

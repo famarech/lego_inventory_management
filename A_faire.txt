@@ -5,8 +5,6 @@ trier l'inventaire en fonction de self.urlimage dans l'ordre decroissant ?
 pour avoir tous les "image Not Available" à la fin ou au début
 puis n'envoyer dans la fonction get_picture que les items dont l'image n'est pas disponible
 
-découper les archives pictures.zip en fichiers inférieur à 50Mo pour git
-
 write module en cours
 sauvegarde en continue lors de get_price à faire en mode a
 refaire la fonction impression_recherche pour une ecriture complete dans le WriteModule
@@ -15,6 +13,9 @@ faire une fonction speciale dedié à la première connexion
 qui vérifie la présence des fichiers auth.json et mdp.json
 et qui renvoir l'erreur et l'adresse IP lors de la première connexion à l'api quand on à pas de jeton
 
+le refresh_infos
+doit aussi contenir le rafraichissement de urlimage
+re-écrire la fonction pour écrire plus court ?
 
 il faut un fichier recap des modules à installer pour faire fonctionner le programme
 tk, pyauotgui, yarl, requests_auth0 etc ...

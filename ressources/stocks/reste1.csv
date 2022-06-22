@@ -1,0 +1,263 @@
+LOTID;DATEADDED;CATEGORY;COLOR;PRICE;QTY;BULK;IMAGE;DESCRIPTION;CONDITION;ITEMTYPE;ITEMID;SALE;STOCKROOM;ITEMWEIGHT;DATELASTSOLD;BASECURRENCYCODE;CATEGORYNAME;CATEGORYNAMEUNDER;COLORNAME;ITEMTYPENAME;ITEMIDNAME;BOX;LINE;ROW;DIMENSIONX;DIMENSIONY;DIMENSIONZ
+;05/01/2022;5;9;0,17;29;1;;;U;P;2357;;Y;1,25;;EUR;Brick;;Light Gray;Part;Brick 2 x 2 Corner;Etagere Indigo;A;5;2;2;1
+;05/01/2022;5;86;0,12;2;1;;;U;P;2357;;Y;1,25;;EUR;Brick;;Light Bluish Gray;Part;Brick 2 x 2 Corner;Etagere Indigo;A;5;2;2;1
+;05/01/2022;26;9;0,11;12;1;;;U;P;2420;;Y;0,54;;EUR;Plate;;Light Gray;Part;Plate 2 x 2 Corner;Etagere Indigo;A;5;2;2;0
+;05/01/2022;26;10;0,17;10;1;;;U;P;2420;;Y;0,54;;EUR;Plate;;Dark Gray;Part;Plate 2 x 2 Corner;Etagere Indigo;A;5;2;2;0
+;05/01/2022;26;86;0,17;23;1;;;U;P;2420;;Y;0,54;;EUR;Plate;;Light Bluish Gray;Part;Plate 2 x 2 Corner;Etagere Indigo;A;5;2;2;0
+;05/01/2022;26;9;0,27;4;1;;;U;P;2445;;Y;3,5;;EUR;Plate;;Light Gray;Part;Plate 2 x 12;Etagere Indigo;A;5;2;12;0
+;05/01/2022;26;86;0,22;10;1;;;U;P;2445;;Y;3,5;;EUR;Plate;;Light Bluish Gray;Part;Plate 2 x 12;Etagere Indigo;A;5;2;12;0
+;05/01/2022;32;9;0,41;30;1;;;U;P;2449;;Y;1,88;;EUR;Slope, Inverted;;Light Gray;Part;Slope, Inverted 75 2 x 1 x 3;Etagere Indigo;A;5;2;1;3
+;05/01/2022;5;9;0,24;14;1;;;U;P;2456;;Y;3,74;;EUR;Brick;;Light Gray;Part;Brick 2 x 6;Etagere Indigo;A;5;2;6;1
+;05/01/2022;5;86;0,17;2;1;;;U;P;2456;;Y;3,74;;EUR;Brick;;Light Bluish Gray;Part;Brick 2 x 6;Etagere Indigo;A;5;2;6;1
+;05/01/2022;5;9;0,71;3;1;;;U;P;2465;;Y;6,2;;EUR;Brick;;Light Gray;Part;Brick 1 x 16;Etagere Indigo;A;5;1;16;1
+;05/01/2022;5;86;0,67;1;1;;;U;P;2465;;Y;6,2;;EUR;Brick;;Light Bluish Gray;Part;Brick 1 x 16;Etagere Indigo;A;5;1;16;1
+;05/01/2022;5;9;0,25;38;1;;;U;P;3001;;Y;2,32;;EUR;Brick;;Light Gray;Part;Brick 2 x 4;Etagere Indigo;A;5;2;4;1
+;05/01/2022;5;86;0,71;11;1;;;U;P;3001;;Y;2,32;;EUR;Brick;;Light Bluish Gray;Part;Brick 2 x 4;Etagere Indigo;A;5;2;4;1
+;05/01/2022;5;9;0,16;27;1;;;U;P;3002;;Y;1,92;;EUR;Brick;;Light Gray;Part;Brick 2 x 3;Etagere Indigo;A;5;2;3;1
+;05/01/2022;5;86;0,1;4;1;;;U;P;3002;;Y;1,92;;EUR;Brick;;Light Bluish Gray;Part;Brick 2 x 3;Etagere Indigo;A;5;2;3;1
+;05/01/2022;5;9;0,12;79;1;;;U;P;3003;;Y;1,35;;EUR;Brick;;Light Gray;Part;Brick 2 x 2;Etagere Indigo;A;5;2;2;1
+;05/01/2022;5;86;0,16;11;1;;;U;P;3003;;Y;1,35;;EUR;Brick;;Light Bluish Gray;Part;Brick 2 x 2;Etagere Indigo;A;5;2;2;1
+;05/01/2022;5;9;0,13;29;1;;;U;P;3004;;Y;0,83;;EUR;Brick;;Light Gray;Part;Brick 1 x 2;Etagere Indigo;A;5;1;2;1
+;05/01/2022;5;86;0,12;7;1;;;U;P;3004;;Y;0,83;;EUR;Brick;;Light Bluish Gray;Part;Brick 1 x 2;Etagere Indigo;A;5;1;2;1
+;05/01/2022;5;9;0,14;30;1;;;U;P;3005;;Y;0,44;;EUR;Brick;;Light Gray;Part;Brick 1 x 1;Etagere Indigo;A;5;1;1;1
+;05/01/2022;5;86;0,13;4;1;;;U;P;3005;;Y;0,44;;EUR;Brick;;Light Bluish Gray;Part;Brick 1 x 1;Etagere Indigo;A;5;1;1;1
+;05/01/2022;5;9;0,38;12;1;;;U;P;3006;;Y;5,75;;EUR;Brick;;Light Gray;Part;Brick 2 x 10;Etagere Indigo;A;5;2;10;0
+;05/01/2022;5;9;0,35;8;1;;;U;P;3007;;Y;4,75;;EUR;Brick;;Light Gray;Part;Brick 2 x 8;Etagere Indigo;A;5;2;8;1
+;05/01/2022;5;86;0,32;2;1;;;U;P;3007;;Y;4,75;;EUR;Brick;;Light Bluish Gray;Part;Brick 2 x 8;Etagere Indigo;A;5;2;8;1
+;05/01/2022;5;9;0,37;5;1;;;U;P;3008;;Y;3,21;;EUR;Brick;;Light Gray;Part;Brick 1 x 8;Etagere Indigo;A;5;1;8;0
+;05/01/2022;5;86;0,48;3;1;;;U;P;3008;;Y;3,21;;EUR;Brick;;Light Bluish Gray;Part;Brick 1 x 8;Etagere Indigo;A;5;1;8;0
+;05/01/2022;5;9;0,3;18;1;;;U;P;3009;;Y;2,42;;EUR;Brick;;Light Gray;Part;Brick 1 x 6;Etagere Indigo;A;5;1;6;1
+;05/01/2022;5;86;0,24;3;1;;;U;P;3009;;Y;2,42;;EUR;Brick;;Light Bluish Gray;Part;Brick 1 x 6;Etagere Indigo;A;5;1;6;1
+;05/01/2022;5;9;0,23;42;1;;;U;P;3010;;Y;1,64;;EUR;Brick;;Light Gray;Part;Brick 1 x 4;Etagere Indigo;A;5;1;4;1
+;05/01/2022;5;86;0,3;11;1;;;U;P;3010;;Y;1,64;;EUR;Brick;;Light Bluish Gray;Part;Brick 1 x 4;Etagere Indigo;A;5;1;4;1
+;05/01/2022;26;9;0,13;59;1;;;U;P;3020;;Y;1,2;;EUR;Plate;;Light Gray;Part;Plate 2 x 4;Etagere Indigo;A;5;2;4;0
+;05/01/2022;26;86;0,23;41;1;;;U;P;3020;;Y;1,2;;EUR;Plate;;Light Bluish Gray;Part;Plate 2 x 4;Etagere Indigo;A;5;2;4;0
+;05/01/2022;26;9;0,1;27;1;;;U;P;3021;;Y;0,93;;EUR;Plate;;Light Gray;Part;Plate 2 x 3;Etagere Indigo;A;5;2;3;0
+;05/01/2022;26;86;0,13;31;1;;;U;P;3021;;Y;0,93;;EUR;Plate;;Light Bluish Gray;Part;Plate 2 x 3;Etagere Indigo;A;5;2;3;0
+;05/01/2022;26;9;0,07;72;1;;;U;P;3022;;Y;0,64;;EUR;Plate;;Light Gray;Part;Plate 2 x 2;Etagere Indigo;A;5;2;2;0
+;05/01/2022;26;86;0,1;22;1;;;U;P;3022;;Y;0,64;;EUR;Plate;;Light Bluish Gray;Part;Plate 2 x 2;Etagere Indigo;A;5;2;2;0
+;05/01/2022;26;9;0,07;17;1;;;U;P;3023;;Y;0,36;;EUR;Plate;;Light Gray;Part;Plate 1 x 2;Etagere Indigo;A;5;1;2;0
+;05/01/2022;26;10;0,15;9;1;;;U;P;3023;;Y;0,36;;EUR;Plate;;Dark Gray;Part;Plate 1 x 2;Etagere Indigo;A;5;1;2;0
+;05/01/2022;26;86;0,07;60;1;;;U;P;3023;;Y;0,36;;EUR;Plate;;Light Bluish Gray;Part;Plate 1 x 2;Etagere Indigo;A;5;1;2;0
+;05/01/2022;26;9;2,26;3;1;;;U;P;3027;;Y;13,27;;EUR;Plate;;Light Gray;Part;Plate 6 x 16;Etagere Indigo;A;5;6;16;0
+;05/01/2022;26;86;1,51;1;1;;;U;P;3027;;Y;13,27;;EUR;Plate;;Light Bluish Gray;Part;Plate 6 x 16;Etagere Indigo;A;5;6;16;0
+;05/01/2022;26;9;1,81;1;1;;;U;P;3028;;Y;9,47;;EUR;Plate;;Light Gray;Part;Plate 6 x 12;Etagere Indigo;A;5;6;12;0
+;05/01/2022;26;9;0,76;1;1;;;U;P;3029;;Y;6,76;;EUR;Plate;;Light Gray;Part;Plate 4 x 12;Etagere Indigo;A;5;4;12;0
+;05/01/2022;26;86;0,67;1;1;;;U;P;3029;;Y;6,76;;EUR;Plate;;Light Bluish Gray;Part;Plate 4 x 12;Etagere Indigo;A;5;4;12;0
+;05/01/2022;26;9;0,19;9;1;;;U;P;3031;;Y;2,22;;EUR;Plate;;Light Gray;Part;Plate 4 x 4;Etagere Indigo;A;5;4;4;0
+;05/01/2022;26;86;0,11;4;1;;;U;P;3031;;Y;2,22;;EUR;Plate;;Light Bluish Gray;Part;Plate 4 x 4;Etagere Indigo;A;5;4;4;0
+;05/01/2022;26;9;0,27;14;1;;;U;P;3032;;Y;3,3;;EUR;Plate;;Light Gray;Part;Plate 4 x 6;Etagere Indigo;A;5;4;6;0
+;05/01/2022;26;86;0,19;9;1;;;U;P;3032;;Y;3,3;;EUR;Plate;;Light Bluish Gray;Part;Plate 4 x 6;Etagere Indigo;A;5;4;6;0
+;05/01/2022;26;9;1,03;2;1;;;U;P;3033;;Y;7,95;;EUR;Plate;;Light Gray;Part;Plate 6 x 10;Etagere Indigo;A;5;6;10;0
+;05/01/2022;26;86;0,64;8;1;;;U;P;3033;;Y;7,95;;EUR;Plate;;Light Bluish Gray;Part;Plate 6 x 10;Etagere Indigo;A;5;6;10;0
+;05/01/2022;26;9;0,23;4;1;;;U;P;3034;;Y;2,27;;EUR;Plate;;Light Gray;Part;Plate 2 x 8;Etagere Indigo;A;5;2;8;0
+;05/01/2022;26;86;1,03;19;1;;;U;P;3034;;Y;2,27;;EUR;Plate;;Light Bluish Gray;Part;Plate 2 x 8;Etagere Indigo;A;5;2;8;0
+;05/01/2022;26;9;0,41;4;1;;;U;P;3035;;Y;4,7;;EUR;Plate;;Light Gray;Part;Plate 4 x 8;Etagere Indigo;A;5;4;8;0
+;05/01/2022;26;86;0,32;2;1;;;U;P;3035;;Y;4,7;;EUR;Plate;;Light Bluish Gray;Part;Plate 4 x 8;Etagere Indigo;A;5;4;8;0
+;05/01/2022;26;9;0,72;4;1;;;U;P;3036;;Y;6,4;;EUR;Plate;;Light Gray;Part;Plate 6 x 8;Etagere Indigo;A;5;6;8;0
+;05/01/2022;26;86;0,56;4;1;;;U;P;3036;;Y;6,4;;EUR;Plate;;Light Bluish Gray;Part;Plate 6 x 8;Etagere Indigo;A;5;6;8;0
+;05/01/2022;31;9;0,23;4;1;;;U;P;3037;;Y;1,97;;EUR;Slope;;Light Gray;Part;Slope 45 2 x 4;Etagere Indigo;A;5;2;4;0
+;05/01/2022;31;10;0,14;4;1;;;U;P;3037;;Y;1,97;;EUR;Slope;;Dark Gray;Part;Slope 45 2 x 4;Etagere Indigo;A;5;2;4;0
+;05/01/2022;31;9;0,21;1;1;;;U;P;3038;;Y;1,72;;EUR;Slope;;Light Gray;Part;Slope 45 2 x 3;Etagere Indigo;A;5;2;3;0
+;05/01/2022;31;9;0,21;5;1;;;U;P;3038;;Y;1,72;;EUR;Slope;;Light Gray;Part;Slope 45 2 x 3;Etagere Indigo;A;5;2;3;0
+;05/01/2022;31;9;0,08;39;1;;;U;P;3039;;Y;1,15;;EUR;Slope;;Light Gray;Part;Slope 45 2 x 2;Etagere Indigo;A;5;2;2;1
+;05/01/2022;31;86;0,21;11;1;;;U;P;3039;;Y;1,15;;EUR;Slope;;Light Bluish Gray;Part;Slope 45 2 x 2;Etagere Indigo;A;5;2;2;1
+;05/01/2022;31;9;0,07;77;1;;;U;P;3040;;Y;0,69;;EUR;Slope;;Light Gray;Part;Slope 45 2 x 1;Etagere Indigo;A;5;2;1;1
+;05/01/2022;31;10;0,07;5;1;;;U;P;3040;;Y;0,69;;EUR;Slope;;Dark Gray;Part;Slope 45 2 x 1;Etagere Indigo;A;5;2;1;1
+;05/01/2022;31;86;0,08;6;1;;;U;P;3040;;Y;0,69;;EUR;Slope;;Light Bluish Gray;Part;Slope 45 2 x 1;Etagere Indigo;A;5;2;1;1
+;05/01/2022;31;9;0,22;2;1;;;U;P;3045;;Y;0,9;;EUR;Slope;;Light Gray;Part;Slope 45 2 x 2 Double Convex Corner;Etagere Indigo;A;5;2;2;1
+;05/01/2022;31;86;0,29;3;1;;;U;P;3045;;Y;0,9;;EUR;Slope;;Light Bluish Gray;Part;Slope 45 2 x 2 Double Convex Corner;Etagere Indigo;A;5;2;2;1
+;05/01/2022;31;9;0,37;3;1;;;U;P;3297;;Y;2,57;;EUR;Slope;;Light Gray;Part;Slope 33 3 x 4;Etagere Indigo;A;5;3;4;1
+;05/01/2022;31;9;0,11;14;1;;;U;P;3298;;Y;1,33;;EUR;Slope;;Light Gray;Part;Slope 33 3 x 2;Etagere Indigo;A;5;3;2;1
+;05/01/2022;31;10;0,1;3;1;;;U;P;3298;;Y;1,33;;EUR;Slope;;Dark Gray;Part;Slope 33 3 x 2;Etagere Indigo;A;5;3;2;1
+;05/01/2022;26;86;1,34;2;1;;;U;P;3456;;Y;11;;EUR;Plate;;Light Bluish Gray;Part;Plate 6 x 14;Etagere Indigo;A;5;6;14;0
+;05/01/2022;26;9;0,15;21;1;;;U;P;3460;;Y;1,36;;EUR;Plate;;Light Gray;Part;Plate 1 x 8;Etagere Indigo;A;5;1;8;0
+;05/01/2022;26;10;0,15;1;1;;;U;P;3460;;Y;1,36;;EUR;Plate;;Dark Gray;Part;Plate 1 x 8;Etagere Indigo;A;5;1;8;0
+;05/01/2022;26;86;1,34;12;1;;;U;P;3460;;Y;1,36;;EUR;Plate;;Light Bluish Gray;Part;Plate 1 x 8;Etagere Indigo;A;5;1;8;0
+;05/01/2022;5;9;0,21;36;1;;;U;P;3622;;Y;1,24;;EUR;Brick;;Light Gray;Part;Brick 1 x 3;Etagere Indigo;A;5;1;3;1
+;05/01/2022;5;86;0,15;9;1;;;U;P;3622;;Y;1,24;;EUR;Brick;;Light Bluish Gray;Part;Brick 1 x 3;Etagere Indigo;A;5;1;3;1
+;05/01/2022;26;10;0,12;7;1;;;U;P;3623;;Y;0,53;;EUR;Plate;;Dark Gray;Part;Plate 1 x 3;Etagere Indigo;A;5;1;3;0
+;05/01/2022;26;86;0,21;15;1;;;U;P;3623;;Y;0,53;;EUR;Plate;;Light Bluish Gray;Part;Plate 1 x 3;Etagere Indigo;A;5;1;3;0
+;05/01/2022;32;9;0,12;5;1;;;U;P;3660;;Y;1,25;;EUR;Slope, Inverted;;Light Gray;Part;Slope, Inverted 45 2 x 2;Etagere Indigo;A;5;2;2;1
+;05/01/2022;32;10;0,06;28;1;;;U;P;3660;;Y;1,25;;EUR;Slope, Inverted;;Dark Gray;Part;Slope, Inverted 45 2 x 2;Etagere Indigo;A;5;2;2;1
+;05/01/2022;32;86;0,21;7;1;;;U;P;3660;;Y;1,25;;EUR;Slope, Inverted;;Light Bluish Gray;Part;Slope, Inverted 45 2 x 2;Etagere Indigo;A;5;2;2;1
+;05/01/2022;32;9;0,07;14;1;;;U;P;3665;;Y;0,66;;EUR;Slope, Inverted;;Light Gray;Part;Slope, Inverted 45 2 x 1;Etagere Indigo;A;5;2;1;1
+;05/01/2022;32;10;0,06;2;1;;;U;P;3665;;Y;0,66;;EUR;Slope, Inverted;;Dark Gray;Part;Slope, Inverted 45 2 x 1;Etagere Indigo;A;5;2;1;1
+;05/01/2022;32;86;0,12;4;1;;;U;P;3665;;Y;0,66;;EUR;Slope, Inverted;;Light Bluish Gray;Part;Slope, Inverted 45 2 x 1;Etagere Indigo;A;5;2;1;1
+;05/01/2022;26;9;0,11;7;1;;;U;P;3666;;Y;1,06;;EUR;Plate;;Light Gray;Part;Plate 1 x 6;Etagere Indigo;A;5;1;6;0
+;05/01/2022;26;10;0,17;3;1;;;U;P;3666;;Y;1,06;;EUR;Plate;;Dark Gray;Part;Plate 1 x 6;Etagere Indigo;A;5;1;6;0
+;05/01/2022;26;86;0,07;21;1;;;U;P;3666;;Y;1,06;;EUR;Plate;;Light Bluish Gray;Part;Plate 1 x 6;Etagere Indigo;A;5;1;6;0
+;05/01/2022;26;9;0,09;38;1;;;U;P;3710;;Y;0,71;;EUR;Plate;;Light Gray;Part;Plate 1 x 4;Etagere Indigo;A;5;1;4;0
+;05/01/2022;26;86;0,35;30;1;;;U;P;3710;;Y;0,71;;EUR;Plate;;Light Bluish Gray;Part;Plate 1 x 4;Etagere Indigo;A;5;1;4;0
+;05/01/2022;26;9;0,12;29;1;;;U;P;3795;;Y;1,74;;EUR;Plate;;Light Gray;Part;Plate 2 x 6;Etagere Indigo;A;5;2;6;0
+;05/01/2022;26;86;0,09;12;1;;;U;P;3795;;Y;1,74;;EUR;Plate;;Light Bluish Gray;Part;Plate 2 x 6;Etagere Indigo;A;5;2;6;0
+;05/01/2022;26;9;0,22;5;1;;;U;P;3832;;Y;2,91;;EUR;Plate;;Light Gray;Part;Plate 2 x 10;Etagere Indigo;A;5;2;10;0
+;05/01/2022;26;86;0,17;5;1;;;U;P;3832;;Y;2,91;;EUR;Plate;;Light Bluish Gray;Part;Plate 2 x 10;Etagere Indigo;A;5;2;10;0
+;05/01/2022;26;9;0,51;3;1;;;U;P;3958;;Y;4,71;;EUR;Plate;;Light Gray;Part;Plate 6 x 6;Etagere Indigo;A;5;6;6;0
+;05/01/2022;26;86;0,26;4;1;;;U;P;3958;;Y;4,71;;EUR;Plate;;Light Bluish Gray;Part;Plate 6 x 6;Etagere Indigo;A;5;6;6;0
+;05/01/2022;31;9;0,08;25;1;;;U;P;4286;;Y;0,98;;EUR;Slope;;Light Gray;Part;Slope 33 3 x 1;Etagere Indigo;A;5;3;1;1
+;05/01/2022;31;10;0,09;4;1;;;U;P;4286;;Y;0,98;;EUR;Slope;;Dark Gray;Part;Slope 33 3 x 1;Etagere Indigo;A;5;3;1;1
+;05/01/2022;31;86;0,08;4;1;;;U;P;4286;;Y;0,98;;EUR;Slope;;Light Bluish Gray;Part;Slope 33 3 x 1;Etagere Indigo;A;5;3;1;1
+;05/01/2022;32;9;0,09;5;1;;;U;P;4287;;Y;0,94;;EUR;Slope, Inverted;;Light Gray;Part;Slope, Inverted 33 3 x 1;Etagere Indigo;A;5;3;1;0
+;05/01/2022;32;86;0,08;3;1;;;U;P;4287;;Y;0,94;;EUR;Slope, Inverted;;Light Bluish Gray;Part;Slope, Inverted 33 3 x 1;Etagere Indigo;A;5;3;1;0
+;05/01/2022;31;86;0,44;1;1;;;U;P;4445;;Y;4,04;;EUR;Slope;;Light Bluish Gray;Part;Slope 45 2 x 8;Etagere Indigo;A;5;2;8;1
+;05/01/2022;5;9;0,61;2;1;;;U;P;6111;;Y;3,8;;EUR;Brick;;Light Gray;Part;Brick 1 x 10;Etagere Indigo;A;5;1;10;1
+;05/01/2022;31;9;0,26;5;1;;;U;P;30363;;Y;1,71;;EUR;Slope;;Light Gray;Part;Slope 18 4 x 2;Etagere Indigo;A;5;4;2;1
+;05/01/2022;31;10;0,17;6;1;;;U;P;30363;;Y;1,71;;EUR;Slope;;Dark Gray;Part;Slope 18 4 x 2;Etagere Indigo;A;5;4;2;1
+;05/01/2022;31;86;0,24;1;1;;;U;P;30363;;Y;1,71;;EUR;Slope;;Light Bluish Gray;Part;Slope 18 4 x 2;Etagere Indigo;A;5;4;2;1
+;05/01/2022;26;86;0,85;1;1;;;U;P;41539;;Y;9,4;;EUR;Plate;;Light Bluish Gray;Part;Plate 8 x 8;Etagere Indigo;A;5;8;8;0
+;05/01/2022;26;86;0,28;4;1;;;U;P;60479;;Y;1,95;;EUR;Plate;;Light Bluish Gray;Part;Plate 1 x 12;Etagere Indigo;A;5;1;12;0
+;05/01/2022;31;86;0,09;1;1;;;U;P;60481;;Y;1,16;;EUR;Slope;;Light Bluish Gray;Part;Slope 65 2 x 1 x 2;Etagere Indigo;A;5;2;1;2
+;05/01/2022;31;9;0,42;1;1;;;U;P;3046a;;Y;1,11;;EUR;Slope;;Light Gray;Part;Slope 45 2 x 2 Double Concave;Etagere Indigo;A;5;2;2;1
+;05/01/2022;31;86;0,1;8;1;;;U;P;3678b;;Y;2,09;;EUR;Slope;;Light Bluish Gray;Part;Slope 65 2 x 2 x 2 with Bottom Tube;Etagere Indigo;A;5;2;2;2
+;05/01/2022;31;9;0,35;10;1;;;U;P;3684a;;Y;2,83;;EUR;Slope;;Light Gray;Part;Slope 75 2 x 2 x 3 - Hollow Studs;Etagere Indigo;A;5;2;2;3
+;05/01/2022;31;86;0,23;1;1;;;U;P;3684a;;Y;2,83;;EUR;Slope;;Light Bluish Gray;Part;Slope 75 2 x 2 x 3 - Hollow Studs;Etagere Indigo;A;5;2;2;3
+;05/01/2022;32;9;0,11;10;1;;;U;P;3747a;;Y;1,65;;EUR;Slope, Inverted;;Light Gray;Part;Slope, Inverted 33 3 x 2 without Connections between Studs;Etagere Indigo;A;5;3;2;0
+;05/01/2022;32;10;0,09;2;1;;;U;P;3747a;;Y;1,65;;EUR;Slope, Inverted;;Dark Gray;Part;Slope, Inverted 33 3 x 2 without Connections between Studs;Etagere Indigo;A;5;3;2;0
+;05/01/2022;32;86;0,2;4;1;;;U;P;3747a;;Y;1,65;;EUR;Slope, Inverted;;Light Bluish Gray;Part;Slope, Inverted 33 3 x 2 without Connections between Studs;Etagere Indigo;A;5;3;2;0
+;05/01/2022;31;9;0,24;24;1;;;U;P;4460a;;Y;1,7;;EUR;Slope;;Light Gray;Part;Slope 75 2 x 1 x 3 - Open Stud;Etagere Indigo;A;5;2;1;3
+;05/01/2022;31;10;0,36;2;1;;;U;P;4460a;;Y;1,7;;EUR;Slope;;Dark Gray;Part;Slope 75 2 x 1 x 3 - Open Stud;Etagere Indigo;A;5;2;1;3
+;05/01/2022;31;86;0,29;3;1;;;U;P;4460a;;Y;1,7;;EUR;Slope;;Light Bluish Gray;Part;Slope 75 2 x 1 x 3 - Open Stud;Etagere Indigo;A;5;2;1;3
+;05/01/2022;4;1;0,33;29;1;;;U;P;3956;;Y;1,13;;EUR;Bracket;;White;Part;Bracket 2 x 2 - 2 x 2 with 2 Holes;Etagere Indigo;C;2;2,4;2;2
+;05/01/2022;4;5;0,17;13;1;;;U;P;3956;;Y;1,13;;EUR;Bracket;;Red;Part;Bracket 2 x 2 - 2 x 2 with 2 Holes;Etagere Indigo;C;2;2,4;2;2
+;05/01/2022;4;7;0,15;4;1;;;U;P;3956;;Y;1,13;;EUR;Bracket;;Blue;Part;Bracket 2 x 2 - 2 x 2 with 2 Holes;Etagere Indigo;C;2;2,4;2;2
+;05/01/2022;4;8;0,1;5;1;;;U;P;3956;;Y;1,13;;EUR;Bracket;;Brown;Part;Bracket 2 x 2 - 2 x 2 with 2 Holes;Etagere Indigo;C;2;2,4;2;2
+;05/01/2022;4;9;0,17;8;1;;;U;P;3956;;Y;1,13;;EUR;Bracket;;Light Gray;Part;Bracket 2 x 2 - 2 x 2 with 2 Holes;Etagere Indigo;C;2;2,4;2;2
+;05/01/2022;4;11;0,1;32;1;;;U;P;3956;;Y;1,13;;EUR;Bracket;;Black;Part;Bracket 2 x 2 - 2 x 2 with 2 Holes;Etagere Indigo;C;2;2,4;2;2
+;05/01/2022;4;86;0,06;3;1;;;U;P;3956;;Y;1,13;;EUR;Bracket;;Light Bluish Gray;Part;Bracket 2 x 2 - 2 x 2 with 2 Holes;Etagere Indigo;C;2;2,4;2;2
+;05/01/2022;22;1;0,15;8;1;;;U;P;4214;;Y;1,26;;EUR;Hinge;;White;Part;Hinge Vehicle Roof Holder 1 x 4 x 2;Etagere Indigo;C;2;1;4;2
+;05/01/2022;22;3;0,34;5;1;;;U;P;4214;;Y;1,26;;EUR;Hinge;;Yellow;Part;Hinge Vehicle Roof Holder 1 x 4 x 2;Etagere Indigo;C;2;1;4;2
+;05/01/2022;22;5;0,13;9;1;;;U;P;4214;;Y;1,26;;EUR;Hinge;;Red;Part;Hinge Vehicle Roof Holder 1 x 4 x 2;Etagere Indigo;C;2;1;4;2
+;05/01/2022;22;7;0,21;1;1;;;U;P;4214;;Y;1,26;;EUR;Hinge;;Blue;Part;Hinge Vehicle Roof Holder 1 x 4 x 2;Etagere Indigo;C;2;1;4;2
+;05/01/2022;22;11;0,15;6;1;;;U;P;4214;;Y;1,26;;EUR;Hinge;;Black;Part;Hinge Vehicle Roof Holder 1 x 4 x 2;Etagere Indigo;C;2;1;4;2
+;05/01/2022;7;1;0,28;9;1;;;U;P;4217;;Y;5,38;;EUR;Brick, Modified;;White;Part;Brick, Modified 1 x 14 with Groove;Etagere Indigo;C;2;1;14;1
+;05/01/2022;7;5;0,26;12;1;;;U;P;4217;;Y;5,38;;EUR;Brick, Modified;;Red;Part;Brick, Modified 1 x 14 with Groove;Etagere Indigo;C;2;1;14;1
+;05/01/2022;10;1;0,1;2;1;;;U;P;4345;;Y;2,17;;EUR;Container;;White;Part;Container, Box 2 x 2 x 2;Etagere Indigo;C;2;2;2;2
+;05/01/2022;10;3;0,21;1;1;;;U;P;4345;;Y;2,17;;EUR;Container;;Yellow;Part;Container, Box 2 x 2 x 2;Etagere Indigo;C;2;2;2;2
+;05/01/2022;10;5;0,08;9;1;;;U;P;4345;;Y;2,17;;EUR;Container;;Red;Part;Container, Box 2 x 2 x 2;Etagere Indigo;C;2;2;2;2
+;05/01/2022;10;7;0,22;2;1;;;U;P;4345;;Y;2,17;;EUR;Container;;Blue;Part;Container, Box 2 x 2 x 2;Etagere Indigo;C;2;2;2;2
+;05/01/2022;10;9;0,22;5;1;;;U;P;4345;;Y;2,17;;EUR;Container;;Light Gray;Part;Container, Box 2 x 2 x 2;Etagere Indigo;C;2;2;2;2
+;05/01/2022;10;11;0,11;7;1;;;U;P;4345;;Y;2,17;;EUR;Container;;Black;Part;Container, Box 2 x 2 x 2;Etagere Indigo;C;2;2;2;2
+;05/01/2022;10;16;0,25;1;1;;;U;P;4345;;Y;2,17;;EUR;Container;;Trans-Neon Green;Part;Container, Box 2 x 2 x 2;Etagere Indigo;C;2;2;2;2
+;05/01/2022;10;86;0,09;6;1;;;U;P;4345;;Y;2,17;;EUR;Container;;Light Bluish Gray;Part;Container, Box 2 x 2 x 2;Etagere Indigo;C;2;2;2;2
+;05/01/2022;4;1;0,11;2;1;;;U;P;4598;;Y;1,87;;EUR;Bracket;;White;Part;Bracket 3 x 2 - 2 x 2 Inverted (Space Seat);Etagere Indigo;C;2;3,4;2;2
+;05/01/2022;4;2;0,08;2;1;;;U;P;4598;;Y;1,87;;EUR;Bracket;;Tan;Part;Bracket 3 x 2 - 2 x 2 Inverted (Space Seat);Etagere Indigo;C;2;3,4;2;2
+;05/01/2022;4;3;3,31;1;1;;;U;P;4598;;Y;1,87;;EUR;Bracket;;Yellow;Part;Bracket 3 x 2 - 2 x 2 Inverted (Space Seat);Etagere Indigo;C;2;3,4;2;2
+;05/01/2022;4;5;0,17;1;1;;;U;P;4598;;Y;1,87;;EUR;Bracket;;Red;Part;Bracket 3 x 2 - 2 x 2 Inverted (Space Seat);Etagere Indigo;C;2;3,4;2;2
+;05/01/2022;4;7;0,09;2;1;;;U;P;4598;;Y;1,87;;EUR;Bracket;;Blue;Part;Bracket 3 x 2 - 2 x 2 Inverted (Space Seat);Etagere Indigo;C;2;3,4;2;2
+;05/01/2022;4;11;0,1;4;1;;;U;P;4598;;Y;1,87;;EUR;Bracket;;Black;Part;Bracket 3 x 2 - 2 x 2 Inverted (Space Seat);Etagere Indigo;C;2;3,4;2;2
+;05/01/2022;4;4;0,1;1;1;;;U;P;4732;;Y;3,87;;EUR;Bracket;;Orange;Part;Bracket 8 x 2 x 1 1/3;Etagere Indigo;C;2;8;2;1,33
+;05/01/2022;4;5;0,08;3;1;;;U;P;4732;;Y;3,87;;EUR;Bracket;;Red;Part;Bracket 8 x 2 x 1 1/3;Etagere Indigo;C;2;8;2;1,33
+;05/01/2022;4;8;0,1;1;1;;;U;P;4732;;Y;3,87;;EUR;Bracket;;Brown;Part;Bracket 8 x 2 x 1 1/3;Etagere Indigo;C;2;8;2;1,33
+;05/01/2022;4;11;0,22;7;1;;;U;P;4732;;Y;3,87;;EUR;Bracket;;Black;Part;Bracket 8 x 2 x 1 1/3;Etagere Indigo;C;2;8;2;1,33
+;05/01/2022;7;9;0,28;5;1;;;U;P;6056;;Y;3,5;;EUR;Brick, Modified;;Light Gray;Part;Brick, Modified 2 x 2 x 6 with Groove;Etagere Indigo;C;2;2;2;6
+;05/01/2022;4;1;0,68;1;1;;;U;P;6087;;Y;3,24;;EUR;Bracket;;White;Part;Bracket 5 x 2 x 2 1/3 with 2 Holes;Etagere Indigo;C;2;5;2;2,33
+;05/01/2022;4;11;0,06;8;1;;;U;P;6087;;Y;3,24;;EUR;Bracket;;Black;Part;Bracket 5 x 2 x 2 1/3 with 2 Holes;Etagere Indigo;C;2;5;2;2,33
+;05/01/2022;4;86;0,07;6;1;;;U;P;6087;;Y;3,24;;EUR;Bracket;;Light Bluish Gray;Part;Bracket 5 x 2 x 2 1/3 with 2 Holes;Etagere Indigo;C;2;5;2;2,33
+;05/01/2022;11;1;0,39;4;1;;;U;P;6259;;Y;3,92;;EUR;Cylinder;;White;Part;Cylinder Half 2 x 4 x 4;Etagere Indigo;C;2;2;4;4
+;05/01/2022;11;3;0,28;1;1;;;U;P;6259;;Y;3,92;;EUR;Cylinder;;Yellow;Part;Cylinder Half 2 x 4 x 4;Etagere Indigo;C;2;2;4;4
+;05/01/2022;11;9;1,05;1;1;;;U;P;6259;;Y;3,92;;EUR;Cylinder;;Light Gray;Part;Cylinder Half 2 x 4 x 4;Etagere Indigo;C;2;2;4;4
+;05/01/2022;137;3;0,21;1;1;;;U;P;6629;;Y;2,6;;EUR;Technic, Liftarm;;Yellow;Part;Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4);Etagere Indigo;C;2;0;0;0
+;05/01/2022;137;4;0,15;6;1;;;U;P;6629;;Y;2,6;;EUR;Technic, Liftarm;;Orange;Part;Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4);Etagere Indigo;C;2;0;0;0
+;05/01/2022;137;7;0,08;1;1;;;U;P;6629;;Y;2,6;;EUR;Technic, Liftarm;;Blue;Part;Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4);Etagere Indigo;C;2;0;0;0
+;05/01/2022;137;9;0,13;1;1;;;U;P;6629;;Y;2,6;;EUR;Technic, Liftarm;;Light Gray;Part;Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4);Etagere Indigo;C;2;0;0;0
+;05/01/2022;137;11;0,07;1;1;;;U;P;6629;;Y;2,6;;EUR;Technic, Liftarm;;Black;Part;Technic, Liftarm, Modified Bent Thick 1 x 9 (6 - 4);Etagere Indigo;C;2;0;0;0
+;05/01/2022;4;11;0,04;2;1;;;U;P;11215;;Y;2,17;;EUR;Bracket;;Black;Part;Bracket 5 x 2 x 1 1/3 with 2 Holes;Etagere Indigo;C;2;5;2;1,33
+;05/01/2022;4;86;0,04;1;1;;;U;P;11215;;Y;2,17;;EUR;Bracket;;Light Bluish Gray;Part;Bracket 5 x 2 x 1 1/3 with 2 Holes;Etagere Indigo;C;2;5;2;1,33
+;05/01/2022;30;6;0,17;1;1;;;U;P;30078;;Y;6;;EUR;Propeller;;Green;Part;Propeller 6 Blade Fan 8 x 8;Etagere Indigo;C;2;0;0;0
+;05/01/2022;137;1;0,55;2;1;;;U;P;32278;;Y;4;;EUR;Technic, Liftarm;;White;Part;Technic, Liftarm Thick 1 x 15;Etagere Indigo;C;2;1;15;0
+;05/01/2022;137;4;0,41;2;1;;;U;P;32278;;Y;4;;EUR;Technic, Liftarm;;Orange;Part;Technic, Liftarm Thick 1 x 15;Etagere Indigo;C;2;1;15;0
+;05/01/2022;137;6;0,78;1;1;;;U;P;32278;;Y;4;;EUR;Technic, Liftarm;;Green;Part;Technic, Liftarm Thick 1 x 15;Etagere Indigo;C;2;1;15;0
+;05/01/2022;137;11;0,43;8;1;;;U;P;32278;;Y;4;;EUR;Technic, Liftarm;;Black;Part;Technic, Liftarm Thick 1 x 15;Etagere Indigo;C;2;1;15;0
+;05/01/2022;137;85;0,36;2;1;;;U;P;32278;;Y;4;;EUR;Technic, Liftarm;;Dark Bluish Gray;Part;Technic, Liftarm Thick 1 x 15;Etagere Indigo;C;2;1;15;0
+;05/01/2022;137;11;0,23;7;1;;;U;P;32525;;Y;2,8;;EUR;Technic, Liftarm;;Black;Part;Technic, Liftarm Thick 1 x 11;Etagere Indigo;C;2;1;11;0
+;05/01/2022;137;7;0,48;7;1;;;U;P;41239;;Y;3,3;;EUR;Technic, Liftarm;;Blue;Part;Technic, Liftarm Thick 1 x 13;Etagere Indigo;C;2;1;13;0
+;05/01/2022;137;11;0,28;17;1;;;U;P;41239;;Y;3,3;;EUR;Technic, Liftarm;;Black;Part;Technic, Liftarm Thick 1 x 13;Etagere Indigo;C;2;1;13;0
+;05/01/2022;137;85;0,26;2;1;;;U;P;41239;;Y;3,3;;EUR;Technic, Liftarm;;Dark Bluish Gray;Part;Technic, Liftarm Thick 1 x 13;Etagere Indigo;C;2;1;13;0
+;05/01/2022;137;86;0,42;8;1;;;U;P;41239;;Y;3,3;;EUR;Technic, Liftarm;;Light Bluish Gray;Part;Technic, Liftarm Thick 1 x 13;Etagere Indigo;C;2;1;13;0
+;05/01/2022;137;86;0,9;4;1;;;U;P;64179;;Y;5,3;;EUR;Technic, Liftarm;;Light Bluish Gray;Part;Technic, Liftarm, Modified Frame Thick 5 x 7 Open Center;Etagere Indigo;C;2;5;7;0
+;05/01/2022;154;6;1,19;1;1;;;U;P;64782;;Y;8,8;;EUR;Technic, Panel;;Green;Part;Technic, Panel Plate 5 x 11 x 1;Etagere Indigo;C;2;5;11;1
+;05/01/2022;154;86;1,05;8;1;;;U;P;64782;;Y;8,8;;EUR;Technic, Panel;;Light Bluish Gray;Part;Technic, Panel Plate 5 x 11 x 1;Etagere Indigo;C;2;5;11;1
+;05/01/2022;27;1;0,07;2;1;;;U;P;64799;;Y;2;;EUR;Plate, Modified;;White;Part;Plate, Modified 4 x 4 with 2 x 2 Cutout;Etagere Indigo;C;2;4;4;0
+;05/01/2022;27;3;0,09;1;1;;;U;P;64799;;Y;2;;EUR;Plate, Modified;;Yellow;Part;Plate, Modified 4 x 4 with 2 x 2 Cutout;Etagere Indigo;C;2;4;4;0
+;05/01/2022;27;11;0,1;2;1;;;U;P;64799;;Y;2;;EUR;Plate, Modified;;Black;Part;Plate, Modified 4 x 4 with 2 x 2 Cutout;Etagere Indigo;C;2;4;4;0
+;05/01/2022;27;86;0,09;2;1;;;U;P;64799;;Y;2;;EUR;Plate, Modified;;Light Bluish Gray;Part;Plate, Modified 4 x 4 with 2 x 2 Cutout;Etagere Indigo;C;2;4;4;0
+;05/01/2022;8;85;0,11;1;1;;;U;P;87081;;Y;3,04;;EUR;Brick, Round;;Dark Bluish Gray;Part;Brick, Round 4 x 4 with Hole;Etagere Indigo;C;2;4;4;1
+;05/01/2022;72;7;0,44;2;1;;;U;P;818;;Y;5;;EUR;Vehicle;;Blue;Part;Vehicle, Tipper Bucket 2 x 4;indigo;A;2;4;6;2
+;05/01/2022;91;8;1,03;3;1;;;U;P;2345;;Y;4,95;;EUR;Panel;;Brown;Part;Panel 3 x 3 x 6 Corner Wall;indigo;A;2;3;3;6
+;05/01/2022;91;11;0,56;1;1;;;U;P;2345;;Y;4,95;;EUR;Panel;;Black;Part;Panel 3 x 3 x 6 Corner Wall;indigo;A;2;3;3;6
+;05/01/2022;27;11;2,04;2;1;;;U;P;2539;;Y;3,5;;EUR;Plate, Modified;;Black;Part;Plate, Modified 6 x 6 Octagonal with Open Center and 4 Clips (Horizontal Grip);indigo;A;2;6;6;0
+;05/01/2022;90;8;6,5;1;1;;;U;P;2549;;Y;8,82;;EUR;Ladder;;Brown;Part;Rope Bridge;indigo;A;2;16;4;3
+;05/01/2022;105;11;2,53;1;1;;;U;P;2681;;Y;9;;EUR;Support;;Black;Part;Support 6 x 6 x 10 Stanchion;indigo;A;2;6;6;10
+;05/01/2022;116;11;18,71;2;1;;;U;P;3961;;Y;4,57;;EUR;Dish;;Black;Part;Dish 8 x 8 Inverted (Radar) - Solid Studs;indigo;A;2;8;8;1
+;05/01/2022;72;4;0,26;3;1;;;U;P;4080;;Y;7,3;;EUR;Vehicle;;Orange;Part;Vehicle, Tipper Bed 4 x 6;indigo;A;2;5;9;2
+;05/01/2022;72;34;0,42;1;1;;;U;P;4080;;Y;7,3;;EUR;Vehicle;;Lime;Part;Vehicle, Tipper Bed 4 x 6;indigo;A;2;5;9;2
+;05/01/2022;18;23;1,39;1;1;;;U;P;4094;;Y;3,32;;EUR;Minifigure, Utensil;;Pink;Part;Minifigure, Utensil Umbrella Top with No Bottom Flaps, 6 x 6 with Top Stud;indigo;A;2;0;0;0
+;05/01/2022;18;34;0,48;1;1;;;U;P;4094;;Y;3,32;;EUR;Minifigure, Utensil;;Lime;Part;Minifigure, Utensil Umbrella Top with No Bottom Flaps, 6 x 6 with Top Stud;indigo;A;2;0;0;0
+;05/01/2022;90;3;0,9;1;1;;;U;P;4207;;Y;3,21;;EUR;Ladder;;Yellow;Part;Ladder 14 x 2.5 with 13 Steps;indigo;A;2;0;0;0
+;05/01/2022;90;9;1,7;2;1;;;U;P;4207;;Y;3,21;;EUR;Ladder;;Light Gray;Part;Ladder 14 x 2.5 with 13 Steps;indigo;A;2;0;0;0
+;05/01/2022;90;86;3,48;3;1;;;U;P;4207;;Y;3,21;;EUR;Ladder;;Light Bluish Gray;Part;Ladder 14 x 2.5 with 13 Steps;indigo;A;2;0;0;0
+;05/01/2022;91;11;0,96;1;1;;;U;P;4444;;Y;5,9;;EUR;Panel;;Black;Part;Panel 2 x 5 x 6 Wall with Window;indigo;A;2;2;5;6
+;05/01/2022;479;1;0,12;1;1;;;U;P;4597;;Y;9,13;;EUR;Cockpit;;White;Part;Cockpit 6 x 6 x 1 Cabin Base;indigo;A;2;6;6;1
+;05/01/2022;479;11;0,3;1;1;;;U;P;4597;;Y;9,13;;EUR;Cockpit;;Black;Part;Cockpit 6 x 6 x 1 Cabin Base;indigo;A;2;6;6;1
+;05/01/2022;479;85;0,12;2;1;;;U;P;4597;;Y;9,13;;EUR;Cockpit;;Dark Bluish Gray;Part;Cockpit 6 x 6 x 1 Cabin Base;indigo;A;2;6;6;1
+;05/01/2022;4;4;0,1;1;1;;;U;P;4732;;Y;3,87;;EUR;Bracket;;Orange;Part;Bracket 8 x 2 x 1 1/3;indigo;A;2;8;2;1,33
+;05/01/2022;4;5;0,08;3;1;;;U;P;4732;;Y;3,87;;EUR;Bracket;;Red;Part;Bracket 8 x 2 x 1 1/3;indigo;A;2;8;2;1,33
+;05/01/2022;4;8;0,1;1;1;;;U;P;4732;;Y;3,87;;EUR;Bracket;;Brown;Part;Bracket 8 x 2 x 1 1/3;indigo;A;2;8;2;1,33
+;05/01/2022;4;11;0,21;7;1;;;U;P;4732;;Y;3,87;;EUR;Bracket;;Black;Part;Bracket 8 x 2 x 1 1/3;indigo;A;2;8;2;1,33
+;05/01/2022;103;10;2,24;1;1;;;U;P;4784;;Y;12;;EUR;Stairs;;Dark Gray;Part;Stairs 4 x 7 x 9 1/3 Straight Enclosed;indigo;A;2;4;7;9,33
+;05/01/2022;27;85;0,12;2;1;;;U;P;6063;;Y;6,5;;EUR;Plate, Modified;;Dark Bluish Gray;Part;Plate, Modified 10 x 10 Octagonal Open Center;indigo;A;2;10;10;0
+;05/01/2022;379;9;0,69;1;1;;;U;P;6066;;Y;9,2;;EUR;Roof;;Light Gray;Part;Castle Turret Top 4 x 8 x 2 1/3;indigo;A;2;4;8;2,33
+;05/01/2022;379;10;0,25;1;1;;;U;P;6066;;Y;9,2;;EUR;Roof;;Dark Gray;Part;Castle Turret Top 4 x 8 x 2 1/3;indigo;A;2;4;8;2,33
+;05/01/2022;379;11;0,38;5;1;;;U;P;6066;;Y;9,2;;EUR;Roof;;Black;Part;Castle Turret Top 4 x 8 x 2 1/3;indigo;A;2;4;8;2,33
+;05/01/2022;117;1;1,03;1;1;;;U;P;6177;;Y;5,49;;EUR;Tile, Round;;White;Part;Tile, Round 8 x 8 with 4 Studs in Center;indigo;A;2;8;8;0
+;05/01/2022;131;11;0,12;4;1;;;U;P;30029;;Y;6;;EUR;Vehicle, Base;;Black;Part;Vehicle, Base 4 x 10 x 2/3 with 4 x 2 Recessed Center with Smooth Underside;indigo;A;2;4;10;0,67
+;05/01/2022;583;85;0,15;2;1;;;U;P;30036;;Y;5,76;;EUR;Wedge, Plate;;Dark Bluish Gray;Part;Wedge, Plate 8 x 6 x 2/3 with Grille;indigo;A;2;8;6;0,67
+;05/01/2022;27;2;0,14;2;1;;;U;P;30041;;Y;4;;EUR;Plate, Modified;;Tan;Part;Plate, Modified 6 x 8 Trap Door Frame Horizontal;indigo;A;2;0;0;0
+;05/01/2022;27;11;0,09;1;1;;;U;P;30041;;Y;4;;EUR;Plate, Modified;;Black;Part;Plate, Modified 6 x 8 Trap Door Frame Horizontal;indigo;A;2;0;0;0
+;05/01/2022;27;85;0,1;3;1;;;U;P;30041;;Y;4;;EUR;Plate, Modified;;Dark Bluish Gray;Part;Plate, Modified 6 x 8 Trap Door Frame Horizontal;indigo;A;2;0;0;0
+;05/01/2022;27;2;0,12;2;1;;;U;P;30042;;Y;3,5;;EUR;Plate, Modified;;Tan;Part;Plate, Modified 4 x 5 with Trap Door Hinge;indigo;A;2;0;0;0
+;05/01/2022;27;11;0,09;1;1;;;U;P;30042;;Y;3,5;;EUR;Plate, Modified;;Black;Part;Plate, Modified 4 x 5 with Trap Door Hinge;indigo;A;2;0;0;0
+;05/01/2022;27;85;0,06;3;1;;;U;P;30042;;Y;3,5;;EUR;Plate, Modified;;Dark Bluish Gray;Part;Plate, Modified 4 x 5 with Trap Door Hinge;indigo;A;2;0;0;0
+;05/01/2022;540;85;0,01;3;1;;;U;P;30101;;Y;7,08;;EUR;Door, Frame;;Dark Bluish Gray;Part;Door, Frame 2 x 8 x 6 Swivel with Bottom Notches;indigo;A;2;2;8;6
+;05/01/2022;103;11;0,86;1;1;;;U;P;30134;;Y;7,58;;EUR;Stairs;;Black;Part;Stairs 7 x 4 x 6 Straight Open;indigo;A;2;7;4;6
+;05/01/2022;103;85;1,17;1;1;;;U;P;30134;;Y;7,58;;EUR;Stairs;;Dark Bluish Gray;Part;Stairs 7 x 4 x 6 Straight Open;indigo;A;2;7;4;6
+;05/01/2022;32;1;0,17;1;1;;;U;P;30183;;Y;6,12;;EUR;Slope, Inverted;;White;Part;Slope, Inverted 45 6 x 4 Double with Recessed Center;indigo;A;2;4;6;1
+;05/01/2022;93;11;0,11;5;1;;;U;P;30248;;Y;5,39;;EUR;Aircraft;;Black;Part;Helicopter Sled Rails 12 x 6;indigo;A;2;12;6;1,33
+;05/01/2022;93;85;0,08;4;1;;;U;P;30248;;Y;5,39;;EUR;Aircraft;;Dark Bluish Gray;Part;Helicopter Sled Rails 12 x 6;indigo;A;2;12;6;1,33
+;05/01/2022;93;86;0,01;1;1;;;U;P;30248;;Y;5,39;;EUR;Aircraft;;Light Bluish Gray;Part;Helicopter Sled Rails 12 x 6;indigo;A;2;12;6;1,33
+;05/01/2022;131;3;0,14;1;1;;;U;P;30263;;Y;7,91;;EUR;Vehicle, Base;;Yellow;Part;Vehicle, Trailer Base 6 x 12 x 1 1/3;indigo;A;2;6;12;1,33
+;05/01/2022;131;9;0,19;1;1;;;U;P;30263;;Y;7,91;;EUR;Vehicle, Base;;Light Gray;Part;Vehicle, Trailer Base 6 x 12 x 1 1/3;indigo;A;2;6;12;1,33
+;05/01/2022;131;11;0,08;1;1;;;U;P;30263;;Y;7,91;;EUR;Vehicle, Base;;Black;Part;Vehicle, Trailer Base 6 x 12 x 1 1/3;indigo;A;2;6;12;1,33
+;05/01/2022;32;4;0,14;1;1;;;U;P;30283;;Y;4,21;;EUR;Slope, Inverted;;Orange;Part;Slope, Inverted 45 6 x 4 Double with 4 x 4 Cutout;indigo;A;2;6;4;1
+;05/01/2022;32;11;0,08;1;1;;;U;P;30283;;Y;4,21;;EUR;Slope, Inverted;;Black;Part;Slope, Inverted 45 6 x 4 Double with 4 x 4 Cutout;indigo;A;2;6;4;1
+;05/01/2022;105;3;0,82;4;1;;;U;P;30517;;Y;6,79;;EUR;Support;;Yellow;Part;Support 2 x 2 x 10 Girder Triangular Vertical - Type 1 - Solid Top, 3 Posts;indigo;A;2;2;2;10
+;05/01/2022;105;10;0,93;1;1;;;U;P;30517;;Y;6,79;;EUR;Support;;Dark Gray;Part;Support 2 x 2 x 10 Girder Triangular Vertical - Type 1 - Solid Top, 3 Posts;indigo;A;2;2;2;10
+;05/01/2022;31;4;0,19;1;1;;;U;P;32083;;Y;5,91;;EUR;Slope;;Orange;Part;Slope 45 6 x 4 Double;indigo;A;2;6;4;1
+;05/01/2022;103;85;0,19;8;1;;;U;P;40243;;Y;1,77;;EUR;Stairs;;Dark Bluish Gray;Part;Stairs Spiral Step;indigo;A;2;2,5;6;0,67
+;05/01/2022;12;85;0,24;2;1;;;U;P;40249;;Y;4,33;;EUR;Door;;Dark Bluish Gray;Part;Door 2 x 5 x 5 Swivel, Bracket Base;indigo;A;2;2;5;5
+;05/01/2022;131;1;0,13;1;1;;;U;P;52036;;Y;5,75;;EUR;Vehicle, Base;;White;Part;Vehicle, Base 4 x 12 x 3/4 with 4 x 2 Recessed Center with Smooth Underside;indigo;A;2;4;12;0,75
+;05/01/2022;131;85;0,08;7;1;;;U;P;52036;;Y;5,75;;EUR;Vehicle, Base;;Dark Bluish Gray;Part;Vehicle, Base 4 x 12 x 3/4 with 4 x 2 Recessed Center with Smooth Underside;indigo;A;2;4;12;0,75
+;05/01/2022;105;85;0,64;5;1;;;U;P;57893;;Y;6,33;;EUR;Support;;Dark Bluish Gray;Part;Support 2 x 2 x 10 Girder Triangular Vertical - Type 2 - Open Side Top, 1 Post & 1 Panel;indigo;A;2;2;2;10
+;05/01/2022;105;3;0,75;4;1;;;U;P;58827;;Y;5,29;;EUR;Support;;Yellow;Part;Support 2 x 2 x 10 Girder Triangular Vertical - Type 3 - 3 Posts, 2 Sections;indigo;A;2;2;2;10
+;05/01/2022;105;11;0,92;3;1;;;U;P;58827;;Y;5,29;;EUR;Support;;Black;Part;Support 2 x 2 x 10 Girder Triangular Vertical - Type 3 - 3 Posts, 2 Sections;indigo;A;2;2;2;10
+;05/01/2022;105;85;1,23;1;1;;;U;P;58827;;Y;5,29;;EUR;Support;;Dark Bluish Gray;Part;Support 2 x 2 x 10 Girder Triangular Vertical - Type 3 - 3 Posts, 2 Sections;indigo;A;2;2;2;10
+;05/01/2022;105;5;0,74;1;1;;;U;P;64448;;Y;4,8;;EUR;Support;;Red;Part;Support 1 x 6 x 5 Girder Rectangular;indigo;A;2;1;6;5
+;05/01/2022;27;85;0,06;1;1;;;U;P;92099;;Y;3,1;;EUR;Plate, Modified;;Dark Bluish Gray;Part;Plate, Modified 4 x 6 with Trap Door Hinge (Long Pins);indigo;A;2;0;0;0
+;05/01/2022;105;11;0,51;2;1;;;U;P;95347;;Y;5,72;;EUR;Support;;Black;Part;Support 2 x 2 x 10 Girder Triangular Vertical - Type 4 - 3 Posts, 3 Sections;indigo;A;2;2;2;10
+;05/01/2022;105;11;0,22;1;1;;;U;P;30646b;;Y;9,2;;EUR;Support;;Black;Part;Support 2 x 2 x 8 with Grooves and Top Peg, Smooth on All Sides;indigo;A;2;2;2;8
+;05/01/2022;779;1;1,26;2;1;;;U;P;3961px2;;Y;4,57;;EUR;Dish, Decorated;;White;Part;Dish 8 x 8 Inverted (Radar) with Wheel of Fortune Pattern;indigo;A;2;8;8;1
+;05/01/2022;131;1;0,17;1;1;;;U;P;4212b;;Y;5,4;;EUR;Vehicle, Base;;White;Part;Vehicle, Base 4 x 10 x 2/3 with 2 x 2 Recessed Center with Smooth Underside, No Center Hole;indigo;A;2;4;10;0,67
+;05/01/2022;131;3;0,17;1;1;;;U;P;4212b;;Y;5,4;;EUR;Vehicle, Base;;Yellow;Part;Vehicle, Base 4 x 10 x 2/3 with 2 x 2 Recessed Center with Smooth Underside, No Center Hole;indigo;A;2;4;10;0,67
+;05/01/2022;131;5;0,18;3;1;;;U;P;4212b;;Y;5,4;;EUR;Vehicle, Base;;Red;Part;Vehicle, Base 4 x 10 x 2/3 with 2 x 2 Recessed Center with Smooth Underside, No Center Hole;indigo;A;2;4;10;0,67
+;05/01/2022;131;11;0,15;3;1;;;U;P;4212b;;Y;5,4;;EUR;Vehicle, Base;;Black;Part;Vehicle, Base 4 x 10 x 2/3 with 2 x 2 Recessed Center with Smooth Underside, No Center Hole;indigo;A;2;4;10;0,67
+;05/01/2022;116;9;0,57;2;1;;;U;P;4285a;;Y;1,9;;EUR;Dish;;Light Gray;Part;Dish 6 x 6 Inverted (Radar) Webbed - Type 1 (underside attachable at any position);indigo;A;2;6;6;0,67
+;05/01/2022;116;86;1,55;1;1;;;U;P;44375a;;Y;2,56;;EUR;Dish;;Light Bluish Gray;Part;Dish 6 x 6 Inverted (Radar) - Hollow Studs;indigo;A;2;6;6;0,67
+;05/01/2022;461;11;6,29;1;1;;;U;P;4444p04;;Y;5,9;;EUR;Panel, Decorated;;Black;Part;Panel 2 x 5 x 6 Wall with Window with Window Stones Light Gray Pattern;indigo;A;2;2;5;6
+;05/01/2022;105;7;2,72;1;1;;;U;P;4476a;;Y;2,34;;EUR;Support;;Blue;Part;Support 2 x 4 x 5 Stanchion Inclined, 3mm Wide Posts;indigo;A;2;2;4;5
+;05/01/2022;105;11;0,71;7;1;;;U;P;4476a;;Y;2,34;;EUR;Support;;Black;Part;Support 2 x 4 x 5 Stanchion Inclined, 3mm Wide Posts;indigo;A;2;2;4;5
+;05/01/2022;105;1;0,13;9;1;;;U;P;4476b;;Y;2,22;;EUR;Support;;White;Part;Support 2 x 4 x 5 Stanchion Inclined, 5mm Wide Posts;indigo;A;2;2;4;5
+;05/01/2022;105;3;0,21;2;1;;;U;P;4476b;;Y;2,22;;EUR;Support;;Yellow;Part;Support 2 x 4 x 5 Stanchion Inclined, 5mm Wide Posts;indigo;A;2;2;4;5
+;05/01/2022;105;5;0,27;4;1;;;U;P;4476b;;Y;2,22;;EUR;Support;;Red;Part;Support 2 x 4 x 5 Stanchion Inclined, 5mm Wide Posts;indigo;A;2;2;4;5
+;05/01/2022;105;11;0,28;7;1;;;U;P;4476b;;Y;2,22;;EUR;Support;;Black;Part;Support 2 x 4 x 5 Stanchion Inclined, 5mm Wide Posts;indigo;A;2;2;4;5
+;05/01/2022;116;12;0,75;2;1;;;U;P;50990a;;Y;9,3;;EUR;Dish;;Trans-Clear;Part;Dish 10 x 10 Inverted (Radar) - Hollow Studs;indigo;A;2;10;10;1
