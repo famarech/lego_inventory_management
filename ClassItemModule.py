@@ -171,6 +171,9 @@ class ITEM:
                                             "DimensionZ",
                                             self.itemid,
                                             "parts")
+        self.urlimage = self.exist_picture(self.itemid,
+                                            self.colorid,
+                                            self.urlimage)
 
     def afficher(self):
         print(f"{self.itemid} : {self.colorid} : {self.qty} : {self.price}€ " +\
