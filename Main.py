@@ -8,19 +8,16 @@ from api import bricklink_api as api
 
 
 
-# f01 = (abspath('./essai.csv'))
-# inv01 = INVENTAIRE(f01, 'pyth', 'inv')
+f01 = (abspath('./ressources/stocks/stock_total.csv'))
+inv01 = INVENTAIRE(f01, 'pyth', 'inv')
+inv01.upload()
 
-
-f02 = (abspath('./ressources/exemples/from_user_inv_of_sets.csv'))
-sets02 = SETS(f02, 'user', 'sets')
-
-
-sets02.afficher()
-
-
-
-
+#
+# f02 = (abspath('./ressources/exemples/from_user_inv_of_sets.csv'))
+# sets02 = SETS(f02, 'user', 'sets')
+#
+#
+# sets02.afficher()
 
 
 
@@ -40,11 +37,15 @@ sets02.afficher()
 
 
 
+
+
+
+# f11 = abspath('./en_cours/casier_moyen_bleue.csv')
 # inv11 = INVENTAIRE(f11, 'user', 'inv')
 # inv11.get_price()
 # inv11.refresh_infos()
 # inv11.sauvegarder(abspath('./ressources/stocks/'), False)
-# f11 = abspath('./ressources/stocks/casier_grand_orangedeux.csv')
+# f11 = abspath('./ressources/stocks/casier_moyen_bleue.csv')
 # inv11 = INVENTAIRE(f11, 'pyth', 'inv')
 # inv11.sauvegarder(abspath('./ressources/stocks/'), False)
 # print(inv11.price_total())
@@ -83,6 +84,7 @@ sets02.afficher()
 # f5 = abspath('./ressources/stocks/casier_petit_noir.csv')
 # f6 = abspath('./ressources/stocks/malette_noire.csv')
 # f7 = abspath('./ressources/stocks/tritiroir_violetfonce.csv')
+# f8 = abspath('./ressources/stocks/casier_moyen_bleue.csv')
 #
 # inv1 = INVENTAIRE(f1, 'pyth', 'inv')
 # inv2 = INVENTAIRE(f2, 'pyth', 'inv')
@@ -91,6 +93,7 @@ sets02.afficher()
 # inv5 = INVENTAIRE(f5, 'pyth', 'inv')
 # inv6 = INVENTAIRE(f6, 'pyth', 'inv')
 # inv7 = INVENTAIRE(f7, 'pyth', 'inv')
+# inv8 = INVENTAIRE(f8, 'pyth', 'inv')
 #
 # inv1.fusionner(inv2)
 # inv1.fusionner(inv3)
@@ -98,11 +101,14 @@ sets02.afficher()
 # inv1.fusionner(inv5)
 # inv1.fusionner(inv6)
 # inv1.fusionner(inv7)
+# inv1.fusionner(inv8)
 #
 # inv1.filename = 'stock_total'
-# inv1.sauvegarder(abspath('./ressources/stocks/'), True)
+# inv1.sauvegarder(abspath('./ressources/stocks/'), False)
 #
-# print(inv1.price_total())
+# print(inv1.price_total(), '€')
+# print(inv1.weight_total(), 'kg')
+
 
 
 
@@ -179,7 +185,9 @@ sets02.afficher()
 #                                 '', '', '', '', '',
 #                                 ''))
 #
-# inv10.sauvegarder(abspath('./ressources/stocks/'), False)
+# inv10.sauvegarder(abspath('./'), False)
+# inv10 = INVENTAIRE(f10, 'pyth', 'inv')
+# inv10.sauvegarder(abspath('./'), False)
 #
 # inv10 = INVENTAIRE(f10, 'pyth', 'inv')
 # inv10.get_picture()

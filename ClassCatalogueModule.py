@@ -45,7 +45,29 @@ class CATALOGUE:
             somme = somme + int(item.qty)
         return somme
 
+    def refresh_infos(self):
+        print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
+        start = time()
+        size = len(self.tab)
+        # time_per_item = 3.7 # en utilisant les fichiers json
+        time_per_item = 1.3004 # en utilisant l'api
+        finish = localtime(start + (time_per_item * size))
+        print("fin du rafraichissement estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
+        for item in self.tab:
+            item.refresh_infos_by_api()
+        filename = '/' + self.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+        delta = round(time() - start, 2)
+        print("\tRafraichissement terminé !!!\n" +\
+                f"{len(self.tab)} references en {delta} secondes.\n")
+
     def sauvegarder(self, path_destination, refresh):
+        print("Creation des fichiers d'uploads ...")
         path = path_destination + '\\' + self.filename + '.csv'
         self.tab.sort(key=lambda obj: obj.colorid)
         self.tab.sort(key=lambda obj: obj.itemid)
@@ -58,22 +80,12 @@ class CATALOGUE:
         print("Inventaire trié et sauvegardé !!!\n\n")
 
     def upload(self):
-        for item in self.tab:
-            print(item.price)
-            print(type(item.price))
-            print(item.qty)
-            print(type(item.qty))
-
         index = len(self.tab) - 1
         for item in reversed(self.tab):
             if item.qty == '0' or float(item.price.replace(',','.')) == 0:
                 del self.tab[index]
             index -= 1
         write.transform_to_upload_blk_xml(self.tab, self.filename)
-
-    def printing(self):
-        write.transform_to_impression_html(self.tab, self.filename)
-        print("Inventaire printé en html !!!")
 
     def fusionner(self, inventory_to_add):
         # !!!! ATTENTION !!!! met à jour l'objet actuel d'origine avec un nouvel inventaire
@@ -90,28 +102,11 @@ class CATALOGUE:
         print(f"l'inventaire '''{inventory_to_add.filename}''' " +\
                 f"fusionné dans l'Inventaire '''{self.filename}'''\n\n")
 
-    def get_price(self):
-        size = len(self.tab)
-        time_per_item = 1
-        finish = localtime(time() + (time_per_item * size))
-        print("fin de la recherche de prix estimé à :\n" +\
-                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
-        for item in self.tab:
-            item.get_price()
-        filename = '/' + self.filename + '_' +\
-                    str(localtime().tm_hour) +\
-                    str(localtime().tm_min) +\
-                    str(localtime().tm_sec) + '_temp.csv'
-        path = abspath('./ressources/save_temp')
-        write.save(self.tab, path + filename, "w")
-        print(f"\t\tFin de la Recherche de Prix de l'inventaire {self.filename}\n\n")
-
     def find_in(self, inventory_in_wich):
         # !!!! ATTENTION !!!! fait une recherche des items de l'inventaire self.tab
         # dans inventory_in_wich qui est passé en parametre
         print(f"Recherche des items de l'inventaire ''''{self.filename}''''\n"+
                 f"\tdans l'inventaire ''''{inventory_in_wich.filename}'''' ...\n\n")
-
         inventory_in_wich.tab.sort(key=lambda obj: obj.colorid)
         inventory_in_wich.tab.sort(key=lambda obj: obj.itemid)
         content = ''
@@ -184,17 +179,12 @@ class CATALOGUE:
                     mid -= int(round((mid-a)/2, 0))
         return content
 
-    def get_picture(self):
-        start = time()
-        size = len(self.tab)
-        time_per_item = 9.5
-        finish = localtime(start + (time_per_item * size))
-        print("fin du telechargement des images estimé à :\n" +\
-                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n\n")
-        get_picture(self)
 
-    # def compare(self):
-        #comparer deux inventaire pour trouver l'un dans l'autre
+
+    # def trouver doublon
+    # pour trouver les doublon faire des recherches d'un inventaire dans un autre
+    # avec find_in()
+    # si il y a un resultat alors il y a des doublons.
 
 
 
@@ -224,32 +214,34 @@ class INVENTAIRE(CATALOGUE):
             item.afficher()
         print(f"\t--> {len(self.tab)} références.\n\n\n")
 
-    def refresh_infos(self):
-        print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
-        start = time()
+    def get_price(self):
         size = len(self.tab)
-        # time_per_item = 3.7 # en utilisant les fichiers json
-        time_per_item = 1.3004 # en utilisant l'api
-        finish = localtime(start + (time_per_item * size))
-        print("fin du rafraichissement estimé à :\n" +\
+        time_per_item = 1
+        finish = localtime(time() + (time_per_item * size))
+        print("fin de la recherche de prix estimé à :\n" +\
                 f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
         for item in self.tab:
-            item.refresh_infos_by_api()
+            item.get_price()
         filename = '/' + self.filename + '_' +\
                     str(localtime().tm_hour) +\
                     str(localtime().tm_min) +\
                     str(localtime().tm_sec) + '_temp.csv'
         path = abspath('./ressources/save_temp')
         write.save(self.tab, path + filename, "w")
-        delta = round(time() - start, 2)
-        print("\tRafraichissement terminé !!!\n" +\
-                f"{len(self.tab)} references en {delta} secondes.\n")
+        print(f"\t\tFin de la Recherche de Prix de l'inventaire {self.filename}\n\n")
 
+    def printing(self):
+        write.transform_to_impression_html(self.tab, self.filename)
+        print("Inventaire printé en html !!!")
 
-
-
-
-
+    def get_picture(self):
+        start = time()
+        size = len(self.tab)
+        time_per_item = 9.5
+        finish = localtime(start + (time_per_item * size))
+        print("fin du telechargement des images estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n\n")
+        get_picture(self)
 
 
 class SET(CATALOGUE):
@@ -331,6 +323,12 @@ class SET(CATALOGUE):
 
 
     # def refresh_infos(self):
+
+    # def impression pour casser le set et l'intégrer dans un inventaire
+
+    # def get_price_du set
+
+    # def get_picture du set
 
 
 

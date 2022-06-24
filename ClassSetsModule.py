@@ -36,3 +36,8 @@ class SETS:
     #     remplacer donc self.tab par un enorme set
     #     bien réflechir quelles instances de set on va devoir ecraser ou additionner
     #     exemple le poids à additionner, l'emplacement à écraser
+
+
+    # refresh et save
+    # rafraichir les infos spécifique du set
+    # et sauvegarder dans un fichier from_pyth_inv_of_set
