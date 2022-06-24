@@ -13,8 +13,8 @@ from api import bricklink_api as api
 # f_7 = abspath('./ressources/exemples/impression_from_python.html')
 # f_8 = abspath('./ressources/exemples/from_pyth_inv_semicolon.csv')
 # f_9 = abspath('./ressources/exemples/from_user_inv_semicolon.csv')
-f10 = abspath('essai.csv')
-# f11 = abspath('./en_cours/casier_grand_orangedeux.csv')
+# f10 = abspath('essai.csv')
+# f11 = abspath('./ressources/stocks/casier_moyen_gris.csv')
 
 # inv1 = INVENTAIRE(f_1, 'blk', 'inv') #ok
 # inv2 = INVENTAIRE(f_2, 'blk', 'inv') #ok
@@ -57,9 +57,9 @@ f10 = abspath('essai.csv')
 #                                 ''))
 #
 # inv10.sauvegarder(abspath('./ressources/stocks/'), False)
-
-inv10 = INVENTAIRE(f10, 'pyth', 'inv')
-inv10.get_picture()
+#
+# inv10 = INVENTAIRE(f10, 'pyth', 'inv')
+# inv10.get_picture()
 
 # inv11 = INVENTAIRE(f11, 'user', 'inv')
 # inv11.get_price()
@@ -72,38 +72,33 @@ inv10.get_picture()
 # print(inv11.weight_total())
 # print(inv11.qty_total())
 
-# f1 = abspath('./ressources/stocks/casier_grand_bleueclair.csv')
-# f2 = abspath('./ressources/stocks/casier_grand_orangedeux.csv')
-# f3 = abspath('./ressources/stocks/casier_moyen_gris.csv')
-# f4 = abspath('./ressources/stocks/casier_petit_gris.csv')
-# f5 = abspath('./ressources/stocks/casier_petit_noir.csv')
-# f6 = abspath('./ressources/stocks/malette_noire.csv')
-# f7 = abspath('./ressources/stocks/tritiroir_violetfonce.csv')
-#
-# inv1 = INVENTAIRE(f1, 'pyth', 'inv')
-# inv2 = INVENTAIRE(f2, 'pyth', 'inv')
-# inv3 = INVENTAIRE(f3, 'pyth', 'inv')
-# inv4 = INVENTAIRE(f4, 'pyth', 'inv')
-# inv5 = INVENTAIRE(f5, 'pyth', 'inv')
-# inv6 = INVENTAIRE(f6, 'pyth', 'inv')
-# inv7 = INVENTAIRE(f7, 'pyth', 'inv')
-#
-# inv1.fusionner(inv2)
-# inv1.fusionner(inv3)
-# inv1.fusionner(inv4)
-# inv1.fusionner(inv5)
-# inv1.fusionner(inv6)
-# inv1.fusionner(inv7)
-#
-# inv1.filename = 'stock_total'
-# inv1.sauvegarder(abspath('./ressources/stocks/'), False)
-#
-# print(inv1.price_total())
+f1 = abspath('./ressources/stocks/casier_grand_bleueclair.csv')
+f2 = abspath('./ressources/stocks/casier_grand_orangedeux.csv')
+f3 = abspath('./ressources/stocks/casier_moyen_gris.csv')
+f4 = abspath('./ressources/stocks/casier_petit_gris.csv')
+f5 = abspath('./ressources/stocks/casier_petit_noir.csv')
+f6 = abspath('./ressources/stocks/malette_noire.csv')
+f7 = abspath('./ressources/stocks/tritiroir_violetfonce.csv')
 
+inv1 = INVENTAIRE(f1, 'pyth', 'inv')
+inv2 = INVENTAIRE(f2, 'pyth', 'inv')
+inv3 = INVENTAIRE(f3, 'pyth', 'inv')
+inv4 = INVENTAIRE(f4, 'pyth', 'inv')
+inv5 = INVENTAIRE(f5, 'pyth', 'inv')
+inv6 = INVENTAIRE(f6, 'pyth', 'inv')
+inv7 = INVENTAIRE(f7, 'pyth', 'inv')
 
+inv1.fusionner(inv2)
+inv1.fusionner(inv3)
+inv1.fusionner(inv4)
+inv1.fusionner(inv5)
+inv1.fusionner(inv6)
+inv1.fusionner(inv7)
 
+inv1.filename = 'stock_total'
+inv1.sauvegarder(abspath('./ressources/stocks/'), True)
 
-
+print(inv1.price_total())
 
 
 

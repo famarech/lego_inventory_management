@@ -9,7 +9,7 @@ from json import load
 from time import time
 from time import localtime
 
-
+from api import bricklink_api as api
 
 
 def get_extension(path):
@@ -166,15 +166,40 @@ def from_user_inv_semicolon_csv(file):
                             row[5]))
     return tab
 
+# def from_user_inv_of_sets(set_name, qty):
+#     tab = []
+#     json_obj = api.catalog_item.get_subsets('Set', set_name)
+#     for each in json_obj['data']:
+#         for e in each['entries']:
+#             a = str(e['item']['category_id'])
+#             c = str(e['color_id'])
+#             q = str(e['quantity'] * int(qty))
+#             t = e['item']['type']
+#             b = row[3] + ' ' + row[0]
+#             n = e['item']['name'].replace(';', '')
+#             tab.append(ITEM('', '', a, c, '0,00',
+#                             q, '', '', '', '',
+#                             t, e['item']['no'], '', '', '0',
+#                             '', '', n, '', '',
+#                             '', '', '', '', '',
+#                             '', '', '', '', '',
+#                             '', '', '', '', '',
+#                             '', '', '', '', '',
+#                             '', '', '', b, row[4],
+#                             row[5]))
+#     return tab
 
 
 
 
 
 
+
+# # # -------------------------------------------------------------------- # # #
 def loading(path, where_from, type, filename, extension):
     print(f"chargement de l'inventaire '''{filename}{extension}''' en cours")
     start = time()
+    tab = []
 
     if where_from == 'blk':
         if type == 'inv':
@@ -198,7 +223,10 @@ def loading(path, where_from, type, filename, extension):
         # elif type == 'impression':
             # tab = from_pyth_html(path)
     elif where_from == 'user':
-        tab = from_user_inv_semicolon_csv(path)
+        if type == 'inv':
+            tab = from_user_inv_semicolon_csv(path)
+        # elif type == 'sets':
+        #     tab = from_user_inv_of_sets(filename, qty)
     else:
         print("format non reconnu\n\t\t\tABANDON\n")
         exit()

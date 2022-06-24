@@ -35,7 +35,7 @@ class INVENTAIRE:
         print(f"Inventaire : {self.filename} ===\n")
         for item in self.tab:
             item.afficher()
-        pritn(f"\t--> {len(self.tab)} références.\n\n\n")
+        print(f"\t--> {len(self.tab)} références.\n\n\n")
 
     def price_total(self):
         somme = 0
@@ -60,12 +60,13 @@ class INVENTAIRE:
         print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
         start = time()
         size = len(self.tab)
-        time_per_item = 3.7
+        # time_per_item = 3.7 # en utilisant les fichiers json
+        time_per_item = 1.3004 # en utilisant l'api
         finish = localtime(start + (time_per_item * size))
         print("fin du rafraichissement estimé à :\n" +\
                 f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
         for item in self.tab:
-            item.refresh_infos()
+            item.refresh_infos_by_api()
         filename = '/' + self.filename + '_' +\
                     str(localtime().tm_hour) +\
                     str(localtime().tm_min) +\
@@ -229,3 +230,77 @@ class INVENTAIRE:
 
     # def compare(self):
         #comparer deux inventaire pour trouver l'un dans l'autre
+
+
+
+
+
+
+
+
+
+
+class SET(INVENTAIRE):
+
+    def __init__(self, path, where_from, type, qty, box, row, column):
+
+        super().__init__(path, where_from, type)
+        self.status = '' # soit complet, modifié ou en cours de construction
+
+        self.itemid = self.filename
+        self.name = ''
+        self.type = 'SET'
+        self.categoryid = ''
+        self.urlimage = ''
+        self.weight = ''
+        self.dimx = ''
+        self.dimy = ''
+        self.dimz = ''
+        self.yearreleased = ''
+        self.isobsolete = ''
+        self.qty = qty
+        self.box = box
+        self.row = row
+        self.column = column
+
+        self.tab = self.loading()
+
+
+    def loading(self):
+        tab = []
+        json_obj = api.catalog_item.get_subsets('Set', self.itemid)
+        for each in json_obj['data']:
+            for e in each['entries']:
+                a = str(e['item']['category_id'])
+                c = str(e['color_id'])
+                q = str(e['quantity'] * int(qty))
+                t = e['item']['type']
+                b = self.box + ' ' + self.itemid
+                n = e['item']['name'].replace(';', '')
+                tab.append(ITEM('', '', a, c, '0,00',
+                                q, '', '', '', '',
+                                t, e['item']['no'], '', '', '0',
+                                '', '', n, '', '',
+                                '', '', '', '', '',
+                                '', '', '', '', '',
+                                '', '', '', '', '',
+                                '', '', '', '', '',
+                                '', '', '', b, self.row,
+                                self.column))
+        return tab
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

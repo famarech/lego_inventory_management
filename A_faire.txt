@@ -17,6 +17,8 @@ le refresh_infos
 doit aussi contenir le rafraichissement de urlimage
 re-écrire la fonction pour écrire plus court ?
 charger les fichiers json en avance pour essayer de faire plus rapide ?
+est-ce qu'utiliser l'api pour faire des requetes est plus rapide ? oui
+mais peut etre garder l'ancienne focntion au cas ou pas de connexion internet
 
 il faut un fichier recap des modules à installer pour faire fonctionner le programme
 tk, pyauotgui, yarl, requests_auth0 etc ...

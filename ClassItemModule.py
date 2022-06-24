@@ -175,6 +175,43 @@ class ITEM:
                                             self.colorid,
                                             self.urlimage)
 
+    def refresh_infos_by_api(self):
+        json_obj_item = api.catalog_item.get_item('Part', self.itemid)
+        try :
+            self.categoryid = str(json_obj_item['data']['category_id'])
+            self.itemidname = str(json_obj_item['data']['name']).replace(';', ' ')
+            self.itemtypename = str(json_obj_item['data']['type'])
+            self.weight = json_obj_item['data']['weight']
+            self.dimensionx = json_obj_item['data']['dim_x']
+            self.dimensiony = json_obj_item['data']['dim_y']
+            self.dimensionz = json_obj_item['data']['dim_z']
+        except:
+            pass
+
+        if self.categoryid == 'Category ID Not Available':
+            a = 0
+        else:
+            a = int(self.categoryid)
+
+        json_obj_cat = api.category.get_category(a)
+        try:
+            self.categorynamefull = json_obj_cat['data']['category_name']
+        except:
+            pass
+        json_obj_col = api.color.get_color(int(self.colorid))
+        try:
+            self.colorname = json_obj_col['data']['color_name']
+            self.colorrgb = json_obj_col['data']['color_code']
+            self.colortype = json_obj_col['data']['color_type']
+            self.urlimage = self.exist_picture(self.itemid,
+                                                self.colorid,
+                                                self.urlimage)
+        except:
+            pass
+        self.condition = 'U'
+        self.stockroom = 'Y'
+        self.currency = 'EUR'
+
     def afficher(self):
         print(f"{self.itemid} : {self.colorid} : {self.qty} : {self.price}€ " +\
                 f"dans {self.box} : {self.row}{self.column}")
@@ -217,7 +254,7 @@ class ITEM:
                 self.categoryname3 + ";" +\
                 self.categoryname4 + ";" +\
                 self.colorname + ";" +\
-                '#' + self.colorrgb + ";" +\
+                self.colorrgb + ";" +\
                 self.colortype + ";" +\
                 self.subcondition + ";" +\
                 self.remarks + ";" +\
