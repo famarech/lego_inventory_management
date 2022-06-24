@@ -1,3 +1,6 @@
+a voir si il est interessant de deplacer la fonction loading de la class SET
+dans le module ReadModule pour plus de cohérence
+
 modifier la focntion get_picture
 d'abord vérifier si les images existent pour chaque item de l'inventaire
 modifier en consequence la valeur self.urlimage
@@ -14,8 +17,6 @@ qui vérifie la présence des fichiers auth.json et mdp.json
 et qui renvoir l'erreur et l'adresse IP lors de la première connexion à l'api quand on à pas de jeton
 
 le refresh_infos
-doit aussi contenir le rafraichissement de urlimage
-re-écrire la fonction pour écrire plus court ?
 charger les fichiers json en avance pour essayer de faire plus rapide ?
 est-ce qu'utiliser l'api pour faire des requetes est plus rapide ? oui
 mais peut etre garder l'ancienne focntion au cas ou pas de connexion internet
@@ -25,8 +26,8 @@ tk, pyauotgui, yarl, requests_auth0 etc ...
 
 tester la fonction refresh_infos sur chaque type d'exemple
 dans les fonction du loading ne reste que la fonction depuis impression
-trouver solution pour longueur de chargement (fonction get_category et exist_picture)
+
 verifier de quel type doivent être chaque attribut de la class ITEM (int, str, float)
-toujours des problems de . et de , de points et de virgiles pour price et weight et dimensions
+
 de manière générale, il va falloir faire le ménage dans les variables/fichiers/instances qui s'appelle 'item'
 attention, certaines instances de ITEM doivent être forcés en fonction des types d'import pour faire fonctionner des fonctions du types get_price, il va falloir fair la chasse

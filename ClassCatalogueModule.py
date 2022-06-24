@@ -1,16 +1,17 @@
 from ClassItemModule import ITEM
-from ReadModule import loading
+import ReadModule
 from ReadModule import get_extension
 import WriteModule as write
 from BrickLinkModule import get_picture
 from os.path import abspath
 from time import time
 from time import localtime
+from api import bricklink_api as api
 
 
 
 
-class INVENTAIRE:
+class CATALOGUE:
 
     def __init__(self, path, where_from, type):
 
@@ -19,23 +20,11 @@ class INVENTAIRE:
         self.extension = get_extension(path)[2]
         self.where_from = where_from
         self.type = type
-        self.tab = loading(path, where_from, type, self.filename, self.extension)
-
-        self.price = self.price_total()
-        self.weight = self.weight_total()
-        self.qty = self.qty_total()
-        self.price_par_piece = self.price / self.qty
-
-        # self.afficher()
 
 
 
 
-    def afficher(self):
-        print(f"Inventaire : {self.filename} ===\n")
-        for item in self.tab:
-            item.afficher()
-        print(f"\t--> {len(self.tab)} références.\n\n\n")
+
 
     def price_total(self):
         somme = 0
@@ -55,28 +44,6 @@ class INVENTAIRE:
         for item in self.tab:
             somme = somme + int(item.qty)
         return somme
-
-    def refresh_infos(self):
-        print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
-        start = time()
-        size = len(self.tab)
-        # time_per_item = 3.7 # en utilisant les fichiers json
-        time_per_item = 1.3004 # en utilisant l'api
-        finish = localtime(start + (time_per_item * size))
-        print("fin du rafraichissement estimé à :\n" +\
-                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
-        for item in self.tab:
-            item.refresh_infos_by_api()
-        filename = '/' + self.filename + '_' +\
-                    str(localtime().tm_hour) +\
-                    str(localtime().tm_min) +\
-                    str(localtime().tm_sec) + '_temp.csv'
-        path = abspath('./ressources/save_temp')
-        write.save(self.tab, path + filename, "w")
-        delta = round(time() - start, 2)
-        print("\tRafraichissement terminé !!!\n" +\
-                f"{len(self.tab)} references en {delta} secondes.\n")
-
 
     def sauvegarder(self, path_destination, refresh):
         path = path_destination + '\\' + self.filename + '.csv'
@@ -226,8 +193,6 @@ class INVENTAIRE:
                 f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n\n")
         get_picture(self)
 
-
-
     # def compare(self):
         #comparer deux inventaire pour trouver l'un dans l'autre
 
@@ -238,9 +203,56 @@ class INVENTAIRE:
 
 
 
+class INVENTAIRE(CATALOGUE):
+
+    def __init__(self, path, where_from, type):
+
+        super().__init__(path, where_from, type)
+
+        self.tab = ReadModule.loading(path, where_from, type, self.filename, self.extension)
+
+        self.price = self.price_total()
+        self.weight = self.weight_total()
+        self.qty = self.qty_total()
+        self.price_par_piece = self.price / self.qty
 
 
-class SET(INVENTAIRE):
+
+    def afficher(self):
+        print(f"Inventaire : {self.filename} ===\n")
+        for item in self.tab:
+            item.afficher()
+        print(f"\t--> {len(self.tab)} références.\n\n\n")
+
+    def refresh_infos(self):
+        print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
+        start = time()
+        size = len(self.tab)
+        # time_per_item = 3.7 # en utilisant les fichiers json
+        time_per_item = 1.3004 # en utilisant l'api
+        finish = localtime(start + (time_per_item * size))
+        print("fin du rafraichissement estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
+        for item in self.tab:
+            item.refresh_infos_by_api()
+        filename = '/' + self.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+        delta = round(time() - start, 2)
+        print("\tRafraichissement terminé !!!\n" +\
+                f"{len(self.tab)} references en {delta} secondes.\n")
+
+
+
+
+
+
+
+
+class SET(CATALOGUE):
 
     def __init__(self, path, where_from, type, qty, box, row, column):
 
@@ -266,14 +278,24 @@ class SET(INVENTAIRE):
         self.tab = self.loading()
 
 
+
+
+    def afficher(self):
+        print(f"Set N° : {self.filename} ===\n")
+        for item in self.tab:
+            item.afficher()
+        print(f"\t--> {len(self.tab)} références.\n\n\n")
+
     def loading(self):
+        print(f"chargement du set '''{self.filename}{self.extension}''' en cours")
+        start = time()
         tab = []
         json_obj = api.catalog_item.get_subsets('Set', self.itemid)
         for each in json_obj['data']:
             for e in each['entries']:
                 a = str(e['item']['category_id'])
                 c = str(e['color_id'])
-                q = str(e['quantity'] * int(qty))
+                q = str(e['quantity'] * int(self.qty))
                 t = e['item']['type']
                 b = self.box + ' ' + self.itemid
                 n = e['item']['name'].replace(';', '')
@@ -287,9 +309,28 @@ class SET(INVENTAIRE):
                                 '', '', '', '', '',
                                 '', '', '', b, self.row,
                                 self.column))
+        if len(tab) > 0:
+            finish = time()
+            delta = round(finish - start, 2)
+            print("chargement terminé\n" +\
+                    f"{len(tab)} references en {delta} secondes.\n")
+
+        filename = '/' + self.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(tab, path + filename, "w")
+
+        filename = '/' + self.filename + '.csv'
+        path = abspath('./ressources/sets')
+        write.save(tab, path + filename, "w")
+
         return tab
 
 
+
+    # def refresh_infos(self):
 
 
 

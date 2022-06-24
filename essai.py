@@ -1,4 +1,4 @@
-from ClassInventaireModule import INVENTAIRE
+from ClassCatalogueModule import INVENTAIRE
 from ClassItemModule import ITEM
 from os.path import abspath
 from json import load

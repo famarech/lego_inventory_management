@@ -2,7 +2,7 @@ from ReadModule import get_extension
 from os.path import abspath
 import csv
 from WriteModule import save
-from ClassInventaireModule import SET
+from ClassCatalogueModule import SET
 
 class SETS:
 
@@ -12,37 +12,27 @@ class SETS:
         self.extension = get_extension(path)[2]
         self.wherefrom = where_from
         self.type = type
-        self.tab = []
-        self.list = self.loading(path)
+        self.tab = self.loading(path)
 
 
 
 
     def loading(self, file):
-        list = []
         tab = []
         with open(file, encoding="utf-8", newline='') as csvfile:
             data = csv.reader(csvfile.readlines()[1:], delimiter=';')
             for row in data:
-
-                # list.append(abspath('./ressources/sets/') + '/' + row[0] + '.csv')
-                # filename = '/' + row[0] + '.csv'
-                # path = abspath('./ressources/sets/')
-                # save(tab, path + filename, "w")
-
                 complete_path = self.path + row[0] + self.extension
-                print(complete_path)
-                self.tab.append(SET(complete_path, self.wherefrom, self.type,
+                tab.append(SET(complete_path, self.wherefrom, self.type,
                                     row[1], row[3], row[4], row[5]))
-        return list
+        return tab
 
+    def afficher(self):
+        for set in self.tab:
+            set.afficher()
 
-
-
-
-
-
-invS = SETS(abspath('./ressources/exemples/from_user_inv_of_sets.csv'), 'user', 'sets')
-
-for s in invS:
-    print(s)
+    # def fusionner():
+    #     fusionner tous les set en un seul gros inventaire
+    #     remplacer donc self.tab par un enorme set
+    #     bien réflechir quelles instances de set on va devoir ecraser ou additionner
+    #     exemple le poids à additionner, l'emplacement à écraser
