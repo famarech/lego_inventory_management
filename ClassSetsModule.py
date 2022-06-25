@@ -31,11 +31,13 @@ class SETS:
         for set in self.tab:
             set.afficher()
 
-    # def fusionner():
-    #     fusionner tous les set en un seul gros inventaire
-    #     remplacer donc self.tab par un enorme set
-    #     bien réflechir quelles instances de set on va devoir ecraser ou additionner
-    #     exemple le poids à additionner, l'emplacement à écraser
+    def fusionner(self, newpath, newfilename):
+        size = len(self.tab)
+        for i in range(1,size,1):
+            self.tab[0].fusionner(self.tab[i])
+        self.tab[0].filename = newname
+        self.tab[0].sauvegarder(newpath, False)
+
 
 
     # refresh et save

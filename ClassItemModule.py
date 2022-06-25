@@ -214,7 +214,7 @@ class ITEM:
 
     def afficher(self):
         print(f"{self.itemid} : {self.colorid} : {self.qty} : {self.price}€ " +\
-                f"dans {self.box} : {self.row}{self.column}")
+                f"dans {self.box} : {self.row}{self.column} \t {self.urlimage}")
 
     def price_total(self):
         a = float(self.price.replace(',','.'))

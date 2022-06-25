@@ -8,21 +8,41 @@ from api import bricklink_api as api
 
 
 
-f01 = (abspath('./ressources/stocks/stock_total.csv'))
+f01 = (abspath('./essai.csv'))
 inv01 = INVENTAIRE(f01, 'pyth', 'inv')
-inv01.upload()
+inv01.working(abspath('./en_cours'))
 
-#
-# f02 = (abspath('./ressources/exemples/from_user_inv_of_sets.csv'))
+
+
+
+
+
+
+
+
+
+
+
+
+# f02 = (abspath('./en_cours/Joseph_sets.csv'))
 # sets02 = SETS(f02, 'user', 'sets')
+# size = len(sets02.tab)
+# for i in range(1,size,1):
+#     sets02.tab[0].fusionner(sets02.tab[i])
+# sets02.tab[0].filename = 'Joseph_inv'
+# sets02.tab[0].sauvegarder(abspath('./en_cours'), False)
 #
-#
-# sets02.afficher()
-
-
-
-
-
+# f02 = (abspath('./en_cours/Joseph_inv.csv'))
+# inv02 = INVENTAIRE(f02, 'pyth', 'inv')
+# inv02.get_price()
+# inv02.refresh_infos()
+# inv02.get_picture()
+# inv02.sauvegarder(abspath('./en_cours/'), False)
+# inv02 = INVENTAIRE(f02, 'pyth', 'inv')
+# print(inv02.price_total(), '€')
+# print(inv02.weight_total(), 'kg')
+# print(inv02.qty_total(), 'pièces')
+# inv02.printing()
 
 
 

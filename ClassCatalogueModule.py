@@ -64,10 +64,10 @@ class CATALOGUE:
         write.save(self.tab, path + filename, "w")
         delta = round(time() - start, 2)
         print("\tRafraichissement terminé !!!\n" +\
-                f"{len(self.tab)} references en {delta} secondes.\n")
+                f"{len(self.tab)} references en {delta} secondes.\n\n")
 
     def sauvegarder(self, path_destination, refresh):
-        print("Creation des fichiers d'uploads ...")
+        print("Creation du fichier de sauvegarde ...")
         path = path_destination + '\\' + self.filename + '.csv'
         self.tab.sort(key=lambda obj: obj.colorid)
         self.tab.sort(key=lambda obj: obj.itemid)
@@ -80,6 +80,7 @@ class CATALOGUE:
         print("Inventaire trié et sauvegardé !!!\n\n")
 
     def upload(self):
+        print("Creation des fichiers d'uploads ...")
         index = len(self.tab) - 1
         for item in reversed(self.tab):
             if item.qty == '0' or float(item.price.replace(',','.')) == 0:
@@ -88,7 +89,7 @@ class CATALOGUE:
         write.transform_to_upload_blk_xml(self.tab, self.filename)
 
     def fusionner(self, inventory_to_add):
-        # !!!! ATTENTION !!!! met à jour l'objet actuel d'origine avec un nouvel inventaire
+        # !!!! ATTENTION !!!! met à jour l'objet d'origine avec nouvel inventaire
         # inventory_to_add est l'inventaire à ajouter à l'objet actuel
         for item in inventory_to_add.tab:
             self.tab.append(item)
@@ -103,7 +104,7 @@ class CATALOGUE:
                 f"fusionné dans l'Inventaire '''{self.filename}'''\n\n")
 
     def find_in(self, inventory_in_wich):
-        # !!!! ATTENTION !!!! fait une recherche des items de l'inventaire self.tab
+        # !!!! ATTENTION !!!! fait recherche des items de l'inventaire self.tab
         # dans inventory_in_wich qui est passé en parametre
         print(f"Recherche des items de l'inventaire ''''{self.filename}''''\n"+
                 f"\tdans l'inventaire ''''{inventory_in_wich.filename}'''' ...\n\n")
@@ -213,6 +214,9 @@ class INVENTAIRE(CATALOGUE):
         for item in self.tab:
             item.afficher()
         print(f"\t--> {len(self.tab)} références.\n\n\n")
+        print(self.qty_total(), 'pièces')
+        print(self.weight_total(), 'kg')
+        print(self.price_total(), '€')
 
     def get_price(self):
         size = len(self.tab)
@@ -231,17 +235,42 @@ class INVENTAIRE(CATALOGUE):
         print(f"\t\tFin de la Recherche de Prix de l'inventaire {self.filename}\n\n")
 
     def printing(self):
+        for each in self.tab:
+            each.exist_picture(each.itemid, each.colorid, each.urlimage)
         write.transform_to_impression_html(self.tab, self.filename)
         print("Inventaire printé en html !!!")
 
     def get_picture(self):
+        self.tab.sort(key=lambda obj: obj.urlimage)
+        index = 0
+        for each in self.tab:
+            if each.urlimage == 'Not Available':
+                index += 1
+            else:
+                break
         start = time()
         size = len(self.tab)
         time_per_item = 9.5
         finish = localtime(start + (time_per_item * size))
-        print("fin du telechargement des images estimé à :\n" +\
-                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local\n\n")
-        get_picture(self)
+        print(f"{index} images manquantes,\n" +\
+            f"fin du telechargement des images estimé à :\n" +\
+            f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec}" +\
+            "-- heure local\n\n")
+        get_picture(self.tab[:index])
+
+    def working(self, path_destination):
+        self.get_price()
+        self.refresh_infos()
+        self.get_picture()
+
+        filename = '/' + self.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+
+        self.sauvegarder(path_destination, False)
 
 
 class SET(CATALOGUE):
@@ -277,6 +306,9 @@ class SET(CATALOGUE):
         for item in self.tab:
             item.afficher()
         print(f"\t--> {len(self.tab)} références.\n\n\n")
+        print(self.qty_total(), 'pièces')
+        print(self.weight_total(), 'kg')
+        print(self.price_total(), '€')
 
     def loading(self):
         print(f"chargement du set '''{self.filename}{self.extension}''' en cours")

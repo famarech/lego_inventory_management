@@ -9,11 +9,11 @@ import json
 
 
 
-def get_picture(inventaire):
+def get_picture(tab):
     sleep(3)
-    blk = BRICKLINK(inventaire)
-    for i in range(0, len(inventaire.tab), blk.paquet):
-        partition = inventaire.tab[i:(i + blk.paquet)]
+    blk = BRICKLINK(tab)
+    for i in range(0, len(tab), blk.paquet):
+        partition = tab[i:(i + blk.paquet)]
         blk.ouvrir()
         for item in partition:
             filename = "id" + item.itemid + "color" + item.colorid + ".jpg"
