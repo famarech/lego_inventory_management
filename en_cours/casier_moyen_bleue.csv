@@ -3,49 +3,71 @@ ITEMID;QTY;COLORNAME;BOX;ROW;COLUMN
 30136;70;Reddish Brown;Casier Moyen Bleue;A;1
 30137;23;Brown;Casier Moyen Bleue;A;1
 30137;14;Reddish Brown;Casier Moyen Bleue;A;1
+2431;6;Tan;Casier Moyen Bleue;A;2
+2431;9;Lime;Casier Moyen Bleue;A;2
+2431;4;Orange;Casier Moyen Bleue;A;2
+2431;3;Dark Blue;Casier Moyen Bleue;A;2
+2431;8;Dark Orange;Casier Moyen Bleue;A;2
+2431;13;Brown;Casier Moyen Bleue;A;2
+2431;1;Reddish Brown;Casier Moyen Bleue;A;2
+3068b;1;Bright Light Orange;Casier Moyen Bleue;A;2
+3068b;2;Lime;Casier Moyen Bleue;A;2
+3068b;5;Sand Green;Casier Moyen Bleue;A;2
+3068b;11;Dark Red;Casier Moyen Bleue;A;2
+3068b;2;Dark Blue;Casier Moyen Bleue;A;2
+3068b;18;Dark Tan;Casier Moyen Bleue;A;2
+3068b;4;Dark Green;Casier Moyen Bleue;A;2
+6636;1;Tan;Casier Moyen Bleue;A;2
+6636;4;Medium Orange;Casier Moyen Bleue;A;2
+6636;2;Lime;Casier Moyen Bleue;A;2
+6636;2;Orange;Casier Moyen Bleue;A;2
+6636;5;Dark Blue;Casier Moyen Bleue;A;2
+6636;14;Dark Tan;Casier Moyen Bleue;A;2
+6636;10;Brown;Casier Moyen Bleue;A;2
 2743;1;Black;Casier Moyen Bleue;A;3
 2743;1;Dark Bluish Gray;Casier Moyen Bleue;A;3
-47720;7;Black;Casier Moyen Bleue;A;3
-47720;2;Light Bluish Gray;Casier Moyen Bleue;A;3
-3069b;11;Orange;Casier Moyen Bleue;A;3
-3069b;8;Brown;Casier Moyen Bleue;A;3
-3069b;34;Lime;Casier Moyen Bleue;A;3
-3069b;8;Dark Red;Casier Moyen Bleue;A;3
-3069b;1;Pearl Light Gray;Casier Moyen Bleue;A;3
-3069b;5;Dark Bluish Gray;Casier Moyen Bleue;A;3
 3069b;2;Dark Brown;Casier Moyen Bleue;A;3
 3069b;1;Medium Nougat;Casier Moyen Bleue;A;3
 3069b;3;Medium Azure;Casier Moyen Bleue;A;3
 3069b;13;Tan;Casier Moyen Bleue;A;3
+3069b;34;Lime;Casier Moyen Bleue;A;3
+3069b;11;Orange;Casier Moyen Bleue;A;3
+3069b;8;Dark Red;Casier Moyen Bleue;A;3
+3069b;1;Pearl Light Gray;Casier Moyen Bleue;A;3
+3069b;8;Brown;Casier Moyen Bleue;A;3
+3069b;5;Dark Bluish Gray;Casier Moyen Bleue;A;3
+47720;7;Black;Casier Moyen Bleue;A;3
+47720;2;Light Bluish Gray;Casier Moyen Bleue;A;3
 32316;3;White;Casier Moyen Bleue;A;4
+32316;23;Black;Casier Moyen Bleue;A;4
 32316;1;Yellow;Casier Moyen Bleue;A;4
+32316;5;Lime;Casier Moyen Bleue;A;4
 32316;7;Orange;Casier Moyen Bleue;A;4
 32316;5;Red;Casier Moyen Bleue;A;4
 32316;9;Blue;Casier Moyen Bleue;A;4
-32316;23;Black;Casier Moyen Bleue;A;4
-32316;5;Lime;Casier Moyen Bleue;A;4
 32316;2;Dark Bluish Gray;Casier Moyen Bleue;A;4
 32316;5;Light Bluish Gray;Casier Moyen Bleue;A;4
-30157;1;Brown;Casier Moyen Bleue;B;1
-30157;2;Light Gray;Casier Moyen Bleue;B;1
 30157;12;Dark Gray;Casier Moyen Bleue;B;1
+30157;1;Brown;Casier Moyen Bleue;B;1
 30157;2;Dark Bluish Gray;Casier Moyen Bleue;B;1
 30157;5;Light Bluish Gray;Casier Moyen Bleue;B;1
 30157;3;Reddish Brown;Casier Moyen Bleue;B;1
+30157;2;Light Gray;Casier Moyen Bleue;B;1
 63864;6;White;Casier Moyen Bleue;B;2
+63864;1;Black;Casier Moyen Bleue;B;2
 63864;1;Yellow;Casier Moyen Bleue;B;2
 63864;4;Red;Casier Moyen Bleue;B;2
 63864;2;Blue;Casier Moyen Bleue;B;2
-63864;1;Black;Casier Moyen Bleue;B;2
 63864;3;Dark Bluish Gray;Casier Moyen Bleue;B;2
 63864;5;Light Bluish Gray;Casier Moyen Bleue;B;2
 87079;10;White;Casier Moyen Bleue;B;2
+87079;1;Black;Casier Moyen Bleue;B;2
 87079;1;Red;Casier Moyen Bleue;B;2
 87079;2;Blue;Casier Moyen Bleue;B;2
-87079;1;Brown;Casier Moyen Bleue;B;2
-87079;1;Black;Casier Moyen Bleue;B;2
 87079;6;Dark Bluish Gray;Casier Moyen Bleue;B;2
 87079;4;Light Bluish Gray;Casier Moyen Bleue;B;2
+87079;1;Brown;Casier Moyen Bleue;B;2
+87580;3;Pearl Gold;Casier Moyen Bleue;B;2
 87580;3;Tan;Casier Moyen Bleue;B;2
 87580;1;Yellow;Casier Moyen Bleue;B;2
 87580;1;Red;Casier Moyen Bleue;B;2
@@ -53,84 +75,72 @@ ITEMID;QTY;COLORNAME;BOX;ROW;COLUMN
 87580;2;Dark Tan;Casier Moyen Bleue;B;2
 87580;8;Dark Bluish Gray;Casier Moyen Bleue;B;2
 87580;1;Light Bluish Gray;Casier Moyen Bleue;B;2
-87580;3;Pearl Gold;Casier Moyen Bleue;B;2
-6636;1;Tan;Casier Moyen Bleue;A;2
-6636;2;Orange;Casier Moyen Bleue;A;2
-6636;10;Brown;Casier Moyen Bleue;A;2
-6636;4;Medium Orange;Casier Moyen Bleue;A;2
-6636;2;Lime;Casier Moyen Bleue;A;2
-6636;5;Dark Blue;Casier Moyen Bleue;A;2
-6636;14;Dark Tan;Casier Moyen Bleue;A;2
-2431;6;Tan;Casier Moyen Bleue;A;2
-2431;4;Orange;Casier Moyen Bleue;A;2
-2431;13;Brown;Casier Moyen Bleue;A;2
-2431;9;Lime;Casier Moyen Bleue;A;2
-2431;3;Dark Blue;Casier Moyen Bleue;A;2
-2431;8;Dark Orange;Casier Moyen Bleue;A;2
-2431;1;Reddish Brown;Casier Moyen Bleue;A;2
-3068b;2;Lime;Casier Moyen Bleue;A;2
-3068b;5;Sand Green;Casier Moyen Bleue;A;2
-3068b;11;Dark Red;Casier Moyen Bleue;A;2
-3068b;2;Dark Blue;Casier Moyen Bleue;A;2
-3068b;18;Dark Tan;Casier Moyen Bleue;A;2
-3068b;4;Dark Green;Casier Moyen Bleue;A;2
-3068b;1;Bright Light Orange;Casier Moyen Bleue;A;2
-2994;1;Yellow;Casier Moyen Bleue;C;1
+132old;14;Black;Casier Moyen Bleue;C;1
 2994;2;Black;Casier Moyen Bleue;C;1
+2994;1;Yellow;Casier Moyen Bleue;C;1
 32007;5;Yellow;Casier Moyen Bleue;C;1
 56902;14;Light Bluish Gray;Casier Moyen Bleue;C;1
-132old;14;Black;Casier Moyen Bleue;C;1
 3641;40;Black;Casier Moyen Bleue;C;2
 3641;40;Black;Casier Moyen Bleue;C;3
+30155;16;Black;Casier Moyen Bleue;C;4
+30155;1;Tan;Casier Moyen Bleue;C;4
+30155;9;Dark Bluish Gray;Casier Moyen Bleue;C;4
 3482;10;White;Casier Moyen Bleue;C;4
 3482;2;Yellow;Casier Moyen Bleue;C;4
 6248;8;Yellow;Casier Moyen Bleue;C;4
 6248;5;Red;Casier Moyen Bleue;C;4
 6248;3;Light Bluish Gray;Casier Moyen Bleue;C;4
-30155;1;Tan;Casier Moyen Bleue;C;4
-30155;16;Black;Casier Moyen Bleue;C;4
-30155;9;Dark Bluish Gray;Casier Moyen Bleue;C;4
 3483;54;Black;Casier Moyen Bleue;D;1
 3483;19;Black;Casier Moyen Bleue;D;2
 61254;4;Black;Casier Moyen Bleue;D;2
-60700;27;Black;Casier Moyen Bleue;D;3
 6014a;29;White;Casier Moyen Bleue;D;3
 6014a;8;Light Gray;Casier Moyen Bleue;D;3
+60700;27;Black;Casier Moyen Bleue;D;3
 6014b;64;White;Casier Moyen Bleue;D;4
-6014b;11;Yellow;Casier Moyen Bleue;D;4
 6014b;2;Black;Casier Moyen Bleue;D;4
+6014b;11;Yellow;Casier Moyen Bleue;D;4
 6014b;44;Light Bluish Gray;Casier Moyen Bleue;D;4
 60700;54;Black;Casier Moyen Bleue;E;1
 60700;54;Black;Casier Moyen Bleue;E;2
 4084;19;Black;Casier Moyen Bleue;E;3
 60700;12;Black;Casier Moyen Bleue;E;3
 4288;8;Black;Casier Moyen Bleue;E;4
-6118;2;White;Casier Moyen Bleue;E;4
-6118;2;Blue;Casier Moyen Bleue;E;4
-6118;2;Black;Casier Moyen Bleue;E;4
 56890;5;Black;Casier Moyen Bleue;E;4
+6118;2;White;Casier Moyen Bleue;E;4
+6118;2;Black;Casier Moyen Bleue;E;4
+6118;2;Blue;Casier Moyen Bleue;E;4
 3873;130;Black;Casier Moyen Bleue;F;1
 3873;12;Light Bluish Gray;Casier Moyen Bleue;F;1
+4738a;1;Pearl Gold;Casier Moyen Bleue;F;2
+4738a;7;Brown;Casier Moyen Bleue;F;2
+4738a;3;Reddish Brown;Casier Moyen Bleue;F;2
+4739a;1;Pearl Gold;Casier Moyen Bleue;F;2
+4739a;7;Brown;Casier Moyen Bleue;F;2
+4739a;3;Reddish Brown;Casier Moyen Bleue;F;2
+61780;1;Green;Casier Moyen Bleue;F;2
+61780;5;Dark Bluish Gray;Casier Moyen Bleue;F;2
+61780;2;Reddish Brown;Casier Moyen Bleue;F;2
 2439;6;Dark Gray;Casier Moyen Bleue;F;3
 2439;3;Dark Bluish Gray;Casier Moyen Bleue;F;3
-61780;1;Green;Casier Moyen Bleue;F;2
-61780;2;Reddish Brown;Casier Moyen Bleue;F;2
-61780;5;Dark Bluish Gray;Casier Moyen Bleue;F;2
-92926;2;Green;Casier Moyen Bleue;F;3
-2489;25;Brown;Casier Moyen Bleue;F;3
 2489;1;Dark Brown;Casier Moyen Bleue;F;3
+2489;25;Brown;Casier Moyen Bleue;F;3
 2489;2;Reddish Brown;Casier Moyen Bleue;F;3
-64951;1;Brown;Casier Moyen Bleue;F;4
+92926;2;Green;Casier Moyen Bleue;F;3
 30150;6;White;Casier Moyen Bleue;F;4
 30150;3;Brown;Casier Moyen Bleue;F;4
-2415;1;Light Gray;Casier Moyen Bleue;G;2
+64951;1;Brown;Casier Moyen Bleue;F;4
+4493c01pb07;1;Black;Casier Moyen Bleue;G;1
+6026;3;Green;Casier Moyen Bleue;G;1
+6027;2;Green;Casier Moyen Bleue;G;1
+76147c01;1;White;Casier Moyen Bleue;G;1
 2415;2;Light Bluish Gray;Casier Moyen Bleue;G;2
+2415;1;Light Gray;Casier Moyen Bleue;G;2
+42608;1;Light Bluish Gray;Casier Moyen Bleue;G;2
 4862;4;Trans-Clear;Casier Moyen Bleue;G;2
 4862;27;Trans-Black;Casier Moyen Bleue;G;2
 4862;50;Trans-Light Blue;Casier Moyen Bleue;G;2
-4870;10;Light Gray;Casier Moyen Bleue;G;2
 4870;6;Light Bluish Gray;Casier Moyen Bleue;G;2
-42608;1;Light Bluish Gray;Casier Moyen Bleue;G;2
+4870;10;Light Gray;Casier Moyen Bleue;G;2
 60601;8;Trans-Clear;Casier Moyen Bleue;G;2
 60601;7;Trans-Light Blue;Casier Moyen Bleue;G;2
 61483;4;Light Bluish Gray;Casier Moyen Bleue;G;2
@@ -138,80 +148,70 @@ ITEMID;QTY;COLORNAME;BOX;ROW;COLUMN
 4863;22;White;Casier Moyen Bleue;G;3
 4863;1;Yellow;Casier Moyen Bleue;G;3
 4863;3;Blue;Casier Moyen Bleue;G;3
-4035;2;White;Casier Moyen Bleue;G;4
-4035;1;Red;Casier Moyen Bleue;G;4
-4035;3;Black;Casier Moyen Bleue;G;4
-4036;2;Trans-Clear;Casier Moyen Bleue;G;4
-4036;2;Trans-Light Blue;Casier Moyen Bleue;G;4
-6156;4;White;Casier Moyen Bleue;G;4
 30044;1;White;Casier Moyen Bleue;G;4
-30044;2;Brown;Casier Moyen Bleue;G;4
 30044;2;Black;Casier Moyen Bleue;G;4
+30044;2;Brown;Casier Moyen Bleue;G;4
 30044;1;Light Bluish Gray;Casier Moyen Bleue;G;4
 30045;1;Black;Casier Moyen Bleue;G;4
+4035;2;White;Casier Moyen Bleue;G;4
+4035;3;Black;Casier Moyen Bleue;G;4
+4035;1;Red;Casier Moyen Bleue;G;4
+4036;2;Trans-Clear;Casier Moyen Bleue;G;4
+4036;2;Trans-Light Blue;Casier Moyen Bleue;G;4
 60032;1;Red;Casier Moyen Bleue;G;4
 60592;4;White;Casier Moyen Bleue;G;4
-60592;4;Tan;Casier Moyen Bleue;G;4
 60592;1;Black;Casier Moyen Bleue;G;4
+60592;4;Tan;Casier Moyen Bleue;G;4
 60593;1;White;Casier Moyen Bleue;G;4
 60593;1;Tan;Casier Moyen Bleue;G;4
 60602;1;Trans-Clear;Casier Moyen Bleue;G;4
 61345;7;White;Casier Moyen Bleue;G;4
+6156;4;White;Casier Moyen Bleue;G;4
 90195;3;Light Bluish Gray;Casier Moyen Bleue;G;4
 2494;10;Trans-Clear;Casier Moyen Bleue;H;1
 2494;6;Trans-Black;Casier Moyen Bleue;H;1
 2494;1;Trans-Light Blue;Casier Moyen Bleue;H;1
-4347;2;Yellow;Casier Moyen Bleue;H;1
-4347;1;Red;Casier Moyen Bleue;H;1
-4347;1;Black;Casier Moyen Bleue;H;1
 2494pb01;7;Trans-Clear;Casier Moyen Bleue;H;1
 2494pb03;3;Trans-Light Blue;Casier Moyen Bleue;H;1
 2494pb05;2;Trans-Clear;Casier Moyen Bleue;H;1
+4347;1;Black;Casier Moyen Bleue;H;1
+4347;2;Yellow;Casier Moyen Bleue;H;1
+4347;1;Red;Casier Moyen Bleue;H;1
 4347pb01;1;Red;Casier Moyen Bleue;H;1
 4347pb02;2;Red;Casier Moyen Bleue;H;1
 4347pb07;4;Red;Casier Moyen Bleue;H;1
 4347pb08;1;Red;Casier Moyen Bleue;H;1
 2493;13;White;Casier Moyen Bleue;H;2
+2493;5;Black;Casier Moyen Bleue;H;2
 2493;4;Red;Casier Moyen Bleue;H;2
 2493;1;Blue;Casier Moyen Bleue;H;2
-2493;5;Black;Casier Moyen Bleue;H;2
-30179;4;Black;Casier Moyen Bleue;H;4
 57895;4;Trans-Clear;Casier Moyen Bleue;H;3
 57895;2;Trans-Black;Casier Moyen Bleue;H;3
 57895;6;Trans-Light Blue;Casier Moyen Bleue;H;3
-60616;2;Trans-Clear;Casier Moyen Bleue;H;3
-60616;1;Trans-Black;Casier Moyen Bleue;H;3
-60616;1;Trans-Light Blue;Casier Moyen Bleue;H;3
-60623;1;White;Casier Moyen Bleue;H;3
-60623;1;Yellow;Casier Moyen Bleue;H;3
 57895pb005;1;Trans-Clear;Casier Moyen Bleue;H;3
 57895pb006;11;Trans-Light Blue;Casier Moyen Bleue;H;3
 57895pb008;1;Trans-Clear;Casier Moyen Bleue;H;3
 57895pb009;1;Trans-Clear;Casier Moyen Bleue;H;3
 57895pb014;1;Trans-Light Blue;Casier Moyen Bleue;H;3
+60616;2;Trans-Clear;Casier Moyen Bleue;H;3
+60616;1;Trans-Black;Casier Moyen Bleue;H;3
+60616;1;Trans-Light Blue;Casier Moyen Bleue;H;3
 60616pb001;2;Trans-Light Blue;Casier Moyen Bleue;H;3
+60623;1;White;Casier Moyen Bleue;H;3
+60623;1;Yellow;Casier Moyen Bleue;H;3
 60797c01;1;Dark Bluish Gray;Casier Moyen Bleue;H;3
+x39c03;5;Black;Casier Moyen Bleue;H;3
+30179;4;Black;Casier Moyen Bleue;H;4
 6160c03;4;White;Casier Moyen Bleue;H;4
 6160c03pb06;1;Red;Casier Moyen Bleue;H;4
 6160c04;1;Black;Casier Moyen Bleue;H;4
-x39c03;5;Black;Casier Moyen Bleue;H;3
 50745;21;White;Casier Moyen Bleue;I;1
 50745;4;Yellow;Casier Moyen Bleue;I;1
 50745;2;Orange;Casier Moyen Bleue;I;1
 50745;1;Red;Casier Moyen Bleue;I;1
 50745;4;Blue;Casier Moyen Bleue;I;1
 50745;70;Dark Bluish Gray;Casier Moyen Bleue;I;1
-x77ac50;2;Black;Casier Moyen Bleue;I;1
 x77ac100;1;Black;Casier Moyen Bleue;I;1
 x77ac30;1;Black;Casier Moyen Bleue;I;1
+x77ac50;2;Black;Casier Moyen Bleue;I;1
 x77cc250;1;Black;Casier Moyen Bleue;I;1
-4493c01pb07;1;Black;Casier Moyen Bleue;G;1
-76147c01;1;White;Casier Moyen Bleue;G;1
-6026;3;Green;Casier Moyen Bleue;G;1
-6027;2;Green;Casier Moyen Bleue;G;1
-4738a;7;Brown;Casier Moyen Bleue;F;2
-4738a;3;Reddish Brown;Casier Moyen Bleue;F;2
-4738a;1;Pearl Gold;Casier Moyen Bleue;F;2
-4739a;7;Brown;Casier Moyen Bleue;F;2
-4739a;3;Reddish Brown;Casier Moyen Bleue;F;2
-4739a;1;Pearl Gold;Casier Moyen Bleue;F;2

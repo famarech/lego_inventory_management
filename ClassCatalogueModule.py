@@ -45,26 +45,7 @@ class CATALOGUE:
             somme = somme + int(item.qty)
         return somme
 
-    def refresh_infos(self):
-        print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
-        start = time()
-        size = len(self.tab)
-        # time_per_item = 3.7 # en utilisant les fichiers json
-        time_per_item = 1.3004 # en utilisant l'api
-        finish = localtime(start + (time_per_item * size))
-        print("fin du rafraichissement estimé à :\n" +\
-                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
-        for item in self.tab:
-            item.refresh_infos_by_api()
-        filename = '/' + self.filename + '_' +\
-                    str(localtime().tm_hour) +\
-                    str(localtime().tm_min) +\
-                    str(localtime().tm_sec) + '_temp.csv'
-        path = abspath('./ressources/save_temp')
-        write.save(self.tab, path + filename, "w")
-        delta = round(time() - start, 2)
-        print("\tRafraichissement terminé !!!\n" +\
-                f"{len(self.tab)} references en {delta} secondes.\n\n")
+
 
     def sauvegarder(self, path_destination, refresh):
         print("Creation du fichier de sauvegarde ...")
@@ -234,11 +215,26 @@ class INVENTAIRE(CATALOGUE):
         write.save(self.tab, path + filename, "w")
         print(f"\t\tFin de la Recherche de Prix de l'inventaire {self.filename}\n\n")
 
-    def printing(self):
-        for each in self.tab:
-            each.exist_picture(each.itemid, each.colorid, each.urlimage)
-        write.transform_to_impression_html(self.tab, self.filename)
-        print("Inventaire printé en html !!!")
+    def refresh_infos(self):
+        print(f"Rafraichissement des infos de '''{self.filename}''' en cours ...")
+        start = time()
+        size = len(self.tab)
+        # time_per_item = 3.7 # en utilisant les fichiers json
+        time_per_item = 1.3004 # en utilisant l'api
+        finish = localtime(start + (time_per_item * size))
+        print("fin du rafraichissement estimé à :\n" +\
+                f"{finish.tm_hour}:{finish.tm_min}:{finish.tm_sec} -- heure local")
+        for item in self.tab:
+            item.refresh_infos_by_api()
+        filename = '/' + self.filename + '_' +\
+                    str(localtime().tm_hour) +\
+                    str(localtime().tm_min) +\
+                    str(localtime().tm_sec) + '_temp.csv'
+        path = abspath('./ressources/save_temp')
+        write.save(self.tab, path + filename, "w")
+        delta = round(time() - start, 2)
+        print("\tRafraichissement terminé !!!\n" +\
+                f"{len(self.tab)} references en {delta} secondes.\n\n")
 
     def get_picture(self):
         self.tab.sort(key=lambda obj: obj.urlimage)
@@ -249,7 +245,7 @@ class INVENTAIRE(CATALOGUE):
             else:
                 break
         start = time()
-        size = len(self.tab)
+        size = len(self.tab[:index])
         time_per_item = 9.5
         finish = localtime(start + (time_per_item * size))
         print(f"{index} images manquantes,\n" +\
@@ -272,6 +268,12 @@ class INVENTAIRE(CATALOGUE):
 
         self.sauvegarder(path_destination, False)
 
+    def printing(self):
+        for each in self.tab:
+            each.exist_picture(each.itemid, each.colorid, each.urlimage)
+        write.transform_to_impression_html(self.tab, self.filename)
+        print("Inventaire printé en html !!!")
+
 
 class SET(CATALOGUE):
 
@@ -282,7 +284,7 @@ class SET(CATALOGUE):
 
         self.itemid = self.filename
         self.name = ''
-        self.type = 'SET'
+        self.type = ''
         self.categoryid = ''
         self.urlimage = ''
         self.weight = ''
@@ -295,10 +297,8 @@ class SET(CATALOGUE):
         self.box = box
         self.row = row
         self.column = column
-
         self.tab = self.loading()
-
-
+        self.refresh_infos_set()
 
 
     def afficher(self):
@@ -352,7 +352,18 @@ class SET(CATALOGUE):
 
         return tab
 
-
+    def refresh_infos_set(self):
+        json_obj = api.catalog_item.get_item('Set', self.itemid)
+        self.name = json_obj['data']['name']
+        self.type = json_obj['data']['type']
+        self.categoryid = json_obj['data']['category_id']
+        self.urlimage = json_obj['data']['image_url']
+        self.weight = json_obj['data']['weight']
+        self.dimx = json_obj['data']['dim_x']
+        self.dimy = json_obj['data']['dim_y']
+        self.dimz = json_obj['data']['dim_z']
+        self.yearreleased = json_obj['data']['year_released']
+        self.isobsolete = json_obj['data']['is_obsolete']
 
     # def refresh_infos(self):
 

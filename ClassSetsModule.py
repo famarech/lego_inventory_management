@@ -35,7 +35,7 @@ class SETS:
         size = len(self.tab)
         for i in range(1,size,1):
             self.tab[0].fusionner(self.tab[i])
-        self.tab[0].filename = newname
+        self.tab[0].filename = newfilename
         self.tab[0].sauvegarder(newpath, False)
 
 

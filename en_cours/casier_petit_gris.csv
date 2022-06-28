@@ -1,279 +1,279 @@
-ITEMID;QTY;COLORNAME;BOX;LINE;COLUMN
+ITEMID;QTY;COLORNAME;BOX;ROW;COLUMN
 2877;17;White;Casier Petit Gris;A;1
-2877;13;Yellow;Casier Petit Gris;A;1
+2877;3;Dark Gray;Casier Petit Gris;A;1
 2877;11;Black;Casier Petit Gris;A;1
+2877;13;Yellow;Casier Petit Gris;A;1
 2877;3;Red;Casier Petit Gris;A;1
 2877;10;Green;Casier Petit Gris;A;1
-2877;2;Reddish Brown;Casier Petit Gris;A;1
-2877;3;Dark Gray;Casier Petit Gris;A;1
 2877;16;Dark Bluish Gray;Casier Petit Gris;A;1
 2877;15;Light Bluish Gray;Casier Petit Gris;A;1
+2877;2;Reddish Brown;Casier Petit Gris;A;1
 30136;8;White;Casier Petit Gris;A;2
+30136;1;Dark Gray;Casier Petit Gris;A;2
 30136;24;Tan;Casier Petit Gris;A;2
 30136;2;Green;Casier Petit Gris;A;2
-30136;3;Light Gray;Casier Petit Gris;A;2
-30136;1;Dark Gray;Casier Petit Gris;A;2
 30136;36;Dark Bluish Gray;Casier Petit Gris;A;2
 30136;8;Light Bluish Gray;Casier Petit Gris;A;2
+30136;3;Light Gray;Casier Petit Gris;A;2
 30137;2;White;Casier Petit Gris;A;2
-30137;4;Light Gray;Casier Petit Gris;A;2
-30137;12;Dark Bluish Gray;Casier Petit Gris;A;2
 30137;1;Medium Nougat;Casier Petit Gris;A;2
+30137;12;Dark Bluish Gray;Casier Petit Gris;A;2
+30137;4;Light Gray;Casier Petit Gris;A;2
 3941;12;White;Casier Petit Gris;A;3
+3941;13;Black;Casier Petit Gris;A;3
 3941;3;Tan;Casier Petit Gris;A;3
 3941;62;Yellow;Casier Petit Gris;A;3
+3941;3;Lime;Casier Petit Gris;A;3
 3941;1;Orange;Casier Petit Gris;A;3
 3941;10;Red;Casier Petit Gris;A;3
-3941;13;Brown;Casier Petit Gris;A;3
-3941;3;Light Gray;Casier Petit Gris;A;3
-3941;13;Black;Casier Petit Gris;A;3
-3941;3;Lime;Casier Petit Gris;A;3
 3941;4;Dark Blue;Casier Petit Gris;A;3
+3941;13;Brown;Casier Petit Gris;A;3
 3941;6;Dark Bluish Gray;Casier Petit Gris;A;3
 3941;5;Light Bluish Gray;Casier Petit Gris;A;3
 3941;13;Reddish Brown;Casier Petit Gris;A;3
+3941;3;Light Gray;Casier Petit Gris;A;3
 2458;11;White;Casier Petit Gris;A;4
-2458;1;Tan;Casier Petit Gris;A;4
-2458;3;Yellow;Casier Petit Gris;A;4
-2458;13;Red;Casier Petit Gris;A;4
-2458;2;Blue;Casier Petit Gris;A;4
-2458;9;Light Gray;Casier Petit Gris;A;4
 2458;1;Dark Gray;Casier Petit Gris;A;4
 2458;18;Black;Casier Petit Gris;A;4
+2458;1;Tan;Casier Petit Gris;A;4
+2458;3;Yellow;Casier Petit Gris;A;4
 2458;2;Light Violet;Casier Petit Gris;A;4
+2458;13;Red;Casier Petit Gris;A;4
+2458;2;Blue;Casier Petit Gris;A;4
 2458;8;Dark Bluish Gray;Casier Petit Gris;A;4
 2458;4;Light Bluish Gray;Casier Petit Gris;A;4
-3315;1;Red;Casier Petit Gris;A;5
+2458;9;Light Gray;Casier Petit Gris;A;4
+3149ac01;5;Red;Casier Petit Gris;A;5
+3149c01;1;Black;Casier Petit Gris;A;5
 3315;1;Black;Casier Petit Gris;A;5
+3315;1;Red;Casier Petit Gris;A;5
 3597;1;Black;Casier Petit Gris;A;5
 3639;1;Black;Casier Petit Gris;A;5
 3639;2;Dark Bluish Gray;Casier Petit Gris;A;5
-3640;1;Red;Casier Petit Gris;A;5
-3640;1;Light Gray;Casier Petit Gris;A;5
 3640;1;Black;Casier Petit Gris;A;5
+3640;1;Red;Casier Petit Gris;A;5
 3640;2;Dark Bluish Gray;Casier Petit Gris;A;5
-3149ac01;5;Red;Casier Petit Gris;A;5
-3149c01;1;Black;Casier Petit Gris;A;5
+3640;1;Light Gray;Casier Petit Gris;A;5
 3679;256;Light Bluish Gray;Casier Petit Gris;B;1
 3680;25;White;Casier Petit Gris;B;1
+3680;44;Black;Casier Petit Gris;B;1
 3680;31;Yellow;Casier Petit Gris;B;1
 3680;26;Blue;Casier Petit Gris;B;1
 3680;3;Light Gray;Casier Petit Gris;B;1
-3680;44;Black;Casier Petit Gris;B;1
 3794a;71;Yellow;Casier Petit Gris;B;1
 3794a;56;Blue;Casier Petit Gris;B;1
 3963;6;White;Casier Petit Gris;B;2
-3963;15;Light Gray;Casier Petit Gris;B;2
 3963;25;Black;Casier Petit Gris;B;2
 3963;2;Light Bluish Gray;Casier Petit Gris;B;2
+3963;15;Light Gray;Casier Petit Gris;B;2
 2436;26;White;Casier Petit Gris;B;3
+2436;56;Black;Casier Petit Gris;B;3
 2436;1;Tan;Casier Petit Gris;B;3
 2436;14;Yellow;Casier Petit Gris;B;3
 2436;4;Red;Casier Petit Gris;B;3
 2436;1;Green;Casier Petit Gris;B;3
 2436;12;Blue;Casier Petit Gris;B;3
-2436;3;Light Gray;Casier Petit Gris;B;3
-2436;56;Black;Casier Petit Gris;B;3
 2436;15;Light Bluish Gray;Casier Petit Gris;B;3
+2436;3;Light Gray;Casier Petit Gris;B;3
 30386pb04;2;Light Bluish Gray;Casier Petit Gris;B;4
 30387;2;Yellow;Casier Petit Gris;B;4
-30387;1;Light Gray;Casier Petit Gris;B;4
 30387;8;Light Bluish Gray;Casier Petit Gris;B;4
+30387;1;Light Gray;Casier Petit Gris;B;4
 30387pb011;1;Light Bluish Gray;Casier Petit Gris;B;4
 30388;2;Yellow;Casier Petit Gris;B;4
 30388;1;Red;Casier Petit Gris;B;4
-30388pb001la;3;Yellow;Casier Petit Gris;B;4
-30388pb004;1;Yellow;Casier Petit Gris;B;4
+30388pb001La;3;Yellow;Casier Petit Gris;B;4
 30388pb003;1;Yellow;Casier Petit Gris;B;4
+30388pb004;1;Yellow;Casier Petit Gris;B;4
 40902;1;Dark Gray;Casier Petit Gris;B;4
 40902;1;Black;Casier Petit Gris;B;4
 40902;6;Light Bluish Gray;Casier Petit Gris;B;4
-4175;3;Red;Casier Petit Gris;B;5
-4175;12;Light Gray;Casier Petit Gris;B;5
 4175;35;Black;Casier Petit Gris;B;5
+4175;3;Red;Casier Petit Gris;B;5
 4175;11;Dark Bluish Gray;Casier Petit Gris;B;5
 4175;2;Light Bluish Gray;Casier Petit Gris;B;5
+4175;12;Light Gray;Casier Petit Gris;B;5
 2444;10;White;Casier Petit Gris;C;1
+2444;23;Black;Casier Petit Gris;C;1
 2444;14;Yellow;Casier Petit Gris;C;1
 2444;5;Red;Casier Petit Gris;C;1
 2444;1;Blue;Casier Petit Gris;C;1
-2444;9;Light Gray;Casier Petit Gris;C;1
-2444;23;Black;Casier Petit Gris;C;1
 2444;6;Dark Bluish Gray;Casier Petit Gris;C;1
 2444;7;Light Bluish Gray;Casier Petit Gris;C;1
+2444;9;Light Gray;Casier Petit Gris;C;1
 2817;1;White;Casier Petit Gris;C;2
+2817;40;Black;Casier Petit Gris;C;2
 2817;6;Red;Casier Petit Gris;C;2
 2817;3;Blue;Casier Petit Gris;C;2
-2817;2;Light Gray;Casier Petit Gris;C;2
-2817;40;Black;Casier Petit Gris;C;2
 2817;10;Light Bluish Gray;Casier Petit Gris;C;2
+2817;2;Light Gray;Casier Petit Gris;C;2
 4730;8;White;Casier Petit Gris;C;3
+4730;16;Black;Casier Petit Gris;C;3
 4730;1;Yellow;Casier Petit Gris;C;3
 4730;2;Red;Casier Petit Gris;C;3
 4730;13;Blue;Casier Petit Gris;C;3
-4730;16;Black;Casier Petit Gris;C;3
 6232;3;White;Casier Petit Gris;C;3
+6232;2;Dark Gray;Casier Petit Gris;C;3
 6232;4;Tan;Casier Petit Gris;C;3
 6232;2;Yellow;Casier Petit Gris;C;3
 6232;7;Red;Casier Petit Gris;C;3
 6232;5;Blue;Casier Petit Gris;C;3
-6232;17;Light Gray;Casier Petit Gris;C;3
-6232;2;Dark Gray;Casier Petit Gris;C;3
 6232;5;Dark Bluish Gray;Casier Petit Gris;C;3
 6232;7;Light Bluish Gray;Casier Petit Gris;C;3
+6232;17;Light Gray;Casier Petit Gris;C;3
 2460;3;White;Casier Petit Gris;C;4
 2460;5;Yellow;Casier Petit Gris;C;4
 2460;9;Red;Casier Petit Gris;C;4
 2460;4;Blue;Casier Petit Gris;C;4
-2460;3;Light Gray;Casier Petit Gris;C;4
 2460;1;Dark Green;Casier Petit Gris;C;4
 2460;2;Dark Bluish Gray;Casier Petit Gris;C;4
 2460;1;Light Bluish Gray;Casier Petit Gris;C;4
-6249;4;Red;Casier Petit Gris;C;4
-6249;3;Light Gray;Casier Petit Gris;C;4
-6249;3;Dark Gray;Casier Petit Gris;C;4
-6249;2;Dark Bluish Gray;Casier Petit Gris;C;4
-6249;1;Light Bluish Gray;Casier Petit Gris;C;4
+2460;3;Light Gray;Casier Petit Gris;C;4
 30000;4;Blue;Casier Petit Gris;C;4
 30000;2;Dark Bluish Gray;Casier Petit Gris;C;4
 30000;7;Light Bluish Gray;Casier Petit Gris;C;4
 30000pb02;1;Dark Bluish Gray;Casier Petit Gris;C;4
+6249;3;Dark Gray;Casier Petit Gris;C;4
+6249;4;Red;Casier Petit Gris;C;4
+6249;2;Dark Bluish Gray;Casier Petit Gris;C;4
+6249;1;Light Bluish Gray;Casier Petit Gris;C;4
+6249;3;Light Gray;Casier Petit Gris;C;4
 11477;1;White;Casier Petit Gris;C;5
+11477;2;Black;Casier Petit Gris;C;5
+11477;1;Yellowish Green;Casier Petit Gris;C;5
 11477;2;Yellow;Casier Petit Gris;C;5
 11477;6;Red;Casier Petit Gris;C;5
 11477;3;Green;Casier Petit Gris;C;5
-11477;6;Blue;Casier Petit Gris;C;5
-11477;3;Reddish Brown;Casier Petit Gris;C;5
-11477;2;Black;Casier Petit Gris;C;5
 11477;13;Dark Blue;Casier Petit Gris;C;5
+11477;6;Blue;Casier Petit Gris;C;5
 11477;2;Dark Bluish Gray;Casier Petit Gris;C;5
 11477;2;Light Bluish Gray;Casier Petit Gris;C;5
+11477;3;Reddish Brown;Casier Petit Gris;C;5
 11477;7;Dark Purple;Casier Petit Gris;C;5
-11477;1;Yellowish Green;Casier Petit Gris;C;5
-61409;3;Yellow;Casier Petit Gris;C;5
-61409;2;Red;Casier Petit Gris;C;5
-61409;7;Reddish Brown;Casier Petit Gris;C;5
 61409;10;Black;Casier Petit Gris;C;5
+61409;3;Yellow;Casier Petit Gris;C;5
 61409;15;Lime;Casier Petit Gris;C;5
+61409;2;Red;Casier Petit Gris;C;5
 61409;2;Dark Orange;Casier Petit Gris;C;5
 61409;31;Dark Bluish Gray;Casier Petit Gris;C;5
+61409;7;Reddish Brown;Casier Petit Gris;C;5
 85984;8;White;Casier Petit Gris;C;5
+85984;4;Black;Casier Petit Gris;C;5
 85984;2;Yellow;Casier Petit Gris;C;5
+85984;6;Bright Green;Casier Petit Gris;C;5
 85984;2;Red;Casier Petit Gris;C;5
 85984;3;Green;Casier Petit Gris;C;5
 85984;2;Blue;Casier Petit Gris;C;5
-85984;4;Black;Casier Petit Gris;C;5
-85984;6;Bright Green;Casier Petit Gris;C;5
 85984;8;Dark Bluish Gray;Casier Petit Gris;C;5
 85984;10;Light Bluish Gray;Casier Petit Gris;C;5
 3794a;93;White;Casier Petit Gris;D;1
-3794a;191;Red;Casier Petit Gris;D;1
-3794a;38;Light Gray;Casier Petit Gris;D;1
 3794a;11;Dark Gray;Casier Petit Gris;D;1
 3794a;134;Black;Casier Petit Gris;D;1
-4510;3;White;Casier Petit Gris;D;2
-4510;1;Red;Casier Petit Gris;D;2
-4510;1;Blue;Casier Petit Gris;D;2
-4510;1;Light Gray;Casier Petit Gris;D;2
-4510;7;Black;Casier Petit Gris;D;2
-4510;4;Dark Bluish Gray;Casier Petit Gris;D;2
-4510;4;Light Bluish Gray;Casier Petit Gris;D;2
+3794a;191;Red;Casier Petit Gris;D;1
+3794a;38;Light Gray;Casier Petit Gris;D;1
+3794a;7;Pearl Gold;Casier Petit Gris;D;2
 3794a;1;Tan;Casier Petit Gris;D;2
-3794a;1;Orange;Casier Petit Gris;D;2
-3794a;6;Green;Casier Petit Gris;D;2
-3794a;10;Brown;Casier Petit Gris;D;2
 3794a;3;Lime;Casier Petit Gris;D;2
+3794a;1;Orange;Casier Petit Gris;D;2
 3794a;1;Dark Red;Casier Petit Gris;D;2
+3794a;6;Green;Casier Petit Gris;D;2
 3794a;6;Dark Blue;Casier Petit Gris;D;2
+3794a;10;Brown;Casier Petit Gris;D;2
 3794a;24;Dark Bluish Gray;Casier Petit Gris;D;2
 3794a;26;Light Bluish Gray;Casier Petit Gris;D;2
-3794a;7;Pearl Gold;Casier Petit Gris;D;2
+4510;3;White;Casier Petit Gris;D;2
+4510;7;Black;Casier Petit Gris;D;2
+4510;1;Red;Casier Petit Gris;D;2
+4510;1;Blue;Casier Petit Gris;D;2
+4510;4;Dark Bluish Gray;Casier Petit Gris;D;2
+4510;4;Light Bluish Gray;Casier Petit Gris;D;2
+4510;1;Light Gray;Casier Petit Gris;D;2
+2926;13;Black;Casier Petit Gris;D;3
 2926;3;Red;Casier Petit Gris;D;3
 2926;12;Light Gray;Casier Petit Gris;D;3
-2926;13;Black;Casier Petit Gris;D;3
 4488;17;White;Casier Petit Gris;D;3
-4488;7;Red;Casier Petit Gris;D;3
 4488;61;Black;Casier Petit Gris;D;3
+4488;7;Red;Casier Petit Gris;D;3
 4488;19;Light Bluish Gray;Casier Petit Gris;D;3
-2653;3;Red;Casier Petit Gris;D;4
-2653;2;Light Gray;Casier Petit Gris;D;4
 2653;4;Black;Casier Petit Gris;D;4
+2653;3;Red;Casier Petit Gris;D;4
 2653;2;Light Bluish Gray;Casier Petit Gris;D;4
+2653;2;Light Gray;Casier Petit Gris;D;4
 30586;10;Red;Casier Petit Gris;D;4
 32028;6;White;Casier Petit Gris;D;4
+32028;14;Black;Casier Petit Gris;D;4
 32028;6;Yellow;Casier Petit Gris;D;4
 32028;12;Green;Casier Petit Gris;D;4
-32028;3;Light Gray;Casier Petit Gris;D;4
-32028;14;Black;Casier Petit Gris;D;4
 32028;1;Dark Bluish Gray;Casier Petit Gris;D;4
 32028;18;Light Bluish Gray;Casier Petit Gris;D;4
+32028;3;Light Gray;Casier Petit Gris;D;4
 15068;2;White;Casier Petit Gris;D;5
-15068;4;Red;Casier Petit Gris;D;5
+15068;1;Dark Brown;Casier Petit Gris;D;5
 15068;2;Sand Green;Casier Petit Gris;D;5
+15068;4;Red;Casier Petit Gris;D;5
 15068;1;Dark Red;Casier Petit Gris;D;5
 15068;13;Dark Blue;Casier Petit Gris;D;5
 15068;6;Dark Bluish Gray;Casier Petit Gris;D;5
-15068;1;Dark Brown;Casier Petit Gris;D;5
 30602;1;White;Casier Petit Gris;D;5
+30602;3;Black;Casier Petit Gris;D;5
 30602;1;Yellow;Casier Petit Gris;D;5
 30602;1;Orange;Casier Petit Gris;D;5
 30602;1;Red;Casier Petit Gris;D;5
 30602;2;Blue;Casier Petit Gris;D;5
-30602;3;Black;Casier Petit Gris;D;5
 30602;1;Dark Bluish Gray;Casier Petit Gris;D;5
-30603;5;Black;Casier Petit Gris;D;5
-30602pb041R;1;Red;Casier Petit Gris;D;5
+30602pb005;1;Yellow;Casier Petit Gris;D;5
 30602pb032L;1;Red;Casier Petit Gris;D;5
 30602pb032R;1;Red;Casier Petit Gris;D;5
 30602pb039;2;White;Casier Petit Gris;D;5
-30602pb005;1;Yellow;Casier Petit Gris;D;5
+30602pb041R;1;Red;Casier Petit Gris;D;5
+30602pb083L;1;Blue;Casier Petit Gris;D;5
+30602pb083R;1;Blue;Casier Petit Gris;D;5
 30602pb087;1;Red;Casier Petit Gris;D;5
-30602pb83L;1;Blue;Casier Petit Gris;D;5
-30602pb83R;1;Blue;Casier Petit Gris;D;5
+30603;5;Black;Casier Petit Gris;D;5
 44675;1;Black;Casier Petit Gris;D;5
 44675;1;Dark Blue;Casier Petit Gris;D;5
 44675;6;Light Bluish Gray;Casier Petit Gris;D;5
-6081;1;Black;Casier Petit Gris;E;1
-6081;1;Dark Bluish Gray;Casier Petit Gris;E;1
-6081;1;Medium Azure;Casier Petit Gris;E;1
-6191;1;Green;Casier Petit Gris;E;1
-6191;2;Light Bluish Gray;Casier Petit Gris;E;1
-6192;4;White;Casier Petit Gris;E;1
-41855;3;Yellow;Casier Petit Gris;E;1
 41855;2;Black;Casier Petit Gris;E;1
+41855;3;Yellow;Casier Petit Gris;E;1
 41855;1;Lime;Casier Petit Gris;E;1
 47457;2;White;Casier Petit Gris;E;1
+47457;2;Black;Casier Petit Gris;E;1
+47457;1;Olive Green;Casier Petit Gris;E;1
+47457;4;Medium Azure;Casier Petit Gris;E;1
 47457;1;Yellow;Casier Petit Gris;E;1
 47457;8;Red;Casier Petit Gris;E;1
 47457;2;Green;Casier Petit Gris;E;1
 47457;1;Blue;Casier Petit Gris;E;1
-47457;2;Black;Casier Petit Gris;E;1
 47457;8;Dark Bluish Gray;Casier Petit Gris;E;1
 47457;3;Light Bluish Gray;Casier Petit Gris;E;1
-47457;1;Olive Green;Casier Petit Gris;E;1
-47457;4;Medium Azure;Casier Petit Gris;E;1
 47457pb01;2;Green;Casier Petit Gris;E;1
+6081;1;Black;Casier Petit Gris;E;1
+6081;1;Medium Azure;Casier Petit Gris;E;1
+6081;1;Dark Bluish Gray;Casier Petit Gris;E;1
+6191;1;Green;Casier Petit Gris;E;1
+6191;2;Light Bluish Gray;Casier Petit Gris;E;1
+6192;4;White;Casier Petit Gris;E;1
 6081;2;White;Casier Petit Gris;E;2
 6081;1;Yellow;Casier Petit Gris;E;2
 6081;2;Red;Casier Petit Gris;E;2
 6091;5;White;Casier Petit Gris;E;2
+6091;1;Dark Gray;Casier Petit Gris;E;2
+6091;1;Bright Pink;Casier Petit Gris;E;2
+6091;3;Black;Casier Petit Gris;E;2
 6091;3;Tan;Casier Petit Gris;E;2
 6091;12;Yellow;Casier Petit Gris;E;2
+6091;1;Sand Green;Casier Petit Gris;E;2
 6091;15;Red;Casier Petit Gris;E;2
+6091;2;Dark Red;Casier Petit Gris;E;2
 6091;3;Green;Casier Petit Gris;E;2
 6091;3;Blue;Casier Petit Gris;E;2
-6091;13;Light Gray;Casier Petit Gris;E;2
-6091;1;Dark Gray;Casier Petit Gris;E;2
-6091;3;Black;Casier Petit Gris;E;2
-6091;1;Sand Green;Casier Petit Gris;E;2
-6091;2;Dark Red;Casier Petit Gris;E;2
 6091;5;Dark Bluish Gray;Casier Petit Gris;E;2
 6091;1;Light Bluish Gray;Casier Petit Gris;E;2
-6091;1;Bright Pink;Casier Petit Gris;E;2
+6091;13;Light Gray;Casier Petit Gris;E;2
 4600;1;White;Casier Petit Gris;E;3
-4600;6;Light Gray;Casier Petit Gris;E;3
 4600;38;Black;Casier Petit Gris;E;3
 4600;18;Light Bluish Gray;Casier Petit Gris;E;3
+4600;6;Light Gray;Casier Petit Gris;E;3
 6157;4;Dark Gray;Casier Petit Gris;E;3
 6157;43;Black;Casier Petit Gris;E;3
 6157;11;Dark Bluish Gray;Casier Petit Gris;E;3
@@ -284,14 +284,14 @@ ITEMID;QTY;COLORNAME;BOX;LINE;COLUMN
 3582;14;Yellow;Casier Petit Gris;E;4
 3582;40;Blue;Casier Petit Gris;E;4
 3582;1;Light Gray;Casier Petit Gris;E;4
-7930;9;Blue;Casier Petit Gris;E;4
 7930;1;White;Casier Petit Gris;E;4
 7930;5;Red;Casier Petit Gris;E;4
+7930;9;Blue;Casier Petit Gris;E;4
+32474;10;Black;Casier Petit Gris;E;5
+32474;3;Lime;Casier Petit Gris;E;5
+32474;1;Red;Casier Petit Gris;E;5
+32474;2;Light Gray;Casier Petit Gris;E;5
 3856;23;White;Casier Petit Gris;E;5
 3856;8;Red;Casier Petit Gris;E;5
 3856;33;Green;Casier Petit Gris;E;5
 3856;8;Blue;Casier Petit Gris;E;5
-32474;1;Red;Casier Petit Gris;E;5
-32474;2;Light Gray;Casier Petit Gris;E;5
-32474;10;Black;Casier Petit Gris;E;5
-32474;3;Lime;Casier Petit Gris;E;5

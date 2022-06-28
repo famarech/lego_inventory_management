@@ -1,3 +1,10 @@
+revoir tous le code pour get_picture
+utiliser urllib3 associer à url_image de l'item pour obtenir l'image de l'item ET du set
+modifier en conséquence l'ecriture printing() pour une image via url
+et une image alternative en cas de hors connexion
+préparer un fichier de téléchargement de toute les photos de tous les items dans caque couleur des categories les plus importantes du stock
+finalement revoir l'utilité de conserver les images ? (hors connexion ???)
+
 a voir si il est interessant de deplacer la fonction loading de la class SET
 dans le module ReadModule pour plus de cohérence
 
